@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <div class="py-32 px-60">
+    <div class="py-44 px-60">
         <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-120 flex justify-center items-center">
             <span class="font-bold text-4xl">
                 Penjelasan AISC
@@ -14,14 +14,14 @@
     
 
     <!-- Reminder -->
-    <div class="relative pb-20 py-10">
+    <div class="relative pb-20 py-16">
         <div class="flex flex-col items-center">
             <span class="text-footer text-4xl font-bold tracking-wide">
                 Coming Very Soon!
             </span>
             <img src="images/reminder.png" alt="" class="w-3/5 pt-16 z-10">
         </div>
-        <div class="absolute left-0 top-0 z-0 pl-20">
+        <div class="absolute left-0 top-0 z-0 pl-20 pt-10">
             <img src="images/bulet6.png" alt="" class="w-1/2">
         </div>
     </div>
