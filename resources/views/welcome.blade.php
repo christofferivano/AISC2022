@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('content')
-    <!-- Penjelasan AISC -->
+
     <div class="py-32 px-60">
         <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-120 flex justify-center items-center">
             <span class="font-bold text-4xl">
@@ -9,6 +9,9 @@
             </span>
         </div>
     </div>
+    </div>
+    <!-- Penjelasan AISC -->
+    
 
     <!-- Reminder -->
     <div class="relative pb-20">
