@@ -1,29 +1,26 @@
-@extends('layouts.main')
+@extends('layouts.navbar')
 
 @section('content')
     <!-- Penjelasan AISC -->
-    <div class="py-32 px-60">
-        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-120 flex justify-center items-center">
-            <span class="font-bold text-4xl">
-                Penjelasan AISC
-            </span>
+    <div class ="flex flex-row justify-center items-center px-40 py-32">
+        <div class="justify-left items-left w-96">
+            <h1 class="text-4xl font-bold">
+                What is Capture The Flag?
+            </h1>
+            <p class="text-footer">
+                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi 
+            </p>
+        </div>
+        <div class="rounded-lg overflow-hidden w-96 ml-80">
+            <img src="images/bg-landing.png" alt="ko">
         </div>
     </div>
 
-    <!-- Reminder -->
-    <div class="relative pb-20 py-10">
-        <div class="flex flex-col items-center">
-            <span class="text-footer text-4xl font-bold tracking-wide">
-                Coming Very Soon!
-            </span>
-            <img src="images/reminder.png" alt="" class="w-3/5 pt-16 z-10">
-        </div>
-        <div class="absolute left-0 top-0 z-0 pl-20">
-            <img src="images/bulet6.png" alt="" class="w-1/2">
-        </div>
-    </div>
+    <!-- List Competition -->
+    <span class="h-70 flex justify-center items-center font-bold text-3xl">
+        <font color ="#30264F">List of Competitions</font>
+    </span>
 
-    <!-- List Event -->
     <div class="container my-20 mx-auto px-52">
         <div class="flex flex-wrap -mx-1">
             <div class="my-4 px-2 w-1/3">
