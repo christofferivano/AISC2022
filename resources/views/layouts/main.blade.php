@@ -5,7 +5,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
-<body class="relative">
+<body class="bg-landing relative">
     <div style="background-image: url('images/bg-landing.png')" class="bg-cover h-landing bg-local relative h-full">
         <div class="absolute pt-12 pl-5">
             <img src="images/bulet1.png" alt="" class="w-1/2"> 
@@ -22,7 +22,7 @@
         <div class="absolute right-0 bottom-0 pr-10">
             <img src="images/bulet2.png" alt="" class=""> 
         </div>
-        <div class="absolute pt-96">
+        <div class="absolute pt-72">
             <img src="images/bulet5.png" alt="" class="w-1/2"> 
         </div>
         <nav class="sticky top-0 z-20 bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">

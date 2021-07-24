@@ -3,3 +3,21 @@
 @tailwind utilities;
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
+
+.card:hover button
+{
+    background: none;
+    border: 1px white solid;
+}
+
+.card:hover a
+{
+    color: white;
+}
+
+.card:hover
+{
+    -webkit-transform-style: preserve-3d;
+
+-webkit-transform-style: flat;
+}

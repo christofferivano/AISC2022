@@ -3,6 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'card-event': "url('/public/images/bg-card.png')"
+      }),
+      backgroundImage: ['hover', 'focus'],
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
         '14': 'repeat(14, minmax(0, 1fr))',
@@ -54,6 +58,7 @@ module.exports = {
       },
       colors: {
         footer: '#30264F',
+        landing: '#FDFAFE',
       },
     },
   },
