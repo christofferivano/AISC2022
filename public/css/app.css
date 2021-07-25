@@ -32377,6 +32377,11 @@ video {
   -webkit-transform-style: flat;
 }
 
+.member:focus span
+{
+  color: white;
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

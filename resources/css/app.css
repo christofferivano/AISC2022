@@ -18,6 +18,10 @@
 .card:hover
 {
     -webkit-transform-style: preserve-3d;
+    -webkit-transform-style: flat;
+}
 
--webkit-transform-style: flat;
+.member:focus span
+{
+    color: white;
 }
