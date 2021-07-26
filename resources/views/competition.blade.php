@@ -96,43 +96,102 @@
         </div>
     </div>
 
-    <!-- Timeline -->
-    <div class="mt-24 pt-16">
-        <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
-            <font color ="#30264F">Timeline</font>
-        </span>
-    </div>
-
-    <div class="container my-20 mx-auto px-52">
-        <div class="flex-row my-4 px-2 w-1/3">
-            <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
-                <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
-                    <h2 class="underline text-2xl font-bold py-5">
-                        <font color="#FFFFFF">Open Registration</font>
-                    </h2>
-                    <span class="text-footer text-xl">
-                        <font color="#FFFFFF">24 Agustus 2021</font>
-                    </span>
+    <!-- <div class="flex flex-row">
+        <div class="container my-20 mx-auto px-52">
+            <div class="my-4 px-1 w-1/4">
+                <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
+                    <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
+                        <h2 class="underline text-2xl font-bold py-5">
+                            <font color="#FFFFFF">Open Registration</font>
+                        </h2>
+                        <span class="text-footer text-xl">
+                            <font color="#FFFFFF">24 Agustus 2021</font>
+                        </span>
+                    </div>
                 </div>
             </div>
+            <div class="pl-32">
+                <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
+            </div>
+            <div class="flex-row my-4 px-1 w-1/4">
+                <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
+                    <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
+                        <h2 class="underline text-2xl font-bold py-5">
+                            <font color="#FFFFFF">Open Registration</font>
+                        </h2>
+                        <span class="text-footer text-xl">
+                            <font color="#FFFFFF">24 Agustus 2021</font>
+                        </span>
+                    </div>
+                </div>
+            </div>  
         </div>
-        <div class="pl-44">
-            <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
-        </div>
-        <div class="flex-row my-4 px-2 w-1/3">
-            <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
-                <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
-                    <h2 class="underline text-2xl font-bold py-5">
-                        <font color="#FFFFFF">Open Registration</font>
-                    </h2>
-                    <span class="text-footer text-xl">
-                        <font color="#FFFFFF">24 Agustus 2021</font>
-                    </span>
+    </div> -->
+    
+    <div class ="flex flex-col px-16 pb-96 relative justify-center">
+        <img src="images/bulet6.png" alt="", class="absolute w-1/2 right-0 bottom-0 -mb-52">
+        <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0">
+        <div class="border rounded-lg shadow-2xl py-10">
+            <!-- Timeline -->
+            <div>
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                    <font color ="#30264F">Timeline</font>
+                </span>
+            </div>
+            <div class="flex flex-row items-end">
+                <!-- Timeline -->
+                <div class="container my-20 px-2">
+                    <div class="my-4 px-20 w-full">
+                        <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-60">
+                            <div class="card-event flex justify-center items-center flex-col items-start py-10" id="card-event">
+                                <h2 class="underline text-2xl font-bold py-5">
+                                    <font color="#FFFFFF">Open Registration</font>
+                                </h2>
+                                <span class="text-footer text-xl">
+                                    <font color="#FFFFFF">24 Agustus 2021</font>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-32">
+                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
+                    </div>
+                </div>
+                <div class="container my-20 px-2">
+                    <div class="my-4 px-20 w-full">
+                        <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
+                            <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
+                                <h2 class="underline text-2xl font-bold py-5">
+                                    <font color="#FFFFFF">Open Registration</font>
+                                </h2>
+                                <span class="text-footer text-xl">
+                                    <font color="#FFFFFF">24 Agustus 2021</font>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-32">
+                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
+                    </div>
+                </div>
+                <div class="container my-20 px-2">
+                    <div class="my-4 px-20 w-full">
+                        <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover h-landing bg-local relative h-40">
+                            <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
+                                <h2 class="underline text-2xl font-bold py-5">
+                                    <font color="#FFFFFF">Open Registration</font>
+                                </h2>
+                                <span class="text-footer text-xl">
+                                    <font color="#FFFFFF">24 Agustus 2021</font>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pl-32">
+                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="pl-44">
-            <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 20px; width: 20px"></div>
         </div>
     </div>
 
