@@ -25,3 +25,13 @@
 {
     color: white;
 }
+
+.event-btn:hover .drop-event
+{
+    display: block;
+}
+
+.compe-btn:hover .drop-compe
+{
+    display: block;
+}
