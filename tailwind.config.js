@@ -37,6 +37,16 @@ module.exports = {
       },
       fontFamily: {
         'montserrat': ['montserrat', 'sans-serif'],
+        'roboto': ['roboto'],
+      },
+      padding: {
+        '97': '28rem',
+        '98': '30rem',
+        '99': '32rem',
+        '100': '36rem',
+        '101': '40rem',
+        '102': '44rem',
+        '103': '48rem',
       },
       width: {
         '1/7': '14.2857143%',
@@ -60,6 +70,8 @@ module.exports = {
       colors: {
         footer: '#30264F',
         landing: '#FDFAFE',
+        testi: '#F56445',
+        testi2: '#0F3E99',
       },
     },
   },

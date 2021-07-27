@@ -7,7 +7,7 @@
 </head>
 <body class="relative">
     <div style="background-image: url('images/bg-conf.png')" class="bg-cover h-landing bg-local relative h-full">
-        <nav class="fixed w-full top-0 z-20 bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <nav class="fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-24 py-2">
                 <div class="flex items-center justify-between h-20">
                     <span class="text-2xl text-gray-900 font-semibold">
