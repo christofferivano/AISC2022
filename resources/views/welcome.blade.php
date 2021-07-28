@@ -14,7 +14,7 @@
     <!-- Reminder -->
     <div class="relative pb-20 py-16">
         <div class="flex flex-col items-center">
-            <h1 class="text-footer text-4xl font-bold tracking-wide">
+            <h1 class="text-footer text-5xl font-bold tracking-wide">
                 Coming Very Soon!
             </h1>
             <img src="images/reminder.png" alt="" class="w-3/5 pt-16 z-10">
@@ -102,7 +102,10 @@
 
     <!-- Timeline -->
     <div class="py-10 px-20">
-        <div class="border border-red-200 rounded-lg shadow-lg w-full">
+        <div class="absolute left-0 mt-72">
+            <img src="images/bulet8.png" alt="" class="w-3/7">
+        </div>
+        <div class="border rounded-lg shadow-lg w-full">
             <div class="flex flex-col items-center py-10">
                 <h1 class="text-footer font-bold text-4xl">Timeline</h1>
                 <div class="flex flex-row items-center py-10">
@@ -147,7 +150,7 @@
     </div>
 
     <!-- Meet the Team -->
-    <div class="flex flex-col items-center py-14 bg-footer">
+    <div class="flex flex-col items-center py-14 bg-footer relative">
         <h1 class="text-white font-bold text-4xl tracking-wide">
             Meet The Team!
         </h1>
