@@ -51,23 +51,25 @@
     </div>
 
     <!-- Testimoni -->
-    <div class="flex flex-col items-center py-10 bg-footer">
-        <h1 class="text-white text-4xl font-semibold">
-            Testimonials
-        </h1>
-        <div class="flex flex-row items-center py-5">
+    <div class="flex flex-col py-10 bg-footer">
+        <div class="flex flex-row items-center justify-center pb-2">
+            <h1 class="text-white text-4xl font-semibold justify-center">
+                Testimonials
+            </h1>
+        </div>
+        <div class="flex flex-row items-center py-5 pl-52">
             <div class="flex overflow-hidden px-8">
                 <div class="filter">
                     <button id="foto-testi1" onclick="showTesti1()">
                         <div id="bg-testi-1" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
-                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
+                            <div id="bg-mix-1" class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
                         </div>
                         <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
                             <img id="foto-testi-1" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
                         </div>
                     </button>
                 </div>
-                <div id="testi1" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
+                <div id="testi1" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden duration-500">
                     <div class="px-10 py-4 font-roboto w-72">
                         <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
                             <span>"</span>
@@ -172,7 +174,7 @@
     </div>
 
     <!-- Register Volunteer -->
-    <div class="flex flex-col items-center pt-60 pb-20">
+    <div class="flex flex-col items-center pt-20 pb-20">
         <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
         <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
         <div class="py-4">

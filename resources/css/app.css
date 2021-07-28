@@ -29,10 +29,30 @@
 
 .event-btn:hover .drop-event
 {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.drop-event
+{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
 }
 
 .compe-btn:hover .drop-compe
 {
-    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+.drop-compe
+{
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-transition: opacity 600ms, visibility 600ms;
+    transition: opacity 600ms, visibility 600ms;
 }
