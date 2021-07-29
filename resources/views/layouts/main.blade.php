@@ -32,7 +32,7 @@
                         LOGO AISC
                     </span>
                     <div class="text-lg flex space-x-20 text-gray-900">
-                        <a href="" class="text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                        <a href="{{ route('volunteer') }}" class="text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
                         <div class="event-btn inline-block relative">
                             <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                                 <span class="text-footer text-lg font-semibold">Event</span>
@@ -41,7 +41,7 @@
                             <ul class="drop-event absolute hidden text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium hover:text-xl">
                                 <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 py-2 px-4 block duration-500" href="#">Webinar</a></li>
                                 <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 py-2 px-4 block" href="#">Social Night</a></li>
-                                <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 py-2 px-4 block" href="#">Conference Day</a></li>
+                                <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 py-2 px-4 block" href="{{ route('conference') }}">Conference Day</a></li>
                             </ul>
                         </div>
                         <div class="compe-btn inline-block relative">
