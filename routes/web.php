@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('competition');
+    return view('competitionregis');
 });
 
 // Route::get('competition', '');
