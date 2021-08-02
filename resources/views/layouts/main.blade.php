@@ -6,24 +6,15 @@
     <title>Document</title>
 </head>
 <body class="relative">
-    <div style="background-image: url('images/bg-landing.png')" class="bg-cover h-landing bg-local relative h-full">
-        <div class="absolute pt-12 pl-5">
-            <img src="images/bulet1.png" alt="" class="w-1/2"> 
+    <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-full">
+        <div class="absolute pt-12">
+            <img src="images/bulet-landing-1.png" alt="" class="w-1/2"> 
         </div>
-        <div class="absolute right-0 bottom-0 pb-16 pr-96">
-            <img src="images/bulet1.png" alt="" class="w-1/2"> 
+        <div class="absolute right-0 top-0">
+            <img src="images/bulet-landing-2.png" alt="" class="h-120"> 
         </div>
-        <div class="absolute right-0 pt-32 pr-10">
-            <img src="images/bulet2.png" alt="" class="w-3/4 -mr-36"> 
-        </div>
-        <div class="absolute pt-28 pl-80">
-            <img src="images/bulet3.png" alt="" class="w-1/2"> 
-        </div>
-        <div class="absolute right-0 bottom-0 pr-10">
-            <img src="images/bulet2.png" alt="" class=""> 
-        </div>
-        <div class="absolute pt-72">
-            <img src="images/bulet5.png" alt="" class="w-1/2"> 
+        <div class="absolute bottom-0 pl-100 -mb-10">
+            <img src="images/bulet-landing-3.png" alt="" class="w-1/2"> 
         </div>
         <nav class="fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-24 py-2">

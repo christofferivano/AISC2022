@@ -3,8 +3,8 @@
 @section('content')
 
     <!-- Penjelasan AISC -->
-    <div class="py-44 px-60">
-        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-120 flex justify-center items-center">
+    <div class="py-52 px-72">
+        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-110 flex justify-center items-center">
             <span class="font-bold text-4xl">
                 Penjelasan AISC
             </span>
@@ -151,7 +151,7 @@
 
     <!-- Meet the Team -->
     <div class="flex flex-col items-center py-14 bg-footer relative">
-        <h1 class="text-white font-bold text-4xl tracking-wide">
+        <h1 class="text-white font-bold text-5xl tracking-wide">
             Meet The Team!
         </h1>
         <div class="px-16 py-10 flex items-center">
@@ -261,11 +261,25 @@
     </div>
 
     <!-- Footer -->
-    <footer class="relative">
-        <div class="bg-footer h-96 flex justify-center items-center">
-            <span class="font-bold text-4xl text-white">
-                Contact Us
-            </span>
+    <footer style="background-image: url('images/bg-footer.png');" class="bg-cover h-landing bg-local relative">
+        <div class="h-96 flex flex-col items-start">
+            <div class="px-20 py-10">
+                <h2 class="font-bold text-5xl text-white">
+                    Contact Us
+                </h2>
+                <div class="flex pt-8 items-center">
+                    <img src="images/instagram.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@aisc2022</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/line-app.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@961ckski</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/linkedin.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">AIChE Indonesia Student Conference 2022</p>
+                </div>
+            </div>
         </div>
     </footer>
 @endsection

@@ -57,7 +57,7 @@
                 Testimonials
             </h1>
         </div>
-        <div class="flex flex-row items-center py-5 pl-52">
+        <div class="flex flex-row items-center py-5 pl-72">
             <div class="flex overflow-hidden px-8">
                 <div class="filter">
                     <button id="foto-testi1" onclick="showTesti1()">
@@ -174,22 +174,38 @@
     </div>
 
     <!-- Register Volunteer -->
-    <div class="flex flex-col items-center pt-20 pb-20">
-        <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
-        <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
-        <div class="py-4">
-            <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
-                <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
-            </button>
+    <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative">
+        <div class="flex flex-col items-center">
+            <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
+            <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
+            <div class="py-4">
+                <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
+                    <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
+                </button>
+            </div>
         </div>
     </div>
 
     <!-- Footer -->
-    <footer class="relative">
-        <div class="bg-footer h-96 flex justify-center items-center">
-            <span class="font-bold text-4xl text-white">
-                Contact Us
-            </span>
+    <footer style="background-image: url('images/bg-footer.png');" class="bg-cover bg-local relative">
+        <div class="h-96 flex flex-col items-start">
+            <div class="px-20 py-10">
+                <h2 class="font-bold text-5xl text-white">
+                    Contact Us
+                </h2>
+                <div class="flex pt-8 items-center">
+                    <img src="images/instagram.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@aisc2022</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/line-app.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@961ckski</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/linkedin.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">AIChE Indonesia Student Conference 2022</p>
+                </div>
+            </div>
         </div>
     </footer>
 @endsection
