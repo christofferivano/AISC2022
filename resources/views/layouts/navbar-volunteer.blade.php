@@ -9,9 +9,11 @@
     <nav class="fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
         <div class="mx-auto px-24 py-2">
             <div class="flex items-center justify-between h-20">
-                <span class="text-2xl text-gray-900 font-semibold">
-                    LOGO AISC
-                </span>
+                <div>
+                    <a href="">
+                        <img src="images/logo.png" alt="" class="w-24">
+                    </a>
+                </div>
                 <div class="text-lg flex space-x-20 text-gray-900">
                     <a href="" class="text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
                     <div class="event-btn inline-block relative">

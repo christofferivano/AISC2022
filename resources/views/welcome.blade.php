@@ -32,65 +32,65 @@
         <div class="container my-20 mx-auto px-52 z-10">
             <div class="flex flex-wrap -mx-1">
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
@@ -154,42 +154,179 @@
         <h1 class="text-white font-bold text-5xl tracking-wide">
             Meet The Team!
         </h1>
-        <div class="px-16 py-10 flex items-center">
-            <button class="w-5">
+            <div x-data="{swiper: null}"
+            x-init="swiper = new Swiper($refs.container, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+            
+                breakpoints: {
+                    640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    },
+                    1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    },
+                    1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    }, 
+                },
+                })"
+            class="relative w-9/12 mx-auto flex flex-row pt-5">
+            <div class="absolute inset-y-0 left-0 z-20 flex items-center pt-5">
+                <button @click="swiper.slidePrev()" 
+                        class="w-5">
                 <img src="images/left-team.png" alt="">
-            </button>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
                 </button>
             </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
+
+            <div class="swiper-container" x-ref="container">
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Project Officer
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Secretary
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Treasurer
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Event
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Competition
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Media & Marketing
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Sponsorship
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Logistic
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Technology
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
-            </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
-            </div>
-            <button class="w-5">
+            
+
+            <div class="absolute inset-y-0 right-0 z-10 flex items-center pt-5">
+                <button @click="swiper.slideNext()" 
+                        class="w-5">
                 <img src="images/right-team.png" alt="">
-            </button>
+                </button>
+            </div>        
         </div>
+        
         <div class="flex items-center py-10">
             <div class="flex flex-col items-center px-6">
                 <div class="relative">
