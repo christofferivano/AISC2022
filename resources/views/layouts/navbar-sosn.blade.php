@@ -6,10 +6,7 @@
     <title>AISC 2022 -  Social Night</title>
 </head>
 <body class="bg-landing relative">
-    <div style="background-image: url('images/bg-sos.png')" class="bg-cover h-landing bg-local relative h-full">
-        <div class="absolute -bottom-96">
-                <img src="images/bg-soskiri.png" alt="" class="w-1/2">
-        </div>
+    <div style="background-image: url('images/bg-sos.png')" class="bg-cover h-landing bg-local relative h-full z-10">
         <nav class="sticky top-0 z-20 bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-24 py-2">
                 <div class="flex items-center justify-between h-20">
@@ -25,6 +22,9 @@
             </div>
         </nav>
         @yield('content')
+    </div>
+    <div class="absolute z-0">
+        <img src="images/bg-soskiri.png" alt="" class="w-1/2">
     </div>
 </body>
 </html>
