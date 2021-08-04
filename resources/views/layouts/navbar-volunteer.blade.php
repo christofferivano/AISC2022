@@ -6,6 +6,9 @@
     <title>Document</title>
 </head>
 <body class="relative h-full">
+    <div class="absolute right-0 top-0 pr-16">
+        <img src="images/bulet-volunteer-1.png" alt="" class="h-96"> 
+    </div>
     <nav class="fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
         <div class="mx-auto px-24 py-2">
             <div class="flex items-center justify-between h-20">
@@ -44,6 +47,78 @@
     </nav>
     @yield('content')
     <script>
+        const targetContent1 = document.getElementById("content-event-1");
+        const btn1 = document.getElementById("event-1");
+        btn1.onclick = function () {
+            if(targetContent1.style.display !== "none")
+            {
+                targetContent1.style.display = "none";
+            }
+            if(targetContent1.style.display === "flex")
+            {
+                targetContent1.style.display = "flex";
+            }
+            else
+            {
+                targetContent1.style.display = "flex";
+            }
+            if(targetContent2.style.display === "flex")
+            {
+                targetContent2.style.display = "none";
+            }
+            if(targetContent3.style.display === "flex")
+            {
+                targetContent3.style.display = "none";
+            }
+        }
+        const targetContent2 = document.getElementById("content-event-2");
+        const btn2 = document.getElementById("event-2");
+        btn2.onclick = function () {
+            if(targetContent2.style.display !== "none")
+            {
+                targetContent2.style.display = "none";
+            }
+            if(targetContent2.style.display === "flex")
+            {
+                targetContent2.style.display = "flex";
+            }
+            else
+            {
+                targetContent2.style.display = "flex";
+            }
+            if(targetContent1.style.display === "flex")
+            {
+                targetContent1.style.display = "none";
+            }
+            if(targetContent3.style.display === "flex")
+            {
+                targetContent3.style.display = "none";
+            }
+        }
+        const targetContent3 = document.getElementById("content-event-3");
+        const btn3 = document.getElementById("event-3");
+        btn3.onclick = function () {
+            if(targetContent3.style.display !== "none")
+            {
+                targetContent3.style.display = "none";
+            }
+            if(targetContent3.style.display === "flex")
+            {
+                targetContent3.style.display = "flex";
+            }
+            else
+            {
+                targetContent3.style.display = "flex";
+            }
+            if(targetContent2.style.display === "flex")
+            {
+                targetContent2.style.display = "none";
+            }
+            if(targetContent1.style.display === "flex")
+            {
+                targetContent1.style.display = "none";
+            }
+        }
         function showTesti1()
         {
             let hidden = document.getElementById('testi1');

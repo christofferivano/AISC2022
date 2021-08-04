@@ -194,7 +194,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-1" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Project Officer
                                         </span>
@@ -208,7 +208,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-2" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Secretary
                                         </span>
@@ -222,7 +222,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-3" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Treasurer
                                         </span>
@@ -236,7 +236,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-4" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Event
                                         </span>
@@ -250,7 +250,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-5" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Competition
                                         </span>
@@ -264,7 +264,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-6" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Media & Marketing
                                         </span>
@@ -278,7 +278,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-7" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Sponsorship
                                         </span>
@@ -292,7 +292,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-8" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Logistic
                                         </span>
@@ -306,7 +306,7 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button id="member-9" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         <span class="text-xl font-semibold text-gray-600 focus:text-white">
                                             Technology
                                         </span>
@@ -327,19 +327,38 @@
             </div>        
         </div>
         
-        <div class="flex items-center py-10">
+        <div id="department-1" class="flex items-center py-10">
             <div class="flex flex-col items-center px-6">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
+                <div class="absolute py-8">
+                    <img src="images/levina.png" alt="" class="w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Levina
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Project Officer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-2" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/bunga.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Bunga
+                        </h2>
+                        <h3 class="text-white text-md">
+                            General Secretary
                         </h3>
                     </div>
                 </div>
@@ -348,14 +367,52 @@
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
+                <div class="absolute py-8">
+                    <img src="images/nindya.png" alt="" class="w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Nindya
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Secretary
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-3" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/salwa.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Salwa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Treasurer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-4" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/kevin.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Kevin
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Event
                         </h3>
                     </div>
                 </div>
@@ -364,14 +421,269 @@
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
+                <div class="absolute py-8">
+                    <img src="images/gregorius.png" alt="" class="w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Gregorius
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Conference Day Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ari.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ari
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Pre-Event Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vincentius.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vincentius
+                        </h2>
+                        <h3 class="text-white text-md">
+                            nAISC Night Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-5" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/nidya.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Nidya
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Competition
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/mikael.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Mikael
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Paper Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/nadhifa.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Nadhifa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            ChemE Jeopardy Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/davine.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Davine
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Poster Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-6" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/josephine.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Josephine
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Media and Marketing
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/daryl.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Daryl
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Social Media Specialist Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ajeng.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ajeng
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Media Production Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vanessa.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vanessa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Outreach Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-7" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ahmad.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ahmad
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Sponsorship
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-8" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/kevin2.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Kevin
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Logistic
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-9" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/christoffer.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ivan
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/frans.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Frans
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vincent.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vincent
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
                         </h3>
                     </div>
                 </div>
