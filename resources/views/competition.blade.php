@@ -98,9 +98,15 @@
 
     
     <!-- Timeline -->
-    <div class ="flex flex-col px-16 pb-96 relative justify-center">
+    <div class ="flex flex-col px-5 pb-96 relative justify-center">
         <img src="images/bulet6.png" alt="", class="absolute w-1/2 right-0 bottom-0 -mb-52">
         <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
+        <!-- <button class="absolute h-2 left-0 flex items-center pl-20">
+            <img src="images/panahkiri.png" alt="" class="h-12">
+        </button>
+        <button class="absolute h-2 right-0 flex items-center pr-20">
+            <img src="images/panahkanan.png" alt="" class="h-12">
+        </button> -->
         <div class="border rounded-lg shadow-2xl py-5">
             <!-- Timeline -->
             <div class="pt-5">
@@ -109,30 +115,91 @@
                 </span>
             </div>
             <div class="flex flex-row items-end">
+                <!-- Slider main container -->
+                <div class="swiper-container my-10 pl-20">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper my-4 px-1">
+                        <!-- Slides -->
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                <font color="#FFFFFF">Open 
+                                    Registration
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                <font color="#FFFFFF">2 Agustus 2021</font>
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                <font color="#FFFFFF">Open 
+                                    BO
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                <font color="#FFFFFF">10 Agustus 2021</font>
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                <font color="#FFFFFF">Open 
+                                    Registration
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                <font color="#FFFFFF">14 Agustus 2021</font>
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                <font color="#FFFFFF">Open 
+                                    Custom
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                <font color="#FFFFFF">13 Agustus 2021</font>
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                <font color="#FFFFFF">Open 
+                                    Rapa
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                <font color="#FFFFFF">12 Agustus 2021</font>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
                 <!-- Timeline -->
-                <div class="container my-20 px-2">
+                <!-- <div class="container my-10 pl-20">
                     <div class="my-4 px-20 w-full">
-                        <div class="card bg-gradient-to-bl from-yellow-400 via-red-500 to-pink-500 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full">
+                        <div class="bg-gradient-to-tr from-pink-300 to-blue-300 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full h-full ml-10">
                             <div class="card-event flex justify-center items-center flex-col items-start py-10" id="card-event">
-                                <h2 class="underline text-2xl font-bold py-5">
-                                    <font color="#FFFFFF">Open Registration</font>
+                                <h2 class="text-left text-2xl font-bold py-5">
+                                    <font color="#FFFFFF">Open 
+                                        Registration</font> 
                                 </h2>
                                 <span class="text-footer text-xl">
-                                    <font color="#FFFFFF">24 Agustus 2021</font>
+                                    <font color="#FFFFFF">2 Agustus 2021</font>
                                 </span>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row items-center justify-starts">  
-                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
-                        <div class="h-2 mx-2 rounded-full bg-red-500 flex items-center justify-center w-full"></div>
+                    <div class="flex flex-row items-center justify-starts ml-20">  
+                        <div class="border-4 border-purple-300 font-bold text-grey-700 rounded-full bg-purple-500 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
+                        <div class="h-2 rounded-full bg-purple-400 flex items-center justify-center w-full pl-32"></div>
                     </div>
                 </div>
-                <div class="container my-20 px-2">
+                <div class="container my-10 px-2">
                     <div class="my-4 px-20 w-full">
-                        <div class="card bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full">
+                        <div class="card bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full ml-10">
                             <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
-                                <h2 class="underline text-2xl font-bold py-5">
+                                <h2 class="text-left text-2xl font-bold py-5">
                                     <font color="#00000">Open Registration</font>
                                 </h2>
                                 <span class="text-footer text-xl">
@@ -141,16 +208,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex items-center justify-start">
-                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
-                        <div class="h-2 mx-2 rounded-full bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 flex items-center justify-center w-full"></div>
+                    <div class="flex flex-row items-center justify-start ml-20 ">
+                        <div class="border-4 border-grey-500 text-grey-700 rounded-full bg-grey-200 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
+                        <div class="h-2 mx-2 rounded-full bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 flex items-center justify-center w-full pl-32"></div>
                     </div>
                 </div>
-                <div class="container my-20 px-2">
+                <div class="container my-10 mr-40">
                     <div class="my-4 px-20 w-full">
-                        <div class="card bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full">
+                        <div class="card bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 overflow-hidden shadow-lg rounded-lg border bg-cover bg-local relative w-full ml-10">
                             <div class="card-event flex justify-center items-center flex-col items-start py-3" id="card-event">
-                                <h2 class="underline text-2xl font-bold py-5">
+                                <h2 class="text-left text-2xl font-bold py-5">
                                     <font color="#00000">Open Registration</font>
                                 </h2>
                                 <span class="text-footer text-xl">
@@ -159,14 +226,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-row items-center justify-start">
-                        <div class="border-4 border-red-300 font-bold text-grey-700 rounded-full bg-red-500 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
-                        <div class="h-2 mx-2 rounded-full bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 flex items-center justify-center w-full"></div>
+                    <div class="flex flex-row items-center justify-start ml-20">
+                        <div class="border-4 border-grey-500 text-grey-700 rounded-full bg-grey-200 flex items-center justify-center" style="height: 1.25rem; width: 1.25rem"></div>
+                        <div class="h-2 mx-2 rounded-full bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 flex items-center justify-center w-full pl-32"></div>
                     </div>
-                </div>
+                </div> -->
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Footer -->
     <footer class="relative py-30">

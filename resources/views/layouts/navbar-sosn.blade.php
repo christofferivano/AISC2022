@@ -26,5 +26,9 @@
     <div class="absolute z-0">
         <img src="images/bg-soskiri.png" alt="" class="w-1/2">
     </div>
+
+    <div class="flex justify-end z-0">
+        <img src="images/bg-soskanan.png" alt="" class="w-1/2 pt-52 pl-10">
+    </div>
 </body>
 </html>

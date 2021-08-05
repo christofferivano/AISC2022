@@ -3,6 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>AISC 2022 -  Competition</title>
 </head>
 <body class="bg-landing relative">
@@ -22,5 +25,29 @@
         </nav>
         @yield('content')
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+        var $swiper = $(".swiper-container");
+        var $bottomSlide = null; 
+        var $bottomSlideContent = null; 
+
+        var mySwiper = new Swiper(".swiper-container", {
+            spaceBetween: 1,
+            slidesPerView: 3,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+            }
+        });
+    });
+    </script>
 </body>
 </html>

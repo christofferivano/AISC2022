@@ -18,30 +18,27 @@
     </div>
 
     <div class ="flex flex-col justify-center items-center px-40 py-32">
-        <div class="rounded-md py-12 my-3 px-6 border border-grey-200 overflow-hidden bg-white w-6/7 shadow-2xl z-10">
-            <div class="flex flex-row px-20 h-full items-center">
-                <img src="images/BCA.png" alt="" class="w-1/6">
+        <div class="rounded-lg py-16 my-3 px-6 border border-grey-200 overflow-hidden bg-white w-6/7 shadow-lg shadow-2xl z-10">
+            <div class="flex flex-row px-20 items-center">
+                <img src="images/Paypal.png" alt="" class="w-1/5">
                 <font class="flex pl-40 justify-center items-center font-Poppins font-semibold text-2xl">
-                    BCA Transfer
+                    Paypal
                 </font>
-                <a href="" class="absolute right-80">
-                    <button type="button" class="rounded-full h-6 w-6 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg">
-                        <img src="images/ceklis.png" alt="">
-                    </button>
-                </a>
+                <button type="button" class="rounded-full h-6 w-6 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg absolute right-80">
+                    <img src="images/ceklis.png" alt="">
+                </button>
             </div>
         </div>
 
         <div class="relative pr-54">
             <form action="" class="flex flex-col pt-12">
                 @csrf
-                <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
-                <input type="text" class="outline-none border-b-2 py-1 pt-4 px-4 w-96 text-sm bg-transparent" placeholder="Name on Card">
-                <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                <input type="date" class="outline-none border-b-2 py-1 px-4 pt-4 w-96 text-sm bg-transparent">
-                <label for="file-upload" class="pt-4 pb-2 pl-4 text-xl font-medium">Transfer Receipt</label>
-                <input type="file" class="outline-none border-b-2 py-1 px-4 pt-4 w-96 text-sm bg-transparent" placeholder="File">
-                <div class="pt-10">
+                <label for="name" class="pb-2 pl-4 text-xl font-medium">Email</label>
+                <input type="text" class="outline-none border-b-2 py-1 px-4 w-96 text-sm bg-transparent" placeholder="Your Email">
+                    <div class="flex flex-row pl-4 pt-16">
+                        <p class="text-lg font-medium">Need Assistance? Visit the Official Paypal Website.</p>
+                        <a href="" class="underline text-blue-700 text-lg pl-1">Here</a>
+                    </div>
                     <div class="pt-28">
                         <a href="">
                             <button type="submit" class="w-full mx-10 bg-gradient-to-r from-pink-400 to-red-500 py-1 px-96 rounded-full text-white text-lg font-semibold shadow-xl">Submit</button>
