@@ -7,6 +7,9 @@ module.exports = {
         'card-event': "url('/public/images/bg-card.png')"
       }),
       backgroundImage: ['hover', 'focus'],
+      fontSize: {
+        '4.5xl': '2.8rem', 
+      },
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
         '14': 'repeat(14, minmax(0, 1fr))',
@@ -90,6 +93,8 @@ module.exports = {
         cardLogis: '#FFEFAB',
         cardSponsor: '#BEFFF4',
         buttonVolunteer: '#A264B3',
+        buttonCompe: '#F25889',
+        buttonMM: '#FF8B0E',
       },
     },
   },

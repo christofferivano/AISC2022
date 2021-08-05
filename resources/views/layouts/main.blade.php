@@ -128,7 +128,7 @@
                 {
                     targetDiv2.style.display = "flex";
                 }
-                if(targetDiv1.style.display === "flex")
+                if(targetDiv1.style.display !== "none")
                 {
                     targetDiv1.style.display = "none";
                 }

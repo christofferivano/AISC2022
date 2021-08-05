@@ -47,78 +47,138 @@
     </nav>
     @yield('content')
     <script>
-        const targetContent1 = document.getElementById("content-event-1");
-        const btn1 = document.getElementById("event-1");
-        btn1.onclick = function () {
-            if(targetContent1.style.display !== "none")
+        var divs = [
+            "event", "competition", "mm", "logistic", "sponsorship"
+        ];
+        "content-event-1", "content-event-2", "content-event-3"
+        var visibleDivId = null;
+        function divVisibility(divId) 
+        {
+            if(visibleDivId === divId) {
+                visibleDivId = divId;
+            } 
+            else 
             {
-                targetContent1.style.display = "none";
+                visibleDivId = divId;
             }
-            if(targetContent1.style.display === "flex")
-            {
-                targetContent1.style.display = "flex";
-            }
-            else
-            {
-                targetContent1.style.display = "flex";
-            }
-            if(targetContent2.style.display === "flex")
-            {
-                targetContent2.style.display = "none";
-            }
-            if(targetContent3.style.display === "flex")
-            {
-                targetContent3.style.display = "none";
+            hideNonVisibleDivs();
+        }
+        function hideNonVisibleDivs() 
+        {
+            var i, divId, div;
+            for(i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if(visibleDivId === divId) {
+                    div.style.display = "flex";
+                } else {
+                    div.style.display = "none";
+                }
             }
         }
-        const targetContent2 = document.getElementById("content-event-2");
-        const btn2 = document.getElementById("event-2");
-        btn2.onclick = function () {
-            if(targetContent2.style.display !== "none")
+
+        var divs2 = [
+            "content-event-1", "content-event-2", "content-event-3",
+            "content-compe-1", "content-compe-2", "content-compe-3",
+            "content-mm-1", "content-mm-2", "content-mm-3",
+        ];
+        var visibleDivId2 = null;
+        function divVisibility2(divId) 
+        {
+            if(visibleDivId2 === divId) {
+                visibleDivId2 = divId;
+            } 
+            else 
             {
-                targetContent2.style.display = "none";
+                visibleDivId2 = divId;
             }
-            if(targetContent2.style.display === "flex")
-            {
-                targetContent2.style.display = "flex";
-            }
-            else
-            {
-                targetContent2.style.display = "flex";
-            }
-            if(targetContent1.style.display === "flex")
-            {
-                targetContent1.style.display = "none";
-            }
-            if(targetContent3.style.display === "flex")
-            {
-                targetContent3.style.display = "none";
+            hideNonVisibleDivs2();
+        }
+        function hideNonVisibleDivs2() 
+        {
+            var i, divId, div;
+            for(i = 0; i < divs.length; i++) {
+                divId = divs2[i];
+                div = document.getElementById(divId);
+                if(visibleDivId2 === divId) {
+                    div.style.display = "flex";
+                } else {
+                    div.style.display = "none";
+                }
             }
         }
-        const targetContent3 = document.getElementById("content-event-3");
-        const btn3 = document.getElementById("event-3");
-        btn3.onclick = function () {
-            if(targetContent3.style.display !== "none")
-            {
-                targetContent3.style.display = "none";
-            }
-            if(targetContent3.style.display === "flex")
-            {
-                targetContent3.style.display = "flex";
-            }
-            else
-            {
-                targetContent3.style.display = "flex";
-            }
-            if(targetContent2.style.display === "flex")
-            {
-                targetContent2.style.display = "none";
-            }
-            if(targetContent1.style.display === "flex")
-            {
-                targetContent1.style.display = "none";
-            }
-        }
+        // const targetContent1 = document.getElementById("content-event-1");
+        // const btn1 = document.getElementById("event-1");
+        // btn1.onclick = function () {
+        //     if(targetContent1.style.display !== "none")
+        //     {
+        //         targetContent1.style.display = "none";
+        //     }
+        //     if(targetContent1.style.display === "flex")
+        //     {
+        //         targetContent1.style.display = "flex";
+        //     }
+        //     else
+        //     {
+        //         targetContent1.style.display = "flex";
+        //     }
+        //     if(targetContent2.style.display === "flex")
+        //     {
+        //         targetContent2.style.display = "none";
+        //     }
+        //     if(targetContent3.style.display === "flex")
+        //     {
+        //         targetContent3.style.display = "none";
+        //     }
+        // }
+        // const targetContent2 = document.getElementById("content-event-2");
+        // const btn2 = document.getElementById("event-2");
+        // btn2.onclick = function () {
+        //     if(targetContent2.style.display !== "none")
+        //     {
+        //         targetContent2.style.display = "none";
+        //     }
+        //     if(targetContent2.style.display === "flex")
+        //     {
+        //         targetContent2.style.display = "flex";
+        //     }
+        //     else
+        //     {
+        //         targetContent2.style.display = "flex";
+        //     }
+        //     if(targetContent1.style.display === "flex")
+        //     {
+        //         targetContent1.style.display = "none";
+        //     }
+        //     if(targetContent3.style.display === "flex")
+        //     {
+        //         targetContent3.style.display = "none";
+        //     }
+        // }
+        // const targetContent3 = document.getElementById("content-event-3");
+        // const btn3 = document.getElementById("event-3");
+        // btn3.onclick = function () {
+        //     if(targetContent3.style.display !== "none")
+        //     {
+        //         targetContent3.style.display = "none";
+        //     }
+        //     if(targetContent3.style.display === "flex")
+        //     {
+        //         targetContent3.style.display = "flex";
+        //     }
+        //     else
+        //     {
+        //         targetContent3.style.display = "flex";
+        //     }
+        //     if(targetContent2.style.display === "flex")
+        //     {
+        //         targetContent2.style.display = "none";
+        //     }
+        //     if(targetContent1.style.display === "flex")
+        //     {
+        //         targetContent1.style.display = "none";
+        //     }
+        // }
         function showTesti1()
         {
             let hidden = document.getElementById('testi1');

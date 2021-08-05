@@ -4,10 +4,16 @@
 
     <!-- Penjelasan AISC -->
     <div class="py-52 px-72">
-        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-110 flex justify-center items-center">
-            <span class="font-bold text-4xl">
-                Penjelasan AISC
-            </span>
+        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-110 flex flex-col items-center justify-center">
+            <h1 class="text-footer font-bold text-4xl">
+                AIChE Indonesia Student Conference (AISC) 2022
+            </h1>
+            <h2 class="text-footer font-black text-4.5xl pt-10">
+                “The Green Revival Era: Optimizing
+            </h2>
+            <h2 class="text-footer font-black text-4.5xl -mt-4">
+                Resiliency Through Viable Innovations”
+            </h2>
         </div>
     </div>
 
@@ -180,15 +186,15 @@
                 },
                 })"
             class="relative w-9/12 mx-auto flex flex-row pt-5">
-            <div class="absolute inset-y-0 left-0 z-20 flex items-center pt-5">
+            <div class="absolute inset-y-0 left-0 z-20 flex items-center">
                 <button @click="swiper.slidePrev()" 
-                        class="w-5">
+                        class="w-5 pt-5">
                 <img src="images/left-team.png" alt="">
                 </button>
             </div>
 
             <div class="swiper-container" x-ref="container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper pt-1">
                     <!-- Slides -->
                     <div class="swiper-slide p-4">
                         <div class="flex flex-col overflow-hidden">
@@ -264,8 +270,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-6" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                    <button id="member-6" class="member transition duration-200 px-8 py-2 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-md font-semibold text-gray-600 focus:text-white">
                                             Media & Marketing
                                         </span>
                                     </button>
@@ -423,7 +429,7 @@
                 </div>
                 <div class="absolute py-8">
                     <img src="images/gregorius.png" alt="" class="w-48 mr-3">
-                    <div class="flex flex-col items-center pt-4">
+                    <div class="flex flex-col items-center pt-4 -mt-3">
                         <h2 class="text-white text-2xl font-semibold">
                             Gregorius
                         </h2>
@@ -505,13 +511,16 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-8">
-                    <img src="images/nadhifa.png" alt="" class="w-48 mr-3">
+                    <img src="images/nadhifa.png" alt="" class="ml-2 w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
                             Nadhifa
                         </h2>
                         <h3 class="text-white text-md">
-                            ChemE Jeopardy Competition Manager
+                            ChemE Jeopardy
+                        </h3>
+                        <h3 class="text-white text-md">
+                            Competition Manager
                         </h3>
                     </div>
                 </div>
@@ -540,7 +549,7 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-8">
-                    <img src="images/josephine.png" alt="" class="w-48 mr-3">
+                    <img src="images/josephine.png" alt="" class="w-48 ml-1">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
                             Josephine
@@ -556,7 +565,7 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-8">
-                    <img src="images/daryl.png" alt="" class="w-48 mr-3">
+                    <img src="images/daryl.png" alt="" class="w-48 mr-3 ml-2">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
                             Daryl
@@ -572,7 +581,7 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-8">
-                    <img src="images/ajeng.png" alt="" class="w-48 mr-3">
+                    <img src="images/ajeng.png" alt="" class="w-48 mr-3 ml-2">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
                             Ajeng
@@ -626,7 +635,7 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-8">
-                    <img src="images/kevin2.png" alt="" class="w-48 mr-3">
+                    <img src="images/kevin2.png" alt="" class="w-48 mr-3 ml-1">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
                             Kevin

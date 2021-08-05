@@ -30,53 +30,41 @@
             <h1 class="text-footer text-5xl font-bold">Positions Available</h1>
         </div>
         <div class="flex flex-row justify-between px-32 pt-10">
-            <div id="card-event" class="flex flex-col items-center">
-                <button class="rounded-xl bg-cardEvent w-52 h-52 shadow-lg">
+            <div id="card-event-1" class="relative flex flex-col items-center">
+                <button onclick="divVisibility('event')" class="rounded-xl bg-cardEvent w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/event-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Event</h2>
                     </div>
                 </button>
-                <div id="focus-line-1" class="pt-1">
-                    <div id="focus-line-1" class="hidden rounded-full bg-footer w-32 py-1"></div>
-                </div>
             </div>
-            <div class="flex flex-col items-center">
-                <button id="card-compe" class="rounded-xl bg-cardCompe w-52 h-52 shadow-lg">
+            <div id="card-event-2" class="flex flex-col items-center">
+                <button onclick="divVisibility('competition')" id="card-compe" class="relative rounded-xl bg-cardCompe w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/compe-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Competition</h2>
                     </div>
                 </button>
-                <div id="focus-line-2" class="hidden pt-1">
-                    <div class="rounded-full bg-footer w-32 py-1"></div>
-                </div>
             </div>
-            <div class="flex flex-col items-center">
-                <button id="card-mm" class="rounded-xl bg-cardMM w-52 h-52 shadow-lg pt-2">
+            <div id="card-event-3" class="flex flex-col items-center">
+                <button onclick="divVisibility('mm')" id="card-mm" class="relative rounded-xl bg-cardMM w-52 h-52 shadow-lg pt-2">
                     <div class="flex flex-col items-center">
                         <img src="images/mm-logo.png" alt="" class="w-28 h-28">
                         <h2 class="text-footer text-xl font-semibold pt-2">Media</h2>
                         <h2 class="text-footer text-xl font-semibold">Marketing</h2>
                     </div>
                 </button>
-                <div id="focus-line-3" class="hidden pt-1">
-                    <div class="rounded-full bg-footer w-32 py-1"></div>
-                </div>
             </div>
-            <div class="flex flex-col items-center">
-                <button id="card-logistic" class="rounded-xl bg-cardLogis w-52 h-52 shadow-lg">
+            <div id="card-event-4" class="flex flex-col items-center">
+                <button onclick="divVisibility('logistic')" id="card-logistic" class="relative rounded-xl bg-cardLogis w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/logistic-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Logistic</h2>
                     </div>
                 </button>
-                <div id="focus-line-4" class="hidden pt-1">
-                    <div class="rounded-full bg-footer w-32 py-1"></div>
-                </div>
             </div>
-            <div class="flex flex-col items-center">
-                <button id="card-sponsorship" class="rounded-xl bg-cardSponsor w-52 h-52 shadow-lg">
+            <div id="card-event-5" class="flex flex-col items-center">
+                <button onclick="divVisibility('sponsorship')" id="card-sponsorship" class="relative rounded-xl bg-cardSponsor w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center pt-4">
                         <img src="images/sponsorship-logo.png" alt="" class="w-32 h-28">
                         <h2 class="text-footer text-xl font-semibold pt-4">Sponsorship</h2>
@@ -89,25 +77,25 @@
         </div>
     </div>
 
-    <div class="grid grid-cols-3 py-10 px-10">
+    <div id="event" class="hidden grid grid-cols-3 py-10 px-10">
         <div class="col-span-1">
             <div class="flex flex-col items-center">
                 <div class="pb-5">
-                    <button id="event-1" class="rounded-full bg-cardEvent h-16 w-97">
+                    <button onclick="divVisibility2('content-event-1')" id="event-1" class="rounded-full shadow-lg bg-cardEvent h-16 w-97">
                         <h2 class="text-footer text-2xl font-semibold">
                             Pre-Event
                         </h2>
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button id="event-2" class="rounded-full border-2 border-buttonVolunteer h-16 w-97">
+                    <button onclick="divVisibility2('content-event-2')" id="event-2" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
                         <h2 class="text-buttonVolunteer text-2xl font-semibold">
                             Conference Day
                         </h2>
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button id="event-3" class="rounded-full border-2 border-buttonVolunteer h-16 w-97">
+                    <button onclick="divVisibility2('content-event-3')" id="event-3" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
                         <h2 class="text-buttonVolunteer text-2xl font-semibold">
                             nAISC Night
                         </h2>
@@ -198,6 +186,223 @@
                             Awarding day between committee, finalists and 
                             representatives of AIChE Student Chapters throughout 
                             Southeast Asia before the conference day.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="competition" class="hidden grid grid-cols-3 py-10 px-10">
+        <div class="col-span-1">
+            <div class="flex flex-col items-center">
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-compe-1')" id="compe-1" class="rounded-full shadow-lg bg-cardCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                        Paper Competition
+                    </button>
+                </div>
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-compe-2')" id="compe-2" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                        Poster Competition
+                    </button>
+                </div>
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-compe-3')" id="compe-3" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                        ChemE Jeopardy Competition                
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2 col-start-2">
+            <div id="content-compe-1" class="flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardCompe">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/paper-compe-logo.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Paper Competition</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            A platform for undergraduate students in Southeast Asia with
+                            ideas, innovations, and discoveries that are related to the future
+                            of the industry to present and validate their vision in the form of
+                            research papers.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-compe-2" class="hidden flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardCompe">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/poster-compe-logo.png" alt="" class="w-10 h-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Poster Competition</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            A competition targeting undergraduate students in Southeast
+                            Asia to show their distinguished innovations in a scientific
+                            poster. A scientific poster is a two-dimensional visual
+                            representation that consists of a research summary including
+                            graphs, tables, and pictures that are simple to follow. 
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-compe-3" class="hidden flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardCompe">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/cheme-compe-logo.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">ChemE Jeopardy Competition</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            The first fast-paced quiz competition in Indonesia for
+                            undergraduate students in Southeast Asia in which teams are
+                            presented with Chemical Engineering-related questions
+                            presented on the game board, and must phrase their responses
+                            in the form of answers. 
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mm" class="hidden grid grid-cols-3 py-10 px-10">
+        <div class="col-span-1">
+            <div class="flex flex-col items-center">
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-mm-1')" id="mm-1" class="rounded-full shadow-lg bg-cardMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                        Social Media Specialist
+                    </button>
+                </div>
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-mm-2')" id="mm-2" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                        Media Production
+                    </button>
+                </div>
+                <div class="pb-5">
+                    <button onclick="divVisibility2('content-mm-3')" id="mm-3" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                        Outreach               
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2 col-start-2">
+            <div id="content-mm-1" class="flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardMM">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/socmed-mm-logo.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Social Media Specialist</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            Responsible for managing all social media, and synergize with
+                            all departments in regards for publication in order to grow
+                            audience and maintain audience engagement.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-mm-2" class="hidden flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardMM">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/medpro-mm-logo.png" alt="" class="w-10 h-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Media Production</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            Responsible for producing all content needed both and
+                            externally. Making sure the designs requested are produced
+                            with the best quality and punctually.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="content-mm-3" class="hidden flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardMM">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/outreach-mm-logo.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Outreach</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            Responsible for raising our program awareness and build
+                            strategic relationship with AISC’s partners and Campus
+                            Ambassadors.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="logistic" class="hidden grid grid-cols-3 py-10 px-10">
+        <div class="col-span-1">
+            <div class="flex flex-col items-center">
+                <div class="pb-5">
+                    <button onclick="divVisibility('content-logis-1')" id="logis-1" class="rounded-full shadow-lg bg-cardLogis h-16 w-97 text-footer text-2xl font-semibold">
+                        Logistic
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2 col-start-2">
+            <div id="content-logis-1" class="flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardLogis">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/logistic-logo-2.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Department of Logistic</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            Being responsible for synergizing with all the departments in
+                            accommodating all the equipment needed for the sake of
+                            supporting our events’ success.
+                            </p>          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sponsorship" class="hidden grid grid-cols-3 py-10 px-10">
+        <div class="col-span-1">
+            <div class="flex flex-col items-center">
+                <div class="pb-5">
+                    <button onclick="divVisibility('content-sponsor-1')" id="sponsor-1" class="rounded-full shadow-lg bg-cardSponsor h-16 w-97 text-footer text-2xl font-semibold">
+                        Sponsorship
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-2 col-start-2">
+            <div id="content-sponsor-1" class="flex flex-col items-center pl-10">
+                <div class="rounded-lg shadow-lg w-99 h-60 bg-cardSponsor">
+                    <div class="px-10 py-5">
+                        <div class="flex flex-row items-center">
+                            <img src="images/sponsorship-logo-2.png" alt="" class="w-14">
+                            <h2 class="pl-3 text-5xl font-semibold text-footer">Department of Sponsorship</h2>
+                        </div>
+                        <div class="pt-2">
+                            <p class="font-semibold text-footer">
+                            Having the expertise to pitch and negotiate our potential
+                            sponsor with reponsibility for making agreement with related
+                            companies to provide us financial support.
                             </p>          
                         </div>
                     </div>
