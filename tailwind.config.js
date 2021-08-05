@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'card-event': "url('/public/images/bg-card.png')"
+        'card-event': "url('/public/images/bg-card.png')",
+        'new-pattern': "url('/images/bg-card-baru.png')",
       }),
       backgroundImage: ['hover', 'focus'],
       fontSize: {
