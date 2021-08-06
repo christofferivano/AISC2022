@@ -3,6 +3,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="relative h-full">
@@ -46,6 +49,9 @@
         </div>
     </nav>
     @yield('content')
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
         var divs = [
             "content-event-1", "content-event-2", "content-event-3",
@@ -393,6 +399,25 @@
             foto4.style.borderTopRightRadius = 0;
             foto4.style.borderBottomRightRadius = 0; 
         }
+
+        $(document).ready(function() {
+        var $swiper = $(".swiper-container");
+        var $bottomSlide = null; 
+        var $bottomSlideContent = null; 
+
+        var mySwiper = new Swiper(".swiper-container", {
+            spaceBetween: 1,
+            slidesPerView: 3,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+            }
+        });
+    });
     </script>
 </body>
 </html>

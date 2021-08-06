@@ -13,9 +13,9 @@
                     <div class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 w-56"></div>
                 </div>
                 <p class="w-96 py-7 text-footer text-2xl">
-                    People who register to be part of
-                    AISC 2022 together we actualize 
-                    AISC purposes and plan.
+                People who register to be part of 
+                AISC 2022, together we actualize 
+                AISC purposes and plans.
                 </p>
             </div>
             <div class="absolute flex flex-col items-end right-0">
@@ -412,7 +412,131 @@
     </div>
 
     <!-- Testimoni -->
-    <div class="flex flex-col py-10 bg-footer">
+    <!-- Timeline -->
+    <div class="pt-20">
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                    <font color ="#30264F">Timeline</font>
+                </span>
+            </div>
+            <div class="flex flex-row items-end pb-20">
+                <!-- Slider main container -->
+                <div class="swiper-container swiper2 my-10 pl-20">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper my-4 px-1">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Recruitment Volunteer
+                            </h2>
+                            <span class="text-footer text-xl">
+                                9th August 2021                            
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 1 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                18th September 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 2
+                            </h2>
+                            <span class="text-footer text-xl">
+                                2nd October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISCompetency 1
+                            </h2>
+                            <span class="text-footer text-xl">
+                                16th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Competition Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th November 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Competition Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISCompetency 2
+                            </h2>
+                            <span class="text-footer text-xl">
+                                18th December 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 4
+                            </h2>
+                            <span class="text-footer text-xl">
+                                15th January 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                D-Day Competition
+                            </h2>
+                            <span class="text-footer text-xl">
+                                12th May 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                nAISC Night
+                            </h2>
+                            <span class="text-footer text-xl">
+                                19th March 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Conference Day
+                            </h2>
+                            <span class="text-footer text-xl">
+                                20th March 2022
+                            </span>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="flex flex-col py-10 bg-footer">
         <div class="flex flex-row items-center justify-center pb-2">
             <h1 class="text-white text-4xl font-semibold justify-center">
                 Testimonials
@@ -532,23 +656,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Register Volunteer -->
-    <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative">
         <div class="flex flex-col items-center">
             <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
             <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
-            <div class="py-4">
+            <div class="py-16">
                 <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
                     <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
                 </button>
             </div>
+            <div class="absolute z-0 my-0 flex left-52">
+                <img src="images/bultet-regis.png" alt="" class="w-1/2">
+            </div>
         </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-footer absolute w-full">
+    <footer class="bg-footer absolute w-full z-10">
         <div class="h-96 flex flex-col items-start">
             <div class="px-20 py-10">
                 <h2 class="font-bold text-5xl text-white">

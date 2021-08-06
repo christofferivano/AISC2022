@@ -143,43 +143,106 @@
                         <!-- Slides -->
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
-                                Open Registration 
+                                Open Recruitment Volunteer
                             </h2>
                             <span class="text-footer text-xl">
-                                2 Agustus 2021                            
+                                9th August 2021                            
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
-                                Open                    BO
-                                </font> 
+                                AISChat 1 
                             </h2>
                             <span class="text-footer text-xl">
-                                10 Agustus 2021
+                                18th September 2021
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
-                                Open                    Registration
+                                AISChat 2
                             </h2>
                             <span class="text-footer text-xl">
-                                14 Agustus 2021
+                                2nd October 2021
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
-                                Open                    Custom
+                                AISCompetency 1
                             </h2>
                             <span class="text-footer text-xl">
-                                13 Agustus 2021
+                                16th October 2021
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
-                                Open                    Rapa
+                                Open Competition Registration
                             </h2>
                             <span class="text-footer text-xl">
-                                12 Agustus 2021
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th November 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Competition Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISCompetency 2
+                            </h2>
+                            <span class="text-footer text-xl">
+                                18th December 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 4
+                            </h2>
+                            <span class="text-footer text-xl">
+                                15th January 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                D-Day Competition
+                            </h2>
+                            <span class="text-footer text-xl">
+                                12th May 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                nAISC Night
+                            </h2>
+                            <span class="text-footer text-xl">
+                                19th March 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Conference Day
+                            </h2>
+                            <span class="text-footer text-xl">
+                                20th March 2022
                             </span>
                         </div>
                     </div>
