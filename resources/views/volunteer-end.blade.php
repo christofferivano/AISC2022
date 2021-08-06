@@ -1,4 +1,4 @@
-@extends('layouts.navbar-volunteer')
+@extends('layouts.navbar-regis-volunteer')
 
 @section('content')
 
@@ -11,7 +11,7 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-image: url('images/bg-footer.png');" class="bg-cover h-landing bg-local relative">
+    <footer class="bg-footer absolute w-full">
         <div class="h-96 flex flex-col items-start">
             <div class="px-20 py-10">
                 <h2 class="font-bold text-5xl text-white">

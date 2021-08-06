@@ -39,6 +39,9 @@ module.exports = {
         '19': '19',
         '20': '20',
       },
+      fontSize: {
+        'xxs': '.5rem',
+      },
       fontFamily: {
         'montserrat': ['montserrat', 'sans-serif'],
         'roboto': ['roboto'],
@@ -102,5 +105,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms'),
+  ],
 }
