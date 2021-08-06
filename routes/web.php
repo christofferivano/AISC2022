@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Competition\CompetitionPage;
 use App\Http\Controllers\Volunteer\VolunteerPage;
+use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
+use App\Http\Controllers\Volunteer\VolunteerEndPage;
 use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
 use App\Http\Controllers\SocialNight\SocialNightPage;
@@ -23,8 +25,9 @@ Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition
 Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 
 Route::get('/volunteer', [VolunteerPage::class, 'index'])->name('volunteer');
-Route::get('/volunteer/registration', [VolunteerPage::class, 'regis'])->prefix('volunteer')->name('volunteer-regis');
-Route::get('/volunteer/thanks', [VolunteerPage::class, 'end'])->prefix('volunteer')->name('volunteer-end');
+Route::get('/registration', [VolunteerRegistrationPage::class, 'index'])->prefix('volunteer')->name('volunteer-regis');
+Route::get('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer')->name('volunteer-end');
+Route::post('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer');
 
 Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 

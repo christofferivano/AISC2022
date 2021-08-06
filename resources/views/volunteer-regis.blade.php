@@ -38,12 +38,13 @@
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>
-                            <a href="" class="underline text-blue-700 text-lg pl-1">Here</a>
+                            <a href="{{ route('volunteer-end') }}" class="underline text-blue-700 text-lg pl-1">Here</a>
                         </div>
                     </div>
-                    <a href="" class="pt-2">
+                    <form action="{{ route('volunteer-end') }}" method="GET" class="pt-2">
+                        @csrf
                         <button type="submit" class="w-96 bg-gradient-to-r from-pink-400 to-red-500 py-1 rounded-full text-white text-lg font-semibold shadow-lg">Submit</button>
-                    </a>
+                    </form>
                 </form>
             </div>
             

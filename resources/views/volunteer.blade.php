@@ -541,7 +541,7 @@
             <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
             <div class="py-4">
                 <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
-                    <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
+                    <a class="text-white text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
                 </button>
             </div>
         </div>
