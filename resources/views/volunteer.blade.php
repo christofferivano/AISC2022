@@ -4,22 +4,22 @@
 
     <!-- Penjelasan Volunteer -->
     <div class="pt-44 pb-44">
-        <div class="px-12 flex">
-            <div class="z-10 pl-28 pt-20">
-                <h2 class="text-footer text-6xl font-bold tracking-wide">
+        <div class="px-2 md:px-12 relative md:flex">
+            <div class="z-10 md:pl-28 pt-20 flex flex-col items-center md:items-start">
+                <h2 class="text-footer text-3xl md:text-6xl font-bold md:tracking-wide">
                     What is Volunteer?
                 </h2>
                 <div class="pt-5">
                     <div class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 w-56"></div>
                 </div>
-                <p class="w-96 py-7 text-footer text-2xl">
+                <p class="w-64 md:w-96 py-7 text-footer text-lg md:text-2xl text-center md:text-left">
                     People who register to be part of
                     AISC 2022 together we actualize 
                     AISC purposes and plan.
                 </p>
             </div>
-            <div class="absolute flex flex-col items-end right-0">
-                <img src="images/volunteer-1.png" alt="" class="h-140">
+            <div class="absolute flex flex-col items-end top-0 right-0">
+                <img src="images/volunteer-1.png" alt="" class="h-140 hidden md:flex">
             </div>
         </div>
     </div>
@@ -411,124 +411,67 @@
         </div>
     </div>
 
-    <!-- Testimoni -->
-    <div class="flex flex-col py-10 bg-footer">
-        <div class="flex flex-row items-center justify-center pb-2">
-            <h1 class="text-white text-4xl font-semibold justify-center">
-                Testimonials
-            </h1>
-        </div>
-        <div class="flex flex-row items-center py-5 pl-52">
-            <div class="flex overflow-hidden px-8">
-                <div class="filter">
-                    <button id="foto-testi1" onclick="showTesti1()">
-                        <div id="bg-testi-1" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
-                            <div id="bg-mix-1" class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
-                        </div>
-                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
-                            <img id="foto-testi-1" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
-                        </div>
-                    </button>
-                </div>
-                <div id="testi1" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden duration-500">
-                    <div class="px-10 py-4 font-roboto w-72">
-                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
-                            <span>"</span>
-                        </div>
-                        <div class="flex flex-col items-start text-footer -mt-4">
-                            <h1 class="text-2xl font-bold">Vinsen</h1>
-                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
-                            <p class="text-sm font-light pt-1">
-                                Family Family Family Family
-                                Family Family Family Family
-                                Family Family Family Family
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <!-- Timeline -->
+    <div class ="flex flex-col px-5 pb-36 relative justify-center">
+        <img src="images/bulet6.png" alt="", class="absolute w-1/2 right-0 bottom-0 -mb-52">
+        <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
+        <div class="border rounded-lg shadow-2xl py-5">
+            <div class="pt-5">
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                    <font color ="#30264F">Timeline</font>
+                </span>
             </div>
-            <div class="flex overflow-hidden px-8">
-                <div class="filter">
-                    <button id="foto-testi2" onclick="showTesti2()">
-                        <div id="bg-testi-2" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
-                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
+            <div class="flex flex-row items-end">
+                <!-- Slider main container -->
+                <div class="swiper-container swiper2 my-10 pl-20">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper my-4 px-1">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Registration 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                2 Agustus 2021                            
+                            </span>
                         </div>
-                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
-                            <img id="foto-testi-2" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    BO
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                10 Agustus 2021
+                            </span>
                         </div>
-                    </button>
-                </div>
-                <div id="testi2" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
-                    <div class="px-10 py-4 font-roboto w-72">
-                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
-                            <span>"</span>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                14 Agustus 2021
+                            </span>
                         </div>
-                        <div class="flex flex-col items-start text-footer -mt-4">
-                            <h1 class="text-2xl font-bold">Vinsen</h1>
-                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
-                            <p class="text-sm font-light pt-1">
-                                Family Family Family Family
-                                Family Family Family Family
-                                Family Family Family Family
-                            </p>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Custom
+                            </h2>
+                            <span class="text-footer text-xl">
+                                13 Agustus 2021
+                            </span>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="flex overflow-hidden px-8">
-                <div class="filter">
-                    <button id="foto-testi3" onclick="showTesti3()">
-                        <div id="bg-testi-3" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
-                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
-                        </div>
-                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
-                            <img id="foto-testi-3" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
-                        </div>
-                    </button>
-                </div>
-                <div id="testi3" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
-                    <div class="px-10 py-4 font-roboto w-72">
-                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
-                            <span>"</span>
-                        </div>
-                        <div class="flex flex-col items-start text-footer -mt-4">
-                            <h1 class="text-2xl font-bold">Vinsen</h1>
-                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
-                            <p class="text-sm font-light pt-1">
-                                Family Family Family Family
-                                Family Family Family Family
-                                Family Family Family Family
-                            </p>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Rapa
+                            </h2>
+                            <span class="text-footer text-xl">
+                                12 Agustus 2021
+                            </span>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="flex overflow-hidden px-8">
-                <div class="filter">
-                    <button id="foto-testi4" onclick="showTesti4()">
-                        <div id="bg-testi-4" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
-                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
-                        </div>
-                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
-                            <img id="foto-testi-4" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
-                        </div>
-                    </button>
-                </div>
-                <div id="testi4" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
-                    <div class="px-10 py-4 font-roboto w-72">
-                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
-                            <span>"</span>
-                        </div>
-                        <div class="flex flex-col items-start text-footer -mt-4">
-                            <h1 class="text-2xl font-bold">Vinsen</h1>
-                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
-                            <p class="text-sm font-light pt-1">
-                                Family Family Family Family
-                                Family Family Family Family
-                                Family Family Family Family
-                            </p>
-                        </div>
-                    </div>
+                    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>
