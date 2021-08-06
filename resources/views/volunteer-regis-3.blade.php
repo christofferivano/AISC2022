@@ -20,6 +20,9 @@
                     <div class="px-20"></div>
                 </div>
             </div>
+            <h1 class="text-xl font-bold pt-6">
+                <font color="#30264F">Please kindly upload the requirements needed :</font> 
+            </h1>
             <div class="pb-20 z-10">
                 <form action="" class="flex flex-col pt-12">
                     @csrf
@@ -44,7 +47,7 @@
                             <a href="" class="underline text-blue-700 text-lg pl-1">Here</a>
                         </div>
                     </div>
-                    <a href="" class="pt-2">
+                    <a href="" class="py-2">
                         <button type="submit" class="w-96 bg-gradient-to-l from-blue-300 to-purple-400 py-1 rounded-full text-white text-lg font-semibold shadow-lg">
                             Submit
                         </button>

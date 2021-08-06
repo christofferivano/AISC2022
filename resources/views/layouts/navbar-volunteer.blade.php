@@ -3,10 +3,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+<<<<<<< HEAD
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+=======
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+>>>>>>> 6cd7e7606fe0f075c00553da841d06e345359014
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
@@ -52,6 +57,11 @@
     </nav>
     @yield('content')
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
+<<<<<<< HEAD
+=======
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+>>>>>>> 6cd7e7606fe0f075c00553da841d06e345359014
     <script>
         var divs = [
             "content-event-1", "content-event-2", "content-event-3",
@@ -243,6 +253,7 @@
                 targetContent4.style.display = "none";
             }
         }
+<<<<<<< HEAD
         $(document).ready(function() {
             var $swiper = $(".swiper2");
             var $bottomSlide = null; 
@@ -261,6 +272,26 @@
                 }
             });
         });
+=======
+        $(document).ready(function() {
+        var $swiper = $(".swiper-container");
+        var $bottomSlide = null; 
+        var $bottomSlideContent = null; 
+
+        var mySwiper = new Swiper(".swiper-container", {
+            spaceBetween: 1,
+            slidesPerView: 3,
+            centeredSlides: true,
+            roundLengths: true,
+            loop: true,
+            loopAdditionalSlides: 30,
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev"
+            }
+        });
+    });
+>>>>>>> 6cd7e7606fe0f075c00553da841d06e345359014
     </script>
 </body>
 </html>

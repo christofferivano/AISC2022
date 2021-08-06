@@ -12,10 +12,17 @@
                 <div class="pt-5">
                     <div class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 w-56"></div>
                 </div>
+<<<<<<< HEAD
                 <p class="w-64 md:w-96 py-7 text-footer text-lg md:text-2xl text-center md:text-left">
                     People who register to be part of
                     AISC 2022 together we actualize 
                     AISC purposes and plan.
+=======
+                <p class="w-96 py-7 text-footer text-2xl">
+                People who register to be part of 
+                AISC 2022, together we actualize 
+                AISC purposes and plans.
+>>>>>>> 6cd7e7606fe0f075c00553da841d06e345359014
                 </p>
             </div>
             <div class="absolute flex flex-col items-end top-0 right-0">
@@ -411,6 +418,7 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     <!-- Timeline -->
     <div class ="flex flex-col px-5 pb-36 relative justify-center">
         <img src="images/bulet6.png" alt="", class="absolute w-1/2 right-0 bottom-0 -mb-52">
@@ -420,6 +428,223 @@
                 <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
                     <font color ="#30264F">Timeline</font>
                 </span>
+=======
+    <!-- Testimoni -->
+    <!-- Timeline -->
+    <div class="pt-20">
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                    <font color ="#30264F">Timeline</font>
+                </span>
+            </div>
+            <div class="flex flex-row items-end pb-20">
+                <!-- Slider main container -->
+                <div class="swiper-container swiper2 my-10 pl-20">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper my-4 px-1">
+                        <!-- Slides -->
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Recruitment Volunteer
+                            </h2>
+                            <span class="text-footer text-xl">
+                                9th August 2021                            
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 1 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                18th September 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 2
+                            </h2>
+                            <span class="text-footer text-xl">
+                                2nd October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISCompetency 1
+                            </h2>
+                            <span class="text-footer text-xl">
+                                16th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Competition Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th November 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Competition Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                24th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 3
+                            </h2>
+                            <span class="text-footer text-xl">
+                                27th October 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISCompetency 2
+                            </h2>
+                            <span class="text-footer text-xl">
+                                18th December 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                AISChat 4
+                            </h2>
+                            <span class="text-footer text-xl">
+                                15th January 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                D-Day Competition
+                            </h2>
+                            <span class="text-footer text-xl">
+                                12th May 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                nAISC Night
+                            </h2>
+                            <span class="text-footer text-xl">
+                                19th March 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Conference Day
+                            </h2>
+                            <span class="text-footer text-xl">
+                                20th March 2022
+                            </span>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="flex flex-col py-10 bg-footer">
+        <div class="flex flex-row items-center justify-center pb-2">
+            <h1 class="text-white text-4xl font-semibold justify-center">
+                Testimonials
+            </h1>
+        </div>
+        <div class="flex flex-row items-center py-5 pl-52">
+            <div class="flex overflow-hidden px-8">
+                <div class="filter">
+                    <button id="foto-testi1" onclick="showTesti1()">
+                        <div id="bg-testi-1" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
+                            <div id="bg-mix-1" class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
+                        </div>
+                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
+                            <img id="foto-testi-1" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
+                        </div>
+                    </button>
+                </div>
+                <div id="testi1" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden duration-500">
+                    <div class="px-10 py-4 font-roboto w-72">
+                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
+                            <span>"</span>
+                        </div>
+                        <div class="flex flex-col items-start text-footer -mt-4">
+                            <h1 class="text-2xl font-bold">Vinsen</h1>
+                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
+                            <p class="text-sm font-light pt-1">
+                                Family Family Family Family
+                                Family Family Family Family
+                                Family Family Family Family
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex overflow-hidden px-8">
+                <div class="filter">
+                    <button id="foto-testi2" onclick="showTesti2()">
+                        <div id="bg-testi-2" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
+                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
+                        </div>
+                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
+                            <img id="foto-testi-2" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
+                        </div>
+                    </button>
+                </div>
+                <div id="testi2" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
+                    <div class="px-10 py-4 font-roboto w-72">
+                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
+                            <span>"</span>
+                        </div>
+                        <div class="flex flex-col items-start text-footer -mt-4">
+                            <h1 class="text-2xl font-bold">Vinsen</h1>
+                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
+                            <p class="text-sm font-light pt-1">
+                                Family Family Family Family
+                                Family Family Family Family
+                                Family Family Family Family
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex overflow-hidden px-8">
+                <div class="filter">
+                    <button id="foto-testi3" onclick="showTesti3()">
+                        <div id="bg-testi-3" class="bg-testi bg-opacity-60 z-10 w-52 h-52 rounded-lg absolute">
+                            <div class="mix-blend-hard-light bg-testi2 bg-opacity-10 w-52 h-52 rounded-lg"></div>
+                        </div>
+                        <div class="relative rounded-lg w-52 bg-red-300 bg-opacity-30 z-0">
+                            <img id="foto-testi-3" src="images/vinsen-full.png" alt="" class="rounded-lg bg-red-200 w-52 h-52 z-0">
+                        </div>
+                    </button>
+                </div>
+                <div id="testi3" class="text-gray-900 text-5xl font-bold bg-white rounded-r-lg hidden">
+                    <div class="px-10 py-4 font-roboto w-72">
+                        <div class="flex flex-col items-end text-6xl font-bold text-testi italic">
+                            <span>"</span>
+                        </div>
+                        <div class="flex flex-col items-start text-footer -mt-4">
+                            <h1 class="text-2xl font-bold">Vinsen</h1>
+                            <h2 class="text-lg font-semibold -mt-1">Project Manager</h2>
+                            <p class="text-sm font-light pt-1">
+                                Family Family Family Family
+                                Family Family Family Family
+                                Family Family Family Family
+                            </p>
+                        </div>
+                    </div>
+                </div>
+>>>>>>> 6cd7e7606fe0f075c00553da841d06e345359014
             </div>
             <div class="flex flex-row items-end">
                 <!-- Slider main container -->
@@ -475,23 +700,23 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Register Volunteer -->
-    <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative">
         <div class="flex flex-col items-center">
             <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
             <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
-            <div class="py-4">
+            <div class="py-16">
                 <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
                     <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
                 </button>
             </div>
+            <div class="absolute z-0 my-0 flex left-52">
+                <img src="images/bultet-regis.png" alt="" class="w-1/2">
+            </div>
         </div>
-    </div>
-
     <!-- Footer -->
-    <footer class="bg-footer absolute w-full">
+    <footer class="bg-footer absolute w-full z-10">
         <div class="h-96 flex flex-col items-start">
             <div class="px-20 py-10">
                 <h2 class="font-bold text-5xl text-white">
