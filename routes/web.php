@@ -5,6 +5,7 @@ use App\Http\Controllers\Competition\CompetitionPage;
 use App\Http\Controllers\Volunteer\VolunteerPage;
 use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
+use App\Http\Controllers\SocialNight\SocialNightPage;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,8 +28,10 @@ Route::get('/volunteer/thanks', [VolunteerPage::class, 'end'])->prefix('voluntee
 
 Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 
+Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
+
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('/dashboard');
 });
 
 // Route::get('competition', '');
