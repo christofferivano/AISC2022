@@ -125,49 +125,67 @@
     </div>
 
     <!-- Timeline -->
-    <div class="py-10 px-20">
-        <div class="absolute left-0 mt-72">
-            <img src="images/bulet8.png" alt="" class="w-3/7">
-        </div>
-        <div class="border rounded-lg shadow-lg w-full">
-            <div class="flex flex-col items-center py-10">
-                <h1 class="text-footer font-bold text-4xl">Timeline</h1>
-                <div class="flex flex-row items-center py-10">
-                    <button class="w-5 mr-20">
-                        <img src="images/left-timeline.png" alt="">
-                    </button>
-                    <div class="flex flex-row items-end">
-                        <div class="px-5">
-                            <div class="border h-52 w-72 bg-gradient-to-br from-purple-100 via-purple-400 to-purple-500 rounded-lg px-5 pt-28">
-                                <h1 class="text-gray-600 text-lg font-bold">Grand Theme</h1>
-                                <h1 class="text-gray-600 text-lg font-bold">Launching</h1>
-                                <p class="text-gray-600 text-md">Jul 30, 2021</p>
-                            </div>
+    <div class ="flex flex-col px-5 pb-96 relative justify-center">
+        <img src="images/bulet6.png" alt="", class="absolute w-1/2 right-0 bottom-0 -mb-52">
+        <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
+        <div class="border rounded-lg shadow-2xl py-5">
+            <!-- Timeline -->
+            <div class="pt-5">
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                    <font color ="#30264F">Timeline</font>
+                </span>
+            </div>
+            <div class="flex flex-row items-end">
+                <!-- Slider main container -->
+                <div class="swiper-container my-10 pl-20">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper my-4 px-1">
+                        <!-- Slides -->
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open Registration 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                2 Agustus 2021                            
+                            </span>
                         </div>
-                        <div class="px-5">
-                            <div class="border h-64 w-80 bg-gradient-to-tr from-red-600 via-red-500 to-yellow-400 rounded-lg px-5 pt-24">
-                                <h1 class="text-white text-2xl font-bold pt-2">Open</h1>
-                                <h1 class="text-white text-2xl font-bold">Recruitment</h1>
-                                <h1 class="text-white text-4xl font-bold">Volunteer</h1>
-                                <p class="text-white text-md pt-2">Aug 2, 2021</p>
-                            </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    BO
+                                </font> 
+                            </h2>
+                            <span class="text-footer text-xl">
+                                10 Agustus 2021
+                            </span>
                         </div>
-                        <div class="px-5">
-                            <div class="border h-52 w-72 bg-gradient-to-br from-gray-100 via-gray-300 to-gray-400 rounded-lg px-5 pt-32">
-                                <h1 class="text-gray-600 text-lg font-bold pt-3">Webinar 1</h1>
-                                <p class="text-gray-600 text-md">Sep 18, 2021</p>
-                            </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Registration
+                            </h2>
+                            <span class="text-footer text-xl">
+                                14 Agustus 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Custom
+                            </h2>
+                            <span class="text-footer text-xl">
+                                13 Agustus 2021
+                            </span>
+                        </div>
+                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                            <h2 class="text-center text-2xl font-bold py-5">
+                                Open                    Rapa
+                            </h2>
+                            <span class="text-footer text-xl">
+                                12 Agustus 2021
+                            </span>
                         </div>
                     </div>
-                    <button class="w-5 ml-20">
-                        <img src="images/right-timeline.png" alt="">
-                    </button>
-                </div>
-                <div class="flex flex-row items-center pl-52">
-                    <img src="images/tl-landing-1.png" alt="" class="w-1/4">
-                    <img src="images/tl-landing-2.png" alt="" class="w-1/3 ml-6">
-                    <img src="images/tl-landing-3.png" alt="" class="w-1/4 ml-2">
-                    <img src="images/tl-landing-4.png" alt="" class="w-10 ml-2">
+                    <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
         </div>

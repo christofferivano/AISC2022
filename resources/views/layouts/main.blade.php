@@ -7,6 +7,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>Document</title>
 </head>
 <body class="relative">
@@ -61,6 +62,7 @@
         </nav>
         @yield('content')
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script>
         var divs = [
             "department-1", "department-2", "department-3" ,"department-4", "department-5",
@@ -91,6 +93,24 @@
                 }
             }
         }
+        $(document).ready(function() {
+            var $swiper = $(".swiper-container");
+            var $bottomSlide = null; 
+            var $bottomSlideContent = null; 
+
+            var mySwiper = new Swiper(".swiper-container", {
+                spaceBetween: 1,
+                slidesPerView: 3,
+                centeredSlides: true,
+                roundLengths: true,
+                loop: true,
+                loopAdditionalSlides: 30,
+                navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev"
+                }
+            });
+        });
         </script>
 </body>
 </html>
