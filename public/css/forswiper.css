@@ -21,15 +21,16 @@
   align-items: center;
   justify-content:center;
   transition:all 200ms linear;
-  transform: scale(0.9);
+  transform: scale(0.8);
 }
 .swiper-slide__content {
   height: 300px;
 }
   
 .slide2.swiper-slide-active {  
-    /* background-image: url("../images/bg-card-baru.png"); */
-    background: linear-gradient(to top right, #D391FC ,#ACD8F2);
+    background-image: url("../images/bg-card-baru.png");
+    /* background: linear-gradient(to top right, #D391FC ,#ACD8F2); */
     text-align: center;
     color: #fff;
+    transform: scale(1);
 }
