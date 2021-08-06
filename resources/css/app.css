@@ -24,6 +24,16 @@
     -webkit-transform-style: flat;
 }
 
+.card:hover h2
+{
+    color: white;
+}
+
+.card:hover span
+{
+    color: white;
+}
+
 .member:hover span
 {
     color: white;

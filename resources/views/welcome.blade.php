@@ -38,14 +38,66 @@
         <div class="container my-20 mx-auto px-52 z-10">
             <div class="flex flex-wrap -mx-1">
                 <div class="my-4 px-2 w-1/3">
+                    <div class="card flex flex-col items-start py-3 px-4 bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                        <!-- <div class="card-event flex flex-col items-start py-3 px-4" id="card-event"> -->
+                            <h2 class="title-1 underline text-footer text-xl font-semibold">Volunteer</h2>
+                            <span class="desc-1 text-footer pt-2 pb-4">
+                            People who register to be part of AISC
+                            2022 together to actualize AISC
+                            purposes and plans.
+                            </span>
+                            <div class="pt-6">
+                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-16 text-sm text-white">CHECK</a>
+                                </button>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </div>
+                <div class="my-4 px-2 w-1/3">
                     <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
-                            <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
+                            <h2 class="underline text-footer text-xl font-semibold">Pre-Event</h2>
                             <span class="text-footer pt-2 pb-4">
-                                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
+                            A series of events that invite experts to
+                            share their knowledge to enliven the
+                            main event of AISC.
+                            </span>
+                            <div class="pt-6">
+                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-16 text-sm text-white">CHECK</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-4 px-2 w-1/3">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                        <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
+                            <h2 class="underline text-footer text-xl font-semibold">Competition</h2>
+                            <span class="text-footer pt-2 pb-4">
+                            A platform for undergraduate students
+                            in Southeast Asia with big ideas to
+                            discover more about green innovations.
+                            </span>
+                            <div class="pt-6">
+                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-16 text-sm text-white">CHECK</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-4 px-2 w-1/3">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                        <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
+                            <h2 class="underline text-footer text-xl font-semibold">nAISC Night</h2>
+                            <span class="text-footer pt-2 pb-4">
+                            A spectacular event dedicated for finalists, AIChE’s representatives 
+                            from the various universities in Southeast Asia, and AISC’s own committee.  
                             </span>
                             <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                <a href="" class="px-16 text-sm text-white">CEK</a>
+                                <a href="" class="px-16 text-sm text-white">CHECK</a>
                             </button>
                         </div>
                     </div>
@@ -53,52 +105,18 @@
                 <div class="my-4 px-2 w-1/3">
                     <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
-                            <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
+                            <h2 class="underline text-footer text-xl font-semibold">Conference Day</h2>
                             <span class="text-footer pt-2 pb-4">
-                                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
+                            The only Southeast Asian scale
+                            conference organized by AISC,
+                            delegates will discuss the latest
+                            innovations with experts in their fields.
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                <a href="" class="px-16 text-sm text-white">CEK</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
-                        <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
-                            <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
-                            <span class="text-footer pt-2 pb-4">
-                                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
-                            </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                <a href="" class="px-16 text-sm text-white">CEK</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
-                        <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
-                            <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
-                            <span class="text-footer pt-2 pb-4">
-                                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
-                            </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                <a href="" class="px-16 text-sm text-white">CEK</a>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
-                        <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
-                            <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
-                            <span class="text-footer pt-2 pb-4">
-                                Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
-                            </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                <a href="" class="px-16 text-sm text-white">CEK</a>
-                            </button>
+                            <div class="pt-6">
+                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-16 text-sm text-white">CHECK</a>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -185,25 +203,23 @@
                     }, 
                 },
                 })"
-            class="relative w-9/12 mx-auto flex flex-row pt-5">
-            <div class="absolute inset-y-0 left-0 z-20 flex items-center">
+            class="relative w-9/12 mx-auto flex flex-row items-center pt-5">
+            <div class="absolute inset-y-0 left-0 z-20 flex items-center pt-5">
                 <button @click="swiper.slidePrev()" 
-                        class="w-5 pt-5">
+                        class="w-5">
                 <img src="images/left-team.png" alt="">
                 </button>
             </div>
 
             <div class="swiper-container" x-ref="container">
-                <div class="swiper-wrapper pt-1">
+                <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide p-4">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-1" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Project Officer
-                                        </span>
+                                    <button onclick="divVisibility('department-1')" id="member-1" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Project Officer
                                     </button>
                                 </div>
                             </div>
@@ -214,10 +230,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-2" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Secretary
-                                        </span>
+                                    <button onclick="divVisibility('department-2')" id="member-2" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Secretary
                                     </button>
                                 </div>
                             </div>
@@ -228,10 +242,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-3" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Treasurer
-                                        </span>
+                                    <button onclick="divVisibility('department-3')" id="member-3" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Treasurer
                                     </button>
                                 </div>
                             </div>
@@ -242,10 +254,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-4" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Event
-                                        </span>
+                                    <button onclick="divVisibility('department-4')" id="member-4" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Event
                                     </button>
                                 </div>
                             </div>
@@ -256,10 +266,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-5" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Competition
-                                        </span>
+                                    <button onclick="divVisibility('department-5')" id="member-5" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Competition
                                     </button>
                                 </div>
                             </div>
@@ -270,10 +278,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-6" class="member transition duration-200 px-8 py-2 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-md font-semibold text-gray-600 focus:text-white">
-                                            Media & Marketing
-                                        </span>
+                                    <button onclick="divVisibility('department-6')" id="member-6" class="member transition duration-200 px-8 py-2 rounded-full text-md font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Media & Marketing
                                     </button>
                                 </div>
                             </div>
@@ -284,10 +290,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-7" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Sponsorship
-                                        </span>
+                                    <button onclick="divVisibility('department-7')" id="member-7" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Sponsorship
                                     </button>
                                 </div>
                             </div>
@@ -298,10 +302,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-8" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Logistic
-                                        </span>
+                                    <button onclick="divVisibility('department-8')" id="member-8" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Logistic
                                     </button>
                                 </div>
                             </div>
@@ -312,10 +314,8 @@
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button id="member-9" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                                            Technology
-                                        </span>
+                                    <button onclick="divVisibility('department-9')" id="member-9" class="member transition duration-200 px-8 py-1 rounded-full text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        Technology
                                     </button>
                                 </div>
                             </div>
@@ -719,7 +719,7 @@
     </div>
 
     <!-- Footer -->
-    <footer style="background-image: url('images/bg-footer.png');" class="bg-cover h-landing bg-local relative">
+    <footer class="bg-footer relative">
         <div class="h-96 flex flex-col items-start">
             <div class="px-20 py-10">
                 <h2 class="font-bold text-5xl text-white">

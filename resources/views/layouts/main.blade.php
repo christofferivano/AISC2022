@@ -39,7 +39,7 @@
                                 <img src="images/drop.png" alt="" class="w-3 ml-2">
                             </button>
                             <ul class="drop-event text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium hover:text-xl">
-                                <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Webinar</a></li>
+                                <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Pre-Event</a></li>
                                 <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Social Night</a></li>
                                 <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Conference Day</a></li>
                             </ul>
@@ -50,9 +50,9 @@
                                 <img src="images/drop.png" alt="" class="w-3 ml-2">
                             </button>
                             <ul class="drop-compe text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium">
-                                <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Competition 1</a></li>
-                                <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Competition 2</a></li>
-                                <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Competition 3</a></li>
+                                <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Paper Competition</a></li>
+                                <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Poster Competition</a></li>
+                                <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">ChemE Jeopardy Competition</a></li>
                             </ul>
                         </div>
                     </div>
@@ -62,455 +62,35 @@
         @yield('content')
     </div>
     <script>
-            const targetDiv1 = document.getElementById("department-1");
-            const btn1 = document.getElementById("member-1");
-            btn1.onclick = function ()
+        var divs = [
+            "department-1", "department-2", "department-3" ,"department-4", "department-5",
+            "department-6", "department-7", "department-8", "department-9"
+        ];
+        var visibleDivId = null;
+        function divVisibility(divId) 
+        {
+            if(visibleDivId === divId) {
+                visibleDivId = divId;
+            } 
+            else 
             {
-                if(targetDiv1.style.display !== "none")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv1.style.display = "flex";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
+                visibleDivId = divId;
+            }
+            hideNonVisibleDivs();
+        }
+        function hideNonVisibleDivs() 
+        {
+            var i, divId, div;
+            for(i = 0; i < divs.length; i++) {
+                divId = divs[i];
+                div = document.getElementById(divId);
+                if(visibleDivId === divId) {
+                    div.style.display = "flex";
+                } else {
+                    div.style.display = "none";
                 }
             }
-
-            const targetDiv2 = document.getElementById("department-2");
-            const btn2 = document.getElementById("member-2");
-            btn2.onclick = function ()
-            {
-                if(targetDiv2.style.display !== "none")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv2.style.display = "flex";
-                }
-                if(targetDiv1.style.display !== "none")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv3 = document.getElementById("department-3");
-            const btn3 = document.getElementById("member-3");
-            btn3.onclick = function ()
-            {
-                if(targetDiv3.style.display !== "none")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv3.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv4 = document.getElementById("department-4");
-            const btn4 = document.getElementById("member-4");
-            btn4.onclick = function ()
-            {
-                if(targetDiv4.style.display !== "none")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv4.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv5 = document.getElementById("department-5");
-            const btn5 = document.getElementById("member-5");
-            btn5.onclick = function ()
-            {
-                if(targetDiv5.style.display !== "none")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv5.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv6 = document.getElementById("department-6");
-            const btn6 = document.getElementById("member-6");
-            btn6.onclick = function ()
-            {
-                if(targetDiv6.style.display !== "none")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv6.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv7 = document.getElementById("department-7");
-            const btn7 = document.getElementById("member-7");
-            btn7.onclick = function ()
-            {
-                if(targetDiv7.style.display !== "none")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv7.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv8 = document.getElementById("department-8");
-            const btn8 = document.getElementById("member-8");
-            btn8.onclick = function ()
-            {
-                if(targetDiv8.style.display !== "none")
-                {
-                    targetDiv8.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv8.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "none";
-                }
-            }
-
-            const targetDiv9 = document.getElementById("department-9");
-            const btn9 = document.getElementById("member-9");
-            btn9.onclick = function ()
-            {
-                if(targetDiv9.style.display !== "none")
-                {
-                    targetDiv9.style.display = "none";
-                }
-                if(targetDiv9.style.display === "flex")
-                {
-                    targetDiv9.style.display = "flex";
-                }
-                else
-                {
-                    targetDiv9.style.display = "flex";
-                }
-                if(targetDiv1.style.display === "flex")
-                {
-                    targetDiv1.style.display = "none";
-                }
-                if(targetDiv2.style.display === "flex")
-                {
-                    targetDiv2.style.display = "none";
-                }
-                if(targetDiv3.style.display === "flex")
-                {
-                    targetDiv3.style.display = "none";
-                }
-                if(targetDiv4.style.display === "flex")
-                {
-                    targetDiv4.style.display = "none";
-                }
-                if(targetDiv5.style.display === "flex")
-                {
-                    targetDiv5.style.display = "none";
-                }
-                if(targetDiv6.style.display === "flex")
-                {
-                    targetDiv6.style.display = "none";
-                }
-                if(targetDiv7.style.display === "flex")
-                {
-                    targetDiv7.style.display = "none";
-                }
-                if(targetDiv8.style.display === "flex")
-                {
-                    targetDiv8.style.display = "none";
-                }
-            }
+        }
         </script>
 </body>
 </html>

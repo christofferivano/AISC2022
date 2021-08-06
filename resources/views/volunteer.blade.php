@@ -31,7 +31,7 @@
         </div>
         <div class="flex flex-row justify-between px-32 pt-10">
             <div id="card-event-1" class="relative flex flex-col items-center">
-                <button onclick="divVisibility('event')" class="rounded-xl bg-cardEvent w-52 h-52 shadow-lg">
+                <button id="card-event" class="rounded-xl bg-cardEvent w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/event-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Event</h2>
@@ -39,7 +39,7 @@
                 </button>
             </div>
             <div id="card-event-2" class="flex flex-col items-center">
-                <button onclick="divVisibility('competition')" id="card-compe" class="relative rounded-xl bg-cardCompe w-52 h-52 shadow-lg">
+                <button id="card-compe" class="relative rounded-xl bg-cardCompe w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/compe-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Competition</h2>
@@ -47,7 +47,7 @@
                 </button>
             </div>
             <div id="card-event-3" class="flex flex-col items-center">
-                <button onclick="divVisibility('mm')" id="card-mm" class="relative rounded-xl bg-cardMM w-52 h-52 shadow-lg pt-2">
+                <button id="card-mm" class="relative rounded-xl bg-cardMM w-52 h-52 shadow-lg pt-2">
                     <div class="flex flex-col items-center">
                         <img src="images/mm-logo.png" alt="" class="w-28 h-28">
                         <h2 class="text-footer text-xl font-semibold pt-2">Media</h2>
@@ -56,7 +56,7 @@
                 </button>
             </div>
             <div id="card-event-4" class="flex flex-col items-center">
-                <button onclick="divVisibility('logistic')" id="card-logistic" class="relative rounded-xl bg-cardLogis w-52 h-52 shadow-lg">
+                <button id="card-logistic" class="relative rounded-xl bg-cardLogis w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center">
                         <img src="images/logistic-logo.png" alt="" class="w-32 h-32">
                         <h2 class="text-footer text-xl font-semibold pt-2">Logistic</h2>
@@ -64,7 +64,7 @@
                 </button>
             </div>
             <div id="card-event-5" class="flex flex-col items-center">
-                <button onclick="divVisibility('sponsorship')" id="card-sponsorship" class="relative rounded-xl bg-cardSponsor w-52 h-52 shadow-lg">
+                <button id="card-sponsorship" class="relative rounded-xl bg-cardSponsor w-52 h-52 shadow-lg">
                     <div class="flex flex-col items-center pt-4">
                         <img src="images/sponsorship-logo.png" alt="" class="w-32 h-28">
                         <h2 class="text-footer text-xl font-semibold pt-4">Sponsorship</h2>
@@ -81,21 +81,21 @@
         <div class="col-span-1">
             <div class="flex flex-col items-center">
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-event-1')" id="event-1" class="rounded-full shadow-lg bg-cardEvent h-16 w-97">
+                    <button onclick="divVisibility('content-event-1')" id="event-1" class="rounded-full shadow-lg bg-cardEvent h-16 w-97">
                         <h2 class="text-footer text-2xl font-semibold">
                             Pre-Event
                         </h2>
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-event-2')" id="event-2" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
+                    <button onclick="divVisibility('content-event-2')" id="event-2" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
                         <h2 class="text-buttonVolunteer text-2xl font-semibold">
                             Conference Day
                         </h2>
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-event-3')" id="event-3" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
+                    <button onclick="divVisibility('content-event-3')" id="event-3" class="rounded-full shadow-lg border-2 border-buttonVolunteer h-16 w-97">
                         <h2 class="text-buttonVolunteer text-2xl font-semibold">
                             nAISC Night
                         </h2>
@@ -198,17 +198,17 @@
         <div class="col-span-1">
             <div class="flex flex-col items-center">
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-compe-1')" id="compe-1" class="rounded-full shadow-lg bg-cardCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                    <button onclick="divVisibility('content-compe-1')" id="compe-1" class="rounded-full shadow-lg bg-cardCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
                         Paper Competition
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-compe-2')" id="compe-2" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                    <button onclick="divVisibility('content-compe-2')" id="compe-2" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
                         Poster Competition
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-compe-3')" id="compe-3" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
+                    <button onclick="divVisibility('content-compe-3')" id="compe-3" class="rounded-full shadow-lg border-2 border-buttonCompe h-16 w-97 text-buttonCompe text-2xl font-semibold">
                         ChemE Jeopardy Competition                
                     </button>
                 </div>
@@ -278,17 +278,17 @@
         <div class="col-span-1">
             <div class="flex flex-col items-center">
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-mm-1')" id="mm-1" class="rounded-full shadow-lg bg-cardMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                    <button onclick="divVisibility('content-mm-1')" id="mm-1" class="rounded-full shadow-lg bg-cardMM h-16 w-97 text-buttonMM text-2xl font-semibold">
                         Social Media Specialist
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-mm-2')" id="mm-2" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                    <button onclick="divVisibility('content-mm-2')" id="mm-2" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
                         Media Production
                     </button>
                 </div>
                 <div class="pb-5">
-                    <button onclick="divVisibility2('content-mm-3')" id="mm-3" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
+                    <button onclick="divVisibility('content-mm-3')" id="mm-3" class="rounded-full shadow-lg border-2 border-buttonMM h-16 w-97 text-buttonMM text-2xl font-semibold">
                         Outreach               
                     </button>
                 </div>
