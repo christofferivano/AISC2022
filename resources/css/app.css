@@ -2,12 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'swiper/swiper-bundle.css';
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap');
 
 .card:hover button
 {
-    background: none;
+    background: rgba(189, 195, 199, 0.5);
     border: 1px white solid;
 }
 
@@ -20,6 +22,11 @@
 {
     -webkit-transform-style: preserve-3d;
     -webkit-transform-style: flat;
+}
+
+.member:hover span
+{
+    color: white;
 }
 
 .member:focus span
@@ -55,4 +62,153 @@
     opacity: 0;
     -webkit-transition: opacity 600ms, visibility 600ms;
     transition: opacity 600ms, visibility 600ms;
+}
+
+@keyframes line_animation {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 8rem;
+    }
+}
+
+/* #focus-line-1
+{
+    visibility: hidden;
+    position: relative;
+} */
+
+/* #focus-line-1::after
+{
+    visibility: hidden;
+    position: relative;
+    width: 0px;
+    animation-name: line_animation;
+    animation-duration: 1s;
+    animation-timing-function: linear; 
+}
+
+#card-event:hover #focus-line-1::after
+{
+    visibility: visible;
+    width: 8rem;
+} */
+
+/* #card-event {
+    display: inline-block;
+    margin-bottom: 20px;
+} */
+
+#card-event-1 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    width: 60%;
+    left: 20%;
+    border-bottom: 5px solid #30264f;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#card-event-1 button:hover::after {
+    transform: scaleX(1);
+}
+
+#card-event-2 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    width: 60%;
+    left: 20%;
+    border-bottom: 5px solid #30264f;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#card-event-2 button:hover::after {
+    transform: scaleX(1);
+}
+
+#card-event-3 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    width: 60%;
+    left: 20%;
+    border-bottom: 5px solid #30264f;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#card-event-3 button:hover::after {
+    transform: scaleX(1);
+}
+
+#card-event-4 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    width: 60%;
+    left: 20%;
+    border-bottom: 5px solid #30264f;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#card-event-4 button:hover::after {
+    transform: scaleX(1);
+}
+
+#card-event-5 button::after {
+    content: "";
+    display: block;
+    position: absolute;
+    margin-top: 2rem;
+    width: 60%;
+    left: 20%;
+    border-bottom: 5px solid #30264f;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+#card-event-5 button:hover::after {
+    transform: scaleX(1);
+}
+
+#event-1:hover
+{
+    border: none;
+    background-color: #F3DFFF;
+}
+
+#event-1:hover h2
+{
+    color: #30264f;
+}
+
+#event-2:hover
+{
+    border: none;
+    background-color: #F3DFFF;
+}
+
+#event-2:hover h2
+{
+    color: #30264f;
+}
+
+#event-3:hover
+{
+    border: none;
+    background-color: #F3DFFF;
+}
+
+#event-3:hover h2
+{
+    color: #30264f;
 }

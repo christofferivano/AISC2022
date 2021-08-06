@@ -4,9 +4,13 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: theme => ({
-        'card-event': "url('/public/images/bg-card.png')"
+        'card-event': "url('/public/images/bg-card.png')",
+        'new-pattern': "url('/images/bg-card-baru.png')",
       }),
       backgroundImage: ['hover', 'focus'],
+      fontSize: {
+        '4.5xl': '2.8rem', 
+      },
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
         '14': 'repeat(14, minmax(0, 1fr))',
@@ -73,6 +77,8 @@ module.exports = {
         '120': '60rem'
       },
       height: {
+        '100': '25rem',
+        '110': '27.5rem',
         '120': '30rem',
         '140': '35rem',
       },
@@ -82,6 +88,14 @@ module.exports = {
         testi: '#F56445',
         testi2: '#0F3E99',
         form: '#D396F8',
+        cardEvent: '#F3DFFF',
+        cardCompe: '#FFD8E8',
+        cardMM: '#FFDAB2',
+        cardLogis: '#FFEFAB',
+        cardSponsor: '#BEFFF4',
+        buttonVolunteer: '#A264B3',
+        buttonCompe: '#F25889',
+        buttonMM: '#FF8B0E',
       },
     },
   },

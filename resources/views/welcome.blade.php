@@ -3,11 +3,17 @@
 @section('content')
 
     <!-- Penjelasan AISC -->
-    <div class="py-44 px-60">
-        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-120 flex justify-center items-center">
-            <span class="font-bold text-4xl">
-                Penjelasan AISC
-            </span>
+    <div class="py-52 px-72">
+        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-110 flex flex-col items-center justify-center">
+            <h1 class="text-footer font-bold text-4xl">
+                AIChE Indonesia Student Conference (AISC) 2022
+            </h1>
+            <h2 class="text-footer font-black text-4.5xl pt-10">
+                “The Green Revival Era: Optimizing
+            </h2>
+            <h2 class="text-footer font-black text-4.5xl -mt-4">
+                Resiliency Through Viable Innovations”
+            </h2>
         </div>
     </div>
 
@@ -32,65 +38,65 @@
         <div class="container my-20 mx-auto px-52 z-10">
             <div class="flex flex-wrap -mx-1">
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-1/3">
-                    <div class="card bg-gradient-to-r transition duration-500 ease-in-out hover:from-pink-500 hover:to-yellow-300 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
                         <div class="card-event flex flex-col items-start py-3 px-4" id="card-event">
                             <h2 class="underline text-footer text-xl font-semibold">Volunteer</h2>
                             <span class="text-footer pt-2 pb-4">
                                 Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi Deskripsi
                             </span>
-                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-red-500">
+                            <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                 <a href="" class="px-16 text-sm text-white">CEK</a>
                             </button>
                         </div>
@@ -151,58 +157,214 @@
 
     <!-- Meet the Team -->
     <div class="flex flex-col items-center py-14 bg-footer relative">
-        <h1 class="text-white font-bold text-4xl tracking-wide">
+        <h1 class="text-white font-bold text-5xl tracking-wide">
             Meet The Team!
         </h1>
-        <div class="px-16 py-10 flex items-center">
-            <button class="w-5">
+            <div x-data="{swiper: null}"
+            x-init="swiper = new Swiper($refs.container, {
+                loop: true,
+                slidesPerView: 1,
+                spaceBetween: 0,
+            
+                breakpoints: {
+                    640: {
+                    slidesPerView: 1,
+                    spaceBetween: 0,
+                    },
+                    768: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                    },
+                    1024: {
+                    slidesPerView: 3,
+                    spaceBetween: 0,
+                    },
+                    1440: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                    }, 
+                },
+                })"
+            class="relative w-9/12 mx-auto flex flex-row pt-5">
+            <div class="absolute inset-y-0 left-0 z-20 flex items-center">
+                <button @click="swiper.slidePrev()" 
+                        class="w-5 pt-5">
                 <img src="images/left-team.png" alt="">
-            </button>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
                 </button>
             </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
+
+            <div class="swiper-container" x-ref="container">
+                <div class="swiper-wrapper pt-1">
+                    <!-- Slides -->
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-1" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Project Officer
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-2" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Secretary
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-3" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Treasurer
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-4" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Event
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-5" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Competition
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-6" class="member transition duration-200 px-8 py-2 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-md font-semibold text-gray-600 focus:text-white">
+                                            Media & Marketing
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-7" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Sponsorship
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-8" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Logistic
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide p-4">
+                        <div class="flex flex-col overflow-hidden">
+                            <div class="flex-shrink-0">
+                                <div class="px-5">
+                                    <button id="member-9" class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                        <span class="text-xl font-semibold text-gray-600 focus:text-white">
+                                            Technology
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
-            </div>
-            <div class="px-5">
-                <button class="member transition duration-200 px-8 py-1 rounded-full hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
-                    <span class="text-xl font-semibold text-gray-600 focus:text-white">
-                        Web Developer
-                    </span>
-                </button>
-            </div>
-            <button class="w-5">
+            
+
+            <div class="absolute inset-y-0 right-0 z-10 flex items-center pt-5">
+                <button @click="swiper.slideNext()" 
+                        class="w-5">
                 <img src="images/right-team.png" alt="">
-            </button>
+                </button>
+            </div>        
         </div>
-        <div class="flex items-center py-10">
+        
+        <div id="department-1" class="flex items-center py-10">
             <div class="flex flex-col items-center px-6">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
+                <div class="absolute py-8">
+                    <img src="images/levina.png" alt="" class="w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Levina
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Project Officer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-2" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/bunga.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Bunga
+                        </h2>
+                        <h3 class="text-white text-md">
+                            General Secretary
                         </h3>
                     </div>
                 </div>
@@ -211,14 +373,52 @@
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
+                <div class="absolute py-8">
+                    <img src="images/nindya.png" alt="" class="w-48 mr-3">
                     <div class="flex flex-col items-center pt-4">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Nindya
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Secretary
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-3" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/salwa.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Salwa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Treasurer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-4" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/kevin.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Kevin
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Event
                         </h3>
                     </div>
                 </div>
@@ -227,14 +427,272 @@
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
-                <div class="absolute py-10">
-                    <img src="images/vinsen.png" alt="" class="w-36 mr-3">
-                    <div class="flex flex-col items-center pt-4">
+                <div class="absolute py-8">
+                    <img src="images/gregorius.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4 -mt-3">
                         <h2 class="text-white text-2xl font-semibold">
-                            Vinsen
+                            Gregorius
                         </h2>
                         <h3 class="text-white text-md">
-                            Project Manager
+                            Conference Day Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ari.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ari
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Pre-Event Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vincentius.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vincentius
+                        </h2>
+                        <h3 class="text-white text-md">
+                            nAISC Night Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-5" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/nidya.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Nidya
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Competition
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/mikael.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Mikael
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Paper Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/nadhifa.png" alt="" class="ml-2 w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Nadhifa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            ChemE Jeopardy
+                        </h3>
+                        <h3 class="text-white text-md">
+                            Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/davine.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Davine
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Poster Competition Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-6" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/josephine.png" alt="" class="w-48 ml-1">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Josephine
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Media and Marketing
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/daryl.png" alt="" class="w-48 mr-3 ml-2">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Daryl
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Social Media Specialist Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ajeng.png" alt="" class="w-48 mr-3 ml-2">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ajeng
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Media Production Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vanessa.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vanessa
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Outreach Manager
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-7" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/ahmad.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ahmad
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Sponsorship
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-8" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/kevin2.png" alt="" class="w-48 mr-3 ml-1">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Kevin
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Head of Logistic
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="department-9" class="hidden flex items-center py-10">
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/christoffer.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Ivan
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/frans.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Frans
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col items-center px-6">
+                <div class="relative">
+                    <img src="images/border-team.png" alt="" class="w-64"> 
+                </div>
+                <div class="absolute py-8">
+                    <img src="images/vincent.png" alt="" class="w-48 mr-3">
+                    <div class="flex flex-col items-center pt-4">
+                        <h2 class="text-white text-2xl font-semibold">
+                            Vincent
+                        </h2>
+                        <h3 class="text-white text-md">
+                            Web Developer
                         </h3>
                     </div>
                 </div>
@@ -261,11 +719,25 @@
     </div>
 
     <!-- Footer -->
-    <footer class="relative">
-        <div class="bg-footer h-96 flex justify-center items-center">
-            <span class="font-bold text-4xl text-white">
-                Contact Us
-            </span>
+    <footer style="background-image: url('images/bg-footer.png');" class="bg-cover h-landing bg-local relative">
+        <div class="h-96 flex flex-col items-start">
+            <div class="px-20 py-10">
+                <h2 class="font-bold text-5xl text-white">
+                    Contact Us
+                </h2>
+                <div class="flex pt-8 items-center">
+                    <img src="images/instagram.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@aisc2022</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/line-app.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">@961ckski</p>
+                </div>
+                <div class="flex pt-5 items-center">
+                    <img src="images/linkedin.png" alt="" class="w-12">
+                    <p class="pl-5 text-white font-semibold text-2xl">AIChE Indonesia Student Conference 2022</p>
+                </div>
+            </div>
         </div>
     </footer>
 @endsection
