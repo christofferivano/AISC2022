@@ -21,30 +21,93 @@
                 </div>
             </div>
             <div>
-                <form action="" class="flex flex-col pt-12">
+                <form action="{{ route('volunteer-regis') }}" method="POST" class="flex flex-col pt-12">
                     @csrf
-                    <label for="name" class="pb-2 pl-4 text-xl font-medium">Name</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm" placeholder="Your Name">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-xl font-medium">Institution</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm" placeholder="Your Institution">
-                    <label for="birth-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Birth Date</label>
-                    <input type="date" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-xl font-medium">Email</label>
-                    <input type="email" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm" placeholder="your_email@email.com">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-xl font-medium">Phone Number</label>
-                    <input type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm" placeholder="08xxxxxxxx">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-xl font-medium">Volunteering In</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm">
+                    <div class="mb-4">
+                        <label for="name" class="pb-2 pl-4 text-xl font-medium">Name</label>
+                        <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('name') border-red-500 @enderror" 
+                        placeholder="Your Name" id="name" name="name" value="{{ old('name') }}">
+
+                        @error('name')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="institution" class="pb-2 pl-4 text-xl font-medium">Institution</label>
+                        <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('institution') border-red-500 @enderror" 
+                        placeholder="Your Institution" id="institution" name="institution" value="{{ old('institution') }}">
+
+                        @error('institution')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+                    
+                    <div class="mb-4">
+                        <label for="birth_date" class="pb-2 pl-4 text-xl font-medium">Birth Date</label>
+                        <input type="date" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('birth_date') border-red-500 @enderror" 
+                        id="birth_date" name="birth_date" value="{{ old('birth_date') }}">
+
+                        @error('birth_date')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="email" class="pb-2 pl-4 text-xl font-medium">Email</label>
+                        <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('email') border-red-500 @enderror" 
+                        placeholder="Your email" id="email" name="email" value="{{ old('email') }}">
+
+                        @error('email')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="phone_number" class="pb-2 pl-4 text-xl font-medium">Phone Number</label>
+                        <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('phone_number') border-red-500 @enderror" 
+                        placeholder="08xxxxxxxx" id="phone_number" name="phone_number" value="{{ old('phone_number') }}">
+
+                        @error('phone_number')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="volunteer_in" class="pb-2 pl-4 text-xl font-medium">volunteer_in</label>
+                        <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm
+                        @error('volunteer_in') border-red-500 @enderror" 
+                        id="volunteer_in" name="volunteer_in" value="{{ old('volunteer_in') }}">
+
+                        @error('volunteer_in')
+                            <div class="text-red-500 mt-2 text-sm">
+                                {{ $message }}
+                            </div>
+                        @enderror
+                    </div>
+
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>
                             <a href="{{ route('volunteer-end') }}" class="underline text-blue-700 text-lg pl-1">Here</a>
                         </div>
                     </div>
-                    <form action="{{ route('volunteer-end') }}" method="GET" class="pt-2">
-                        @csrf
-                        <button type="submit" class="w-96 bg-gradient-to-r from-pink-400 to-red-500 py-1 rounded-full text-white text-lg font-semibold shadow-lg">Submit</button>
-                    </form>
+                    <button type="submit" class="w-96 bg-gradient-to-r from-pink-400 to-red-500 py-1 rounded-full text-white text-lg font-semibold shadow-lg">Submit</button>
                 </form>
             </div>
             

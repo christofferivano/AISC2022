@@ -26,8 +26,8 @@ Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 
 Route::get('/volunteer', [VolunteerPage::class, 'index'])->name('volunteer');
 Route::get('/registration', [VolunteerRegistrationPage::class, 'index'])->prefix('volunteer')->name('volunteer-regis');
+Route::post('/registration', [VolunteerRegistrationPage::class, 'store'])->prefix('volunteer')->name('volunteer-regis');
 Route::get('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer')->name('volunteer-end');
-Route::post('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer');
 
 Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 

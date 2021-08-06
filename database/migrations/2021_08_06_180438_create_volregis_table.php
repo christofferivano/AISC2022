@@ -16,7 +16,12 @@ class CreateVolregisTable extends Migration
         Schema::create('volregis', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string("Name");
+            $table->string('name');
+            $table->string('institution');
+            $table->date('birth_date');
+            $table->string('email');
+            $table->string('phone_number');
+            $table->string('volunteer_in');
         });
     }
 
