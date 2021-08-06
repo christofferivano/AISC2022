@@ -11,6 +11,14 @@ class VolunteerRegistrationPage extends Controller
         return view('volunteer-regis');
     }
 
+    public function second(){
+        return view('volunteer-regis-2');
+    }
+
+    public function third(){
+        return view('volunteer-regis-3');
+    }
+
     public function store(Request $request){
         $this->validate($request, [
             'name' => 'required|max:255',
@@ -20,5 +28,7 @@ class VolunteerRegistrationPage extends Controller
             'phone_number' => 'required|max:255',
             'volunteer_in' => 'required',
         ]);
+
+
     }
 }
