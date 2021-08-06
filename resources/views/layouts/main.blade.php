@@ -94,11 +94,11 @@
             }
         }
         $(document).ready(function() {
-            var $swiper = $(".swiper-container");
+            var $swiper = $(".swiper2");
             var $bottomSlide = null; 
             var $bottomSlideContent = null; 
 
-            var mySwiper = new Swiper(".swiper-container", {
+            var mySwiper = new Swiper(".swiper2", {
                 spaceBetween: 1,
                 slidesPerView: 3,
                 centeredSlides: true,

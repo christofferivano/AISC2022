@@ -137,11 +137,11 @@
             </div>
             <div class="flex flex-row items-end">
                 <!-- Slider main container -->
-                <div class="swiper-container my-10 pl-20">
+                <div class="swiper-container swiper2 my-10 pl-20">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper my-4 px-1">
                         <!-- Slides -->
-                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
                                 Open Registration 
                             </h2>
@@ -149,7 +149,7 @@
                                 2 Agustus 2021                            
                             </span>
                         </div>
-                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
                                 Open                    BO
                                 </font> 
@@ -158,7 +158,7 @@
                                 10 Agustus 2021
                             </span>
                         </div>
-                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
                                 Open                    Registration
                             </h2>
@@ -166,7 +166,7 @@
                                 14 Agustus 2021
                             </span>
                         </div>
-                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
                                 Open                    Custom
                             </h2>
@@ -174,7 +174,7 @@
                                 13 Agustus 2021
                             </span>
                         </div>
-                        <div class="swiper-slide justify-center items-center flex-col items-start py-10">
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-10">
                             <h2 class="text-center text-2xl font-bold py-5">
                                 Open                    Rapa
                             </h2>

@@ -2,17 +2,17 @@
 .swiper-button-prev {
     color: #D391FC !important;
 }
-.swiper-container {
+.swiper2 {
     position:relative;
     width: 100vw;
     height: 300px;
 }
-.swiper-container > .swiper-slide__content {
+.swiper2 > .swiper-slide__content {
   position:absolute;
   top:0;
 }
 
-.swiper-slide {
+.slide2 {
   height: 300px;
   display:flex;
   background: radial-gradient(86.67% 87.5% at 91.4% 93.51%, #BFBFBF 0%, rgba(232, 232, 232, 0.3) 100%);
@@ -27,9 +27,9 @@
   height: 300px;
 }
   
-.swiper-slide.swiper-slide-active {  
-    background-image: url("../images/bg-card-baru.png");
-    /* linear-gradient(to top right, #D391FC ,#ACD8F2); */
+.slide2.swiper-slide-active {  
+    /* background-image: url("../images/bg-card-baru.png"); */
+    background: linear-gradient(to top right, #D391FC ,#ACD8F2);
     text-align: center;
     color: #fff;
 }
