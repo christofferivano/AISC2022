@@ -23,7 +23,9 @@
             <h1 class="text-footer text-center text-lg text-2xl md:text-5xl font-bold tracking-wide">
                 Coming Very Soon!
             </h1>
-            <img src="images/reminder.png" alt="" class="w-3/5 pt-16 z-10">
+            <div class="countdown md:pt-8 text-footer font-semibold md:text-4xl">
+                00 : 00 : 00: 00
+            </div>
         </div>
         <div class="absolute left-0 top-0 z-0 pl-1 md:pl-20 pt-40 mb:pt-10">
             <img src="images/bulet6.png" alt="" class="w-1/3 md:w-1/2">

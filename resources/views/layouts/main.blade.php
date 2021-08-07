@@ -64,6 +64,48 @@
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script>
+        //Setup End Date
+        let launchDate = new Date("Aug 9, 2021 12:00:00").getTime();
+
+        //Setup Timer Tick
+        let timer = setInterval(tick,1000);
+
+        function tick()
+        {
+            let now = new Date().getTime();
+
+            let t = launchDate - now;
+
+            if(t > 0)
+            {
+                let days = Math.floor(t / (1000*60*60*24));
+                if(days<10)
+                {
+                    days = "0" + days;
+                }
+                let hours = Math.floor((t % (1000*60*60*24)) / (1000 * 60 * 60));
+                if(hours<10)
+                {
+                    hours = "0" + hours;
+                }
+                let mins = Math.floor((t % (1000*60*60)) / (1000 * 60));
+                if(hours<10)
+                {
+                    mins = "0" + mins;
+                }
+                let secs = Math.floor((t % (1000*60)) / 1000 );
+                if(secs<10)
+                {
+                    secs = "0" + secs;
+                }
+
+                let time = `${days} Days : ${hours} Hours : ${mins} Minutes : ${secs} Seconds`;
+
+                document.querySelector('.countdown').innerText = time;
+            }
+        }
+    </script>
+    <script>
         var divs = [
             "department-1", "department-2", "department-3" ,"department-4", "department-5",
             "department-6", "department-7", "department-8", "department-9"
