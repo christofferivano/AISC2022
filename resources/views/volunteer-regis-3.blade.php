@@ -18,12 +18,12 @@
             <h1 class="absolute md:relative text-2xl md:text-5xl font-bold">
                 Registration
                 <div class="md:hidden flex flex-row right-0 pl-80 -mt-10 pt-6">
-                    <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
+                    <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
                     <div class="px-1 md:px-2">
                         <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
                     </div>
                     <div class="">
-                        <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
+                        <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
                     </div>
                 </div>
             </h1>
@@ -39,20 +39,31 @@
                 <form action="" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Curriculum Vitae</label>
-                    <input type="file" id="selectedFile" class="hidden">
-                    <input type="button" value="Select a File" onclick="document.getElementById('selectedFile').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="file-upload-1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                        Upload File
+                    </label>
+                    <input type="file" id="file-upload-1" class="hidden">
+                    <!-- <input type="button" value="Select a File" onclick="document.getElementById('selectedFile').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"> -->
                     <label for="porto" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Portofolio (Media Production Only)</label>
-                    <input type="file" id="selectedFile2" class="hidden">
-                    <input type="button" value="Select a File" onclick="document.getElementById('selectedFile2').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="file-upload-2" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                        Upload File
+                    </label>
+                    <input type="file" id="file-upload-2" class="hidden">
                     <label for="twibbon" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Twibbon Upload</label>
-                    <input type="file" id="selectedFile3" class="hidden">
-                    <input type="button" value="Select a File" onclick="document.getElementById('selectedFile3').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="file-upload-3" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                        Upload File
+                    </label>
+                    <input type="file" id="file-upload-3" class="hidden">
                     <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Information Sharing via Snapgram</label>
-                    <input type="file" id="selectedFile4" class="hidden">
-                    <input type="button" value="Select a File" onclick="document.getElementById('selectedFile4').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="file-upload-4" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                        Upload File
+                    </label>
+                    <input type="file" id="file-upload-4" class="hidden">
                     <label for="proof" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Instagram @aisc2022 Follow Proof</label>
-                    <input type="file" id="selectedFile5" class="hidden">
-                    <input type="button" value="Select a File" onclick="document.getElementById('selectedFile5').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="file-upload-5" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                        Upload File
+                    </label>
+                    <input type="file" id="file-upload-5" class="hidden">
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>
