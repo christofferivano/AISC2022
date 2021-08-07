@@ -11,16 +11,16 @@
             <h2 class="text-footer font-black text-base md:text-4.5xl pt-5 md:pt-10">
                 “The Green Revival Era: Optimizing
             </h2>
-            <h2 class="text-footer font-black text-base md:text-4.5xl pt-0.5 md:mt-4">
+            <h2 class="text-footer font-black text-base md:text-4.5xl -mt-1 md:mt-6">
                 Resiliency Through Viable Innovations”
             </h2>
         </div>
     </div>
 
     <!-- Reminder -->
-    <div class="relative md:pb-20 pt-20 pb-10 md:py-16">
+    <div class="relative md:pb-20 pt-28 md:pt-20 md:py-16">
         <div class="flex flex-col items-center">
-            <h1 class="text-footer text-center text-lg text-2xl md:text-5xl font-bold tracking-wide">
+            <h1 class="text-footer text-center text-2xl md:text-6xl font-bold tracking-wide">
                 Coming Very Soon!
             </h1>
             <div class="countdown md:pt-8 text-footer font-semibold md:text-4xl">
@@ -129,7 +129,7 @@
     </div>
 
     <!-- Timeline -->
-    <div class ="flex flex-col px-2 md:px-5 pb-40 md:pb-96 relative justify-center">
+    <div class ="flex flex-col px-2 md:px-5 pb-40 md:pb-80 relative justify-center">
         <img src="images/bulet6.png" alt="", class="absolute w-96 md:w-1/2 right-0 bottom-0 -mb-52">
         <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
         <div class="border rounded-lg shadow-2xl py-5">
@@ -259,7 +259,7 @@
     </div>
 
     <!-- Meet the Team -->
-    <div class="flex flex-col items-center py-4 md:py-14 bg-footer relative">
+    <div class="flex flex-col items-center py-4 md:py-14 bg-footer relative border-b-2 border-white">
         <h1 class="text-white font-bold text-2xl md:text-5xl tracking-wide">
             Meet The Team!
         </h1>
