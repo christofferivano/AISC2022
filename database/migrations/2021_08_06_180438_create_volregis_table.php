@@ -26,10 +26,8 @@ class CreateVolregisTable extends Migration
             $table->string('phone_number');
             $table->string('line_id');
             $table->string('position_1');
-            $table->stirng('position_2');
+            $table->string('position_2');
         });
-
-        DB::statement("ALTER TABLE <table name> ADD <column name> MEDIUMBLOB");
     }
 
     /**

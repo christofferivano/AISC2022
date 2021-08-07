@@ -17,6 +17,7 @@ class CreateFilesTable extends Migration
             $table->id();
             $table->string('name');
             $table->string('file_path');
+            $table->foreignId('volregis_id')->constrained()->onDelete('cascade');
             $table->timestamps();
         });
     }
