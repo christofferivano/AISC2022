@@ -40,85 +40,85 @@
         <div class="container my-20 mx-auto px-2 md:px-52 z-10">
             <div class="flex flex-wrap -mx-1">
                 <div class="my-4 px-2 w-48 md:w-1/3">
-                    <div class="card flex flex-col items-center md:items-start py-3 px-4 bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card flex flex-col items-center md:items-start py-3 px-4 bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <!-- <div class="card-event flex flex-col items-start py-3 px-4" id="card-event"> -->
-                            <h2 class="title-1 md:underline text-footer text-xl font-semibold pt-12 md:pt-0">Volunteer</h2>
+                            <h2 class="title-1 md:underline text-footer text-xl font-semibold pt-4 md:pt-0">Volunteer</h2>
                             <span class="desc-1 hidden md:block text-footer pt-2 pb-4">
                             People who register to be part of AISC
                             2022 together to actualize AISC
                             purposes and plans.
                             </span>
-                            <div class="pt-6">
-                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-sm text-white">CHECK</a>
+                            <div class="pt-2 md:pt-6">
+                                <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         <!-- </div> -->
                     </div>
                 </div>
                 <div class="my-4 px-2 w-48 md:w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center md:items-start py-3 px-4" id="card-event">
-                            <h2 class="md:underline text-footer text-xl font-semibold pt-12 md:pt-0">Pre-Event</h2>
+                            <h2 class="md:underline text-footer text-xl font-semibold pt-4 md:pt-0">Pre-Event</h2>
                             <span class="text-footer hidden md:block pt-2 pb-4">
                             A series of events that invite experts to
                             share their knowledge to enliven the
                             main event of AISC.
                             </span>
-                            <div class="pt-6">
-                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-sm text-white">CHECK</a>
+                            <div class="pt-2 md:pt-6">
+                                <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-48 md:w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center md:items-start py-3 px-4" id="card-event">
-                            <h2 class="md:underline text-footer text-xl font-semibold pt-12 md:pt-0">Competition</h2>
+                            <h2 class="md:underline text-footer text-xl font-semibold pt-4 md:pt-0">Competition</h2>
                             <span class="text-footer hidden md:block pt-2 pb-4">
                             A platform for undergraduate students
                             in Southeast Asia with big ideas to
                             discover more about green innovations.
                             </span>
-                            <div class="pt-6">
-                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-sm text-white">CHECK</a>
+                            <div class="pt-2 md:pt-6">
+                                <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-48 md:w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center md:items-start py-3 px-4" id="card-event">
-                            <h2 class="md:underline text-footer text-xl font-semibold pt-12 md:pt-0">nAISC Night</h2>
+                            <h2 class="md:underline text-footer text-xl font-semibold pt-4 md:pt-0">nAISC Night</h2>
                             <span class="text-footer hidden md:block pt-2 pb-4">
                             A spectacular event dedicated for finalists, AIChE’s representatives 
                             from the various universities in Southeast Asia, and AISC’s own committee.  
                             </span>
-                            <div class="pt-6 md:pt-0">
-                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-sm text-white">CHECK</a>
+                            <div class="pt-2 md:pt-0">
+                                <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="my-4 px-2 w-48 md:w-1/3">
-                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-52">
+                    <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center text-center md:text-left md:items-start py-3 px-4" id="card-event">
-                            <h2 class="md:underline text-footer text-xl font-semibold pt-12 md:pt-0">Conference Day</h2>
+                            <h2 class="md:underline text-footer text-xl font-semibold pt-1 md:pt-0">Conference Day</h2>
                             <span class="text-footer hidden md:block pt-2 pb-4">
                             The only Southeast Asian scale
                             conference organized by AISC,
                             delegates will discuss the latest
                             innovations with experts in their fields.
                             </span>
-                            <div class="pt-6">
-                                <button class="py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-sm text-white">CHECK</a>
+                            <div class="pt-2 md:pt-6">
+                                <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
+                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
     </div>
 
     <!-- Timeline -->
-    <div class ="flex flex-col px-2 md:px-5 pb-96 relative justify-center">
+    <div class ="flex flex-col px-2 md:px-5 pb-40 md:pb-96 relative justify-center">
         <img src="images/bulet6.png" alt="", class="absolute w-96 md:w-1/2 right-0 bottom-0 -mb-52">
         <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
         <div class="border rounded-lg shadow-2xl py-5">
@@ -259,7 +259,7 @@
     </div>
 
     <!-- Meet the Team -->
-    <div class="flex flex-col items-center py-14 bg-footer relative">
+    <div class="flex flex-col items-center py-4 md:py-14 bg-footer relative">
         <h1 class="text-white font-bold text-2xl md:text-5xl tracking-wide">
             Meet The Team!
         </h1>
@@ -297,9 +297,9 @@
             </div>
 
             <div class="swiper-container" x-ref="container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper flex flex-row items-center">
                     <!-- Slides -->
-                    <div class="swiper-slide p-2 md:p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -311,7 +311,7 @@
                         </div>
                     </div>
                         
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -323,7 +323,7 @@
                         </div>
                     </div>
                 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -335,7 +335,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -347,7 +347,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -359,11 +359,11 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
-                                    <button onclick="divVisibility('department-6')" id="member-6" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
+                                    <button onclick="divVisibility('department-6')" id="member-6" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-base font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
                                         Media & Marketing
                                     </button>
                                 </div>
@@ -371,7 +371,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -383,7 +383,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -395,7 +395,7 @@
                         </div>
                     </div>
 
-                    <div class="swiper-slide p-4">
+                    <div class="swiper-slide p-2 md:pt-2">
                         <div class="flex flex-col overflow-hidden">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
@@ -418,14 +418,14 @@
             </div>        
         </div>
         
-        <div id="department-1" class="flex items-center py-10">
+        <div id="department-1" class="flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-4 md:py-8">
-                    <img src="images/levina.png" alt="" class="w-24 md:w-48 mr-2 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <img src="images/levina.png" alt="" class="w-16 md:w-48 md:mr-3 -ml-1 md:-ml-0">
+                    <div class="flex flex-col items-center pt-1 md:pt-4 -ml-2 md:-ml-0">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Levina
                         </h2>
@@ -437,15 +437,15 @@
             </div>
         </div>
 
-        <div id="department-2" class="hidden flex items-center py-10">
+        <div id="department-2" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-4 md:py-8">
-                    <img src="images/bunga.png" alt="" class="w-24 md:w-48 mr-2.5 md:mr-3">
-                    <div class="flex flex-col items-center pt-2 md:pt-4">
-                        <h2 class="text-white text-base md:text-2xl font-semibold">
+                    <img src="images/bunga.png" alt="" class="w-16 md:w-48 md:mr-3 -ml-1 md:-ml-0">
+                    <div class="flex flex-col items-center pt-2 md:pt-4 -ml-2 md:-ml-0">
+                        <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Bunga
                         </h2>
                         <h3 class="text-white text-xxs md:text-md">
@@ -456,12 +456,12 @@
             </div>
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-4 md:py-8">
-                    <img src="images/nindya.png" alt="" class="w-24 md:w-48 mr-2.5 md:mr-3">
-                    <div class="flex flex-col items-center pt-2 md:pt-4">
-                        <h2 class="text-white text-base md:text-2xl font-semibold">
+                    <img src="images/nindya.png" alt="" class="w-16 md:w-48 md:mr-3 -ml-1 md:-ml-0">
+                    <div class="flex flex-col items-center pt-2 md:pt-4 -ml-2 md:-ml-0">
+                        <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Nindya
                         </h2>
                         <h3 class="text-white text-xxs md:text-md">
@@ -472,14 +472,14 @@
             </div>
         </div>
 
-        <div id="department-3" class="hidden flex items-center py-10">
+        <div id="department-3" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-4 md:py-8">
-                    <img src="images/salwa.png" alt="" class="w-24 md:w-48 mr-2 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <img src="images/salwa.png" alt="" class="w-16 md:w-48 md:mr-3 -ml-1 md:-ml-0">
+                    <div class="flex flex-col items-center pt-1 md:pt-4 -ml-2 md:-ml-0">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Salwa
                         </h2>
@@ -491,14 +491,14 @@
             </div>
         </div>
 
-        <div id="department-4" class="hidden flex items-center py-10">
+        <div id="department-4" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/kevin.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Kevin
                         </h2>
@@ -514,7 +514,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/gregorius.png" alt="" class="w-16 md:w-48 md:mr-3 mr-1 md:ml-0">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Gregorius
                         </h2>
@@ -530,7 +530,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/ari.png" alt="" class="w-16 md:w-48 md:mr-3 md:ml-0">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Ari
                         </h2>
@@ -546,7 +546,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/vincentius.png" alt="" class="w-16 md:w-48 md:mr-3 ml-1 md:ml-0">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Vincentius
                         </h2>
@@ -558,14 +558,14 @@
             </div>
         </div>
 
-        <div id="department-5" class="hidden flex items-center py-10">
+        <div id="department-5" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/nidya.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Nidya
                         </h2>
@@ -581,7 +581,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/mikael.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Mikael
                         </h2>
@@ -597,7 +597,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/nadhifa.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Nadhifa
                         </h2>
@@ -616,7 +616,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/davine.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Davine
                         </h2>
@@ -628,14 +628,14 @@
             </div>
         </div>
 
-        <div id="department-6" class="hidden flex items-center py-10">
+        <div id="department-6" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/josephine.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Josephine
                         </h2>
@@ -651,7 +651,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/daryl.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Daryl
                         </h2>
@@ -666,8 +666,8 @@
                     <img src="images/border-team.png" alt="" class="w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
-                    <img src="images/ajeng.png" alt="" class="w-16 md:w-48 ml-2 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <img src="images/ajeng.png" alt="" class="w-16 md:w-48 ml-1 md:ml-2 md:mr-3">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Ajeng
                         </h2>
@@ -683,7 +683,7 @@
                 </div>
                 <div class="absolute py-2 md:py-8">
                     <img src="images/vanessa.png" alt="" class="w-16 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <div class="flex flex-col items-center pt-2 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Vanessa
                         </h2>
@@ -695,13 +695,13 @@
             </div>
         </div>
 
-        <div id="department-7" class="hidden flex items-center py-10">
+        <div id="department-7" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-4 md:py-8">
-                    <img src="images/ahmad.png" alt="" class="w-24 md:w-48 mr-2 md:mr-3">
+                    <img src="images/ahmad.png" alt="" class="w-16 md:w-48 ml-1 md:ml-0 md:mr-3">
                     <div class="flex flex-col items-center md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Ahmad
@@ -714,14 +714,14 @@
             </div>
         </div>
 
-        <div id="department-8" class="hidden flex items-center py-10">
+        <div id="department-8" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-32 md:w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
-                    <img src="images/kevin2.png" alt="" class="w-24 md:w-48 mr-1 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
+                    <img src="images/kevin2.png" alt="" class="w-16 md:w-48 mr-1 md:mr-3">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
                         <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Kevin
                         </h2>
@@ -733,15 +733,15 @@
             </div>
         </div>
 
-        <div id="department-9" class="hidden flex items-center py-10">
+        <div id="department-9" class="hidden flex items-center py-5 md:py-10">
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
-                    <img src="images/christoffer.png" alt="" class="w-24 md:w-48 mr-2 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
-                        <h2 class="text-white text-base md:text-2xl font-semibold">
+                    <img src="images/christoffer.png" alt="" class="w-16 mr-1 md:w-48 md:mr-3">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
+                        <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Ivan
                         </h2>
                         <h3 class="text-white text-xxs md:text-base">
@@ -752,12 +752,12 @@
             </div>
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
-                    <img src="images/frans.png" alt="" class="w-24 mr-2 md:w-48 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
-                        <h2 class="text-white text-base md:text-2xl font-semibold">
+                    <img src="images/frans.png" alt="" class="w-16 mr-1 md:w-48 md:mr-3">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
+                        <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Frans
                         </h2>
                         <h3 class="text-white text-xxs md:text-base">
@@ -768,12 +768,12 @@
             </div>
             <div class="flex flex-col items-center px-1 md:px-6">
                 <div class="relative">
-                    <img src="images/border-team.png" alt="" class="w-64"> 
+                    <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>
                 <div class="absolute py-2 md:py-8">
-                    <img src="images/vincent.png" alt="" class="w-24 md:w-48 mr-2 md:mr-3">
-                    <div class="flex flex-col items-center md:pt-4">
-                        <h2 class="text-white text-base md:text-2xl font-semibold">
+                    <img src="images/vincent.png" alt="" class="w-16 mr-1 md:w-48 md:mr-3">
+                    <div class="flex flex-col items-center pt-1 md:pt-4">
+                        <h2 class="text-white text-sm md:text-2xl font-semibold">
                             Vincent
                         </h2>
                         <h3 class="text-white text-xxs md:text-base">
@@ -786,7 +786,7 @@
     </div>
 
     <!-- Sponsor -->
-    <div class="flex flex-col items-center py-16">
+    <!-- <div class="flex flex-col items-center py-16">
         <h1 class="text-footer text-4xl font-bold">
             Sponsored By
         </h1>
@@ -801,7 +801,7 @@
                 <img src="images/gojek.png" alt="" class="w-44">
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">

@@ -564,7 +564,7 @@
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">
-            <div class="px-10 md:px-20 py-8 md:py-10">
+            <div class="px-8 md:px-20 py-6 md:py-10">
                 <h2 class="font-bold text-2xl md:text-5xl text-white">
                     Contact Us
                 </h2>
