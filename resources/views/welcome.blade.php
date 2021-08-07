@@ -3,15 +3,15 @@
 @section('content')
 
     <!-- Penjelasan AISC -->
-    <div class="py-52 px-72">
-        <div class="rounded-md sticky top-0 z-10 bg-white backdrop-filter backdrop-blur-lg bg-opacity-40 h-110 flex flex-col items-center justify-center">
-            <h1 class="text-footer font-bold text-4xl">
+    <div class="py-36 px-10 md:py-52 md:px-72">
+        <div class="rounded-md sticky top-0 z-10 bg-white text-center backdrop-filter backdrop-blur-lg bg-opacity-40 h-40 md:h-110 flex flex-col items-center justify-center">
+            <h1 class="text-footer font-bold text-sm md:text-4xl">
                 AIChE Indonesia Student Conference (AISC) 2022
             </h1>
-            <h2 class="text-footer font-black text-4.5xl pt-10">
+            <h2 class="text-footer font-black text-base md:text-4.5xl pt-5 md:pt-10">
                 “The Green Revival Era: Optimizing
             </h2>
-            <h2 class="text-footer font-black text-4.5xl -mt-4">
+            <h2 class="text-footer font-black text-base md:text-4.5xl pt-0.5 md:mt-4">
                 Resiliency Through Viable Innovations”
             </h2>
         </div>
@@ -20,7 +20,7 @@
     <!-- Reminder -->
     <div class="relative pb-20 py-16">
         <div class="flex flex-col items-center">
-            <h1 class="text-footer text-5xl font-bold tracking-wide">
+            <h1 class="text-footer text-center text-lg md:text-5xl font-bold tracking-wide">
                 Coming Very Soon!
             </h1>
             <img src="images/reminder.png" alt="" class="w-3/5 pt-16 z-10">
