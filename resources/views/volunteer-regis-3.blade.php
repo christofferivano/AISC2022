@@ -24,7 +24,7 @@
                 <font color="#30264F">Please kindly upload the requirements needed :</font> 
             </h1>
             <div class="pb-20 z-10">
-                <form action="" class="flex flex-col pt-12">
+                <form action="" class="flex flex-col pt-12" enctype="multipart/form-data">
                     @csrf
                     <label for="cv" class="pb-2 pl-4 text-xl font-medium">Curriculum Vitae</label>
                     <input type="file" id="selectedFile" class="hidden">

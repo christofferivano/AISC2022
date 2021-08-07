@@ -21,19 +21,19 @@
                 </div>
             </div>
             <div class="pb-20 z-10">
-                <form action="" class="flex flex-col pt-12">
+                <form action="{{ route('volunteer-regis-2', ['name' => $name, 'radio' => $radio, 'major' => $major, 'batch' => $batch]) }}" method="POST" flex flex-col pt-12">
                     @csrf
                     <label for="domicile" class="pb-2 pl-4 text-xl font-medium">Domicile</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <input name="domicile" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <label for="email" class="pt-4 pb-2 pl-4 text-xl font-medium">Email</label>
-                    <input type="email" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="youremail@email.com">
+                    <input name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="youremail@email.com">
                     <label for="wa" class="pt-4 pb-2 pl-4 text-xl font-medium">Whatsapp Number</label>
-                    <input type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="08xxxxxxxx">
+                    <input name="wa" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="08xxxxxxxx">
                     <label for="line" class="pt-4 pb-2 pl-4 text-xl font-medium">Line ID</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    <label for="position" class="pt-4 pb-2 pl-4 text-xl font-medium">Preferable Position</label>
+                    <input name="line" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <label for="position1" class="pt-4 pb-2 pl-4 text-xl font-medium">Preferable Position</label>
                     <select class="outline-none rounded-full border border-form py-1.5 px-4 w-96 text-sm focus:ring-2 focus:ring-form"
-                    name="position" for="position">
+                    name="position1" for="position1">
                         <option class="py-1 font-sans" disabled selected hidden>Option 1</option>
                         <option class="py-1 font-sans">Pre-Event</option>
                         <option class="py-1 font-sans">Conference Day</option>
@@ -49,7 +49,7 @@
                     </select>
                     <div class="pt-6">
                         <select class="outline-none rounded-full border border-form py-1.5 px-4 w-96 text-sm focus:ring-2 focus:ring-form"
-                        name="position" for="position">
+                        name="position2" for="position2">
                             <option class="py-1 font-sans" disabled selected hidden>Option 2</option>
                             <option class="py-1 font-sans">Pre-Event</option>
                             <option class="py-1 font-sans">Conference Day</option>
