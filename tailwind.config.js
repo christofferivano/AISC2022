@@ -8,9 +8,6 @@ module.exports = {
         'new-pattern': "url('/images/bg-card-baru.png')",
       }),
       backgroundImage: ['hover', 'focus'],
-      fontSize: {
-        '4.5xl': '2.8rem', 
-      },
       gridTemplateColumns: {
         '16': 'repeat(16, minmax(0, 1fr))',
         '14': 'repeat(14, minmax(0, 1fr))',
@@ -41,6 +38,8 @@ module.exports = {
       },
       fontSize: {
         'xxs': '.5rem',
+        'xxxs':'.3rem',
+        '4.5xl': '2.8rem',
       },
       fontFamily: {
         'montserrat': ['montserrat', 'sans-serif'],
