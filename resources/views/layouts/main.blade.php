@@ -18,7 +18,7 @@
         <div class="absolute right-0 top-0">
             <img src="images/bulet-landing-2.png" alt="" class="h-40 md:h-120"> 
         </div>
-        <div class="absolute md:bottom-0 md:pl-100 pt-60 md:-mb-10">
+        <div class="absolute md:bottom-0 md:pl-100 pt-56 md:-mb-10">
             <img src="images/bulet-landing-3.png" alt="" class="w-2/7 md:w-1/2"> 
         </div>
         <nav class="fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">

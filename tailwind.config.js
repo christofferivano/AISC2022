@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: theme => ({
         'card-event': "url('/public/images/bg-card.png')",
         'new-pattern': "url('/images/bg-card-baru.png')",
+        'bg-baru' : "url('/images/bg-hover.png')",
       }),
       backgroundImage: ['hover', 'focus'],
       fontSize: {
@@ -41,6 +42,7 @@ module.exports = {
       },
       fontSize: {
         'xxs': '.5rem',
+        'xxxs':'.3rem',
       },
       fontFamily: {
         'montserrat': ['montserrat', 'sans-serif'],
