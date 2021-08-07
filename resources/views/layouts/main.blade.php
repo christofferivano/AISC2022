@@ -11,30 +11,30 @@
     <title>Document</title>
 </head>
 <body class="relative">
-    <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-full">
+    <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-96 md:h-full">
         <div class="absolute pt-12">
-            <img src="images/bulet-landing-1.png" alt="" class="w-1/2"> 
+            <img src="images/bulet-landing-1.png" alt="" class="w-1/7 md:w-1/2"> 
         </div>
         <div class="absolute right-0 top-0">
-            <img src="images/bulet-landing-2.png" alt="" class="h-120"> 
+            <img src="images/bulet-landing-2.png" alt="" class="h-40 md:h-120"> 
         </div>
-        <div class="absolute bottom-0 pl-100 -mb-10">
-            <img src="images/bulet-landing-3.png" alt="" class="w-1/2"> 
+        <div class="absolute md:bottom-0 md:pl-100 pt-56 md:-mb-10">
+            <img src="images/bulet-landing-3.png" alt="" class="w-2/7 md:w-1/2"> 
         </div>
-        <nav class="fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
-            <div class="mx-auto px-24 py-2">
+        <nav class="fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
+            <div class="mx-auto px-10 md:px-24 py-2">
                 <div class="flex items-center justify-between h-20">
                     <!-- <span class="text-2xl text-gray-900 font-semibold">
                         LOGO AISC
                     </span> -->
                     <div>
                         <a href="">
-                            <img src="images/logo.png" alt="" class="w-24">
+                            <img src="images/logo.png" alt="" class="w-20 md:w-24">
                         </a>
                     </div>
                     <div class="text-lg flex space-x-20 text-gray-900">
-                        <a href="" class="text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
-                        <div class="event-btn inline-block relative">
+                        <a href="" class="hidden md:block text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                        <div class="event-btn hidden md:block inline-block relative">
                             <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                                 <span class="text-footer text-lg font-semibold">Event</span>
                                 <img src="images/drop.png" alt="" class="w-3 ml-2">
@@ -45,7 +45,7 @@
                                 <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Conference Day</a></li>
                             </ul>
                         </div>
-                        <div class="compe-btn inline-block relative">
+                        <div class="compe-btn hidden md:block inline-block relative">
                             <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                                 <span class="text-footer text-lg font-semibold">Competition</span>
                                 <img src="images/drop.png" alt="" class="w-3 ml-2">
