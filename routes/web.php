@@ -29,10 +29,10 @@ Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 Route::get('/volunteer', [VolunteerPage::class, 'index'])->name('volunteer');
 Route::get('/registration', [VolunteerRegistrationPage::class, 'index'])->prefix('volunteer')->name('volunteer-regis');
 Route::post('/registration', [VolunteerRegistrationPage::class, 'store'])->prefix('volunteer')->name('volunteer-regis');
-Route::get('/registration-2', [VolunteerRegistrationPage::class, 'index_2'])->prefix('volunteer')->name('volunteer-regis-2-get');
-Route::post('/registration-2', [VolunteerRegistrationPage::class, 'store_2'])->prefix('volunteer')->name('volunteer-regis-2');
-Route::get('/registration-3', [VolunteerRegistrationPage::class, 'index_3'])->prefix('volunteer')->name('volunteer-regis-3-get');
-Route::post('/registration-3', [VolunteerRegistrationPage::class, 'store_3'])->prefix('volunteer')->name('volunteer-regis-3');
+Route::get('/registration-2/{name}/{radio}/{major}/{batch}', [VolunteerRegistrationPage2::class, 'index'])->prefix('volunteer')->name('volunteer-regis-2-get');
+Route::post('/registration-2/{name}/{radio}/{major}/{batch}', [VolunteerRegistrationPage2::class, 'store'])->prefix('volunteer')->name('volunteer-regis-2');
+Route::get('/registration-3/{name}/{radio}/{major}/{batch}/{domicile}/{email}/{wa}/{line}/{position1}/{position2}', [VolunteerRegistrationPage3::class, 'index'])->prefix('volunteer')->name('volunteer-regis-3-get');
+Route::post('/registration-3/{name}/{radio}/{major}/{batch}/{domicile}/{email}/{wa}/{line}/{position1}/{position2}', [VolunteerRegistrationPage3::class, 'store'])->prefix('volunteer')->name('volunteer-regis-3');
 Route::get('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer')->name('volunteer-end');
 
 Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');

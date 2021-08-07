@@ -7,15 +7,7 @@ use Illuminate\Http\Request;
 
 class VolunteerRegistrationPage2 extends Controller
 {
-    protected String $name, $radio, $major, $batch;
-
     public function index(String $name, String $radio, String $major, String $batch){
-
-        $this->name = $name;
-        $this->radio = $name;
-        $this->name = $name;
-        $this->name = $name;
-
         return view('volunteer-regis-2', [
             'name' => $name,
             'radio' => $radio,
@@ -44,7 +36,7 @@ class VolunteerRegistrationPage2 extends Controller
             'wa' => $request->wa,
             'line' => $request->line,
             'position1' => $request->position1,
-            'position2' => $request->position1,
+            'position2' => $request->position2,
         ]);
     }
 }

@@ -17,4 +17,8 @@ class volregis extends Model
         'phone_number',
         'volunteer_in',
     ];
+
+    public function file(){
+        return $this->hasMany(File::class);
+    }
 }
