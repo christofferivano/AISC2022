@@ -13,16 +13,16 @@
         <img src="images/bulet-volunteer-1.png" alt="" class="h-96"> 
     </div>
     <nav class="fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
-        <div class="mx-auto px-24 py-2">
+        <div class="mx-auto px-5 md:px-24 py-2">
             <div class="flex items-center justify-between h-20">
                 <div>
                     <a href="">
-                        <img src="images/logo.png" alt="" class="w-24">
+                        <img src="images/logo.png" alt="" class="w-16 md:w-24">
                     </a>
                 </div>
                 <div class="text-lg flex space-x-20 text-gray-900">
-                    <a href="" class="hidden text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
-                    <div class="hidden event-btn inline-block relative">
+                    <a href="" class="hidden md:block text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                    <div class="hidden md:block event-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                             <span class="text-footer text-lg font-semibold">Event</span>
                             <img src="images/drop.png" alt="" class="w-3 ml-2">
@@ -33,7 +33,7 @@
                             <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Conference Day</a></li>
                         </ul>
                     </div>
-                    <div class="hidden compe-btn inline-block relative">
+                    <div class="hidden md:block compe-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                             <span class="text-footer text-lg font-semibold">Competition</span>
                             <img src="images/drop.png" alt="" class="w-3 ml-2">
