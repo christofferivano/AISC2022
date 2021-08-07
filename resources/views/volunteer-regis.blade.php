@@ -33,36 +33,36 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 pr-5 z-10">
-                <form action="" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('volunteer-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Full Name</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
+                    <input name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
                     <label for="institution" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution / University</label>
                     <label class="container">Insitut Teknologi Sepuluh Nopember
-                        <input type="radio" checked="checked" name="radio">
+                        <input type="radio" checked="checked" name="radio" value="Institut Teknologi Sepuluh Nopember">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Institut Teknologi Bandung
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Institut Teknologi Bandung">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Universitas Indonesia
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Universitas Indonesia">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Universitas Pertamina
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Universitas Pertamina">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">PEM Akamigas
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="PEM Akamigas">
                         <span class="checkmark"></span>
                     </label>
                     <label for="major" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Major</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input name="major" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     <label for="batch" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Batch</label>
                     <select class="outline-none rounded-full border border-form py-1.5 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
-                    name="position" for="position">
+                    name="batch" for="batch">
                         <option class="py-1 font-sans" disabled selected hidden>Batch</option>
                         <option class="py-1 font-sans">2019</option>
                         <option class="py-1 font-sans">2020</option>

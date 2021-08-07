@@ -17,6 +17,20 @@
         <div class="mx-auto px-5 md:px-24 py-2">
             <div class="flex items-center justify-between h-20">
                 <div>
+<<<<<<< HEAD
+                    <a href="{{ route('dashboard') }}">
+                        <img src="images/logo.png" alt="" class="w-24">
+                    </a>
+                </div>
+                <div class="text-lg flex space-x-20 text-gray-900">
+<<<<<<< HEAD
+                    <a href="{{ route('volunteer') }}" class="text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                    <div class="event-btn inline-block relative">
+=======
+                    <a href="" class="hidden text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                    <div class="hidden event-btn inline-block relative">
+>>>>>>> master
+=======
                     <a href="">
                         <img src="images/logo.png" alt="" class="w-16 md:w-24">
                     </a>
@@ -24,14 +38,15 @@
                 <div class="text-lg flex space-x-20 text-gray-900">
                     <a href="" class="hidden md:block text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
                     <div class="hidden md:block event-btn inline-block relative">
+>>>>>>> master
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                             <span class="text-footer text-lg font-semibold">Event</span>
                             <img src="images/drop.png" alt="" class="w-3 ml-2">
                         </button>
                         <ul class="drop-event text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium hover:text-xl">
-                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Webinar</a></li>
-                            <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Social Night</a></li>
-                            <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Conference Day</a></li>
+                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('webinar') }}">Webinar</a></li>
+                            <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('sosnight') }}">Social Night</a></li>
+                            <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('conference') }}">Conference Day</a></li>
                         </ul>
                     </div>
                     <div class="hidden md:block compe-btn inline-block relative">
@@ -40,9 +55,15 @@
                             <img src="images/drop.png" alt="" class="w-3 ml-2">
                         </button>
                         <ul class="drop-compe text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium">
+<<<<<<< HEAD
+                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('competition') }}">Competition 1</a></li>
+                            <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Competition 2</a></li>
+                            <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Competition 3</a></li>
+=======
                             <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Paper Competition</a></li>
                             <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Poster Competition</a></li>
                             <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">ChemE Jeopardy Competition</a></li>
+>>>>>>> master
                         </ul>
                     </div>
                 </div>

@@ -548,16 +548,15 @@
     </div>
 
     <!-- Register Volunteer -->
-    <div class="pt-20 flex flex-col items-center pt-80 md:pt-20">
-        <h1 class="text-footer text-2xl md:text-5xl font-bold text-center">What Are You Waiting For?</h1>
-        <h1 class="text-footer text-2xl md:text-5xl font-bold text-center md:py-2">Join Us Now!</h1>
-        <div class="pt-5 pb-10 md:py-16">
-            <button class="py-1 rounded-full bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg">
-                <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
-            </button>
-        </div>
-        <div class="hidden md:block absolute z-0 my-0 flex left-52">
-            <img src="images/bultet-regis.png" alt="" class="w-1/2">
+    <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative">
+        <div class="flex flex-col items-center">
+            <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
+            <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
+            <div class="py-4">
+                <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
+                    <a class="text-white text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
+                </button>
+            </div>
         </div>
     </div>
 

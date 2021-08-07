@@ -35,8 +35,13 @@
             <h1 class="text-base md:text-xl font-bold pt-20">
                 <font color="#30264F">Please kindly upload the requirements needed :</font> 
             </h1>
+<<<<<<< HEAD
+            <div class="pb-20 z-10">
+                <form action="" class="flex flex-col pt-12" enctype="multipart/form-data">
+=======
             <div class="w-full md:pr-5 z-10">
                 <form action="" class="flex flex-col pt-10 md:pt-12">
+>>>>>>> master
                     @csrf
                     <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Curriculum Vitae</label>
                     <label for="file-upload-1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
