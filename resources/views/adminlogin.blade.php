@@ -22,11 +22,27 @@
                         </div>
                     </div>
                     <div class="py-4 px-10 w-full">
-                        <form action="">
+                        @if (session('status'))
+                            {{ session('status') }}
+                        @endif
+                        <form action="{{ route('login') }}" method="POST">
+                            @csrf
                             <label for="email" class="pt-2 pb-2 pl-4 text-base md:text-xl font-medium">Email</label><br>
-                            <input name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-full text-sm focus:ring-2 focus:ring-form" placeholder="email@gmail.com"><br>
+                            <input name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-full text-sm focus:ring-2 focus:ring-form
+                            @error('email') border-red-500 @enderror" placeholder="email@gmail.com" value="{{ old('email') }}"><br>
+                            @error('email')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <label for="password" class="pt-2 pb-2 pl-4 text-base md:text-xl font-medium">Password</label><br>
-                            <input name="password" type="password" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-full text-sm focus:ring-2 focus:ring-form" placeholder="password">
+                            <input name="password" type="password" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-full text-sm focus:ring-2 focus:ring-form
+                            @error('password') border-red-500 @enderror" placeholder="password">
+                            @error('password')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                             <div class="pt-10 flex flex-col items-center">
                                 <button type="submit" class="w-96 bg-gradient-to-l from-blue-300 to-purple-400 py-1 rounded-full text-white text-lg font-semibold shadow-lg">
                                     Login

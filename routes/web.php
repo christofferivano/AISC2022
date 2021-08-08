@@ -1,16 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Competition\CompetitionPage;
 use App\Http\Controllers\Volunteer\VolunteerPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage2;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage3;
 use App\Http\Controllers\Volunteer\Admin\VolunteerRegistrationDataController;
+use App\Http\Controllers\Volunteer\Admin\VolunteerRegistrationProof;
 use App\Http\Controllers\Volunteer\VolunteerEndPage;
 use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
 use App\Http\Controllers\SocialNight\SocialNightPage;
+use App\Http\Controllers\ShowFileController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,11 +44,20 @@ Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 
 Route::get('/admin/volunteer/registration', [VolunteerRegistrationDataController::class, 'index'])->name('admin-volunteer');
+Route::get('/admin/volunteer/registration/proof/{volregis}', [VolunteerRegistrationProof::class, 'index'])->name('admin-volunteer-proof');
+Route::get('/admin/volunteer/registration/{volregis}', [VolunteerRegistrationDataController::class, 'delete'])->name('admin-volunteer-delete');
 
-Route::get('/');
+Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
+
+Route::get('/login', [LoginController::class, 'index'])->name('login');
+Route::post('/login', [LoginController::class, 'store']);
 
 Route::get('/', function () {
     return redirect('/dashboard');
+});
+
+Route::get('/admin', function () {
+    return redirect()->route('login');
 });
 
 // Route::get('competition', '');

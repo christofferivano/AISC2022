@@ -160,7 +160,7 @@ class VolunteerRegistrationPage3 extends Controller
                     'volregis_id' => $volregis->id,
                     'name' => $portofolio_model->name,
                     'file_path' => $portofolio_model->file_path,
-                    'type' => 'ig_follow'
+                    'type' => 'portofolio'
                 ]);
             }
 

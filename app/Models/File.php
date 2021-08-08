@@ -14,7 +14,7 @@ class File extends Model
         'type'
     ];
 
-    public function volregis(){
-        return $this->belongsTo(volregis::class);
-    }
+    // public function volregis(){
+    //     return $this->belongsTo(volregis::class);
+    // }
 }

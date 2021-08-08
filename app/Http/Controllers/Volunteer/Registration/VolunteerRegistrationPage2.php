@@ -19,7 +19,7 @@ class VolunteerRegistrationPage2 extends Controller
     public function store(Request $request, String $name, String $radio, String $major, String $batch){
         $this->validate($request, [
             'domicile' => 'required|max:255',
-            'email' => 'required|max:255',
+            'email' => 'required|max:255|email',
             'wa' => 'required',
             'line' => 'required',
             'position1' => 'required',

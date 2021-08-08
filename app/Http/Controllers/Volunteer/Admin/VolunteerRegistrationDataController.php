@@ -9,13 +9,22 @@ use App\Models\volregis;
 
 class VolunteerRegistrationDataController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware(['auth']);
+    }
+
     public function index(){
         $registrator = volregis::all();
-        $file = File::all();
         //dd( $file->where('id', 9)->where('type', 'cv') );
         return view('adminpage',[
             'registrator' => $registrator,
-            'file' => $file
         ]);
+    }
+
+    public function delete(volregis $volregis){
+        $volregis->delete();
+        return back();
     }
 }
