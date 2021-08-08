@@ -35,51 +35,55 @@
             <h1 class="text-base md:text-xl font-bold pt-20">
                 <font color="#30264F">Please kindly upload the requirements needed :</font> 
             </h1>
-<<<<<<< HEAD
-            <div class="pb-20 z-10">
-                <form action="" class="flex flex-col pt-12" enctype="multipart/form-data">
-=======
             <div class="w-full md:pr-5 z-10">
-                <form action="" class="flex flex-col pt-10 md:pt-12">
->>>>>>> master
+                <form action="{{ route('volunteer-regis-3', ['name' => $name, 'radio' => $radio, 'major' => $major, 'batch' => $batch,
+                            'domicile' => $domicile, 'email' => $email, 'wa' => $wa, 'line' => $line, 'position1' => $position1, 'position2' =>$position2]) }}" 
+                            class="flex flex-col pt-10 md:pt-12" method="POST" enctype="multipart/form-data">
                     @csrf
+                    @if (count($errors) > 0)
+            <div class="alert alert-danger">
+                <ul>
+                    @foreach ($errors->all() as $error)
+                      <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+          @endif
                     <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Curriculum Vitae</label>
                     <label for="file-upload-1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input type="file" id="file-upload-1" class="hidden">
+                    <input name="cv" type="file" id="file-upload-1" class="hidden">
                     <!-- <input type="button" value="Select a File" onclick="document.getElementById('selectedFile').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"> -->
                     <label for="porto" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Portofolio (Media Production Only)</label>
                     <label for="file-upload-2" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input type="file" id="file-upload-2" class="hidden">
+                    <input name="portofolio" type="file" id="file-upload-2" class="hidden">
                     <label for="twibbon" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Twibbon Upload</label>
                     <label for="file-upload-3" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input type="file" id="file-upload-3" class="hidden">
+                    <input name="twibbon" type="file" id="file-upload-3" class="hidden">
                     <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Information Sharing via Snapgram</label>
                     <label for="file-upload-4" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input type="file" id="file-upload-4" class="hidden">
+                    <input name="ig_sharing" type="file" id="file-upload-4" class="hidden">
                     <label for="proof" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Instagram @aisc2022 Follow Proof</label>
                     <label for="file-upload-5" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input type="file" id="file-upload-5" class="hidden">
+                    <input name="ig_follow" type="file" id="file-upload-5" class="hidden">
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>
                             <a href="" class="underline text-blue-700 text-lg pl-1">Here</a>
                         </div>
                     </div>
-                    <a href="" class="py-2">
                         <button type="submit" class="w-96 bg-gradient-to-l from-blue-300 to-purple-400 py-1 rounded-full text-white text-lg font-semibold shadow-lg">
                             Submit
                         </button>
-                    </a>
                 </form>
             </div>
             <img src="images/volunteer-regis-3.png" alt="" class="absolute md:hidden right-0 bottom-0 -mb-96 h-80">

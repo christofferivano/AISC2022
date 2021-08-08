@@ -39,6 +39,8 @@ Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 
+Route::get('/');
+
 Route::get('/', function () {
     return redirect('/dashboard');
 });
