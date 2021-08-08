@@ -5,13 +5,13 @@
     <!-- Penjelasan AISC -->
     <div class="pt-36 px-10 md:py-52 md:px-72">
         <div class="rounded-md sticky top-0 z-10 bg-white text-center backdrop-filter backdrop-blur-lg bg-opacity-40 h-40 md:h-110 flex flex-col items-center justify-center">
-            <h1 class="text-footer font-bold text-sm md:text-4xl">
+            <h1 class="text-footer font-bold text-sm md:text-3xl 2xl:text-4xl">
                 AIChE Indonesia Student Conference (AISC) 2022
             </h1>
-            <h2 class="text-footer font-black text-base md:text-4.5xl pt-5 md:pt-10">
+            <h2 class="text-footer font-black text-base md:text-4xl 2xl:text-4.5xl pt-5 md:pt-10">
                 “The Green Revival Era: Optimizing
             </h2>
-            <h2 class="text-footer font-black text-base md:text-4.5xl -mt-1 md:mt-6">
+            <h2 class="text-footer font-black text-base md:text-4xl 2xl:text-4.5xl -mt-1 md:mt-2 2xl:mt-6">
                 Resiliency Through Viable Innovations”
             </h2>
         </div>
@@ -82,7 +82,7 @@
                             in Southeast Asia with big ideas to
                             discover more about green innovations.
                             </span>
-                            <div class="pt-2 md:pt-6">
+                            <div class="pt-2 xl:pt-0 2xl:pt-6">
                                 <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                     <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
@@ -94,11 +94,11 @@
                     <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center md:items-start py-3 px-4" id="card-event">
                             <h2 class="md:underline text-footer text-xl font-semibold pt-4 md:pt-0">nAISC Night</h2>
-                            <span class="text-footer hidden md:block pt-2 pb-4">
+                            <span class="text-footer hidden md:block pt-2 pb-4 md:text-sm 2xl:text-base">
                             A spectacular event dedicated for finalists, AIChE’s representatives 
                             from the various universities in Southeast Asia, and AISC’s own committee.  
                             </span>
-                            <div class="pt-2 md:pt-0">
+                            <div class="pt-2 md:pt-4 2xl:pt-0">
                                 <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                     <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
@@ -110,13 +110,13 @@
                     <div class="card bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
                         <div class="card-event flex flex-col items-center text-center md:text-left md:items-start py-3 px-4" id="card-event">
                             <h2 class="md:underline text-footer text-xl font-semibold pt-1 md:pt-0">Conference Day</h2>
-                            <span class="text-footer hidden md:block pt-2 pb-4">
+                            <span class="text-footer hidden md:block pt-2 pb-4 md:text-sm 2xl:text-base">
                             The only Southeast Asian scale
                             conference organized by AISC,
                             delegates will discuss the latest
                             innovations with experts in their fields.
                             </span>
-                            <div class="pt-2 md:pt-6">
+                            <div class="pt-2 md:pt-4 2xl:pt-6">
                                 <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
                                     <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
