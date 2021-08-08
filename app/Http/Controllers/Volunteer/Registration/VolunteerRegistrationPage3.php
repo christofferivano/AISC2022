@@ -74,10 +74,10 @@ class VolunteerRegistrationPage3 extends Controller
                 $ig_follow_model->name = $ig_follow_filename;
                 $ig_follow_model->file_path = '/storage/'.$ig_follow_filepath;
 
-                $cv_model->save();
-                $twibbon_model->save();
-                $ig_sharing_model->save();
-                $ig_follow_model->save();
+                // $cv_model->save();
+                // $twibbon_model->save();
+                // $ig_sharing_model->save();
+                // $ig_follow_model->save();
             }
             
             if($request->file('portofolio')){
