@@ -8,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>AISC 2022</title>
+    <link rel="shortcut icon" href="/images/logogram.ico" />
 </head>
 <body class="relative h-full">
     <div class="hidden md:block absolute right-0 top-0 pr-16">

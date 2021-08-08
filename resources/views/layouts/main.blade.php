@@ -9,6 +9,7 @@
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>AISC 2022</title>
+    <link rel="shortcut icon" href="/images/logogram.ico" />
 </head>
 <body class="relative">
     <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-96 md:h-full">
