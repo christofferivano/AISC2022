@@ -10,12 +10,16 @@ class volregis extends Model
     use HasFactory;
 
     protected $fillable = [
-        'name',
+        'full_name',
         'institution',
-        'birth_date',
+        'major',
+        'batch',
+        'domicile',
         'email',
         'phone_number',
-        'volunteer_in',
+        'line_id',
+        'position_1',
+        'position_2'
     ];
 
     public function file(){

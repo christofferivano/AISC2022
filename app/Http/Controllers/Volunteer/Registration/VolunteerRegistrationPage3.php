@@ -54,6 +54,20 @@ class VolunteerRegistrationPage3 extends Controller
             $ig_sharing_model = new File;
             $ig_follow_model = new File;
 
+            $volregis = new volregis;
+            $volregis->full_name = $name;
+            $volregis->institution = $radio;
+            $volregis->major = $major;
+            $volregis->batch = $batch;
+            $volregis->domicile = $domicile;
+            $volregis->email = $email;
+            $volregis->phone_number = $wa;
+            $volregis->line_id = $line;
+            $volregis->position_1 = $position1;
+            $volregis->position_2 = $position2;
+
+            $volregis->save();
+
             if($request->file()){
                 $cv_filename = $request->file('cv')->getClientOriginalName();
                 $twibbon_filename = $request->file('twibbon')->getClientOriginalName();
@@ -74,6 +88,11 @@ class VolunteerRegistrationPage3 extends Controller
                 $ig_follow_model->name = $ig_follow_filename;
                 $ig_follow_model->file_path = '/storage/'.$ig_follow_filepath;
 
+                // $cv_model->id=;
+                // $twibbon_model->id = $volregis->id;
+                // $ig_sharing_model->id=;
+                // $ig_follow_model->id=;
+
                 // $cv_model->save();
                 // $twibbon_model->save();
                 // $ig_sharing_model->save();
@@ -88,5 +107,7 @@ class VolunteerRegistrationPage3 extends Controller
                 $portofolio_model->name = $portofolio_filename;
                 $portofolio_model->file_path = '/storage/'.$portofolio_filepath;
             }
+
+            dd($volregis->id);
     }
 }
