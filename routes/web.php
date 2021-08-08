@@ -6,6 +6,7 @@ use App\Http\Controllers\Volunteer\VolunteerPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage2;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage3;
+use App\Http\Controllers\Volunteer\Admin\VolunteerRegistrationDataController;
 use App\Http\Controllers\Volunteer\VolunteerEndPage;
 use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
@@ -38,6 +39,8 @@ Route::get('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer')->
 Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
+
+Route::get('/admin/volunteer/registration', [VolunteerRegistrationDataController::class, 'index'])->name('admin-volunteer');
 
 Route::get('/');
 

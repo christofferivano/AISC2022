@@ -67,7 +67,7 @@
                             </span>
                             <div class="pt-2 md:pt-6">
                                 <button class="py-1 md:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                                    <a href="" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
+                                    <a href="{{ route('admin-volunteer') }}" class="px-8 md:px-16 text-xs md:text-sm text-white">CHECK</a>
                                 </button>
                             </div>
                         </div>

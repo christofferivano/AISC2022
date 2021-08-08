@@ -69,10 +69,30 @@ class VolunteerRegistrationPage3 extends Controller
             $volregis->save();
 
             if($request->file()){
-                $cv_filename = $request->file('cv')->getClientOriginalName();
-                $twibbon_filename = $request->file('twibbon')->getClientOriginalName();
-                $ig_sharing_filename = $request->file('ig_sharing')->getClientOriginalName();
-                $ig_follow_filename = $request->file('ig_follow')->getClientOriginalName();
+                $cv_filename = $name;
+                $cv_filename .= "-";
+                $cv_filename .= $volregis->id;
+                $cv_filename .= "-";
+
+                $twibbon_filename = $name;
+                $twibbon_filename .= "-";
+                $twibbon_filename .= $volregis->id;
+                $twibbon_filename .= "-";
+
+                $ig_sharing_filename = $name;
+                $ig_sharing_filename .= "-";
+                $ig_sharing_filename .= $volregis->id;
+                $ig_sharing_filename .= "-";
+
+                $ig_follow_filename = $name;
+                $ig_follow_filename .= "-";
+                $ig_follow_filename .= $volregis->id;
+                $ig_follow_filename .= "-";
+
+                $cv_filename .= $request->file('cv')->getClientOriginalName();
+                $twibbon_filename .= $request->file('twibbon')->getClientOriginalName();
+                $ig_sharing_filename .= $request->file('ig_sharing')->getClientOriginalName();
+                $ig_follow_filename .= $request->file('ig_follow')->getClientOriginalName();
 
                 $cv_filepath = $request->file('cv')->storeAs('volunteer_registration/cv', $cv_filename, 'public');
                 $twibbon_filepath = $request->file('twibbon')->storeAs('volunteer_registration/twibbon', $twibbon_filename, 'public');
@@ -88,26 +108,62 @@ class VolunteerRegistrationPage3 extends Controller
                 $ig_follow_model->name = $ig_follow_filename;
                 $ig_follow_model->file_path = '/storage/'.$ig_follow_filepath;
 
-                // $cv_model->id=;
+                // $cv_model->id = $volregis->id;
                 // $twibbon_model->id = $volregis->id;
-                // $ig_sharing_model->id=;
-                // $ig_follow_model->id=;
+                // $ig_sharing_model->id = $volregis->id;
+                // $ig_follow_model->id = $volregis->id;
 
-                // $cv_model->save();
-                // $twibbon_model->save();
-                // $ig_sharing_model->save();
-                // $ig_follow_model->save();
+                $volregis->file()->create([
+                    'volregis_id' => $volregis->id,
+                    'name' => $cv_model->name,
+                    'file_path' => $cv_model->file_path,
+                    'type' => 'cv',
+                ]);
+
+                $volregis->file()->create([
+                    'volregis_id' => $volregis->id,
+                    'name' => $twibbon_model->name,
+                    'file_path' => $twibbon_model->file_path,
+                    'type' => 'twibbon'
+                ]);
+
+                $volregis->file()->create([
+                    'volregis_id' => $volregis->id,
+                    'name' => $ig_sharing_model->name,
+                    'file_path' => $ig_sharing_model->file_path,
+                    'type' => 'ig_sharing'
+                ]);
+
+                $volregis->file()->create([
+                    'volregis_id' => $volregis->id,
+                    'name' => $ig_follow_model->name,
+                    'file_path' => $ig_follow_model->file_path,
+                    'type' => 'ig_follow'
+                ]);
             }
             
             if($request->file('portofolio')){
+
+                $portofolio_filename = $name;
+                $portofolio_filename .= "-";
+                $portofolio_filename .= $volregis->id;
+                $portofolio_filename .= "-";
+
                 $portofolio_filename = $request->file('portofolio')->getClientOriginalName();
 
                 $portofolio_filepath = $request->file('cv')->storeAs('volunteer_registration/portofolio', $portofolio_filename, 'public');
 
                 $portofolio_model->name = $portofolio_filename;
                 $portofolio_model->file_path = '/storage/'.$portofolio_filepath;
+
+                $volregis->file()->create([
+                    'volregis_id' => $volregis->id,
+                    'name' => $portofolio_model->name,
+                    'file_path' => $portofolio_model->file_path,
+                    'type' => 'ig_follow'
+                ]);
             }
 
-            dd($volregis->id);
+            return redirect()->route('volunteer-end');
     }
 }
