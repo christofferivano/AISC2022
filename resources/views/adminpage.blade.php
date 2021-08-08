@@ -11,6 +11,21 @@
     <title>Admin Page</title>
 </head>
 <body class="relative">
+    <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
+        <div class="mx-auto px-10 md:px-24 py-2">
+            <div class="flex items-center justify-between h-20">
+                <!-- <span class="text-2xl text-gray-900 font-semibold">
+                    LOGO AISC
+                </span> -->
+                <div>
+                    <img src="images/logo.png" alt="" class="w-20 md:w-24">
+                </div>
+                <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
+                    Log Out
+                </button>
+            </div>
+        </div>
+    </nav>
     <div class="bg-gradient-to-l from-blue-300 to-purple-400 h-full w-full">
     <div class="flex flex-col py-10">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -111,8 +126,6 @@
                 </tbody>
                 </table>
             </div>
-            </div>
-        </div>
         </div>
     </div>
 </body>

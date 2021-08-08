@@ -2,16 +2,16 @@
 
 @section('content')
     <div class="md:hidden absolute left-0 top-0">
-        <img src="images/bulet-respon-volun-1.png" alt="" class="h-96"> 
+        <img src="/images/bulet-respon-volun-1.png" alt="" class="h-96"> 
     </div>
     <div class="hidden md:block absolute">
-        <img src="images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
+        <img src="/images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
     </div>
     <div class="absolute bottom-0 right-0">
-        <img src="images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
+        <img src="/images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
     </div>
     <div class="hidden md:block absolute mt-60 pt-100 pl-6">
-        <img src="images/bulet-regis-volun-3.png" alt="" class="h-40 md:h-96">
+        <img src="/images/bulet-regis-volun-3.png" alt="" class="h-40 md:h-96">
     </div>
     <div class="pt-28 grid md:grid-cols-5 pb-96 md:pb-0 w-full">
         <div class="md:col-span-2 md:col-start-1 pl-5 md:pl-24 flex flex-col items-start w-full">
@@ -35,6 +35,15 @@
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
                 <form action="{{ route('volunteer-regis-2', ['name' => $name, 'radio' => $radio, 'major' => $major, 'batch' => $batch]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
+                    @if (count($errors) > 0)
+                        <div class="alert alert-danger pb-2 text-red-500 font-semibold">
+                            <ul>
+                                @foreach ($errors->all() as $error)
+                                <li>*{{ $error }}</li>
+                                @endforeach
+                            </ul>
+                        </div>
+                    @endif
                     <label for="domicile" class="pb-2 pl-4 text-base md:text-xl font-medium">Domicile</label>
                     <input name="domicile" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <label for="email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Email</label>
@@ -89,7 +98,7 @@
                     </a>
                 </form>
             </div>
-            <img src="images/volunteer-regis-mob-2.png" alt="" class="md:hidden absolute left-0 bottom-0 h-96 -mb-96">
+            <img src="/images/volunteer-regis-mob-2.png" alt="" class="md:hidden absolute left-0 bottom-0 h-96 -mb-96">
         </div>
         <div class="hidden col-span-3 col-start-3 md:flex flex-col items-end">
             <div class="flex flex-row pt-6 pr-20">
@@ -102,7 +111,7 @@
                 </div>
             </div>
             <!-- <div style="background-image: url('images/bg-register-volunteer.png')" class="bg-cover h-landing bg-local relative h-full"></div> -->
-            <img src="images/volunteer-regis-2.png" alt="" class="w-5/7">
+            <img src="/images/volunteer-regis-2.png" alt="" class="w-5/7">
         </div>
     </div>
 
@@ -114,15 +123,15 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/instagram.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/instagram.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@aisc2022</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/line-app.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/line-app.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@961ckski</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/linkedin.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/linkedin.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>

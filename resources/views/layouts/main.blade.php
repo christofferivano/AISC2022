@@ -8,7 +8,8 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
-    <title>Document</title>
+    <title>AISC 2022</title>
+    <link rel="shortcut icon" href="/images/logogram.ico" />
 </head>
 <body class="relative">
     <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-96 md:h-full">
@@ -65,7 +66,7 @@
         <div class="md:hidden w-full fixed top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div x-data="{ open: false }" class="md:hidden flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
                 <div class="h-20 flex flex-row items-center justify-between">
-                    <a href="">
+                    <a href="{{ route('dashboard') }}">
                         <img src="images/logo.png" alt="" class="w-16 md:w-24">
                     </a>
                     <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
@@ -76,7 +77,7 @@
                     </button>
                 </div>
                 <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Volunteer</a>
+                    <a class="px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="{{ route('volunteer') }}">Volunteer</a>
                     <div @click.away="open = false" class="relative" x-data="{ open: false }">
                         <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:focus:bg-gray-600 dark-mode:hover:bg-gray-600 md:w-auto md:inline md:mt-0 md:ml-4 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                         <span>Event</span>
@@ -111,7 +112,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script>
         //Setup End Date
-        let launchDate = new Date("Aug 9, 2021 12:00:00").getTime();
+        let launchDate = new Date("Aug 20, 2021 23:59:59").getTime();
 
         //Setup Timer Tick
         let timer = setInterval(tick,1000);
@@ -135,7 +136,7 @@
                     hours = "0" + hours;
                 }
                 let mins = Math.floor((t % (1000*60*60)) / (1000 * 60));
-                if(hours<10)
+                if(mins<10)
                 {
                     mins = "0" + mins;
                 }
