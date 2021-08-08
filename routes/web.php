@@ -20,7 +20,7 @@ use App\Http\Controllers\SocialNight\SocialNightPage;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'adminlogin')->name('dashboard');
+Route::view('/dashboard', 'welcome')->name('dashboard');
 
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
 

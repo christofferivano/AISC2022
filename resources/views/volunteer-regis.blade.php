@@ -2,16 +2,16 @@
 
 @section('content')
     <div class="md:hidden absolute left-0 top-0">
-        <img src="images/bulet-respon-volun-1.png" alt="" class="h-96"> 
+        <img src="../images/bulet-respon-volun-1.png" alt="" class="h-96"> 
     </div>
     <div class="hidden md:block absolute">
-        <img src="images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
+        <img src="../images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
     </div>
     <div class="absolute bottom-0 right-0">
-        <img src="images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
+        <img src="../images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
     </div>
     <div class="absolute left-0 mt-24 pt-100">
-        <img src="images/bulet-mob-regis-volun-1.png" alt="" class="h-80 md:h-96">
+        <img src="../images/bulet-mob-regis-volun-1.png" alt="" class="h-80 md:h-96">
     </div>
     <div class="pt-28 grid md:grid-cols-5 pb-96 md:pb-0">
         <div class="md:col-span-2 md:col-start-1 pl-5 md:pl-24 flex flex-col items-start w-full">
@@ -80,7 +80,7 @@
                     </a>
                 </form>
             </div>
-            <img src="images/volunteer-regis-1.png" alt="" class="md:hidden absolute right-0 bottom-0 h-96 -mb-80">
+            <img src="../images/volunteer-regis-1.png" alt="" class="md:hidden absolute right-0 bottom-0 h-96 -mb-80">
         </div>
         <div class="hidden col-span-3 col-start-3 md:flex flex-col items-end">
             <div class="flex flex-row pt-6 pr-20">
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <!-- <div style="background-image: url('images/bg-register-volunteer.png')" class="bg-cover h-landing bg-local relative h-full"></div> -->
-            <img src="images/volunteer-regis-1.png" alt="" class="w-4/7">
+            <img src="../images/volunteer-regis-1.png" alt="" class="w-4/7">
         </div>
     </div>
 
@@ -105,15 +105,15 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/instagram.png" alt="" class="w-6 md:w-12">
+                    <img src="../images/instagram.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@aisc2022</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/line-app.png" alt="" class="w-6 md:w-12">
+                    <img src="../images/line-app.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@961ckski</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/linkedin.png" alt="" class="w-6 md:w-12">
+                    <img src="../images/linkedin.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>

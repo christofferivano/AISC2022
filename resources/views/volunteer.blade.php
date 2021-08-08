@@ -80,8 +80,8 @@
         </div>
     </div>
 
-    <div class="md:hidden absolute z-0 right-0 bottom-0 -mb-96">
-        <img src="images/bulet-respon-volun-2.png" alt="" class="h-96"> 
+    <div class="md:hidden absolute z-0 right-0 bottom-0 mb-20">
+        <img src="images/bulet-respon-volun-2.png" alt="" class="h-72 md:h-96"> 
     </div>
 
     <div id="event" class="hidden z-10 grid md:grid-cols-3 py-5 md:py-10 px-5 md:px-10">
@@ -548,18 +548,21 @@
     </div>
 
     <!-- Register Volunteer -->
-    <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative">
-        <div class="flex flex-col items-center">
-            <h1 class="text-footer text-5xl font-bold">What Are You Waiting For?</h1>
-            <h1 class="text-footer text-5xl font-bold py-2">Join Us Now!</h1>
-            <div class="py-4">
-                <button class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 shadow-lg">
-                    <a class="text-white text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
+    <!-- <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative"> -->
+        <div class="flex flex-col items-center pt-72 pb-1 md:py-32">
+            <h1 class="text-footer text-xl md:text-5xl font-bold">What Are You Waiting For?</h1>
+            <h1 class="text-footer text-xl md:text-5xl font-bold py-2">Join Us Now!</h1>
+            <div class="py-2 md:py-4">
+                <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10">
+                    <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
                 </button>
             </div>
+            <div class="absolute left-0 md:left-0 z-0">
+                <img src="images/bultet-regis.png" alt="" class="w-44 pl-0 md:ml-40 md:w-96">
+            </div>
         </div>
-    </div>
-
+    <!-- </div> -->
+    
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">

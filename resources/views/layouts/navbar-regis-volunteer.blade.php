@@ -101,7 +101,7 @@
             <div class="flex items-center justify-between h-20">
                 <div>
                     <a href="">
-                        <img src="images/logo.png" alt="" class="w-16 md:w-24">
+                        <img src="../images/logo.png" alt="" class="w-20 md:w-24">
                     </a>
                 </div>
                 <div id="menu" class="text-lg flex flex-col md:flex-row space-x-20 text-gray-900">
@@ -109,7 +109,7 @@
                     <div class="hidden md:block event-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                             <span class="text-footer text-lg font-semibold">Event</span>
-                            <img src="images/drop.png" alt="" class="w-3 ml-2">
+                            <img src="../images/drop.png" alt="" class="w-3 ml-2">
                         </button>
                         <ul class="drop-event text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium hover:text-xl">
                             <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Webinar</a></li>
@@ -120,7 +120,7 @@
                     <div class="hidden md:block compe-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
                             <span class="text-footer text-lg font-semibold">Competition</span>
-                            <img src="images/drop.png" alt="" class="w-3 ml-2">
+                            <img src="../images/drop.png" alt="" class="w-3 ml-2">
                         </button>
                         <ul class="drop-compe text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium">
                             <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Paper Competition</a></li>
@@ -138,7 +138,7 @@
         <div x-data="{ open: false }" class="md:hidden flex flex-col max-w-screen-xl px-4 mx-auto md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
             <div class="h-20 flex flex-row items-center justify-between">
                 <a href="">
-                    <img src="images/logo.png" alt="" class="w-16 md:w-24">
+                    <img src="../images/logo.png" alt="" class="w-16 md:w-24">
                 </a>
                 <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                     <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
