@@ -11,4 +11,10 @@ class LogoutController extends Controller
     {
         $this->middleware(['auth']);
     }
+
+    public function store(){
+        auth()->logout();
+
+        return redirect()->route('dashboard');
+    }
 }

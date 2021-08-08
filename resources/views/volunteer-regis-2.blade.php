@@ -35,23 +35,34 @@
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
                 <form action="{{ route('volunteer-regis-2', ['name' => $name, 'radio' => $radio, 'major' => $major, 'batch' => $batch]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger pb-2 text-red-500 font-semibold">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                <li>*{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
                     <label for="domicile" class="pb-2 pl-4 text-base md:text-xl font-medium">Domicile</label>
                     <input name="domicile" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('domicile')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Email</label>
                     <input name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="youremail@email.com">
+                    @error('email')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="wa" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Whatsapp Number</label>
                     <input name="wa" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="08xxxxxxxx">
+                    @error('wa')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="line" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Line ID</label>
                     <input name="line" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('line')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="position" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Preferable Position</label>
                     <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
                     name="position1" for="position1">
@@ -68,6 +79,11 @@
                         <option class="py-1 font-sans">Outreach</option>
                         <option class="py-1 font-sans">Media Production</option>
                     </select>
+                    @error('position1')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <div class="pt-6">
                         <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
                         name="position2" for="position2">
@@ -85,6 +101,11 @@
                             <option class="py-1 font-sans">Media Production</option>
                         </select>
                     </div>
+                    @error('position2')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>

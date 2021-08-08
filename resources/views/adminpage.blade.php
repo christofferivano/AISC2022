@@ -20,9 +20,13 @@
                 <div>
                     <img src="images/logo.png" alt="" class="w-20 md:w-24">
                 </div>
-                <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
-                    Log Out
-                </button>
+                <form action="{{ route('logout') }}" method="POST" class="inline">
+                    @csrf
+                    <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
+                        Log Out
+                    </button>
+                </form>
+                
             </div>
         </div>
     </nav>

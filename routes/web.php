@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Competition\CompetitionPage;
 use App\Http\Controllers\Volunteer\VolunteerPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
@@ -51,6 +52,8 @@ Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('sho
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
+
+Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/', function () {
     return redirect('/dashboard');
