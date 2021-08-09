@@ -20,10 +20,10 @@
     <!-- Reminder -->
     <div class="relative md:pb-20 pt-28 md:pt-20 md:py-16">
         <div class="flex flex-col items-center">
-            <h1 class="text-footer text-center text-xl md:text-6xl font-bold tracking-wide">
+            <h1 class="text-footer text-center text-xl md:text-6xl font-bold tracking-wide" data-aos="fade-left">
                 Open Recruitment Volunteer AISC 2022!
             </h1>
-            <div class="countdown md:pt-8 text-footer font-semibold md:text-4xl">
+            <div class="countdown md:pt-8 text-footer font-semibold md:text-4xl" data-aos="fade-right" data-aos-duration="2000">
                 00 : 00 : 00: 00
             </div>
         </div>
@@ -37,7 +37,7 @@
         <div class="absolute right-0 bottom-0 z-0 md:-mb-32">
             <img src="images/landingpage.png" alt="" class="w-40 md:w-96">
         </div>
-        <div class="container my-20 mx-auto px-12 md:px-52 z-10">
+        <div class="container my-20 mx-auto px-12 md:px-52 z-10" data-aos="fade-down">
             <div class="flex flex-wrap -mx-1">
                 <div class="my-4 px-2 w-40 xl:w-1/3">
                     <div class="card flex flex-col items-center md:items-start py-3 px-4 bg-gradient-to-bl transition duration-500 ease-in-out hover:from-blue-300 hover:to-pink-500 transform hover:-translate-y-2 hover:scale-105 overflow-hidden shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-52">
@@ -132,14 +132,14 @@
     <div class ="flex flex-col px-2 md:px-5 pb-40 md:pb-80 relative justify-center">
         <img src="images/bulet6.png" alt="", class="absolute w-96 md:w-1/2 right-0 bottom-0 -mb-52">
         <img src="images/bagianveye.png" alt="", class="absolute w-1/4 left-0 mb-52">
-        <div class="border rounded-lg shadow-2xl py-5">
+        <div class="border rounded-lg shadow-2xl py-5" data-aos="fade-right">
             <!-- Timeline -->
             <div class="pt-5">
-                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5">
+                <span class="h-70 flex justify-center items-center font-bold text-3xl py-5" data-aos="fade-up-right">
                     <font color ="#30264F">Timeline</font>
                 </span>
             </div>
-            <div class="flex flex-row items-end">
+            <div class="flex flex-row items-end" data-aos="fade-right" data-aos-duration="3000">
                 <!-- Slider main container -->
                 <div class="swiper-container swiper2 my-5 md:my-10 pl-20">
                     <!-- Additional required wrapper -->
@@ -243,8 +243,8 @@
     </div>
 
     <!-- Meet the Team -->
-    <div class="flex flex-col items-center py-4 md:py-14 bg-footer relative border-b-2 border-white">
-        <h1 class="text-white font-bold text-2xl md:text-5xl tracking-wide">
+    <div class="flex flex-col items-center py-4 md:py-14 bg-footer relative border-b-2 border-white" data-aos="fade-up">
+        <h1 class="text-white font-bold text-2xl md:text-5xl tracking-wide" data-aos="zoom-in">
             Meet The Team!
         </h1>
             <div x-data="{swiper: null}"
@@ -284,7 +284,7 @@
                 <div class="swiper-wrapper flex flex-row items-center">
                     <!-- Slides -->
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-1')" id="member-1" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -296,7 +296,7 @@
                     </div>
                         
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-2')" id="member-2" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -308,7 +308,7 @@
                     </div>
                 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-3')" id="member-3" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -320,7 +320,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-4')" id="member-4" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -332,7 +332,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-5')" id="member-5" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -344,7 +344,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-6')" id="member-6" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-base font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -356,7 +356,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-7')" id="member-7" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -368,7 +368,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-8')" id="member-8" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -380,7 +380,7 @@
                     </div>
 
                     <div class="swiper-slide p-2 md:pt-2">
-                        <div class="flex flex-col overflow-hidden">
+                        <div class="flex flex-col overflow-hidden" data-aos="zoom-out" data-aos-duration="3000">
                             <div class="flex-shrink-0">
                                 <div class="px-5">
                                     <button onclick="divVisibility('department-9')" id="member-9" class="member transition duration-200 px-2 md:px-8 py-0.5 md:py-1 rounded-full text-xs md:text-xl font-semibold text-gray-600 focus:text-white hover:bg-yellow-400 focus:bg-yellow-600 focus:shadow-2xl">
@@ -403,7 +403,7 @@
         </div>
         
         <div id="department-1" class="flex items-center py-5 md:py-10">
-            <div class="flex flex-col items-center px-1 md:px-6">
+            <div class="flex flex-col items-center px-1 md:px-6" data-aos="flip-up" data-aos-duration="2000">
                 <div class="relative">
                     <img src="images/border-team.png" alt="" class="w-24 md:w-64"> 
                 </div>

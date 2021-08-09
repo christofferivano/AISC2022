@@ -8,6 +8,7 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>AISC 2022</title>
     <link rel="shortcut icon" href="/images/logogram.ico" />
 </head>
@@ -200,6 +201,12 @@
                 }
             });
         });
+        </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1000
+            });
         </script>
 </body>
 </html>

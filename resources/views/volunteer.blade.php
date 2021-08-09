@@ -8,7 +8,7 @@
     </div>
     <div class="pt-20 md:pt-44 pb-20">
         <div class="px-2 md:px-12 relative md:flex">
-            <div class="z-10 md:pl-28 pt-20 flex flex-col items-center md:items-start">
+            <div class="z-10 md:pl-28 pt-20 flex flex-col items-center md:items-start" data-aos="fade-right" data-aos-duration="1900">
                 <h2 class="text-footer text-3xl md:text-6xl font-bold md:tracking-wide">
                     What is Volunteer?
                 </h2>
@@ -21,7 +21,7 @@
                     AISC purposes and plan.
                 </p>
             </div>
-            <div class="absolute flex flex-col items-end top-0 right-0">
+            <div class="absolute flex flex-col items-end top-0 right-0" data-aos="fade-left" data-aos-duration="2400">
                 <img src="images/volunteer-1.png" alt="" class="h-140 hidden md:flex">
             </div>
         </div>
@@ -29,10 +29,10 @@
 
     <!-- Positions -->
     <div class="md:pt-52 pb-10">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="fade-right" data-aos-duration="1200" >
             <h1 class="text-center text-footer text-3xl md:text-5xl font-bold">Positions Available</h1>
         </div>
-        <div class="flex flex-row justify-between px-5 md:px-32 pt-10">
+        <div class="flex flex-row justify-between px-5 md:px-32 pt-10" data-aos="fade-up" data-aos-duration="1900">
             <div id="card-event-1" class="relative flex flex-col items-center">
                 <button id="card-event" class="rounded-xl bg-cardEvent w-14 h-14 md:w-52 md:h-52 shadow-lg">
                     <div class="flex flex-col items-center">
@@ -425,11 +425,11 @@
     <!-- Timeline -->
     <div class="rounded-lg shadow-2xl absolute md:relative z-10">
         <div class="pt-2 md:pt-10">
-            <span class="h-16 md:h-70 flex justify-center items-center font-bold text-xl md:text-4xl drop-shadow-lg py-2 md:py-5">
-                <font color ="#30264F">TIMELINE</font>
+            <span class="h-16 md:h-70 flex justify-center items-center font-bold text-xl md:text-4xl drop-shadow-lg py-2 md:py-5" data-aos="fade-right">
+                <font color ="#30264F">Timeline</font>
             </span>
         </div>
-        <div class="flex flex-row items-end pb-5 md:pb-20">
+        <div class="flex flex-row items-end pb-5 md:pb-20" data-aos="fade-right" data-aos-duration="3000">
             <!-- Slider main container -->
             <div class="swiper-container swiper2 my-2 md:my-10 pl-5 md:pl-20 h-20">
                 <!-- Additional required wrapper -->
@@ -478,10 +478,10 @@
     <!-- Register Volunteer -->
     <!-- <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative"> -->
         <div class="flex flex-col items-center pt-72 pb-1 md:py-32">
-            <h1 class="text-footer text-xl md:text-5xl font-bold">What Are You Waiting For?</h1>
-            <h1 class="text-footer text-xl md:text-5xl font-bold py-2">Join Us Now!</h1>
+            <h1 class="text-footer text-xl md:text-5xl font-bold" data-aos="zoom-in" data-aos-duration="1000" >What Are You Waiting For?</h1>
+            <h1 class="text-footer text-xl md:text-5xl font-bold py-2" data-aos="zoom-in" data-aos-duration="1500" >Join Us Now!</h1>
             <div class="py-2 md:py-4">
-                <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10">
+                <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10" data-aos="zoom-in" data-aos-duration="2000">
                     <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
                 </button>
             </div>
