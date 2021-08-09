@@ -40,26 +40,27 @@
                             'domicile' => $domicile, 'email' => $email, 'wa' => $wa, 'line' => $line, 'position1' => $position1, 'position2' =>$position2]) }}" 
                             class="flex flex-col pt-10 md:pt-12" method="POST" enctype="multipart/form-data">
                     @csrf
-                    @if (count($errors) > 0)
-                        <div class="alert alert-danger pb-2 text-red-500 font-semibold">
-                            <ul>
-                                @foreach ($errors->all() as $error)
-                                <li>*{{ $error }}</li>
-                                @endforeach
-                            </ul>
-                        </div>
-                    @endif
-                    <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Curriculum Vitae</label>
+                    <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Link Twibbon</label>
                     {{-- <label for="twibbon_link" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label> --}}
                     <input name="twibbon_link" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('twibbon_link')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <!-- <input type="button" value="Select a File" onclick="document.getElementById('selectedFile').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"> -->
-                    <label for="portofolio" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Portofolio (Media Production Only)</label>
+                    <label for="portofolio" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Link Proof</label>
                     {{-- <label for="file-upload-2" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label> --}}
                     <input name="proof_link" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('proof_link')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     {{-- <label for="twibbon" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Twibbon Upload</label> --}}
                     {{-- <label for="file-upload-3" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
