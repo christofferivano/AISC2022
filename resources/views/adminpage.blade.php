@@ -69,7 +69,10 @@
                             Position 2
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                            Proof
+                            Link Twibbon
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                            Link Bukti
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                             Edit
@@ -117,10 +120,17 @@
                                 {{ $r->position_2 }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="{{ route('admin-volunteer-proof', $r) }}">View</a>
+                                <a href="//{{ $r->twibbon_link }}" target="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-200 text-blue-800">
+                                    Check
+                                </a>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="{{ route('admin-volunteer-delete', $r) }}">Delete</a>
+                                <a href="//{{ $r->proof_link }}" target="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-200 text-yellow-800">
+                                    Check
+                                </a>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                <a href="{{ route('admin-volunteer-delete', $r) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Delete</a>
                             </td>
                             </tr>
                         @endforeach

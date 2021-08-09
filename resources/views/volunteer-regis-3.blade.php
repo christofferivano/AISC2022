@@ -50,22 +50,22 @@
                         </div>
                     @endif
                     <label for="cv" class="pb-2 pl-4 text-base md:text-xl font-medium">Curriculum Vitae</label>
-                    <label for="file-upload-1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    {{-- <label for="twibbon_link" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
-                    </label>
-                    <input name="cv" type="file" id="file-upload-1" class="hidden">
+                    </label> --}}
+                    <input name="twibbon_link" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <!-- <input type="button" value="Select a File" onclick="document.getElementById('selectedFile').click()" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"> -->
-                    <label for="porto" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Portofolio (Media Production Only)</label>
-                    <label for="file-upload-2" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <label for="portofolio" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Portofolio (Media Production Only)</label>
+                    {{-- <label for="file-upload-2" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
-                    </label>
-                    <input name="portofolio" type="file" id="file-upload-2" class="hidden">
-                    <label for="twibbon" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Twibbon Upload</label>
-                    <label for="file-upload-3" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    </label> --}}
+                    <input name="proof_link" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    {{-- <label for="twibbon" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Twibbon Upload</label> --}}
+                    {{-- <label for="file-upload-3" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
-                    </label>
-                    <input name="twibbon" type="file" id="file-upload-3" class="hidden">
-                    <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Information Sharing via Snapgram</label>
+                    </label> --}}
+                    {{-- <input name="twibbon" type="string" id="file-upload-3" class="hidden"> --}}
+                    {{-- <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Information Sharing via Snapgram</label>
                     <label for="file-upload-4" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
@@ -74,7 +74,7 @@
                     <label for="file-upload-5" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                         Upload File
                     </label>
-                    <input name="ig_follow" type="file" id="file-upload-5" class="hidden">
+                    <input name="ig_follow" type="file" id="file-upload-5" class="hidden"> --}}
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-lg font-medium">You can see the requirements.</p>

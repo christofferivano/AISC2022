@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddTypeToFilesTable extends Migration
+class AddTwibbonLinkToVolregisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddTypeToFilesTable extends Migration
      */
     public function up()
     {
-        Schema::table('files', function (Blueprint $table) {
-            $table -> string('type');
+        Schema::table('volregis', function (Blueprint $table) {
+            $table->string('twibbon_link');
         });
     }
 
@@ -25,8 +25,8 @@ class AddTypeToFilesTable extends Migration
      */
     public function down()
     {
-        Schema::table('files', function (Blueprint $table) {
-            $table->dropColumn('type');
+        Schema::table('volregis', function (Blueprint $table) {
+            $table->dropColumn('twibbon_link');
         });
     }
 }

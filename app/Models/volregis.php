@@ -19,7 +19,9 @@ class volregis extends Model
         'phone_number',
         'line_id',
         'position_1',
-        'position_2'
+        'position_2',
+        'twibbon_link',
+        'proof_link'
     ];
 
     public function file(){
