@@ -10,6 +10,7 @@ use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage2;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage3;
 use App\Http\Controllers\Volunteer\Admin\VolunteerRegistrationDataController;
 use App\Http\Controllers\Volunteer\Admin\VolunteerRegistrationProof;
+use App\Http\Controllers\Volunteer\Admin\VolunteerExportController;
 use App\Http\Controllers\Volunteer\VolunteerEndPage;
 use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
@@ -52,6 +53,8 @@ Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('sho
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
+
+Route::get('/export/volunteer', [VolunteerExportController::class, 'exportExcel'])->name('export-volunteer');
 
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
