@@ -56,6 +56,10 @@ Route::post('/login', [LoginController::class, 'store']);
 
 Route::get('/export/volunteer', [VolunteerExportController::class, 'exportExcel'])->name('export-volunteer');
 
+Route::get('/home', function () {
+    return redirect('/dashboard');
+});
+
 Route::post('/logout', [LogoutController::class, 'store'])->name('logout');
 
 Route::get('/', function () {
