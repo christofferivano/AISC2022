@@ -22,7 +22,8 @@ class VolunteerExportController extends Controller
     }
 
     public function exportExcel(){
-        return Excel::download(new Volunteer, 'tex.xlsx');
+        $date = Carbon::now()->toDateTimeString();
+        return Excel::download(new Volunteer, $date.'volunteer.xlsx');
     }
 
     public function exportCSV(){
