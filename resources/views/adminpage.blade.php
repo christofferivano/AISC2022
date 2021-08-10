@@ -2,13 +2,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ ('/public/css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" defer></script>
-    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
-    <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <title>Admin Page</title>
+    <link rel="shortcut icon" href="images/Logogram.ico" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function () {
+        $("#filter1").change(function () {
+            switch($(this).val()) {
+                case 'option1':
+                    $("#filter2").html("<option value=''>Institut Teknologi Sepuluh Nopember</option><option value=''>Institut Teknologi Bandung</option><option value=''>Universitas Indonesia</option><option value=''>Universitas Pertamina</option><option value=''>PEM Akamigas</option>");
+                    break;
+                case 'option2':
+                    $("#filter2").html("<option value=''>2019</option><option value=''>2020</option>");
+                    break;
+                case 'option3':
+                    $("#filter2").html("<option>Pre-Event</option><option>Conference Day</option><option>nAISC Night</option><option>Logistic</option><option>Sponsorship</option><option>Paper Competition</option><option>Poster Competition</option><option>ChemE Jeopardy Competition</option><option>Social Media Specialist</option><option>Outreach</option><option>Media Production</option>");
+                    break;
+                case 'option4':
+                    $("#filter2").html("<option>Pre-Event</option><option>Conference Day</option><option>nAISC Night</option><option>Logistic</option><option>Sponsorship</option><option>Paper Competition</option><option>Poster Competition</option><option>ChemE Jeopardy Competition</option><option>Social Media Specialist</option><option>Outreach</option><option>Media Production</option>");
+                    break;
+                default:
+                    $("#filter2").html("<option value=''>Institut Teknologi Sepuluh Nopember</option><option value=''>Institut Teknologi Bandung</option><option value=''>Universitas Indonesia</option><option value=''>Universitas Pertamina</option><option value=''>PEM Akamigas</option>");
+            }
+        });
+    });
+
+    </script>
 </head>
 <body class="relative">
     <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
@@ -18,7 +39,22 @@
                     LOGO AISC
                 </span> -->
                 <div>
-                    <img src="images/logo.png" alt="" class="w-20 md:w-24">
+                    <img src="/public/images/logo.png" alt="" class="w-20 md:w-24">
+                </div>
+                <div>
+                    <select name="" id="filter1" class="rounded-lg bg-blue-300 text-white hover:bg-blue-400 hover:text-gray-200">
+                        <option value="option1" id="option1">University</option>
+                        <option value="option2" id="option2">Batch</option>
+                        <option value="option3" id="option3">Position 1</option>
+                        <option value="option4" id="option4">Position 2</option>
+                    </select>
+                    <select name="" id="filter2" class="rounded-lg bg-blue-300 text-white hover:bg-blue-400 hover:text-gray-200 w-96">
+                        <option value="">Institut Teknologi Sepuluh Nopember</option>
+                        <option value="">Institut Teknologi Bandung</option>
+                        <option value="">Universitas Indonesia</option>
+                        <option value="">Universitas Pertamina</option>
+                        <option value="">PEM Akamigas</option>
+                    </select>
                 </div>
                 <form action="{{ route('logout') }}" method="POST" class="inline">
                     @csrf
@@ -30,51 +66,51 @@
             </div>
         </div>
     </nav>
-    <div class="bg-gradient-to-l from-blue-300 to-purple-400 h-full w-full">
-    <div class="flex flex-col py-10">
+    <div class="bg-gradient-to-l from-blue-300 to-purple-400 h-full w-screen">
+    <div class="flex flex-col py-32">
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                 <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
                     <tr>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Full Name
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Institution / University
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Major
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Batch
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Domicile
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Email
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Whatsapp Number
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Line
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Position 1
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Position 2
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Link Twibbon
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Link Bukti
                         </th>
-                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Edit
                         </th>
                     </tr>
