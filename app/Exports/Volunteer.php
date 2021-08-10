@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\Volunteer\Admin;
+namespace App\Exports;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -17,6 +17,9 @@ class Volunteer implements FromCollection, WithHeadings
 
     public function headings():array{
         return[
+            'id',
+            'submited_at',
+            'edited_at',
             'full_name', 
             'institution', 
             'major', 

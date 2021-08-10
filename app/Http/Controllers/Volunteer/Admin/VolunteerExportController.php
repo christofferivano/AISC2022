@@ -11,6 +11,7 @@ use App\Models\volregis;
 use Illuminate\Support\Carbon;
 use Maatwebsite\Excel\Concerns\FromCollection;
 use App\Exports\Volunteer;
+use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
 use Maatwebsite\Excel\Facades\Excel;
 
 class VolunteerExportController extends Controller

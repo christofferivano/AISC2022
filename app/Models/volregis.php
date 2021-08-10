@@ -29,9 +29,8 @@ class volregis extends Model
         return $this->hasMany(File::class);
     }
 
-    public function getVolregis(){
-        $records = DB::table('volregis')->select('full_name', 'institution', 'major', 'batch', 'domicile', 
-        'email', 'line_id', 'phone_number', 'position_1', 'position_2', 'twibbon_link', 'proof_link');
+    public static function getVolregis(){
+        $records = volregis::all();
         return $records;
     }
 }
