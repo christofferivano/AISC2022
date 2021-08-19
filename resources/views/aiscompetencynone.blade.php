@@ -6,7 +6,10 @@
     <div class="md:hidden absolute left-0 top-0">
         <img src="images/bulet-respon-volun-1.png" alt="" class="h-96"> 
     </div>
-    <div class="pt-20 md:pt-32 pb-60">
+    <div class="z-0 absolute right-0 top-0 h-full">
+        <img src="images/buletcompetenbig.png" alt="" class="h-4/6">
+    </div>
+    <div class="pt-10 md:pt-2 pb-60">
         <div class="px-2 md:px-12 relative md:flex">
             <div class="z-10 md:px-28 pt-20 flex flex-col items-center md:items-start" data-aos="fade-right" data-aos-duration="1900">
                 <h2 class="text-footer text-3xl md:text-5xl font-bold md:tracking-wide">
@@ -16,9 +19,9 @@
                     <div class="py-1 rounded-full bg-gradient-to-r from-pink-400 to-red-500 w-56"></div>
                 </div>
                 <p class="w-64 md:w-1/2 py-7 text-footer text-lg md:text-xl text-center md:text-left">
-                    AISCompetency is series of workshop held by <br>
-                    AISC 2022 that will discuss competencies 
-                    needed when entering the work-life and studying 
+                    AISCompetency is series of workshop held by
+                    AISC 2022 that will discuss competencies
+                    needed when entering the work-life and studying
                     in university. This event will invite experts in their 
                     respective fields to speak and share their 
                     knowledge at this event. AISCompetency will be 
@@ -26,18 +29,26 @@
                     18, 2022. So join us and we'll see you, on the inside!
                 </p>
             </div>
-            <div class="absolute pl-20 flex flex-col items-end top-0 right-0" data-aos="fade-left" data-aos-duration="2400">
+            <div class="absolute pl-20 flex items-end top-0 right-0 z-10" data-aos="fade-left" data-aos-duration="2400">
                 <img src="images/bgcompeawal.png" alt="" class="h-140 hidden md:flex">
             </div>
         </div>
     </div>
 
-    <div class="flex justify-center items-center py-20">
+    <div class="absolute left-0 z-0 top-1/2 h-1/2">
+        <img src="images/buletcompeten.png" alt="" class="h-full">
+    </div>
+
+    <div class="flex justify-center items-center pt-20 pb-20 z-10">
         <h1 class="font-extrabold text-7xl">
             <font color="#D3D3D3">No Schedule Yet</font>
         </h1>
     </div>
     
+    <div class="absolute right-0 top-3/4 h-1/2"> 
+        <img src="images/buletwarna.png" alt="" class="h-96">
+    </div>
+
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">
