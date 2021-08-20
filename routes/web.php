@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('aiscompetencyright');
+    return view('aiscomperegis');
 });
 
 // Route::get('competition', '');
