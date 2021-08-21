@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('aiscomperegis');
+    return view('aiscomperegis2');
 });
 
 // Route::get('competition', '');
