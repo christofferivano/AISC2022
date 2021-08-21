@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\DB;
 
 class volregis extends Model
 {
@@ -26,5 +27,10 @@ class volregis extends Model
 
     public function file(){
         return $this->hasMany(File::class);
+    }
+
+    public static function getVolregis(){
+        $records = volregis::all();
+        return $records;
     }
 }

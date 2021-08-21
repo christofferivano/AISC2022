@@ -2,7 +2,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{{ ('/public/css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="{{ asset('js/app.js') }}" defer></script>
     <title>Admin Page</title>
     <link rel="shortcut icon" href="images/Logogram.ico" />
@@ -176,6 +176,10 @@
                 </tbody>
                 </table>
             </div>
+            <form action="{{ route('export-volunteer') }}" method="GET">
+                @csrf
+                <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">Export</button>
+            </form>
         </div>
     </div>
 </body>
