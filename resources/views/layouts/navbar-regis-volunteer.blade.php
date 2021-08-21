@@ -97,7 +97,7 @@
     <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body class="relative h-full">
+<body class="relative h-full bg-landing">
     <nav class="hidden md:block fixed w-full top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
         <div class="mx-auto px-5 md:px-24 py-2">
             <div class="flex items-center justify-between h-20">

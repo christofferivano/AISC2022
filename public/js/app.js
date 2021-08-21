@@ -4970,6 +4970,15 @@ __webpack_require__(/*! ./bootstrap */ "./resources/js/bootstrap.js");
 
 
 
+var burger = document.querySelector('#burger');
+var menu = document.querySelector('#menu');
+burger.addEventListener('click', function () {
+  if (menu.classList.contains('hidden')) {
+    menu.classlist.remove('hidden');
+  } else {
+    menu.classList.add('hidden');
+  }
+});
 
 /***/ }),
 
