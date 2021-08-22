@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('aiscompetencynone');
+    return view('paymentspecific');
 });
 
 // Route::get('competition', '');

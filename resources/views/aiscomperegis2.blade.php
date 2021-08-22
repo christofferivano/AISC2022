@@ -81,14 +81,15 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-8 items-center">
+                    <img src="images/tiktok.png" alt="" class="w-6 md:w-12 mx-4">
                     <img src="images/instagram.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@aisc2022</p>
                 </div>
-                <div class="flex pt-2 md:pt-8 items-center">
+                <div class="flex pl-20 pt-2 md:pt-8 items-center">
                     <img src="images/line-app.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@961ckski</p>
                 </div>
-                <div class="flex pt-2 md:pt-8 items-center">
+                <div class="flex pl-20 pt-2 md:pt-8 items-center">
                     <img src="images/linkedin.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
