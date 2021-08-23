@@ -8,7 +8,7 @@
     </div>
     <div class="pt-20 md:pt-44 pb-20">
         <div class="px-2 md:px-12 relative md:flex">
-            <div class="z-10 md:pl-28 pt-20 flex flex-col items-center md:items-start">
+            <div class="z-10 md:pl-28 pt-20 flex flex-col items-center md:items-start" data-aos="fade-right" data-aos-duration="1900">
                 <h2 class="text-footer text-3xl md:text-6xl font-bold md:tracking-wide">
                     What is Volunteer?
                 </h2>
@@ -21,7 +21,7 @@
                     AISC purposes and plan.
                 </p>
             </div>
-            <div class="absolute flex flex-col items-end top-0 right-0">
+            <div class="absolute flex flex-col items-end top-0 right-0" data-aos="fade-left" data-aos-duration="2400">
                 <img src="images/volunteer-1.png" alt="" class="h-140 hidden md:flex">
             </div>
         </div>
@@ -29,10 +29,10 @@
 
     <!-- Positions -->
     <div class="md:pt-52 pb-10">
-        <div class="flex flex-col items-center">
+        <div class="flex flex-col items-center" data-aos="fade-right" data-aos-duration="1200" >
             <h1 class="text-center text-footer text-3xl md:text-5xl font-bold">Positions Available</h1>
         </div>
-        <div class="flex flex-row justify-between px-5 md:px-32 pt-10">
+        <div class="flex flex-row justify-between px-5 md:px-32 pt-10" data-aos="fade-up" data-aos-duration="1900">
             <div id="card-event-1" class="relative flex flex-col items-center">
                 <button id="card-event" class="rounded-xl bg-cardEvent w-14 h-14 md:w-52 md:h-52 shadow-lg">
                     <div class="flex flex-col items-center">
@@ -80,8 +80,8 @@
         </div>
     </div>
 
-    <div class="md:hidden absolute z-0 right-0 bottom-0 -mb-96">
-        <img src="images/bulet-respon-volun-2.png" alt="" class="h-96"> 
+    <div class="md:hidden absolute z-0 right-0 bottom-0 mb-20">
+        <img src="images/bulet-respon-volun-2.png" alt="" class="h-72 md:h-96"> 
     </div>
 
     <div id="event" class="hidden z-10 grid md:grid-cols-3 py-5 md:py-10 px-5 md:px-10">
@@ -425,11 +425,11 @@
     <!-- Timeline -->
     <div class="rounded-lg shadow-2xl absolute md:relative z-10">
         <div class="pt-2 md:pt-10">
-            <span class="h-16 md:h-70 flex justify-center items-center font-bold text-xl md:text-4xl drop-shadow-lg py-2 md:py-5">
-                <font color ="#30264F">TIMELINE</font>
+            <span class="h-16 md:h-70 flex justify-center items-center font-bold text-xl md:text-4xl drop-shadow-lg py-2 md:py-5" data-aos="fade-right">
+                <font color ="#30264F">Timeline</font>
             </span>
         </div>
-        <div class="flex flex-row items-end pb-5 md:pb-20">
+        <div class="flex flex-row items-end pb-5 md:pb-20" data-aos="fade-right" data-aos-duration="3000">
             <!-- Slider main container -->
             <div class="swiper-container swiper2 my-2 md:my-10 pl-5 md:pl-20 h-20">
                 <!-- Additional required wrapper -->
@@ -437,106 +437,34 @@
                     <!-- Slides -->
                     <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
                         <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            Open Recruitment Volunteer
+                            Open Recruitment Registration
                         </h2>
                         <span class="text-sm md:text-xl">
-                            9th August 2021                            
+                            Aug 9, 2021                            
                         </span>
                     </div>
                     <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
                         <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISChat 1 
+                            Close Recruitment Registration
                         </h2>
                         <span class="text-sm md:text-xl">
-                            18th September 2021
+                            Aug 20, 2021
                         </span>
                     </div>
                     <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
                         <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISChat 2
+                            Screening
                         </h2>
                         <span class="text-sm md:text-xl">
-                            2nd October 2021
+                            Aug 27, 2021
                         </span>
                     </div>
                     <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
                         <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISCompetency 1
+                            Announcement
                         </h2>
                         <span class="text-sm md:text-xl">
-                            16th October 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            Open Competition Registration
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            24th October 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISChat 3
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            27th November 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            Open Competition Registration
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            24th October 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISChat 3
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            27th October 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISCompetency 2
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            18th December 2021
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            AISChat 4
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            15th January 2022
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            D-Day Competition
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            12th May 2022
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            nAISC Night
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            19th March 2022
-                        </span>
-                    </div>
-                    <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
-                        <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                            Conference Day
-                        </h2>
-                        <span class="text-sm md:text-xl">
-                            20th March 2022
+                            Sept 2, 2021
                         </span>
                     </div>
                 </div>
@@ -548,19 +476,21 @@
     </div>
 
     <!-- Register Volunteer -->
-    <div class="pt-20 flex flex-col items-center pt-80 md:pt-20">
-        <h1 class="text-footer text-2xl md:text-5xl font-bold text-center">What Are You Waiting For?</h1>
-        <h1 class="text-footer text-2xl md:text-5xl font-bold text-center md:py-2">Join Us Now!</h1>
-        <div class="pt-5 pb-10 md:py-16">
-            <button class="py-1 rounded-full bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg">
-                <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
-            </button>
+    <!-- <div style="background-image: url('images/regis-volunteer.png');" class="pt-20 pb-20 bg-cover bg-local relative"> -->
+        <div class="flex flex-col items-center pt-72 pb-1 md:py-32">
+            <h1 class="text-footer text-xl md:text-5xl font-bold" data-aos="zoom-in" data-aos-duration="1000" >What Are You Waiting For?</h1>
+            <h1 class="text-footer text-xl md:text-5xl font-bold py-2" data-aos="zoom-in" data-aos-duration="1500" >Join Us Now!</h1>
+            <div class="py-2 md:py-4">
+                <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10" data-aos="zoom-in" data-aos-duration="2000">
+                    <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
+                </button>
+            </div>
+            <div class="absolute left-0 md:left-0 z-0">
+                <img src="images/bultet-regis.png" alt="" class="w-44 pl-0 md:ml-40 md:w-96">
+            </div>
         </div>
-        <div class="hidden md:block absolute z-0 my-0 flex left-52">
-            <img src="images/bultet-regis.png" alt="" class="w-1/2">
-        </div>
-    </div>
-
+    <!-- </div> -->
+    
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">

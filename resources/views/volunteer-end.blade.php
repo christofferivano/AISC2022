@@ -2,10 +2,10 @@
 
 @section('content')
 
-    <div class="pt-16 pl-6 md:ml-80 md:pl-44">
+    <div class="pt-16 pl-6 md:ml-80 md:pl-44" data-aos="fade-left" data-aos-duration="1500">
         <img src="images/end-volunteer.png" alt="" class="h-96 md:h-140">
     </div>
-    <div class="pt-5 md:py-20 text-montserrat flex flex-col items-center pb-60">
+    <div class="pt-5 md:py-20 text-montserrat flex flex-col items-center pb-60" data-aos="fade-right" data-aos-duration="2000"> 
         <h1 class="text-base md:text-4xl font-bold">Thank You for Being The Volunteer of AISC 2022</h1>
         <h1 class="text-base md:text-4xl font-bold pt-1 jusify-center">We Will Reach Out to You Soon!</h1>
     </div>

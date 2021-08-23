@@ -2,16 +2,16 @@
 
 @section('content')
     <div class="md:hidden absolute left-0 top-0">
-        <img src="images/bulet-respon-volun-1.png" alt="" class="h-96"> 
+        <img src="/images/bulet-respon-volun-1.png" alt="" class="h-96"> 
     </div>
     <div class="hidden md:block absolute">
-        <img src="images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
+        <img src="/images/bulet-regis-volun-4.png" alt="" class="w-2/7 ml-98 pl-20 mt-20">
     </div>
     <div class="absolute bottom-0 right-0">
-        <img src="images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
+        <img src="/images/bulet-regis-volun-2.png" alt="" class="h-52 -mt-80 md:hidden">
     </div>
     <div class="absolute left-0 mt-24 pt-100">
-        <img src="images/bulet-mob-regis-volun-1.png" alt="" class="h-80 md:h-96">
+        <img src="/images/bulet-mob-regis-volun-1.png" alt="" class="h-80 md:h-96">
     </div>
     <div class="pt-28 grid md:grid-cols-5 pb-96 md:pb-0">
         <div class="md:col-span-2 md:col-start-1 pl-5 md:pl-24 flex flex-col items-start w-full">
@@ -33,40 +33,55 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 pr-5 z-10">
-                <form action="" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('volunteer-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Full Name</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
+                    <input name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
+                    @error('name')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="institution" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution / University</label>
                     <label class="container">Insitut Teknologi Sepuluh Nopember
-                        <input type="radio" checked="checked" name="radio">
+                        <input type="radio" checked="checked" name="radio" value="Institut Teknologi Sepuluh Nopember">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Institut Teknologi Bandung
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Institut Teknologi Bandung">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Universitas Indonesia
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Universitas Indonesia">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">Universitas Pertamina
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="Universitas Pertamina">
                         <span class="checkmark"></span>
                     </label>
                     <label class="container">PEM Akamigas
-                        <input type="radio" name="radio">
+                        <input type="radio" name="radio" value="PEM Akamigas">
                         <span class="checkmark"></span>
                     </label>
                     <label for="major" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Major</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input name="major" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    @error('major')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <label for="batch" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Batch</label>
                     <select class="outline-none rounded-full border border-form py-1.5 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
-                    name="position" for="position">
+                    name="batch" for="batch">
                         <option class="py-1 font-sans" disabled selected hidden>Batch</option>
                         <option class="py-1 font-sans">2019</option>
                         <option class="py-1 font-sans">2020</option>
                     </select>
+                    @error('batch')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    {{ $message }}
+                                </div>
+                            @enderror
                     <div class="pt-10">
                         <div class="flex flex-row pl-4">
                             <p class="text-sm md:text-lg font-medium">You can see the requirements.</p>
@@ -80,7 +95,7 @@
                     </a>
                 </form>
             </div>
-            <img src="images/volunteer-regis-1.png" alt="" class="md:hidden absolute right-0 bottom-0 h-96 -mb-80">
+            <img src="/images/volunteer-regis-1.png" alt="" class="md:hidden absolute right-0 bottom-0 h-96 -mb-80">
         </div>
         <div class="hidden col-span-3 col-start-3 md:flex flex-col items-end">
             <div class="flex flex-row pt-6 pr-20">
@@ -93,7 +108,7 @@
                 </div>
             </div>
             <!-- <div style="background-image: url('images/bg-register-volunteer.png')" class="bg-cover h-landing bg-local relative h-full"></div> -->
-            <img src="images/volunteer-regis-1.png" alt="" class="w-4/7">
+            <img src="/images/volunteer-regis-1.png" alt="" class="w-4/7">
         </div>
     </div>
 
@@ -105,15 +120,15 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/instagram.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/instagram.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@aisc2022</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/line-app.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/line-app.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@961ckski</p>
                 </div>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="images/linkedin.png" alt="" class="w-6 md:w-12">
+                    <img src="/images/linkedin.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>
