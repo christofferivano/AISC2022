@@ -36,9 +36,9 @@
             <form action="" class="flex flex-col pt-12">
                 @csrf
                 <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
-                <input type="text" class="outline-none border-b-2 py-1 pt-4 px-4 w-96 text-sm bg-transparent" placeholder="Name on Card">
+                <input type="text" class="outline-none border-b-2 border-form py-1 px-4 pt-4 w-96 text-sm bg-transparent" placeholder="Name on Card">
                 <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                <input type="date" class="outline-none border-b-2 py-1 px-4 pt-4 w-96 text-sm bg-transparent">
+                <input type="date" class="outline-none border-b-2 border-form py-1 px-4 pt-4 w-96 text-sm bg-transparent">
                 <label for="file-upload" class="pt-4 pb-2 pl-4 text-xl font-medium">Transfer Receipt</label>
                 <input type="file" class="outline-none border-b-2 py-1 px-4 pt-4 w-96 text-sm bg-transparent" placeholder="File">
                 <div class="pt-10">
