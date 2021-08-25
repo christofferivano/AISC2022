@@ -74,6 +74,23 @@
             border-radius: 50%;
             background: white;
         }
+        .input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            outline: none;
+        }
+        
+        .input:focus {
+            outline: 0;
+            -webkit-appearance:none;
+            box-shadow: none;
+            -moz-box-shadow: none;
+            -webkit-box-shadow: none;
+        }
+        .focus-within\:border-teal:focus-within {
+  border-color: #4dc0b5;
+}
         @media (min-width: 768px) {
             .container {
                 margin-bottom: 12px;
@@ -205,6 +222,16 @@
         $('#file-upload-5').change(function() {
             var i = $(this).prev('label').clone();
             var file = $('#file-upload-5')[0].files[0].name;
+            $(this).prev('label').text(file);
+        });
+        $('#file-upload-6').change(function() {
+            var i = $(this).prev('label').clone();
+            var file = $('#file-upload-6')[0].files[0].name;
+            $(this).prev('label').text(file);
+        });
+        $('#file-upload-7').change(function() {
+            var i = $(this).prev('label').clone();
+            var file = $('#file-upload-7')[0].files[0].name;
             $(this).prev('label').text(file);
         });
     </script>

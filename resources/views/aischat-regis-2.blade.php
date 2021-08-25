@@ -31,7 +31,17 @@
                 <form action="" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="info" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?</label>
-                    <input name="info" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
+                    name="info" for="info">
+                        <option class="py-1 font-sans" disabled selected hidden>Choose an Option</option>
+                        <option class="py-1 font-sans">AISC Instagram</option>
+                        <option class="py-1 font-sans">AISC LinkedIn</option>
+                        <option class="py-1 font-sans">AISC Tik Tok</option>
+                        <option class="py-1 font-sans">AISC OA Line</option>
+                        <option class="py-1 font-sans">Media Partner</option>
+                        <option class="py-1 font-sans">Friends</option>
+                        <option class="py-1 font-sans">Others</option>
+                    </select>
                     <label for="expectation" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">What do you expect from this event?</label>
                     <input name="expectation" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <a href="" class="pt-10">
@@ -64,20 +74,21 @@
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">
-            <div class="px-8 md:px-20 py-6 md:py-10">
+            <div class="px-10 md:px-20 py-8 md:py-10">
                 <h2 class="font-bold text-2xl md:text-5xl text-white">
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="/images/instagram.png" alt="" class="w-6 md:w-12">
+                    <img src="images/tiktok.png" alt="" class="w-6 md:w-12 mx-4">
+                    <img src="images/instagram.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@aisc2022</p>
                 </div>
-                <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="/images/line-app.png" alt="" class="w-6 md:w-12">
+                <div class="flex pl-20 pt-2 md:pt-8 items-center">
+                    <img src="images/line-app.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">@961ckski</p>
                 </div>
-                <div class="flex pt-2 md:pt-8 items-center">
-                    <img src="/images/linkedin.png" alt="" class="w-6 md:w-12">
+                <div class="flex pl-20 pt-2 md:pt-8 items-center">
+                    <img src="images/linkedin.png" alt="" class="w-6 md:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>
