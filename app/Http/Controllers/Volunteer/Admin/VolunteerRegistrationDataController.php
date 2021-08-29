@@ -16,11 +16,9 @@ class VolunteerRegistrationDataController extends Controller
     }
 
     public function index(){
-        $registrator = volregis::all();
+        $registrator = volregis::paginate(20);
         //dd( $file->where('id', 9)->where('type', 'cv') );
-        return view('adminpage',[
-            'registrator' => $registrator,
-        ]);
+        return view('adminpage', compact('registrator'));
     }
 
     public function delete(volregis $volregis){

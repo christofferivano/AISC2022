@@ -175,6 +175,9 @@
                     @endif
                 </tbody>
                 </table>
+                <div class="d-flex justify-content-center">
+                    {!! $registrator->links() !!}
+                </div>
             </div>
             <form action="{{ route('export-volunteer') }}" method="GET">
                 @csrf
