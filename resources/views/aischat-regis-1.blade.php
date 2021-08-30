@@ -28,7 +28,7 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
-                <form action="" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('aischat-regis-2-store') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Name</label>
                     <input name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">

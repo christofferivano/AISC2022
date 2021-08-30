@@ -41,7 +41,14 @@ Route::get('/registration-3/{name}/{radio}/{major}/{batch}/{domicile}/{email}/{w
 Route::post('/registration-3/{name}/{radio}/{major}/{batch}/{domicile}/{email}/{wa}/{line}/{position1}/{position2}', [VolunteerRegistrationPage3::class, 'store'])->prefix('volunteer')->name('volunteer-regis-3');
 Route::get('/thanks', [VolunteerEndPage::class, 'index'])->prefix('volunteer')->name('volunteer-end');
 
-Route::get('/webinar', [WebinarPage::class, 'index'])->name('webinar');
+Route::get('/aischat', [WebinarPage::class, 'index'])->name('aischat');
+Route::get('/aischat/kosong', [WebinarPage::class, 'index_k'])->name('aischat-kosong');
+Route::get('/aischat/registration', [WebinarPage::class, 'registration_1'])->name('aischat-regis');
+Route::post('/aischat/registration', [WebinarPage::class, 'store_1'])->name('aischat-regis');
+Route::get('/aischat/registration-2', [WebinarPage::class, 'registration_2'])->name('aischat-regis-2');
+Route::post('/aischat/registration-2', [WebinarPage::class, 'store_2'])->name('aischat-regis-2-store');
+Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->name('aischat-regis-end');
+Route::post('/aischat/registration-3/{name}/{email}/{major}/{wa}/{place}', [WebinarPage::class, 'store_3'])->name('aischat-regis-3-store');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 

@@ -65,7 +65,7 @@
         <h1 class="text-footer text-xl md:text-6xl font-bold pb-4">Join Our AISChat Now!</h1>
         <div class="py-2 md:py-4">
             <button class="py-2 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10">
-                <a class="text-white text-sm md:text-xl font-semibold px-32" href="">Register Here!</a>
+                <a class="text-white text-sm md:text-xl font-semibold px-32" href="{{ route('aischat-regis') }}">Register Here!</a>
             </button>
         </div>
         <div class="absolute right-0 -mt-52 z-0">
