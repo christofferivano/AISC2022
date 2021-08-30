@@ -1,17 +1,17 @@
 @extends('layouts.navbar-regis-volunteer')
 
 
-@section('content')
-    <div class="absolute right-0 z-10 pt-20">
-        <img src="images/webinar.png" alt="" class="h-140">
+@section('content')  
+    <div class="absolute right-0 z-10 pt-98 md:pt-20">
+        <img src="images/webinar.png" alt="" class="h-80 md:h-140">
     </div>
     <div class="absolute right-0 z-0">
-        <img src="images/bulet-aischat-1.png" alt="" class="h-140">
+        <img src="images/bulet-aischat-1.png" alt="" class="h-96 md:h-140">
     </div>
     <div class="absolute left-0 bottom-0 z-0 -mb-60">
         <img src="images/bulet-aischat-2.png" alt="" class="h-140">
     </div>
-    <div class ="flex flex-col pl-36 pt-40">
+    <div class ="flex flex-col pl-36 pt-40 z-20">
         <div class="justify-left items-left w-96">
             <h1 class="text-4.5xl font-bold">
                 What is AISChat?
