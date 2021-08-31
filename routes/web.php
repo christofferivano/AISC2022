@@ -26,7 +26,7 @@ use App\Http\Controllers\ShowFileController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'welcome')->name('dashboard');
+Route::view('/dashboard', 'aischat-regis-end')->name('dashboard');
 
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
 
