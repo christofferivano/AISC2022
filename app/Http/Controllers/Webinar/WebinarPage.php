@@ -9,6 +9,9 @@ use Exception;
 
 class WebinarPage extends Controller
 {
+    public function __construct(){
+        $this->middleware(['auth']);
+    }
     public function index(){
         return view('aischat-available');
     }
