@@ -36,7 +36,7 @@
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Name</label>
                     <input name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <label for="institution" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University/Company</label>
-                    <input name="institution" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <input name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <label for="major" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Major</label>
                     <input name="major" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     <label for="email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Email</label>

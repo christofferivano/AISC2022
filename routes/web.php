@@ -18,6 +18,7 @@ use App\Http\Controllers\SocialNight\SocialNightPage;
 use App\Http\Controllers\ShowFileController;
 use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
+use App\Http\Controllers\Webinar\Admin\AischatExportController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,6 +68,7 @@ Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
 Route::get('/export/volunteer', [VolunteerExportController::class, 'exportExcel'])->name('export-volunteer');
+Route::get('/export/aischat', [AischatExportController::class, 'exportExcel'])->name('export-aischat');
 
 Route::get('/admin/list', [Admin::class, 'index'])->name('admin');
 

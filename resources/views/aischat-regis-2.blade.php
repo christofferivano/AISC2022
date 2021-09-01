@@ -35,11 +35,11 @@
             </div>
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
                 <form action="{{ route('aischat-regis-3-store', [
-                    'name' => $regis1->get('name'), 
-                    'place' => $regis1->get('place'),
-                    'major' => $regis1->get('major'),
+                    'name' => $regis1->get('name'),
                     'email' => $regis1->get('email'),
-                    'wa' => $regis1->get('wa')
+                    'major' => $regis1->get('major'),
+                    'wa' => $regis1->get('wa'),
+                    'place' => $regis1->get('place'),
                     ]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="info" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?</label>

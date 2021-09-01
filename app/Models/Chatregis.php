@@ -18,4 +18,9 @@ class Chatregis extends Model
         'source',
         'expect'
     ];
+
+    public static function getChatregis(){
+        $records = Chatregis::all();
+        return $records;
+    }
 }

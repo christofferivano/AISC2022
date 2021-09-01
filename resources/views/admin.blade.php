@@ -11,8 +11,15 @@
     <title>Admin Page</title>
 </head>
 <body class="relative">
+    
     <div class="bg-gradient-to-l from-blue-300 to-purple-400 h-full w-full">
     <div class="flex flex-col py-10">
+        <form action="{{ route('dashboard') }}" method="GET" class="inline">
+            @csrf
+            <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
+                Back
+            </button>
+        </form>
         <div class="-my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
             <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
