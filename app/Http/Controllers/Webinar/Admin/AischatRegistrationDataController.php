@@ -16,6 +16,11 @@ class AischatRegistrationDataController extends Controller
     public function index(){
         $registrator = Chatregis::paginate(20);
         //dd( $file->where('id', 9)->where('type', 'cv') );
-        return view('adminpage', compact('registrator'));
+        return view('admin-aischat', compact('registrator'));
+    }
+
+    public function delete(Chatregis $chatregis){
+        $chatregis->delete();
+        return back();
     }
 }

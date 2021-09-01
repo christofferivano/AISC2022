@@ -63,6 +63,12 @@
                     </button>
                 </form>
                 
+                <form action="{{ route('admin') }}" method="GET" class="inline">
+                    @csrf
+                    <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
+                        Back
+                    </button>
+                </form>
             </div>
         </div>
     </nav>
@@ -87,13 +93,16 @@
                             Email
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
-                            Whatsapp Number
+                            WA
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Source
                         </th>
                         <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             Expectation
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Edit
                         </th>
                     </tr>
                 </thead>
@@ -104,12 +113,12 @@
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <div class="flex items-center">
                                     <div class="text-sm font-medium text-gray-900">
-                                    {{ $r->full_name }}
+                                    {{ $r->name }}
                                     </div>
                                 </div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
-                                <div class="text-sm text-gray-900">{{ $r->institution }}</div>
+                                <div class="text-sm text-gray-900">{{ $r->place }}</div>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap">
                                 <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-100 text-green-800">
@@ -117,38 +126,19 @@
                                 </span>
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->batch }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->domicile }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                 {{ $r->email }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->phone_number }}
+                                {{ $r->wa }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->line_id }}
+                                {{ $r->source }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->position_1 }}
+                                {{ $r->expect }}
                             </td>
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                {{ $r->position_2 }}
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="//{{ $r->twibbon_link }}" target="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-200 text-blue-800">
-                                    Check
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="//{{ $r->proof_link }}" target="#" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-yellow-200 text-yellow-800">
-                                    Check
-                                </a>
-                            </td>
-                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                <a href="{{ route('admin-volunteer-delete', $r) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Delete</a>
+                                <a href="{{ route('admin-aischat-delete', $r) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Delete</a>
                             </td>
                             </tr>
                         @endforeach

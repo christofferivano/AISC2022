@@ -62,7 +62,12 @@
                         Log Out
                     </button>
                 </form>
-                
+                <form action="{{ route('admin') }}" method="GET" class="inline">
+                    @csrf
+                    <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">
+                        Back
+                    </button>
+                </form>
             </div>
         </div>
     </nav>

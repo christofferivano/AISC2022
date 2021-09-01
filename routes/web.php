@@ -16,6 +16,8 @@ use App\Http\Controllers\Webinar\WebinarPage;
 use App\Http\Controllers\Conference\ConferencePage;
 use App\Http\Controllers\SocialNight\SocialNightPage;
 use App\Http\Controllers\ShowFileController;
+use App\Http\Controllers\Admin;
+use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -56,12 +58,17 @@ Route::get('/admin/volunteer/registration', [VolunteerRegistrationDataController
 Route::get('/admin/volunteer/registration/proof/{volregis}', [VolunteerRegistrationProof::class, 'index'])->name('admin-volunteer-proof');
 Route::get('/admin/volunteer/registration/{volregis}', [VolunteerRegistrationDataController::class, 'delete'])->name('admin-volunteer-delete');
 
+Route::get('/admin/aischat/registration', [AischatRegistrationDataController::class, 'index'])->name('admin-aischat');
+Route::get('/admin/aischat/registration/{chatregis}', [AischatRegistrationDataController::class, 'delete'])->name('admin-aischat-delete');
+
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'store']);
 
 Route::get('/export/volunteer', [VolunteerExportController::class, 'exportExcel'])->name('export-volunteer');
+
+Route::get('/admin/list', [Admin::class, 'index'])->name('admin');
 
 Route::get('/home', function () {
     return redirect('/dashboard');
