@@ -33,7 +33,6 @@
                     <div class="px-16 md:px-20"></div>
                 </div>
             </div>
-<<<<<<< HEAD
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
                 <form action="{{ route('aischat-regis-3-store', [
                     'name' => $regis1->get('name'), 
@@ -42,10 +41,6 @@
                     'email' => $regis1->get('email'),
                     'wa' => $regis1->get('wa')
                     ]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
-=======
-            <div class="w-full pt-16 md:pt-0 md:pr-5 z-10">
-                <form action="" method="POST" class="flex flex-col pt-10 md:pt-12">
->>>>>>> 21dac4880e6656caf11ba7cfb4da24e6c1078ee5
                     @csrf
                     <label for="info" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?</label>
                     <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
