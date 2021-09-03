@@ -74,7 +74,7 @@
         <h1 class="text-footer text-2xl md:text-5xl font-bold text-center md:py-2">Join Our AISCompetency Now!</h1>
         <div class="pt-5 pb-10 md:py-16">
             <button class="py-1 rounded-full bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg">
-                <a class="text-white text-xl font-semibold px-20" href="">Register Here!</a>
+                <a class="text-white text-xl font-semibold px-20" href="{{ route('competency-regis-1') }}">Register Here!</a>
             </button>
         </div>  
     </div>

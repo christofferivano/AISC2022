@@ -37,12 +37,27 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 pr-5 z-10">
-                <form action="" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('competency-regis-2-store', [
+                    'name' => $regis1['name'],
+                    'place' => $regis1['place'],
+                    'email' => $regis1['email'],
+                    'wa' => $regis1['wa']
+                    ]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
-                    <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did You Get this Information</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">What do You Expect From this event?</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Opinion">
+                    <label for="info" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?</label>
+                    <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
+                    name="info" for="info">
+                        <option class="py-1 font-sans" disabled selected hidden>Choose an Option</option>
+                        <option class="py-1 font-sans">AISC Instagram</option>
+                        <option class="py-1 font-sans">AISC LinkedIn</option>
+                        <option class="py-1 font-sans">AISC Tik Tok</option>
+                        <option class="py-1 font-sans">AISC OA Line</option>
+                        <option class="py-1 font-sans">Media Partner</option>
+                        <option class="py-1 font-sans">Friends</option>
+                        <option class="py-1 font-sans">Others</option>
+                    </select>
+                    <label for="expect" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">What do You Expect From this event?</label>
+                    <input name="expect" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Opinion">
                     <div class="pt-40">
                         <div class="flex flex-row pl-4">
                             <p class="text-sm md:text-lg font-medium">You can see the requirements.</p>

@@ -6,19 +6,21 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
-    <title>AISC 2022 -  Competition</title>
+    <title>AISC 2022 -  Competency</title>
 </head>
 <body class="bg-landing relative">
         <nav class="sticky top-0 z-20 bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-24 py-2">
                 <div class="flex items-center justify-between h-20">
-                    <span class="text-2xl text-gray-900 font-semibold">
-                        LOGO AISC
-                    </span>
+                    <div>
+                        <a href="{{ route('dashboard') }}">
+                            <img src="images/logo.png" alt="" class="w-20 md:w-24">
+                        </a>
+                    </div>
                     <div class="text-lg flex space-x-20 text-gray-900">
                         <a href="{{ route('volunteer') }}">Volunteer</a>
                         <a href="">Event</a>
-                        <a href="">Competition</a>
+                        <a href="{{ route('competition') }}">Competition</a>
                     </div>
                 </div>
             </div>

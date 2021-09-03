@@ -19,6 +19,7 @@ use App\Http\Controllers\ShowFileController;
 use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 use App\Http\Controllers\Webinar\Admin\AischatExportController;
+use App\Http\Controllers\Competency\CompetencyController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -32,6 +33,13 @@ use App\Http\Controllers\Webinar\Admin\AischatExportController;
 Route::view('/dashboard', 'welcome')->name('dashboard');
 
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
+
+Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
+Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
+Route::post('/competency/registration', [CompetencyController::class, 'store_1'])->name('competency-regis-1-store');
+Route::get('/competency/registration-2', [CompetencyController::class, 'registration_2'])->name('competency-regis-2');
+Route::post('/competency/registration-2/store/{name}/{place}/{email}/{wa}', [CompetencyController::class, 'store_2'])->name('competency-regis-2-store');
+Route::get('/competency/registration/thanks', [CompetencyController::class, 'end'])->name('competency-regis-end');
 
 Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 
@@ -49,9 +57,9 @@ Route::get('/aischat/kosong', [WebinarPage::class, 'index_k'])->name('aischat-ko
 Route::get('/aischat/registration', [WebinarPage::class, 'registration_1'])->name('aischat-regis');
 Route::post('/aischat/registration', [WebinarPage::class, 'store_1'])->name('aischat-regis');
 Route::get('/aischat/registration-2', [WebinarPage::class, 'registration_2'])->name('aischat-regis-2');
-Route::post('/aischat/registration-2', [WebinarPage::class, 'store_2'])->name('aischat-regis-2-store');
+Route::post('/aischat/registration-2/store', [WebinarPage::class, 'store_2'])->name('aischat-regis-2-store');
 Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->name('aischat-regis-end');
-Route::post('/aischat/registration-3/{name}/{email}/{major}/{wa}/{place}', [WebinarPage::class, 'store_3'])->name('aischat-regis-3-store');
+Route::post('/aischat/registration-3/store/{name}/{email}/{major}/{wa}/{place}', [WebinarPage::class, 'store_3'])->name('aischat-regis-3-store');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 

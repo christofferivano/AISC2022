@@ -11,7 +11,6 @@
     <title>Admin Page</title>
 </head>
 <body class="relative">
-    
     <div class="bg-gradient-to-l from-blue-300 to-purple-400 h-full w-full">
     <div class="flex flex-col py-10">
         <form action="{{ route('dashboard') }}" method="GET" class="inline">

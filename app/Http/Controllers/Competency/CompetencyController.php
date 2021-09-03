@@ -1,75 +1,71 @@
 <?php
 
-namespace App\Http\Controllers\Webinar;
+namespace App\Http\Controllers\Competency;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Models\Chatregis;
+use App\Models\Competenregis;
 use Exception;
 
-class WebinarPage extends Controller
+
+class CompetencyController extends Controller
 {
+    
     public function __construct(){
         $this->middleware(['auth']);
     }
+
     public function index(){
-        return view('aischat-available');
+        return view('aiscompetencyright');
     }
 
-    public function index_k(){
-        return view('aischat-kosong');
+    public function end(){
+        return view('aiscompetencydone');
     }
 
     public function registration_1(){
-        return view('aischat-regis-1');
+        return view('aiscomperegis');
     }
 
     public function registration_2(){
-        return view('aischat-regis-2');
+        return view('aiscomperegis2');
     }
 
-    public function registration_3(){
-        return view('aischat-regis-end');
-    }
-
-    public function store_2(Request $request){
-        
+    public function store_1(Request $request){
         $this->validate($request, [
             'name' => 'required',
             'place' => 'required',
-            'major' => 'required',
-            'email' => 'required|email',
-            'wa' => 'required'
+            'email' => 'required',
+            'wa' => 'required',
         ]);
 
-        $regis1 = collect([
+        $regis1 = array(
             'name' => $request->name,
             'place' => $request->place,
             'email' => $request->email,
-            'major' => $request->major,
-            'wa' => $request->wa,
-        ]);
-        return view('aischat-regis-2', ['regis1' => $regis1]);
+            'wa' => $request->wa
+        );
+
+        return view('aiscomperegis2', ['regis1' => $regis1]);
     }
 
-    public function store_3(Request $request, $name, $email, $major, $wa, $place){
+    public function store_2(Request $request, $name, $place, $email, $wa){
+        
         $this->validate($request, [
             'info' => 'required',
-            'expectation' => 'required'
+            'expect' => 'required'
         ]);
-
         $temp = "'".$wa;
         try {
-            Chatregis::create([
+            Competenregis::create([
                 'name' => $name,
                 'place' => $place,
                 'email' => $email,
-                'major' => $major,
                 'wa' => $temp,
                 'source' => $request->info,
-                'expect' => $request->expectation
+                'expect' => $request->expect
             ]);
-         } 
+        }
         catch (Exception $e) { // It's actually a QueryException but this works too
             if ($e->getCode() == 23000) {
                 // Deal with duplicate key error 
@@ -77,6 +73,7 @@ class WebinarPage extends Controller
                 return view('errors.1062', ['error' => $error]);
             }
         }
-        return redirect()->route('aischat-regis-end');
+
+        return redirect()->route('competency-regis-end');
     }
 }

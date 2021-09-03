@@ -37,16 +37,16 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 pr-5 z-10">
-                <form action="" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('competency-regis-1-store') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Name</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
-                    <label for="institution" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution / University</label>
-                    <input type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Institution">
+                    <input name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Name">
+                    <label for="place" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution / University</label>
+                    <input name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="Your Institution">
                     <label for="email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Email</label>
-                    <input type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="youremail@email.com">
+                    <input name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="youremail@email.com">
                     <label for="wa" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Whatsapp Number</label>
-                    <input type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="08xxxxxxxx">
+                    <input name="wa" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="08xxxxxxxx">
                     <div class="pt-40">
                         <div class="flex flex-row pl-4">
                             <p class="text-sm md:text-lg font-medium">You can see the requirements.</p>
