@@ -60,6 +60,8 @@ Route::get('/aischat/registration-2', [WebinarPage::class, 'registration_2'])->n
 Route::post('/aischat/registration-2/store', [WebinarPage::class, 'store_2'])->name('aischat-regis-2-store');
 Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->name('aischat-regis-end');
 Route::post('/aischat/registration-3/store/{name}/{email}/{major}/{wa}/{place}', [WebinarPage::class, 'store_3'])->name('aischat-regis-3-store');
+//Route::get('/aischat/registration/payment/{id}', [WebinarPage::class, 'payment'])->name('aischat-regis-payment');
+
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 
@@ -68,7 +70,8 @@ Route::get('/admin/volunteer/registration/proof/{volregis}', [VolunteerRegistrat
 Route::get('/admin/volunteer/registration/{volregis}', [VolunteerRegistrationDataController::class, 'delete'])->name('admin-volunteer-delete');
 
 Route::get('/admin/aischat/registration', [AischatRegistrationDataController::class, 'index'])->name('admin-aischat');
-Route::get('/admin/aischat/registration/{chatregis}', [AischatRegistrationDataController::class, 'delete'])->name('admin-aischat-delete');
+Route::get('/admin/aischat/registration/delete/{chatregis}', [AischatRegistrationDataController::class, 'delete'])->name('admin-aischat-delete');
+Route::get('/admin/aischat/registration/show/{id}', [AischatRegistrationDataController::class, 'show'])->name('admin-aischat-show');
 
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 

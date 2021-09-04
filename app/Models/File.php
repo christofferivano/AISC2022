@@ -17,4 +17,12 @@ class File extends Model
     // public function volregis(){
     //     return $this->belongsTo(volregis::class);
     // }
+
+    public function chatregis(){
+        return $this->belongsTo(Chatregis::class);
+    }
+
+    public function competenregis(){
+        return $this->belongsTo(Competenregis::class);
+    }
 }

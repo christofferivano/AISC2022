@@ -69,7 +69,7 @@ class WebinarPage extends Controller
                 'source' => $request->info,
                 'expect' => $request->expectation
             ]);
-         } 
+        } 
         catch (Exception $e) { // It's actually a QueryException but this works too
             if ($e->getCode() == 23000) {
                 // Deal with duplicate key error 
@@ -77,6 +77,16 @@ class WebinarPage extends Controller
                 return view('errors.1062', ['error' => $error]);
             }
         }
-        return redirect()->route('aischat-regis-end');
+        return view('payment-method');
+    }
+
+    public function payment_method(Request $request){
+        $this->validate($request,[
+            'radio' => 'required'
+        ]);
+
+        
+
+        return view('payment-bca');
     }
 }

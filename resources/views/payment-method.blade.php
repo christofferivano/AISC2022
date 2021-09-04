@@ -25,7 +25,7 @@
         <h1 class="text-2xl md:text-5xl font-bold pr-5 md:pr-10 pb-16">
             Payment
         </h1>
-        <form class="w-full max-w-screen-md z-10">
+        <form action="" method="POST" class="w-full max-w-screen-md z-10">
             <div>
                 <input class="hidden" id="radio_1" type="radio" name="radio" checked>
                 <label class="flex flex-col p-4 shadow-md rounded-md md:rounded-xl cursor-pointer" for="radio_1">

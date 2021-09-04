@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\File;
 
 class Chatregis extends Model
 {
@@ -16,11 +17,16 @@ class Chatregis extends Model
         'major',
         'wa',
         'source',
-        'expect'
+        'expect',
+        'status'
     ];
 
     public static function getChatregis(){
         $records = Chatregis::all();
         return $records;
+    }
+
+    public function files(){
+        return $this->hasOne(File::class);
     }
 }

@@ -23,4 +23,9 @@ class AischatRegistrationDataController extends Controller
         $chatregis->delete();
         return back();
     }
+
+    public function show($id){
+        $temp = Chatregis::find($id);
+        dd($temp->files);
+    }
 }

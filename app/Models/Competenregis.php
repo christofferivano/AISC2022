@@ -15,6 +15,11 @@ class Competenregis extends Model
         'email',
         'wa',
         'source',
-        'expect'
+        'expect',
+        'status'
     ];
+
+    public function files(){
+        return $this->hasOne(File::class);
+    }
 }
