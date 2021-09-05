@@ -9,9 +9,9 @@ use Exception;
 
 class WebinarPage extends Controller
 {
-    public function __construct(){
-        $this->middleware(['auth']);
-    }
+    // public function __construct(){
+    //     $this->middleware(['auth']);
+    // }
     public function index(){
         return view('aischat-available');
     }
@@ -77,7 +77,7 @@ class WebinarPage extends Controller
                 return view('errors.1062', ['error' => $error]);
             }
         }
-        return view('aischat-regis-end');
+        return redirect()->route('aischat-regis-end');
     }
 
     public function payment_method(Request $request){
