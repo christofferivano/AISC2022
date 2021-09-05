@@ -16,14 +16,14 @@
         <img src="images/bulet-volunteer-1.png" alt="" class="h-96"> 
     </div>
     <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
-        <div class="mx-auto px-5 md:px-24 py-2">
-            <div class="flex items-center justify-between h-20">
+        <div class="mx-auto px-5 md:px-10 lg:px-16 xl:px-24 py-2">
+            <div class="flex items-center justify-between md:h-12 lg:h-16 xl:h-20">
                 <div>
                     <a href="{{ route('dashboard') }}">
-                        <img src="images/logo.png" alt="" class="w-24">
+                        <img src="images/logo.png" alt="" class="md:w-16 lg:w-20 xl:w-24">
                     </a>
                 </div>
-                <div class="text-lg flex space-x-20 text-gray-900">
+                <div class="text-lg flex md:flex-row md:space-x-10 lg:space-x-14 xl:space-x-20 text-gray-900">
                     <a href="{{ route('volunteer') }}" class="hidden text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
                     <div class="hidden event-btn inline-block relative">
                     <a href="">
@@ -31,14 +31,14 @@
                     </a>
                 </div>
                 <div class="text-lg flex space-x-20 text-gray-900">
-                    <a href="" class="hidden md:block text-footer text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
+                    <a href="" class="hidden md:block text-footer md:text-xs lg:text-sm xl:text-lg font-semibold hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">Volunteer</a>
                     <div class="hidden md:block event-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
-                            <span class="text-footer text-lg font-semibold">Event</span>
-                            <img src="/images/drop.png" alt="" class="w-3 ml-2">
+                            <span class="text-footer md:text-xs lg:text-sm xl:text-lg font-semibold">Event</span>
+                            <img src="/images/drop.png" alt="" class="md:w-2 lg:w-3 ml-2">
                         </button>
                         <ul class="drop-event text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium hover:text-xl">
-                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('aischat') }}">Webinar</a></li>
+                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('aischat') }}">AISChat</a></li>
                             <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="">Social Night</a></li>
                             <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('competency') }}">Aiscompetency</a></li>
                             <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="">Conference Day</a></li>
@@ -46,8 +46,8 @@
                     </div>
                     <div class="hidden md:block compe-btn inline-block relative">
                         <button class="inline-flex items-center hover:shadow-xl hover:bg-opacity-80 hover:bg-white px-4 py-1 rounded">
-                            <span class="text-footer text-lg font-semibold">Competition</span>
-                            <img src="images/drop.png" alt="" class="w-3 ml-2">
+                            <span class="text-footer md:text-xs lg:text-sm xl:text-lg font-semibold">Competition</span>
+                            <img src="images/drop.png" alt="" class="md:w-2 lg:w-3 ml-2">
                         </button>
                         <ul class="drop-compe text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium">
                             <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('competition') }}">Paper Competition</a></li>
@@ -83,7 +83,7 @@
                     </button>
                     <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute z-10 right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-48">
                         <div class="px-2 py-2 bg-white rounded-md shadow dark-mode:bg-gray-800">
-                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Webinar</a>
+                            <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">AISChat</a>
                             <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Social Night</a>
                             <a class="block px-4 py-2 mt-2 text-sm font-semibold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline" href="#">Conference Day</a>
                         </div>
