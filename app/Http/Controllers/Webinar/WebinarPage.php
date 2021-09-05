@@ -77,7 +77,7 @@ class WebinarPage extends Controller
                 return view('errors.1062', ['error' => $error]);
             }
         }
-        return view('payment-method');
+        return view('aischat-regis-end');
     }
 
     public function payment_method(Request $request){

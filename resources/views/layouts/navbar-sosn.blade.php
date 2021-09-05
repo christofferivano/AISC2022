@@ -15,8 +15,11 @@
                     </span>
                     <div class="text-lg flex space-x-20 text-gray-900">
                         <a href="{{ route('volunteer') }}">Volunteer</a>
+                        @auth
+                            <a href="{{ route('admin') }}">Admin</a>
+                        @endauth
                         <a href="">Event</a>
-                        <a href="{{ route('competition') }}">Competition</a>
+                        <a href="">Competition</a>
                     </div>
                 </div>
             </div>
