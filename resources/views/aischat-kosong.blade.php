@@ -1,4 +1,4 @@
-@extends('layouts.navbar-regis-volunteer')
+@extends('layouts.navbar-aischat')
 
 
 @section('content')  
