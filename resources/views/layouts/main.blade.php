@@ -10,18 +10,18 @@
     <link href="{{ asset('css/forswiper.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>AISC 2022</title>
-    <link rel="shortcut icon" href="/images/logogram.ico" />
+    <link rel="shortcut icon" href="/images/Logogram.ico" />
 </head>
 <body class="relative">
     <div style="background-image: url('images/bg-landing-2.png')" class="bg-cover h-landing bg-local relative h-96 md:h-full">
         <div class="absolute pt-12">
-            <img src="images/bulet-landing-1.png" alt="" class="w-1/7 md:w-1/2"> 
+            <img src="../images/bulet-landing-1.png" alt="" class="w-1/7 md:w-1/5 lg:w-1/3 xl:w-1/2"> 
         </div>
         <div class="absolute right-0 top-0">
-            <img src="images/bulet-landing-2.png" alt="" class="h-40 md:h-120"> 
+            <img src="../images/bulet-landing-2.png" alt="" class="h-40 md:h-60 lg:h-96 xl:h-120"> 
         </div>
-        <div class="absolute md:bottom-0 md:pl-100 pt-56 md:-mb-10">
-            <img src="images/bulet-landing-3.png" alt="" class="w-2/7 md:w-1/2"> 
+        <div class="absolute md:bottom-0 md:pl-100 pt-56 lg:-mb-5 xl:-mb-10">
+            <img src="../images/bulet-landing-3.png" alt="" class="w-2/7 md:w-1/2"> 
         </div>
         <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-5 md:px-10 lg:px-16 xl:px-24 py-2">
@@ -117,7 +117,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script>
         //Setup End Date
-        let launchDate = new Date("Aug 20, 2021 23:59:59").getTime();
+        let launchDate = new Date("Sep 17, 2021 23:59:59").getTime();
 
         //Setup Timer Tick
         let timer = setInterval(tick,1000);
