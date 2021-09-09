@@ -103,7 +103,7 @@
         <h1 class="z-10 text-footer text-2xl md:text-4xl lg:text-4.5xl xl:text-6xl font-bold md:pb-4">Join Our AISChat Now!</h1>
         <div class="py-2 md:py-4">
             <button class="py-0.5 md:py-1 lg:py-1.5 xl:py-2 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10">
-                <a class="text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold px-14 md:px-20 lg:w-24 xl:px-32" href="{{ route('aischat-regis') }}">Register Here!</a>
+                <a class="text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold px-14 md:px-20 lg:w-24 xl:px-32" href="{{ route('aischat-regis-one') }}">Register Here!</a>
             </button>
         </div>
         <div class="absolute right-0 md:block right-0 -mt-40 md:-mt-52 z-0">

@@ -20,21 +20,14 @@ class WebinarPage extends Controller
         return view('aischat-kosong');
     }
 
-    public function registration_1(){
-        return view('aischat-regis-1');
+
+    public function createStep1(Request $request){
+        $chatregis = $request->session()->get('chatregis');
+        return view('aischat-regis-1', compact('chatregis', $chatregis));
     }
 
-    public function registration_2(){
-        return view('aischat-regis-2');
-    }
-
-    public function registration_3(){
-        return view('aischat-regis-end');
-    }
-
-    public function store_2(Request $request){
-        
-        $this->validate($request, [
+    public function postCreateStep1(Request $request){
+        $validatedData = $request->validate([
             'name' => 'required',
             'place' => 'required',
             'major' => 'required',
@@ -42,50 +35,54 @@ class WebinarPage extends Controller
             'wa' => 'required'
         ]);
 
-        $regis1 = collect([
-            'name' => $request->name,
-            'place' => $request->place,
-            'email' => $request->email,
-            'major' => $request->major,
-            'wa' => $request->wa,
-        ]);
-        return view('aischat-regis-2', ['regis1' => $regis1]);
+        if (empty($request->session()->get('chatregis'))){
+            $chatregis = new Chatregis();
+            $chatregis->fill($validatedData);
+            $request->session()->put('chatregis', $chatregis);
+        }
+        else{
+            $chatregis = $request->session()->get('chatregis');
+            $chatregis->fill($validatedData);
+            $request->session()->put('chatregis', $chatregis);
+        }
+        // dd('success');
+        return redirect()->route('aischat-regis-two');
     }
 
-    public function store_3(Request $request, $name, $email, $major, $wa, $place){
-        $this->validate($request, [
-            'info' => 'required',
-            'expectation' => 'required'
-        ]);
+    public function createStep2(Request $request){
+        $chatregis = $request->session()->get('chatregis');
+        return view('aischat-regis-2', compact('chatregis', $chatregis));
+    }
 
-        $temp = "'".$wa;
-        try {
-            Chatregis::create([
-                'name' => $name,
-                'place' => $place,
-                'email' => $email,
-                'major' => $major,
-                'wa' => $temp,
-                'source' => $request->info,
-                'expect' => $request->expectation
-            ]);
-        } 
-        catch (Exception $e) { // It's actually a QueryException but this works too
-            if ($e->getCode() == 23000) {
-                // Deal with duplicate key error 
-                $error = $e->getMessage(); 
-                return view('errors.1062', ['error' => $error]);
-            }
+    public function postCreateStep2(Request $request){
+        $validatedData = $request->validate([
+            'source' => 'required',
+            'expect' => 'required'
+        ]);
+        if (empty($request->session()->get('chatregis'))){
+            $chatregis = new Chatregis();
+            $chatregis->fill($validatedData);
+            $request->session()->put('chatregis', $chatregis);
+        }
+        else{
+            $chatregis = $request->session()->get('chatregis');
+            $chatregis->fill($validatedData);
+            $request->session()->put('chatregis', $chatregis);
         }
         return redirect()->route('aischat-regis-end');
+    }
+
+    public function registration_3(Request $request){
+        $chatregis = $request->session()->get('chatregis');
+        $chatregis->save();
+        $request->session()->forget('chatregis');
+        return view('aischat-regis-end');
     }
 
     public function payment_method(Request $request){
         $this->validate($request,[
             'radio' => 'required'
         ]);
-
-        
 
         return view('payment-bca');
     }
