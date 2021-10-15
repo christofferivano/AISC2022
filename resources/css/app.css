@@ -34,6 +34,51 @@
     color: white;
 }
 
+.card:hover #logo-paper
+{
+    visibility: hidden;
+}
+
+.card #logo-paper-hover
+{
+    visibility: hidden;
+}
+
+.card:hover #logo-paper-hover
+{
+    visibility: visible;
+}
+
+.card:hover #logo-poster
+{
+    visibility: hidden;
+}
+
+.card #logo-poster-hover
+{
+    visibility: hidden;
+}
+
+.card:hover #logo-poster-hover
+{
+    visibility: visible;
+}
+
+.card:hover #logo-cheme
+{
+    visibility: hidden;
+}
+
+.card #logo-cheme-hover
+{
+    visibility: hidden;
+}
+
+.card:hover #logo-cheme-hover
+{
+    visibility: visible;
+}
+
 .member:hover span
 {
     color: white;

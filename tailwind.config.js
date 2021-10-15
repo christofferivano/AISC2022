@@ -84,6 +84,8 @@ module.exports = {
         '110': '27.5rem',
         '120': '30rem',
         '140': '35rem',
+        '145': '37.5rem',
+        '150': '40rem',
       },
       colors: {
         footer: '#30264F',
