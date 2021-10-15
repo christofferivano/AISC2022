@@ -11,7 +11,7 @@
     <div class="pt-32 grid md:grid-cols-5 pb-96 md:pb-32 w-full">
         <div class="md:col-span-2 md:col-start-1 pl-5 md:pl-24 flex flex-col items-start w-full">
             <h1 class="absolute py-5 md:py-0.5 md:relative text-2xl md:text-5xl font-bold">
-                Paper Competition Registration
+                Poster Competition Registration
                 <div class="md:hidden flex flex-row right-0 pl-64 md:pl-80 -mt-10 pt-6">
                     <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
                     <div class="px-1 md:px-2">
@@ -150,7 +150,7 @@
                 </div>
                 <div class="rounded-full h-4 w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
             </div>
-            <img src="/images/compe-regis.png" alt="" class="w-5/7 pt-20 z-10">
+            <img src="/images/poster-bg.png" alt="" class="w-5/7 pt-20 z-10">
             <div class="absolute right-0 bottom-48 -mb-96 z-0">
                 <img src="images/compe-kanan.png" alt="" class="h-150">
             </div>
