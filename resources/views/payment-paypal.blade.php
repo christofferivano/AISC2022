@@ -1,18 +1,12 @@
 @extends('layouts.navbar-regis-volunteer')
 
 @section('content')
-    <div class="absolute left-0 top-0 z-0">
-        <img src="/images/bulet-payment-1.png" alt="" class="w-48 md:w-96 -mb-40">
-    </div>
-    <div class="absolute right-0 bottom-0 z-0 -mr-20 md:-mr-0">
-        <img src="/images/bulet-payment-2.png" alt="" class="h-60 -mb-40">
+<div class="hidden md:block absolute z-0">
+        <img src="/images/compe-atas.png" alt="" class="w-97 ml-64 pl-20">
     </div>
 
-
-    <div class="flex justify-center pt-40 z-10">
-        <h1 class="pl-8 md:pl-0 text-3xl md:text-5xl font-bold">
-            Payment
-        </h1>
+    <div class="absolute right-0 top-96">
+        <img src="/images/bayarbcovgo.png" alt="" class="w-96">
     </div>
 
     <div class="absolute flex flex-row right-0 pr-2 md:pr-28 -mt-5 md:-mt-4 -mr-12 md:-mr-0 z-10">
@@ -26,35 +20,72 @@
         <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
     </div>
 
-    <div class ="flex flex-col px-6 md:px-60 py-20 md:py-32 z-10">
-        <div class="rounded-lg py-4 px-4 border border-grey-200 overflow-hidden bg-white w-full shadow-lg z-10">
-            <div class="px-5 md:px-6 flex flex-row items-center justify-between h-16">
-                <img src="images/paypal.png" alt="" class="h-8 md:h-14">
-                <h2 class="text-xl md:text-2xl font-bold  -ml-10 md:-ml-40 md:pl-4">Paypal</h2>
-                <div class="rounded-full h-6 w-6 border-2 border-gray-400">
-                    <img src="images/ceklis.png" alt="" class="h-full">
+
+    <div class="flex justify-center pt-40 z-10">
+        <h1 class="pl-8 md:pl-0 text-3xl md:text-5xl font-bold">
+            Payment
+        </h1>
+    </div>
+    <div class="grid grid-cols-2">
+        <div class="">
+            <img src="/images/payment-bg.png" alt="" class="w-6/7">
+        </div>
+        <h1 class="flex flex-col text-5xl justify-center font-semibold">
+            Registration Fee : <br>
+            <div class="pt-2">
+                Rp. 60.000/Person
+            </div>
+            <div class="text-xl font-normal pt-2">
+                *6 USD/person (international student)
+            </div>
+            <div class="text-xl font-normal pt-16">
+            BCA 7655051236 (Salwa Azzahrah) <br>
+            OVO 08113150102 (Salwa Azzahrah) <br>
+            Gopay 08113150102 (Salwa Azzahrah) <br>
+            </div>
+        </h1>
+    </div>
+
+
+    <div class="rounded bg-gray-50 border border-grey-700  z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
+        <div class ="flex flex-col px-6 md:px-60 py-20 md:py-32 z-10">
+            <h1 class="underline text-2xl pb-10 pl-6">
+                Payment Method Selected
+            </h1>
+            <div class="rounded-lg py-4 px-4 border border-grey-200 overflow-hidden bg-white w-full shadow-lg z-10">
+                <div class="px-5 md:px-6 flex flex-row items-center justify-between h-16">
+                    <img src="images/paypal.png" alt="" class="h-8 md:h-14">
+                    <h2 class="text-xl md:text-2xl font-bold  -ml-10 md:-ml-40 md:pl-4">Paypal</h2>
+                    <div class="rounded-full h-6 w-6 border-2 border-gray-400">
+                        <img src="images/ceklis.png" alt="" class="h-full">
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="z-10">
-            <form action="" class="flex flex-col items-start pt-12">
-                @csrf
-                <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
-                <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
-                <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                <input type="date" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent">
-                <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
-                <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
-                    File
-                </label>
-                <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
-                <div class="pt-32 md:pt-20 w-full">
-                    <button type="submit" class="w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
-                        Next
-                    </button>
-                </div>
-            </form>
+            <div class="absolute left-0 -bottom-96 -mb-64 z-0">
+                    <img src="/images/bayarrounded.png" alt="" class="w-80 opacity-75">
+            </div>
+
+            <div class="z-10 ">
+                <form action="" class="flex flex-col items-start pt-12">
+                    @csrf
+                    <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
+                    <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
+                    <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                        File
+                    </label>
+                    <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                    <div class="pt-32 md:pt-20 w-full">
+                        <button type="submit" class="w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
+                            Next
+                        </button>
+                    </div>
+                    <div class="absolute right-0 top-3/4 pt-103 bottom-0 z-0">
+                        <img src="/images/bayarbawah.png" alt="" class="w-72">
+                    </div>
+                </form>
+            </div>
         </div>
     </div>
 
