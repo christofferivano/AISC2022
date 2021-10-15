@@ -34,28 +34,37 @@
                 </div>
             </div>
             <div class="w-full pt-10 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('aischat-regis-3-store', [
-                    'name' => $regis1->get('name'),
-                    'email' => $regis1->get('email'),
-                    'major' => $regis1->get('major'),
-                    'wa' => $regis1->get('wa'),
-                    'place' => $regis1->get('place'),
-                    ]) }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('aischat-regis-two') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
-                    <label for="info" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?</label>
+                    <label for="source" class="pb-2 pl-4 text-base md:text-xl font-medium">Where did you get this information?*</label>
                     <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
-                    name="info" for="info">
+                    name="source" for="source">
                         <option class="py-1 font-sans" disabled selected hidden>Choose an Option</option>
-                        <option class="py-1 font-sans">AISC Instagram</option>
-                        <option class="py-1 font-sans">AISC LinkedIn</option>
-                        <option class="py-1 font-sans">AISC Tik Tok</option>
-                        <option class="py-1 font-sans">AISC OA Line</option>
-                        <option class="py-1 font-sans">Media Partner</option>
-                        <option class="py-1 font-sans">Friends</option>
-                        <option class="py-1 font-sans">Others</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC Instagram') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">AISC Instagram</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC LinkedIn') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">AISC LinkedIn</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC Tik Tok') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">AISC Tik Tok</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC OA Line') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">AISC OA Line</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC Media Partner') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">Media Partner</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC Friends') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">Friends</option>
+                        <option {{{ (isset($chatregis->source) && $chatregis->source == 'AISC Others') ? "selected=\"selected\"" : "" }}} class="py-1 font-sans">Others</option>
                     </select>
-                    <label for="expectation" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">What do you expect from this event?</label>
-                    <input name="expectation" type="text" class="outline-none rounded-lg border border-form py-20 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('source')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The information source is required!
+                            </div>
+                    @enderror
+                    <label for="expect" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">What do you expect from this event?*</label>
+                    <input value="{{{ $chatregis->expect ?? '' }}}" name="expect" type="text" class="outline-none rounded-lg border border-form py-20 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('expect')
+                            <div class="text-red-500 mt-2 text-sm">
+                                Your expectation is required!
+                            </div>
+                    @enderror
+
+                    <div class="text-black-500 mt-4 text-sm">
+                        * is required!
+                    </div>
+                    
                     <a href="" class="pt-32 md:pt-10">
                         <button type="submit" class="w-80 md:w-96 bg-gradient-to-l from-blue-300 to-purple-400 py-1 rounded-full text-white text-lg font-semibold shadow-lg">
                             Next
@@ -82,7 +91,7 @@
         </div>
     </div>
     <div class="hidden md:block absolute left-0 -mt-80 z-0">
-        <img src="images/bulet-aischat-4.png" alt="" class="h-120">
+        <img src="/images/bulet-aischat-4.png" alt="" class="h-120">
     </div>
 
     <!-- Footer -->

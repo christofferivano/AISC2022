@@ -482,7 +482,7 @@
             <h1 class="text-footer text-xl md:text-5xl font-bold py-2" data-aos="zoom-in" data-aos-duration="1500" >Join Us Now!</h1>
             <div class="py-2 md:py-4">
                 <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10" data-aos="zoom-in" data-aos-duration="2000">
-                    <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('volunteer-regis') }}">Register Here!</a>
+                    <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('volunteer-end') }}">Register Here!</a>
                 </button>
             </div>
             <div class="absolute left-0 md:left-0 z-0">

@@ -138,7 +138,7 @@
                                 {{ $r->expect }}
                             </td>
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    <a href="{{ route('admin-aischat-delete', $r) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Delete</a>
+                                    <a onClick='javascript:return confirm("Are you sure want to delete {{ $r->name }} from the registration data list?");' href="{{ route('admin-aischat-delete', $r) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Delete</a>
                                 </td>
                                 {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     <a href="{{ route('admin-aischat-show', $r->id) }} " class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Validate</a>
