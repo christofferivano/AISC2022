@@ -2,42 +2,62 @@
 
 
 @section('content')
-    <div class="hidden md:block absolute z-0">
+<div class="hidden md:block absolute z-0">
         <img src="/images/compe-atas.png" alt="" class="w-97 ml-64 pl-20">
     </div>
 
-    <div class="absolute right-0 top-96">
-        <img src="/images/bayarbcovgo.png" alt="" class="w-96">
+    <div class="absolute right-0 top-96 pt-56 md:pt-0">
+        <img src="/images/bayarbcovgo.png" alt="" class="w-40 md:w-96">
     </div>
 
-    <div class="absolute flex flex-row right-0 pr-5 md:pr-28 pt-44 md:pt-48 z-10">
-        <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
-        <div class="px-2">
-            <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
-        </div>
-        <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
-    </div>
-
-    <!-- Payment Method -->
-    <div class="pt-40 flex flex-col items-center justify-center z-10">
-        <h1 class="text-2xl md:text-5xl font-bold pr-5 md:pr-10 pb-16">
+    <div class="flex flex-row justify-center pt-40 z-10">
+        <h1 class="pl-0 text-3xl md:text-5xl font-bold">
             Payment
         </h1>
+        <div class="absolute flex flex-row right-16 md:right-20 pr-2 md:pr-28 -mt-5 md:-mt-4 -mr-12 md:-mr-0 z-10 pt-10">
+            <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
+            <div class="px-2">
+                <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
+            </div>
+            <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
+        </div>
     </div>
 
-    <div class="grid grid-cols-2">
-        <div class="">
-            <img src="/images/payment-bg.png" alt="" class="w-6/7">
+    <div class="hidden md:grid grid-cols-2 pt-10 md:pt-0">
+        <img src="/images/payment-bg.png" alt="" class="w-6/7 z-10">
+        <div class="absolute md:hidden -bottom-10 z-0">
+            <img src="/images/bgkanan.png" alt="" class="w-96">
         </div>
-        <h1 class="flex flex-col text-5xl justify-center font-semibold">
+        <h1 class="flex flex-col text-2xl md:text-5xl justify-center font-semibold pl-8 md:pl-0">
             Registration Fee : <br>
             <div class="pt-2">
                 Rp. 60.000/Person
             </div>
-            <div class="text-xl font-normal pt-2">
+            <div class="text-base md:text-xl font-normal pt-2">
                 *6 USD/person (international student)
             </div>
-            <div class="text-xl font-normal pt-16">
+            <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
+            BCA 7655051236 (Salwa Azzahrah) <br>
+            OVO 08113150102 (Salwa Azzahrah) <br>
+            Gopay 08113150102 (Salwa Azzahrah) <br>
+            </div>
+        </h1>
+    </div>
+
+    <div class="md:hidden grid grid-rows-2 pt-10 md:pt-0">
+        <img src="/images/payment-bg.png" alt="" class="w-6/7 z-10">
+        <div class="absolute md:hidden -bottom-10 z-0">
+            <img src="/images/bgkanan.png" alt="" class="w-96">
+        </div>
+        <h1 class="flex flex-col text-2xl md:text-5xl justify-center font-semibold pl-8 md:pl-0">
+            Registration Fee : <br>
+            <div class="pt-2">
+                Rp. 60.000/Person
+            </div>
+            <div class="text-base md:text-xl font-normal pt-2">
+                *6 USD/person (international student)
+            </div>
+            <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
             BCA 7655051236 (Salwa Azzahrah) <br>
             OVO 08113150102 (Salwa Azzahrah) <br>
             Gopay 08113150102 (Salwa Azzahrah) <br>
@@ -73,19 +93,22 @@
                 </div>
             </form>
         </div>
-        <div class="absolute left-0 -bottom-96 -mb-64 z-0">
+        <div class="absolute left-0 -bottom-96 -mb-64 md:-mb-40 z-0">
                 <img src="/images/bayarrounded.png" alt="" class="w-80 opacity-75">
         </div>
         
-        <div class="flex flex-col items-center pt-60 md:pt-40 pb-40 px-80">
-            <button type="submit" class="w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
+        <div class="flex items-center pt-5 md:pt-10 my-2 md:my-20 pb-40 md:pb-0 px-20 md:px-72 z-10">
+            <button type="submit" class="w-96 md:w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
+            <a href="payment-paypal">
                 Next
+            </a>    
             </button>
         </div>
 
-        <div class="absolute right-0 top-3/4 pt-103 bottom-0 z-0">
-            <img src="/images/bayarbawah.png" alt="" class="w-72">
+        <div class="absolute right-0 top-3/4 mt-105 md:mt-102 bottom-0 z-0">
+            <img src="/images/bayarbawah.png" alt="" class="w-40 md:w-72">
         </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
