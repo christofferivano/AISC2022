@@ -30,7 +30,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'payment-bca')->name('dashboard');
+Route::view('/dashboard', 'payment-paypal')->name('dashboard');
 
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
 

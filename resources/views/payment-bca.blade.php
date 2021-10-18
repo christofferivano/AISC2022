@@ -5,18 +5,15 @@
         <img src="/images/compe-atas.png" alt="" class="w-97 ml-64 pl-20">
     </div>
 
-    <div class="absolute right-0 top-96">
-        <img src="/images/bayarbcovgo.png" alt="" class="w-96">
+    <div class="absolute right-0 top-96 pt-56 md:pt-0">
+        <img src="/images/bayarbcovgo.png" alt="" class="w-40 md:w-96">
     </div>
 
     <div class="flex flex-row justify-center pt-40 z-10">
-        <h1 class="pl-8 md:pl-0 text-3xl md:text-5xl font-bold">
+        <h1 class="pl-0 text-3xl md:text-5xl font-bold">
             Payment
         </h1>
-        <div class="absolute flex flex-row right-0 pr-2 md:pr-28 -mt-5 md:-mt-4 -mr-12 md:-mr-0 z-10 pt-10">
-            <div class="px-2">
-                <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
-            </div>
+        <div class="absolute flex flex-row right-16 md:right-20 pr-2 md:pr-28 -mt-5 md:-mt-4 -mr-12 md:-mr-0 z-10 pt-10">
             <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
             <div class="px-2">
                 <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
@@ -24,32 +21,56 @@
             <div class="rounded-full h-3 w-3 md:h-4 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
         </div>
     </div>
-    <div class="grid grid-cols-2">
-        <div class="">
-            <img src="/images/payment-bg.png" alt="" class="w-6/7">
+
+    <div class="hidden md:grid grid-cols-2 pt-10 md:pt-0">
+        <img src="/images/payment-bg.png" alt="" class="w-6/7 z-10">
+        <div class="absolute md:hidden -bottom-10 z-0">
+            <img src="/images/bgkanan.png" alt="" class="w-96">
         </div>
-        <h1 class="flex flex-col text-5xl justify-center font-semibold">
+        <h1 class="flex flex-col text-2xl md:text-5xl justify-center font-semibold pl-8 md:pl-0">
             Registration Fee : <br>
             <div class="pt-2">
                 Rp. 60.000/Person
             </div>
-            <div class="text-xl font-normal pt-2">
+            <div class="text-base md:text-xl font-normal pt-2">
                 *6 USD/person (international student)
             </div>
-            <div class="text-xl font-normal pt-16">
+            <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
             BCA 7655051236 (Salwa Azzahrah) <br>
             OVO 08113150102 (Salwa Azzahrah) <br>
             Gopay 08113150102 (Salwa Azzahrah) <br>
             </div>
         </h1>
     </div>
-    <div class="rounded bg-gray-50 border border-grey-700  z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
+
+    <div class="md:hidden grid grid-rows-2 pt-10 md:pt-0">
+        <img src="/images/payment-bg.png" alt="" class="w-6/7 z-10">
+        <div class="absolute md:hidden -bottom-10 z-0">
+            <img src="/images/bgkanan.png" alt="" class="w-96">
+        </div>
+        <h1 class="flex flex-col text-2xl md:text-5xl justify-center font-semibold pl-8 md:pl-0">
+            Registration Fee : <br>
+            <div class="pt-2">
+                Rp. 60.000/Person
+            </div>
+            <div class="text-base md:text-xl font-normal pt-2">
+                *6 USD/person (international student)
+            </div>
+            <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
+            BCA 7655051236 (Salwa Azzahrah) <br>
+            OVO 08113150102 (Salwa Azzahrah) <br>
+            Gopay 08113150102 (Salwa Azzahrah) <br>
+            </div>
+        </h1>
+    </div>
+
+    <div class="rounded bg-gray-50 border border-grey-700 z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
         <div class ="flex flex-col px-6 md:px-60 py-20 md:py-32 z-10">
             <div class="rounded-lg p-4 border border-grey-200 overflow-hidden bg-white w-full shadow-lg z-10">
                 <div class="px-2 md:px-6 flex flex-row items-center justify-between h-16">
                     <img src="images/BCA.png" alt="" class="h-14">
                     <h2 class="text-xl md:text-2xl font-bold -ml-10 md:-ml-20">BCA Transfer</h2>
-                    <div class="rounded-full h-6 w-6 border-2 border-gray-400">
+                    <div class="rounded-full h-6 w-6 border-1 border-gray-400">
                         <img src="images/ceklis.png" alt="" class="h-full">
                     </div>
                 </div>
@@ -75,8 +96,8 @@
                             Next
                         </button>
                     </div>
-                    <div class="absolute right-0 top-3/4 pt-103 bottom-0 z-0">
-                        <img src="/images/bayarbawah.png" alt="" class="w-72">
+                    <div class="absolute right-0 top-3/4 mt-108 md:mt-105 bottom-0 z-0">
+                        <img src="/images/bayarbawah.png" alt="" class="w-40 md:w-72">
                     </div>
                 </form>
             </div>
