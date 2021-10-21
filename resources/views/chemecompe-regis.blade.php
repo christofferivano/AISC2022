@@ -11,9 +11,9 @@
     <div class="pt-32 md:grid md:grid-cols-5 pb-96 md:pb-32 md:w-full">
         <div class="md:col-span-2 md:col-start-1 pl-1 md:pl-24 flex flex-col items-start md:w-full">
             <h1 class="hidden md:block md:absolute py-5 md:py-0.5 md:relative text-2xl md:text-5xl font-bold">
-                Paper Competition Registration
+                ChemE Jeopardy Competition Registration
                 <h2 class="md:hidden text-lg font-bold">
-                    Paper Competition
+                    ChemE Jeopardy Competition
                 </h2>
                 <h1 class="md:hidden text-2xl font-bold">
                     Registration
@@ -128,11 +128,11 @@
                         * is required!
                     </div>
                     <div class="flex flex-col pt-20">
-                        <div class="text-black-500 mt-4 text-xs md:text-lg pl-2 md:pl-10">
+                        <div class="text-black-500 w-96 md:w-full mt-4 text-xs md:text-lg pl-2 md:pl-10">
                         The guidebook of each competitions can be found, <a href="" class="underline text-blue-500">Here</a>
                         </div>
                         <a href="competitionregis-2" class="pt-2 md:pl-5">
-                            <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
+                            <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>
                         </a>
@@ -140,7 +140,7 @@
                 </form>
             </div>
             <div class="py-20 md:py-0">
-                <img src="/images/compe-regis.png" alt="" class="md:hidden absolute left-0 bottom-6/7 h-96 -mb-96">
+                <img src="/images/cheme-bg.png" alt="" class="md:hidden absolute right-0 bottom-6/7 h-96 -mb-96">
             </div>
             <img src="images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
             <img src="images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
@@ -155,7 +155,7 @@
                     <div class="rounded-full h-4 w-4 bg-gradient-to-r from-gray-100 to-gray-300 shadow-lg"></div>
                 </div>
             </div>
-            <img src="/images/compe-regis.png" alt="" class="w-5/7 pt-20 z-10">
+            <img src="/images/cheme-bg.png" alt="" class="w-5/7 pt-20 z-10">
             <div class="absolute right-0 bottom-48 -mb-96 z-0">
                 <img src="images/compe-kanan.png" alt="" class="h-150">
             </div>
