@@ -11,4 +11,8 @@ class PosterCompetitionController extends Controller
     {
         return view('competition-poster');
     }
+
+    public function register(){
+        return view('postercompe-regis');
+    }
 }

@@ -11,4 +11,8 @@ class JeopardyCompetitionController extends Controller
     {
         return view('competition-cheme');
     }
+
+    public function register(){
+        return view('chemecompe-regis');
+    }
 }

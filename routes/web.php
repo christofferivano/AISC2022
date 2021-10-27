@@ -68,12 +68,15 @@ Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition
 
 //Route for poster
 Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
+Route::get('/competition/poster/register', [PosterCompetitionController::class, 'register'])->name('poster-competition-regis');
 
 //Route for paper
 Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
+Route::get('/competition/paper/register', [PaperCompetitionController::class, 'register'])->name('paper-competition-regis');
 
 //Route for Cheme Jeopardy
 Route::get('/competition/cheme', [JeopardyCompetitionController::class, 'index'])->name('cheme-competition');
+Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'register'])->name('cheme-competition-regis');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 

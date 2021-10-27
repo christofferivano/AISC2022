@@ -11,4 +11,8 @@ class PaperCompetitionController extends Controller
     {
         return view('competition-paper');
     }
+
+    public function register(){
+        return view('papercompe-regis');
+    }
 }
