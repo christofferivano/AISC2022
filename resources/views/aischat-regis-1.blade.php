@@ -68,12 +68,19 @@
                                 The whatsapp number is required!
                             </div>
                     @enderror
+                    <label for="rcode" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Referal Code*</label>
+                    <input value="{{{ $chatregis->rcode ?? '' }}}" name="rcode" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('rcode')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The referal code is required!
+                            </div>
+                    @enderror
 
                     <div class="text-black-500 mt-4 text-sm">
                         * is required!
                     </div>
 
-                    <a href="" class="pt-10">
+                    <a href="aischat-regis-2" class="pt-10">
                         <button type="submit" class="w-96 bg-gradient-to-l from-blue-300 to-purple-400 py-1 rounded-full text-white text-lg font-semibold shadow-lg">
                             Next
                         </button>

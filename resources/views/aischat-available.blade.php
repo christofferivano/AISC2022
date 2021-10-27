@@ -47,13 +47,13 @@
             </div>
             <div class="col-span-2 col-start-2 md:pl-20 py-14 md:py-20 lg:py-28 xl:py-40">
                 <p class="text-xxs md:text-sm lg:text-base xl:text-xl font-semibold text-justify">
-                Mr. Ahmad Agus Setiawan is an assistant professor in 
-                renewable energy systems and planning at Gadjah Mada 
-                University. He is an Energy expert staff in the Executive Office 
-                of the President of the Republic of Indonesia. He will explain 
-                the topic of "Diving Into ASEAN SDGs," where the discussion is 
-                about the importance of SDGs for countries in ASEAN. So what 
-                are you waiting for!
+                Prof. Carson Meredith will explain about:
+                <div class="list-decimal text-xxs md:text-sm lg:text-base xl:text-xl font-semibold text-justify">
+                <li>The benefits and problems of plastic today</li>
+                <li>The cause of plastic is very harmful to the environment</li>
+                <li>Processes and materials for making renewable materials</li>
+                <li>The impact of innovation on renewable materials derived from crab shells and plants on the environment is correlated with the SDGs and the economic viability of the innovation.</li>
+                </div>
                 </p>
                 <p class="text-xs md:text-sm lg:text-base xl:text-xl font-semibold pt-4 md:pt-4 lg:pt-6 xl:pt-10">
                     Speaker : Ahmad Agus Setiawan, ST., M.Sc., Ph.D.

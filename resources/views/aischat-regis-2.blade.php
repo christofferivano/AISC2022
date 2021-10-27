@@ -91,7 +91,7 @@
         </div>
     </div>
     <div class="hidden md:block absolute left-0 -mt-80 z-0">
-        <img src="images/bulet-aischat-4.png" alt="" class="h-120">
+        <img src="/images/bulet-aischat-4.png" alt="" class="h-120">
     </div>
 
     <!-- Footer -->
