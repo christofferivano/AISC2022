@@ -16,6 +16,10 @@ class CreateVoucherTable extends Migration
         Schema::create('voucher', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('jenis_voucher')->nullable(false);
+            $table->string('nama_institusi');
+            $table->integer('besar_potongan')->nullable(false);
+            $table->string('kode_voucher')->nullable(false);
         });
     }
 

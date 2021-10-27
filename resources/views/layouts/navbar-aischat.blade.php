@@ -146,9 +146,9 @@
                             <img src="/images/drop.png" alt="" class="md:w-2 lg:w-3 ml-2">
                         </button>
                         <ul class="drop-compe text-gray-700 pt-3 w-60 shadow-xl text-footer font-medium">
-                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="">Paper Competition</a></li>
-                            <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">Poster Competition</a></li>
-                            <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="#">ChemE Jeopardy Competition</a></li>
+                            <li class=""><a class="rounded-t bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('paper-competition') }}">Paper Competition</a></li>
+                            <li class=""><a class="bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('poster-competition') }}">Poster Competition</a></li>
+                            <li class=""><a class="rounded-b bg-white backdrop-filter backdrop-blur-lg bg-opacity-80 hover:bg-gray-200 focus:bg-gray-400 py-2 px-4 block" href="{{ route('cheme-competition') }}">ChemE Jeopardy Competition</a></li>
                         </ul>
                     </div>
                 </div>
