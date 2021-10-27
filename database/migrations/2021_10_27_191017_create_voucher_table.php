@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddStatusToCompetenregisTable extends Migration
+class CreateVoucherTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddStatusToCompetenregisTable extends Migration
      */
     public function up()
     {
-        Schema::table('competenregis', function (Blueprint $table) {
-            $table->integer('status')->default(0);
+        Schema::create('voucher', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
         });
     }
 
@@ -25,8 +26,6 @@ class AddStatusToCompetenregisTable extends Migration
      */
     public function down()
     {
-        Schema::table('competenregis', function (Blueprint $table) {
-            $table->dropColumn('status');
-        });
+        Schema::dropIfExists('voucher');
     }
 }

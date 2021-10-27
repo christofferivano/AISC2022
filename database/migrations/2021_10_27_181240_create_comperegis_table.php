@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateReferallTable extends Migration
+class CreateComperegisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,11 +13,13 @@ class CreateReferallTable extends Migration
      */
     public function up()
     {
-        Schema::create('referall', function (Blueprint $table) {
+        Schema::create('comperegis', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('referral_code')->unique();
-            $table->integer('team');
+            $table->string('jenis')->nullable(false);
+            $table->string('nama_tim')->nullable(false);
+            $table->integer('total_pembayaran')->nullable(false)->default(0);
+            $table->integer('validation')->nullable(false)->default(0);
         });
     }
 
@@ -28,6 +30,6 @@ class CreateReferallTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('referall');
+        Schema::dropIfExists('comperegis');
     }
 }
