@@ -30,7 +30,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'comperegisdone')->name('dashboard');
+Route::view('/dashboard', 'chemecompe-regis')->name('dashboard');
 
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
 

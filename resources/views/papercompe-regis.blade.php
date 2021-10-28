@@ -50,8 +50,32 @@
                                 The team leader is required!
                             </div>
                     @enderror
+                    <label for="origin" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Origin*</label>
+                    <select name="origin" for="origin" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
+                        <option class="py-1 font-sans" disabled selected hidden>Select Origin</option>
+                        <option class="py-1 font-sans">Indonesia</option>
+                        <option class="py-1 font-sans">International</option>
+                    </select>
+                    @error('origin')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The origin is required!
+                            </div>
+                    @enderror
                     <label for="place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                    <input value="{{{ $chatregis->place ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <select name="place" for="place" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
+                        <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                        <option class="py-1 font-sans">Pre-Event</option>
+                        <option class="py-1 font-sans">Conference Day</option>
+                        <option class="py-1 font-sans">nAISC Night</option>
+                        <option class="py-1 font-sans">Logistic</option>
+                        <option class="py-1 font-sans">Sponsorship</option>
+                        <option class="py-1 font-sans">Paper Competition</option>
+                        <option class="py-1 font-sans">Poster Competition</option>
+                        <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                        <option class="py-1 font-sans">Social Media Specialist</option>
+                        <option class="py-1 font-sans">Outreach</option>
+                        <option class="py-1 font-sans">Media Production</option>
+                    </select>
                     @error('place')
                             <div class="text-red-500 mt-2 text-sm">
                                 The institution/university is required!
@@ -76,7 +100,20 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place1 ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <select name="place1" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                <option class="py-1 font-sans">Pre-Event</option>
+                                <option class="py-1 font-sans">Conference Day</option>
+                                <option class="py-1 font-sans">nAISC Night</option>
+                                <option class="py-1 font-sans">Logistic</option>
+                                <option class="py-1 font-sans">Sponsorship</option>
+                                <option class="py-1 font-sans">Paper Competition</option>
+                                <option class="py-1 font-sans">Poster Competition</option>
+                                <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                                <option class="py-1 font-sans">Social Media Specialist</option>
+                                <option class="py-1 font-sans">Outreach</option>
+                                <option class="py-1 font-sans">Media Production</option>
+                            </select>
                             @error('place')
                                     <div class="text-red-500 mt-2 text-sm">
                                         The institution/university for team member 1 is required!
@@ -96,7 +133,20 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place2 ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <select name="place2" for="place2" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                <option class="py-1 font-sans">Pre-Event</option>
+                                <option class="py-1 font-sans">Conference Day</option>
+                                <option class="py-1 font-sans">nAISC Night</option>
+                                <option class="py-1 font-sans">Logistic</option>
+                                <option class="py-1 font-sans">Sponsorship</option>
+                                <option class="py-1 font-sans">Paper Competition</option>
+                                <option class="py-1 font-sans">Poster Competition</option>
+                                <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                                <option class="py-1 font-sans">Social Media Specialist</option>
+                                <option class="py-1 font-sans">Outreach</option>
+                                <option class="py-1 font-sans">Media Production</option>
+                            </select>
                             @error('place')
                                     <div class="text-red-500 mt-2 text-sm">
                                         The institution/university for team member 2 is required!
@@ -116,7 +166,20 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place3 ?? '' }}}" name="place3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <select name="place3" for="place3" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                <option class="py-1 font-sans">Pre-Event</option>
+                                <option class="py-1 font-sans">Conference Day</option>
+                                <option class="py-1 font-sans">nAISC Night</option>
+                                <option class="py-1 font-sans">Logistic</option>
+                                <option class="py-1 font-sans">Sponsorship</option>
+                                <option class="py-1 font-sans">Paper Competition</option>
+                                <option class="py-1 font-sans">Poster Competition</option>
+                                <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                                <option class="py-1 font-sans">Social Media Specialist</option>
+                                <option class="py-1 font-sans">Outreach</option>
+                                <option class="py-1 font-sans">Media Production</option>
+                            </select>
                             @error('place')
                                     <div class="text-red-500 mt-2 text-sm">
                                         The institution/university for team member 3 is required!
