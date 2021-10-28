@@ -1,4 +1,4 @@
-@extends('layouts.navbar-regis-volunteer')
+@extends('layouts.paymentmethod')
 
 
 @section('content')
@@ -72,13 +72,13 @@
                         <div class="px-2 md:px-6 flex flex-row items-center justify-between h-16">
                             <img src="images/BCA.png" alt="" class="h-14">
                             <h2 class="text-xl md:text-2xl font-bold -ml-10 md:-ml-40 md:pl-4">BCA Transfer</h2>
-                            <button onclick="BCA()" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
+                            <button id="bcabutt" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
                                 <img src="images/ceklis.png" alt="" class="ceklis h-full w-full hidden">
                             </button>
                         </div>
                     </label>
                 </div>
-                <div class="flex flex-col items-start pt-12">
+                <div id="bcadisplay" class="flex flex-col items-start pt-12">
                     <label for="name_bca" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
                         <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
                         <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
@@ -95,13 +95,13 @@
                         <div class="px-2 md:pr-6 flex flex-row items-center justify-between h-16">
                             <img src="images/paypal.png" alt="" class="h-8 md:h-14">
                             <h2 class="text-xl md:text-2xl font-bold -ml-28 md:-ml-64">Paypal</h2>
-                            <button onclick="PAYPAL()" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
+                            <button id="paypalbutt" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
                                 <img src="images/ceklis.png" alt="" class="ceklis h-full w-full hidden">
                             </button>
                         </div>
                     </label>
                 </div>
-                <div class="flex flex-col items-start pt-12">
+                <div id="paypaldisplay" class="flex flex-col items-start pt-12">
                     <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
                     <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
                     <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
