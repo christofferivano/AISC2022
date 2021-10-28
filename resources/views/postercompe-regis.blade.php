@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="block md:hidden absolute left-0 top-0 z-0">
-        <img src="images/bulet-aischat-4.png" alt="" class="h-48 opacity-50">
+        <img src="/images/bulet-aischat-4.png" alt="" class="h-48 opacity-50">
     </div>
     <div class="hidden md:block absolute">
         <img src="/images/compe-atas.png" alt="" class="w-97 ml-96 pl-20">
@@ -50,8 +50,32 @@
                                 The team leader is required!
                             </div>
                     @enderror
+                    <label for="origin" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Origin*</label>
+                    <select name="origin" for="origin" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
+                        <option class="py-1 font-sans" disabled selected hidden>Select Origin</option>
+                        <option class="py-1 font-sans">Indonesia</option>
+                        <option class="py-1 font-sans">International</option>
+                    </select>
+                    @error('origin')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The origin is required!
+                            </div>
+                    @enderror
                     <label for="place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                    <input value="{{{ $chatregis->place ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <select name="place" for="place" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                        <option class="py-1 font-sans">Pre-Event</option>
+                        <option class="py-1 font-sans">Conference Day</option>
+                        <option class="py-1 font-sans">nAISC Night</option>
+                        <option class="py-1 font-sans">Logistic</option>
+                        <option class="py-1 font-sans">Sponsorship</option>
+                        <option class="py-1 font-sans">Paper Competition</option>
+                        <option class="py-1 font-sans">Poster Competition</option>
+                        <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                        <option class="py-1 font-sans">Social Media Specialist</option>
+                        <option class="py-1 font-sans">Outreach</option>
+                        <option class="py-1 font-sans">Media Production</option>
+                    </select>
                     @error('place')
                             <div class="text-red-500 mt-2 text-sm">
                                 The institution/university is required!
@@ -76,54 +100,27 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place1 ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <select name="place1" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                <option class="py-1 font-sans">Pre-Event</option>
+                                <option class="py-1 font-sans">Conference Day</option>
+                                <option class="py-1 font-sans">nAISC Night</option>
+                                <option class="py-1 font-sans">Logistic</option>
+                                <option class="py-1 font-sans">Sponsorship</option>
+                                <option class="py-1 font-sans">Paper Competition</option>
+                                <option class="py-1 font-sans">Poster Competition</option>
+                                <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
+                                <option class="py-1 font-sans">Social Media Specialist</option>
+                                <option class="py-1 font-sans">Outreach</option>
+                                <option class="py-1 font-sans">Media Production</option>
+                            </select>
                             @error('place')
                                     <div class="text-red-500 mt-2 text-sm">
                                         The institution/university for team member 1 is required!
                                     </div>
                             @enderror   
                         </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row">
-                        <div class="flex flex-col">
-                                <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2*</label>
-                                <input value="{{{ $chatregis->member2 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 2 is required!
-                                        </div>
-                                @enderror
-                        </div>
-                        <div class="flex flex-col px-0 md:px-10">
-                            <label for="place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place2 ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            @error('place')
-                                    <div class="text-red-500 mt-2 text-sm">
-                                        The institution/university for team member 2 is required!
-                                    </div>
-                            @enderror   
-                        </div>
-                    </div>
-                    <div class="flex flex-col md:flex-row">
-                        <div class="flex flex-col">
-                                <label for="member3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 3*</label>
-                                <input value="{{{ $chatregis->member3 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 3 is required!
-                                        </div>
-                                @enderror
-                        </div>
-                        <div class="flex flex-col px-0 md:px-10">
-                            <label for="place3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place3 ?? '' }}}" name="place3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            @error('place')
-                                    <div class="text-red-500 mt-2 text-sm">
-                                        The institution/university for team member 3 is required!
-                                    </div>
-                            @enderror   
-                        </div>
-                    </div>
+                    </div>                    
                     <div class="text-black-500 mt-4 text-sm">
                         * is required!
                     </div>
@@ -142,8 +139,8 @@
             <div class="py-20 md:py-0">
                 <img src="/images/poster-bg.png" alt="" class="block md:hidden absolute right-0 bottom-6/7 h-96 -mb-96">
             </div>
-            <img src="images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
-            <img src="images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
+            <img src="/images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
+            <img src="/images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
         </div>
         <div class="hidden col-span-3 col-start-3 md:flex flex-col items-end">
             <div class="flex flex-row pt-6 pr-20">
@@ -157,15 +154,15 @@
             </div>
             <img src="/images/poster-bg.png" alt="" class="w-5/7 pt-20 z-10">
             <div class="absolute right-0 bottom-48 -mb-96 z-0">
-                <img src="images/compe-kanan.png" alt="" class="h-150">
+                <img src="/images/compe-kanan.png" alt="" class="h-150">
             </div>
         </div>
     </div>
     <div class="hidden md:block absolute md:left-0 md:-mt-96 z-0">
-        <img src="images/compe-bawah.png" alt="" class="h-120">
+        <img src="/images/compe-bawah.png" alt="" class="h-120">
     </div>
     <div class="hidden md:block absolute md:right-0 md:-mt-80 z-0 opacity-75">
-        <img src="images/compe-kbawah.png" alt="" class="h-100">
+        <img src="/images/compe-kbawah.png" alt="" class="h-100">
     </div>
 
     <!-- Footer -->
@@ -176,16 +173,16 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/tiktok.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12 mr-2 md:mr-4">
-                    <img src="images/instagram.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/tiktok.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12 mr-2 md:mr-4">
+                    <img src="/images/instagram.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">@aisc2022</p>
                 </div>
                 <div class="flex pl-8 md:pl-12 lg:pl-14 xl:pl-16 pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/line-app.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/line-app.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 xl:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">@961ckski</p>
                 </div>
                 <div class="flex pl-8 md:pl-12 lg:pl-14 xl:pl-16 pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/linkedin.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/linkedin.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 xl:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>
