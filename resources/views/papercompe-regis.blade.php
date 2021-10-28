@@ -34,96 +34,78 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('aischat-regis-one') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('paper-competition-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="teamname" class="pb-2 pl-4 text-base md:text-xl font-medium">Team Name*</label>
-                    <input value="{{{ $chatregis->teamname ?? '' }}}" name="team name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <input value="{{{ $papercome->teamname ?? '' }}}" name="teamname" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     @error('teamname')
                             <div class="text-red-500 mt-2 text-sm">
                                 The team name is required!
                             </div>
                     @enderror
                     <label for="tl" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader*</label>
-                    <input value="{{{ $chatregis->tl ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    @error('place')
+                    <input name="tl" value="{{{ $team_leader->nama ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('tl')
                             <div class="text-red-500 mt-2 text-sm">
                                 The team leader is required!
                             </div>
                     @enderror
                     <label for="place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                    <input value="{{{ $chatregis->place ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <input value="{{{ $team_leader->institution ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     @error('place')
                             <div class="text-red-500 mt-2 text-sm">
                                 The institution/university is required!
                             </div>
                     @enderror
                     <label for="telp" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Phone Number*</label>
-                    <input value="{{{ $chatregis->telp ?? '' }}}" name="telp" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    @error('wa')
+                    <input value="{{{ $team_leader->phone_number ?? '' }}}" name="telp" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('telp')
                             <div class="text-red-500 mt-2 text-sm">
                                 The phone number is required!
                             </div>
                     @enderror
+                    <label for="email" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Email*</label>
+                    <input value="{{{ $team_leader->email ?? '' }}}" name="email" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('email')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The email is required!
+                            </div>
+                    @enderror
+                    
+                    <input type="hidden" name="jenis" value="Paper">
+
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
                                 <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1*</label>
-                                <input value="{{{ $chatregis->member1 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 1 is required!
-                                        </div>
-                                @enderror
+                                <input value="{{{ $member1->nama ?? '' }}}" name="member1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place1 ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            @error('place')
-                                    <div class="text-red-500 mt-2 text-sm">
-                                        The institution/university for team member 1 is required!
-                                    </div>
-                            @enderror   
+                            <input value="{{{ $member1->institution ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> 
                         </div>
                     </div>
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
                                 <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2*</label>
-                                <input value="{{{ $chatregis->member2 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 2 is required!
-                                        </div>
-                                @enderror
+                                <input value="{{{ $member2->nama ?? '' }}}" name="member2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place2 ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            @error('place')
-                                    <div class="text-red-500 mt-2 text-sm">
-                                        The institution/university for team member 2 is required!
-                                    </div>
-                            @enderror   
+                            <input value="{{{ $member2->institution ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> 
                         </div>
                     </div>
-                    <div class="flex flex-col md:flex-row">
+                    {{-- <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
                                 <label for="member3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 3*</label>
-                                <input value="{{{ $chatregis->member3 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 3 is required!
-                                        </div>
-                                @enderror
+                                <input value="{{{ $papercompe->member3 ?? '' }}}" name="member3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $chatregis->place3 ?? '' }}}" name="place3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            @error('place')
-                                    <div class="text-red-500 mt-2 text-sm">
-                                        The institution/university for team member 3 is required!
-                                    </div>
-                            @enderror   
+                            <input value="{{{ $papercompe->place3 ?? '' }}}" name="place3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="text-black-500 mt-4 text-sm">
                         * is required!
                     </div>
@@ -131,7 +113,7 @@
                         <div class="text-black-500 mt-4 text-xs md:text-lg pl-2 md:pl-10">
                         The guidebook of each competitions can be found, <a href="" class="underline text-blue-500">Here</a>
                         </div>
-                        <a href="competitionregis-2" class="pt-2 md:pl-5">
+                        <a href="payment-method" class="pt-2 md:pl-5">
                             <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>
