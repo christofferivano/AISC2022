@@ -4,6 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Competition\CompetitionPage;
+use App\Http\Controllers\Competition\Poster\PosterCompetitionController;
+use App\Http\Controllers\Competition\Paper\PaperCompetitionController;
+use App\Http\Controllers\Competition\Jeopardy\JeopardyCompetitionController;
 use App\Http\Controllers\Volunteer\VolunteerPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage;
 use App\Http\Controllers\Volunteer\Registration\VolunteerRegistrationPage2;
@@ -20,6 +23,7 @@ use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 use App\Http\Controllers\Webinar\Admin\AischatExportController;
 use App\Http\Controllers\Competency\CompetencyController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -30,9 +34,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'chemecompe-regis')->name('dashboard');
-
-Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
+Route::view('/dashboard', 'welcome')->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -61,6 +63,20 @@ Route::post('/aischat/registration/2', [WebinarPage::class, 'postCreateStep2'])-
 Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->name('aischat-regis-end');
 //Route::get('/aischat/registration/payment/{id}', [WebinarPage::class, 'payment'])->name('aischat-regis-payment');
 
+// Route for competition
+Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
+
+//Route for poster
+Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
+Route::get('/competition/poster/register', [PosterCompetitionController::class, 'register'])->name('poster-competition-regis');
+
+//Route for paper
+Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
+Route::get('/competition/paper/register', [PaperCompetitionController::class, 'register'])->name('paper-competition-regis');
+
+//Route for Cheme Jeopardy
+Route::get('/competition/cheme', [JeopardyCompetitionController::class, 'index'])->name('cheme-competition');
+Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'register'])->name('cheme-competition-regis');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 

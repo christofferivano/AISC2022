@@ -52,7 +52,7 @@
                     </div>
                     <div class="absolute z-10 pt-20 md:pt-24 lg:pt-36 xl:pt-36">
                         <button class="py-1 lg:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                            <a href="" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
+                            <a href="{{ route('paper-competition') }}" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
                         </button>
                     </div>
                 <!-- </div> -->
@@ -68,7 +68,7 @@
                     </div>
                     <div class="absolute z-10 pt-20 md:pt-24 lg:pt-36 xl:pt-36">
                         <button class="py-1 lg:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                            <a href="" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
+                            <a href="{{ route('poster-competition') }}" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
                         </button>
                     </div>
                 <!-- </div> -->
@@ -84,7 +84,7 @@
                     </div>
                     <div class="absolute z-10 pt-20 md:pt-24 lg:pt-36 xl:pt-36">
                         <button class="py-1 lg:py-1.5 rounded-full bg-gradient-to-r from-purple-400 to-blue-300">
-                            <a href="" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
+                            <a href="{{ route('cheme-competition') }}" class="px-8 px-10 lg:px-16 text-xs md:text-sm text-white">CHECK</a>
                         </button>
                     </div>
                 <!-- </div> -->

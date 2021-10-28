@@ -148,7 +148,7 @@
         </h1>
         <div class="py-2 md:py-4">
             <button class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10" data-aos="zoom-in" data-aos-duration="2000">
-                <a class="text-white text-sm md:text-xl font-semibold px-20" href="">Register Here!</a>
+                <a class="text-white text-sm md:text-xl font-semibold px-20" href="{{ route('poster-competition-regis') }}">Register Here!</a>
             </button>
         </div>
         <div class="absolute right-0 bottom-0 -mb-32">
