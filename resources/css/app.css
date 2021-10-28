@@ -282,3 +282,8 @@ input:checked + label {
 {
     background-image: linear-gradient(#D492EE, #97FFED);
 }
+
+/* #paypaldisplay
+{
+    display: none;
+} */

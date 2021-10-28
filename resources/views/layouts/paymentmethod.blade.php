@@ -5,6 +5,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <title>Payment Methods</title>
     <link rel="shortcut icon" href="/images/logogram.ico" />
     <style>
@@ -238,45 +239,46 @@
             var file = $('#file-upload-7')[0].files[0].name;
             $(this).prev('label').text(file);
         });
-
+    </script>
+    <script>
         const targetDiv = document.getElementById("bcadisplay");
         const btn1 = document.getElementById("bcabutt");
+        const targetDiv2 = document.getElementById("paypaldisplay");
+        const btn2 = document.getElementById("paypalbutt");  
         btn1.onclick = function() {  
+            console.log("d", targetDiv.style.display)
             if(targetDiv.style.display !== "none")
             {
                 targetDiv.style.display = "none";
             }
-            if(targetDiv.style.display === "block")
+            if(targetDiv.style.display === "flex")
             {
-                targetDiv.style.display = "block";
+                targetDiv.style.display = "flex";
             }
             else
             {
-                targetDiv.style.display = "block";
+                targetDiv.style.display = "flex";
             }
-            if(targetDiv2.style.display === "block")
+            if(targetDiv2.style.display === "flex")
             {
                 targetDiv2.style.display = "none";
             }
         }
-        
-        const targetDiv2 = document.getElementById("paypaldisplay");
-        const btn2 = document.getElementById("paypalbutt");  
         btn2.onclick = function()
         {
             if(targetDiv2.style.display === "none")
             {
                 targetDiv2.style.display = "none";
             }
-            if(targetDiv2.style.display === "block")
+            if(targetDiv2.style.display === "flex")
             {
-                targetDiv2.style.display = "block";
+                targetDiv2.style.display = "flex";
             }
             else
             {
-                targetDiv2.style.display = "block";
+                targetDiv2.style.display = "flex";
             }
-            if(targetDiv.style.display === "block")
+            if(targetDiv.style.display === "flex")
             {
                 targetDiv.style.display = "none";
             }
