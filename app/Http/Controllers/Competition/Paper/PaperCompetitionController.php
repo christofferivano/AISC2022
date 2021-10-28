@@ -30,15 +30,7 @@ class PaperCompetitionController extends Controller
     }
 
     public function createStep2(Request $request){
-        $papercompe = $request->session()->get('papercompe');
-        $team_leader = $request->session()->get('team_leader');
-        $member1 = $request->session()->get('member1');
-        $member2 = $request->session()->get('member2');
-        return view('papercompe-regis')
-        ->with(compact('papercompe', $papercompe))
-        ->with(compact('team_leader', $team_leader))
-        ->with(compact('member1', $member1))
-        ->with(compact('member2', $member2));
+        return view('payment-method');
     }
 
     public function postCreateStep1(Request $request){
@@ -47,6 +39,7 @@ class PaperCompetitionController extends Controller
             'tl' => 'required',
             'place' => 'required',
             'telp' => 'required',
+            'origin' => 'required',
             'email' => 'required|email',
             'member1' => 'nullable',
             'place1' => 'nullable',
@@ -163,7 +156,7 @@ class PaperCompetitionController extends Controller
                 'nama_tim' => $validatedData['teamname'],
                 'total_pembayaran' => $total_biaya,
                 'validation' => 0,
-                'origin' => 0
+                'origin' => $validatedData['origin'],
             ]);
 
             $request->session()->put('papercompe', $papercompe);
@@ -175,11 +168,28 @@ class PaperCompetitionController extends Controller
                 'nama_tim' => $validatedData['teamname'],
                 'total_pembayaran' => $total_biaya,
                 'validation' => 0,
-                'origin' => 0
+                'origin' => $validatedData['origin'],
             ]);
             $request->session()->put('papercompe', $papercompe);
         }
 
         return redirect()->route('aischat-regis-two');
+    }
+
+    public function postCreateStep2(Request $request){
+        dd($request->radio);
+        $request->validate([
+            'radio' => 'required'
+        ]);
+
+        if ($request->radio == "BCA"){
+            $validatedData = $request->validate([
+                'radio' => 'required',
+
+            ]);
+        }
+        else {
+
+        }
     }
 }

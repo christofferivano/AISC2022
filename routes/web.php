@@ -34,7 +34,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'welcome')->name('dashboard');
+Route::view('/dashboard', 'payment-method')->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -66,8 +66,6 @@ Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->n
 // Route for competition
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
 
-// Route for payment
-
 //Route for poster
 Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
 Route::get('/competition/poster/register', [PosterCompetitionController::class, 'register'])->name('poster-competition-regis');
@@ -77,6 +75,7 @@ Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->
 Route::get('/competition/paper/register', [PaperCompetitionController::class, 'createStep1'])->name('paper-competition-regis');
 Route::post('/competition/paper/register', [PaperCompetitionController::class, 'postCreateStep1'])->name('paper-competition-regis');
 Route::get('/competition/paper/register/payment', [PaperCompetitionController::class, 'CreateStep2'])->name('paper-competition-regis-payment');
+Route::post('/competition/paper/register/payment', [PaperCompetitionController::class, 'PostCreateStep2'])->name('paper-competition-regis-payment');
 
 //Route for Cheme Jeopardy
 Route::get('/competition/cheme', [JeopardyCompetitionController::class, 'index'])->name('cheme-competition');

@@ -53,8 +53,8 @@
                     <label for="origin" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Origin*</label>
                     <select name="origin" for="origin" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
                         <option class="py-1 font-sans" disabled selected hidden>Select Origin</option>
-                        <option class="py-1 font-sans">Indonesia</option>
-                        <option class="py-1 font-sans">International</option>
+                        <option value="0" class="py-1 font-sans">Indonesia</option>
+                        <option value="1" class="py-1 font-sans">International</option>
                     </select>
                     @error('origin')
                             <div class="text-red-500 mt-2 text-sm">
@@ -62,7 +62,7 @@
                             </div>
                     @enderror
                     <label for="place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                    <input value="{{{ $team_leader->institution ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    {{-- <input value="{{{ $team_leader->institution ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> --}}
                     <select name="place" for="place" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
                         <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
                         <option class="py-1 font-sans">Pre-Event</option>
@@ -106,7 +106,7 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $member1->institution ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> 
+                            {{-- <input value="{{{ $member1->institution ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">  --}}
                             <select name="place1" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                                 <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
                                 <option class="py-1 font-sans">Pre-Event</option>
@@ -135,7 +135,7 @@
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
                             <label for="place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <input value="{{{ $member2->institution ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> 
+                            {{-- <input value="{{{ $member2->institution ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">  --}}
                             <select name="place2" for="place2" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                                 <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
                                 <option class="py-1 font-sans">Pre-Event</option>

@@ -238,6 +238,8 @@
             var file = $('#file-upload-7')[0].files[0].name;
             $(this).prev('label').text(file);
         });
+
+        
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

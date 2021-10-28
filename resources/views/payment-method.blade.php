@@ -38,8 +38,7 @@
             </div>
             <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
             BCA 7655051236 (Salwa Azzahrah) <br>
-            OVO 08113150102 (Salwa Azzahrah) <br>
-            Gopay 08113150102 (Salwa Azzahrah) <br>
+            PayPal @salwaazzahrah <br>
             </div>
         </h1>
     </div>
@@ -59,37 +58,72 @@
             </div>
             <div class="text-base md:text-xl font-normal pt-10 md:pt-16">
             BCA 7655051236 (Salwa Azzahrah) <br>
-            OVO 08113150102 (Salwa Azzahrah) <br>
-            Gopay 08113150102 (Salwa Azzahrah) <br>
+            PayPal @salwaazzahrah <br>
             </div>
         </h1>
     </div>
 
-    <div class="flex flex-col rounded bg-gray-50 border border-grey-700 h-96 z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
-        <form action="" method="POST" class="w-full max-w-screen-lg pt-10 z-10">
+    <div class="flex flex-col rounded bg-gray-50 border border-grey-700 h-250 z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
+        <form action="{{ route('paper-competition-regis-payment') }}" method="POST" class="w-full max-w-screen-lg pt-10 z-10">
+                @csrf
                 <div class="z-10">
-                    <input class="hidden" id="radio_1" type="radio" name="radio" checked>
+                    <input class="hidden" id="radio_1" type="radio" name="radio" checked value="BCA">
                     <label class="flex flex-col p-4 shadow-md rounded-md md:rounded-xl cursor-pointer" for="radio_1">
                         <div class="px-2 md:px-6 flex flex-row items-center justify-between h-16">
                             <img src="images/BCA.png" alt="" class="h-14">
                             <h2 class="text-xl md:text-2xl font-bold -ml-10 md:-ml-40 md:pl-4">BCA Transfer</h2>
-                            <button type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
+                            <button onclick="BCA()" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
                                 <img src="images/ceklis.png" alt="" class="ceklis h-full w-full hidden">
                             </button>
                         </div>
                     </label>
                 </div>
+                <div class="flex flex-col items-start pt-12">
+                    <label for="name_bca" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
+                        <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                        <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
+                        <input type="date" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent">
+                        <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
+                        <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                            File
+                        </label>
+                        <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                </div>
                 <div class="pt-5 z-10">
-                    <input class="hidden" id="radio_2" type="radio" name="radio">
+                    <input class="hidden" id="radio_2" type="radio" name="radio" value="Paypal">
                     <label class="flex flex-col p-4 shadow-md rounded-xl cursor-pointer" for="radio_2">
                         <div class="px-2 md:pr-6 flex flex-row items-center justify-between h-16">
                             <img src="images/paypal.png" alt="" class="h-8 md:h-14">
                             <h2 class="text-xl md:text-2xl font-bold -ml-28 md:-ml-64">Paypal</h2>
-                            <button type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
+                            <button onclick="PAYPAL()" type="button" class="rounded-full h-6 w-6 border-1 border-gray-400">
                                 <img src="images/ceklis.png" alt="" class="ceklis h-full w-full hidden">
                             </button>
                         </div>
                     </label>
+                </div>
+                <div class="flex flex-col items-start pt-12">
+                    <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
+                    <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
+                    <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                        File
+                    </label>
+                    <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                </div>
+                <div class="flex flex-col items-start pt-12">
+                    <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Document Requirement (Upload in zip Files)</label>
+                    <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                        File
+                    </label>
+                    <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                </div>
+
+                <div class="flex items-center pt-5 md:pt-10 my-2 md:my-20 pb-40 md:pb-0 px-20 md:px-72 z-10">
+                    <button type="submit" class="w-96 md:w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
+                    <a href="payment-paypal">
+                        Next
+                    </a>    
+                    </button>
                 </div>
             </form>
         </div>
@@ -97,19 +131,12 @@
                 <img src="/images/bayarrounded.png" alt="" class="w-80 opacity-75">
         </div>
         
-        <div class="flex items-center pt-5 md:pt-10 my-2 md:my-20 pb-40 md:pb-0 px-20 md:px-72 z-10">
-            <button type="submit" class="w-96 md:w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
-            <a href="payment-paypal">
-                Next
-            </a>    
-            </button>
-        </div>
+        
 
         <div class="absolute right-0 top-3/4 mt-105 md:mt-102 bottom-0 z-0">
             <img src="/images/bayarbawah.png" alt="" class="w-40 md:w-72">
         </div>
     </div>
-
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">
         <div class="h-full flex flex-col items-start">
