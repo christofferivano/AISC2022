@@ -104,6 +104,8 @@
                 <div class="flex flex-col items-start pt-12">
                     <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
                     <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
+                    <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
                     <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
                     <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
                         File
