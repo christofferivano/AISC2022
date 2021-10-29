@@ -29,7 +29,9 @@ class CreateFilecompeTable extends Migration
      */
     public function down()
     {
-        $table->dropForeign('filecompe_comperegis_id_foreign');
+        Schema::table('member', function (Blueprint $table) {
+            $table->dropForeign('filecompe_comperegis_id_foreign');
+        });
         Schema::dropIfExists('filecompe');
     }
 }

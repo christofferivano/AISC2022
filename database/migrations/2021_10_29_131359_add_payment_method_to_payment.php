@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPaymentMethodToComperegis extends Migration
+class AddPaymentMethodToPayment extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,9 @@ class AddPaymentMethodToComperegis extends Migration
      */
     public function up()
     {
-        Schema::table('comperegis', function (Blueprint $table) {
-            $table->string('payment_method');
+        Schema::table('payment', function (Blueprint $table) {
+            $table->string('method')->nullable(true);
+            $table->string('filepath')->nullable(true);
         });
     }
 
@@ -25,8 +26,9 @@ class AddPaymentMethodToComperegis extends Migration
      */
     public function down()
     {
-        Schema::table('comperegis', function (Blueprint $table) {
-            $table->dropColumn('payment_method');
+        Schema::table('payment', function (Blueprint $table) {
+            $table->dropColumn('method');
+            $table->dropColumn('filepath');
         });
     }
 }

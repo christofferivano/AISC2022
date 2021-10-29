@@ -35,6 +35,11 @@ return [
             'root' => storage_path('app'),
         ],
 
+        'comperegis_document' => [
+            'driver' => 'local',
+            'root' => storage_path('app/public/comperegis/document')
+        ],
+
         'public' => [
             'driver' => 'local',
             'root' => storage_path('app/public'),
@@ -75,6 +80,9 @@ return [
 
     'links' => [
         public_path('storage') => storage_path('app/public'),
+        public_path('images') => storage_path('app/public/images'),
+        public_path('comperegis_payment') => storage_path('app\public\comperegis\payment'),
+        public_path('comperegis_document') => storage_path('app\public\comperegis\document')
     ],
 
 ];

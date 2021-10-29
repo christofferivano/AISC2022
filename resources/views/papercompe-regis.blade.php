@@ -164,7 +164,7 @@
                         <div class="text-black-500 mt-4 text-xs md:text-lg pl-2 md:pl-10">
                         The guidebook of each competitions can be found, <a href="" class="underline text-blue-500">Here</a>
                         </div>
-                        <a href="payment-method" class="pt-2 md:pl-5">
+                        <a href="" class="pt-2 md:pl-5">
                             <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>

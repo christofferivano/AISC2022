@@ -64,7 +64,7 @@
     </div>
 
     <div class="flex flex-col rounded bg-gray-50 border border-grey-700 h-250 z-0 w-full max-w-full justify-center items-center drop-shadow-xl">
-        <form action="{{ route('paper-competition-regis-payment') }}" method="POST" class="w-full max-w-screen-lg pt-10 z-10">
+        <form enctype="multipart/form-data" action="{{ route('paper-competition-regis-payment') }}" method="POST" class="w-full max-w-screen-lg pt-10 z-10">
                 @csrf
                 <div class="z-10">
                     <input class="hidden" id="radio_1" type="radio" name="radio" value="BCA">
@@ -80,14 +80,27 @@
                 </div>
                 <div id="bcadisplay" class="hidden flex flex-col items-start pt-12">
                     <label for="name_bca" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
-                        <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                        <input name="name_bca" type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                        @error('name_bca')
+                            <div class="text-red-500 mt-2 text-sm">
+                                BCA Card Name is required!
+                            </div>
+                        @enderror
                         <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                        <input type="date" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent">
+                        <input name="date_bca" type="date" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent">
+                        @error('date_bca')
+                            <div class="text-red-500 mt-2 text-sm">
+                                Payment date is required!
+                            </div>
+                        @enderror
                         <label for="sg" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
                         <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
                             File
                         </label>
-                        <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                        <input name="tf_receipt_bca" type="file" id="file-upload-6" class="hidden">
+                        @error('tf_receipt_bca')
+                            <div class="text-red-500 mt-2 text-sm">{{ $message }}</div>
+                        @enderror
                 </div>
                 <div class="pt-5 z-10">
                     <input class="hidden" id="radio_2" type="radio" name="radio" value="Paypal">
@@ -102,27 +115,47 @@
                     </label>
                 </div>
                 <div id="paypaldisplay" class="hidden flex flex-col items-start pt-12">
-                    <label for="name" class="pb-2 pl-4 text-xl font-medium">Name on Card</label>
-                    <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <label for="name_paypal" class="pb-2 pl-4 text-xl font-medium">Name on Account</label>
+                    <input name="name_paypal" type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    @error('name_paypal')
+                        <div class="text-red-500 mt-2 text-sm">
+                            Paypal Account Name is required!
+                        </div>
+                    @enderror
                     <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                    <input type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <input name="date_paypal" type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    @error('date_paypal')
+                        <div class="text-red-500 mt-2 text-sm">
+                            Payment date is required!
+                        </div>
+                    @enderror
                     <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Transfer Receipt</label>
-                    <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                    <label for="file-upload-7" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
                         File
                     </label>
-                    <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                    <input name="tf_receipt_paypal" type="file" id="file-upload-7" class="hidden">
+                    @error('tf_receipt_paypal')
+                        <div class="text-red-500 mt-2 text-sm">{{ $message }}</div>
+                    @enderror
                 </div>
+                @error('radio')
+                    <div class="text-red-500 mt-2 text-sm">
+                        Choose one of the payment method!
+                    </div>
+                @enderror
                 <div class="flex flex-col items-start pt-12">
-                    <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Document Requirement (Upload in zip Files)</label>
-                    <label for="file-upload-6" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
+                    <label for="sg" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Document Requirement (Upload in one  PDF files)</label>
+                    <label for="file-upload-8" class="outline-none rounded-full border border-form py-1 px-4 w-40 md:w-40 text-white content-center focus:ring-2 focus:ring-form bg-gradient-to-l from-blue-300 to-purple-400">
                         File
                     </label>
-                    <input name="tf-receipt" type="file" id="file-upload-6" class="hidden">
+                    <input name="document_requirement" type="file" id="file-upload-8" class="hidden">
                 </div>
-
+                @error('document_requirement')
+                    <div class="text-red-500 mt-2 text-sm">{{ $message }}</div>
+                @enderror
                 <div class="flex items-center pt-5 md:pt-10 my-2 md:my-20 pb-40 md:pb-0 px-20 md:px-72 z-10">
                     <button type="submit" class="w-96 md:w-full bg-gradient-to-l from-blue-300 to-purple-400 py-1.5 rounded-full text-white text-lg font-semibold shadow-lg">
-                    <a href="payment-paypal">
+                    <a href="">
                         Next
                     </a>    
                     </button>

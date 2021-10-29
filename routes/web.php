@@ -22,6 +22,7 @@ use App\Http\Controllers\ShowFileController;
 use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 use App\Http\Controllers\Webinar\Admin\AischatExportController;
+use App\Http\Controllers\Competition\Admin\CompetitionDataController;
 use App\Http\Controllers\Competency\CompetencyController;
 
 /*
@@ -34,7 +35,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'payment-method')->name('dashboard');
+Route::view('/dashboard', 'welcome')->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -74,6 +75,8 @@ Route::get('/competition/poster/register', [PosterCompetitionController::class, 
 Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
 Route::get('/competition/paper/register', [PaperCompetitionController::class, 'createStep1'])->name('paper-competition-regis');
 Route::post('/competition/paper/register', [PaperCompetitionController::class, 'postCreateStep1'])->name('paper-competition-regis');
+Route::get('/competition/paper/register/voucher', [PaperCompetitionController::class, 'CreateStep3'])->name('paper-competition-regis-voucher');
+Route::post('/competition/paper/register/voucher', [PaperCompetitionController::class, 'postCreateStep3'])->name('paper-competition-regis-voucher');
 Route::get('/competition/paper/register/payment', [PaperCompetitionController::class, 'CreateStep2'])->name('paper-competition-regis-payment');
 Route::post('/competition/paper/register/payment', [PaperCompetitionController::class, 'PostCreateStep2'])->name('paper-competition-regis-payment');
 
@@ -90,6 +93,15 @@ Route::get('/admin/volunteer/registration/{volregis}', [VolunteerRegistrationDat
 Route::get('/admin/aischat/registration', [AischatRegistrationDataController::class, 'index'])->name('admin-aischat');
 Route::get('/admin/aischat/registration/delete/{chatregis}', [AischatRegistrationDataController::class, 'delete'])->name('admin-aischat-delete');
 Route::get('/admin/aischat/registration/show/{id}', [AischatRegistrationDataController::class, 'show'])->name('admin-aischat-show');
+
+//Route for competition admin
+Route::view('/admin/competition', 'admin-competition')->name('admin-competition');
+Route::get('/admin/competition/institution', [CompetitionDataController::class, 'index_institution'])->name('institution');
+Route::get('/admin/competition/institution/add', [CompetitionDataController::class, 'index_institution_add'])->name('institution-add');
+Route::post('/admin/competition/institution/add', [CompetitionDataController::class, 'index_institution_add_add'])->name('institution-add');
+Route::get('/admin/competition/institution/delete/{institute}', [CompetitionDataController::class, 'institution_delete'])->name('institution-delete');
+Route::get('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_edit'])->name('institution-edit');
+Route::post('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_update'])->name('institution-update');
 
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 

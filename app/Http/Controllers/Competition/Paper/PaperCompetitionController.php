@@ -5,6 +5,9 @@ namespace App\Http\Controllers\Competition\Paper;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\Comperegis;
+use Illuminate\Support\Facades\Storage;
+use App\Models\Payment;
+use App\Models\Member;
 
 class PaperCompetitionController extends Controller
 {
@@ -31,6 +34,18 @@ class PaperCompetitionController extends Controller
 
     public function createStep2(Request $request){
         return view('payment-method');
+    }
+
+    public function createStep3(Request $request){
+        $papercompe = $request->session()->get('papercompe');
+        $team_leader = $request->session()->get('team_leader');
+        $member1 = $request->session()->get('member1');
+        $member2 = $request->session()->get('member2');
+        return view('couponpaper')
+        ->with(compact('papercompe', $papercompe))
+        ->with(compact('team_leader', $team_leader))
+        ->with(compact('member1', $member1))
+        ->with(compact('member2', $member2));
     }
 
     public function postCreateStep1(Request $request){
@@ -172,24 +187,85 @@ class PaperCompetitionController extends Controller
             ]);
             $request->session()->put('papercompe', $papercompe);
         }
-
-        return redirect()->route('aischat-regis-two');
+        
+        return redirect()->route('paper-competition-regis-voucher');
     }
 
     public function postCreateStep2(Request $request){
-        dd($request->radio);
-        $request->validate([
-            'radio' => 'required'
-        ]);
+        // dd($request->hasFile('document_requirement'));
+        $papercompe = $request->session()->get('papercompe');
 
-        if ($request->radio == "BCA"){
-            $validatedData = $request->validate([
+        $this->validate($request,
+            [
                 'radio' => 'required',
+                'document_requirement' => 'required|mimes:pdf|max:2048'
+            ],
+            [
+                'document_requirement.required' => 'Document requirement must be uploaded!',
+                'document_requirement.mimes' => 'File must be in pdf format!',
+                'document_requirement.max' => 'File size must not exceed 2 MB'
+            ]
+        );
 
-            ]);
+        $name_card;
+        $date;
+        $path;
+        $filenameSimpan;
+
+        if (!strcmp($request->radio, 'BCA')){
+            $this->validate($request, [
+                    'name_bca' => 'required',
+                    'date_bca' => 'required',
+                    'tf_receipt_bca' => 'required|mimes:jpeg,png,jpg|max:1024',
+                ],
+                [
+                    'tf_receipt_bca.required' => 'BCA Payment Receipt must be uploaded',
+                    'tf_receipt_bca.mimes' => 'File must be in jpg or png format!',
+                    'tf_receipt_bca.max' => 'File size must not exceed 1 MB'
+                ]    
+            );
+
+            $name_card = $request->name_bca;
+            $date = $request->date_bca;
+
+            $filenameWithExt = $request->file('tf_receipt_bca')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('tf_receipt_bca')->getClientOriginalExtension();
+            $filenameSimpan = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('tf_receipt_bca')->storeAs('public/comperegis/payment', $filenameSimpan);
+            dd($path);
         }
         else {
+            $this->validate($request, [
+                    'name_paypal' => 'required',
+                    'date_paypal' => 'required',
+                    'tf_receipt_paypal' => 'required|mimes:jpeg,png,jpg|max:1024',
+                ],
+                [
+                    'tf_receipt_paypal.required' => 'Paypal Payment Receipt must be uploaded',
+                    'tf_receipt_paypal.mimes' => 'File must be in jpg or png format!',
+                    'tf_receipt_paypal.max' => 'File size must not exceed 1 MB'
+                ]    
+            );
 
+            $name_card = $request->name_paypal;
+            $date = $request->date_paypal;
+
+            $filenameWithExt = $request->file('tf_receipt_paypal')->getClientOriginalName();
+            $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+            $extension = $request->file('tf_receipt_paypal')->getClientOriginalExtension();
+            $filenameSimpan = $filename.'_'.time().'.'.$extension;
+            $path = $request->file('tf_receipt_paypal')->storeAs('public/comperegis/payment', $filenameSimpan);
+            dd($path);
         }
+
+        $payment = new Payment();
+        $payment->fill([
+            'name_card' => $name_card,
+            'payment_date' => $date,
+            'filename' => $filenameSimpan,
+            'filepath' => $path,
+            'comperegis_id' => $papercompe->id,
+        ]);
     }
 }
