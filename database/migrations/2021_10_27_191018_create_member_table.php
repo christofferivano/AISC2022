@@ -34,8 +34,11 @@ class CreateMemberTable extends Migration
      */
     public function down()
     {
-        $table->dropForeign('member_comperegis_id_foreign');
-        $table->dropForeign('member_voucher_id_foreign');
+        Schema::table('member', function (Blueprint $table) {
+            $table->dropForeign('member_comperegis_id_foreign');
+            $table->dropForeign('member_voucher_id_foreign');
+        });
+        
         Schema::dropIfExists('member');
     }
 }

@@ -32,7 +32,7 @@
             </div>
             </div>
             <div class="absolute  top-0 pt-14 right-20 lg:right-40 xl:right-60" data-aos="fade-left" data-aos-duration="2400">
-                <img src="images/logo-poster.png" alt="" class="h-40 lg:h-72 xl:h-96 2xl:h-100">
+                <img src="https://res.cloudinary.com/ivan1912/image/upload/v1635521670/project%20aisc/poster_1_nmijcf.png" alt="" class="h-40 lg:h-72 xl:h-96 2xl:h-100">
             </div>
         </div>
     </div>

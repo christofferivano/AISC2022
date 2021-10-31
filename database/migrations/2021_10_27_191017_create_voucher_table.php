@@ -17,7 +17,7 @@ class CreateVoucherTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('jenis_voucher')->nullable(false);
-            $table->string('nama_institusi');
+            $table->foreignId('institution_id')->nullable(true)->constrained('institution')->onDelete('cascade');
             $table->integer('besar_potongan')->nullable(false);
             $table->string('kode_voucher')->nullable(false);
         });
@@ -30,6 +30,9 @@ class CreateVoucherTable extends Migration
      */
     public function down()
     {
+        Schema::table('voucher', function (Blueprint $table) {
+            $table->dropForeign('voucher_institution_id_foreign');
+        });
         Schema::dropIfExists('voucher');
     }
 }
