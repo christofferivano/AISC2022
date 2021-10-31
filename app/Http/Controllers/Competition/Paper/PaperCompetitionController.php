@@ -10,6 +10,8 @@ use App\Models\Payment;
 use App\Models\Member;
 use App\Models\Voucher;
 use App\Models\Institution;
+use Carbon\Carbon;
+use App\Models\Document;
 
 class PaperCompetitionController extends Controller
 {
@@ -55,6 +57,23 @@ class PaperCompetitionController extends Controller
         ->with('count', $count);
     }
 
+    public function createStep4(Request $request, $count){
+        $papercompe = $request->session()->get('papercompe');
+        $team_leader = $request->session()->get('team_leader');
+        $member1 = $request->session()->get('member1');
+        $member2 = $request->session()->get('member2');
+        return view('competitionregis-2', ['count', $count])
+        ->with(compact('papercompe', $papercompe))
+        ->with(compact('team_leader', $team_leader))
+        ->with(compact('member1', $member1))
+        ->with(compact('member2', $member2))
+        ->with('count', $count);
+    }
+
+    public function createStep5(){
+        return view('competitioncomplete');
+    }
+
     public function postCreateStep1(Request $request){
         $validatedData = $request->validate([
             'teamname' => 'required',
@@ -73,7 +92,7 @@ class PaperCompetitionController extends Controller
         ]);
 
         $biaya;
-        if (!strcmp($request->origin, "Indonesia")){
+        if (!$request->origin){
             $biaya = 60000;
         }
         else $biaya = 6;
@@ -118,8 +137,6 @@ class PaperCompetitionController extends Controller
             $request->session()->put('team_leader', $team_leader);
 
             $biaya_leader = $biaya;
-
-            $count++;
         }
         else {
             $team_leader = $request->session()->get('team_leader');
@@ -135,7 +152,6 @@ class PaperCompetitionController extends Controller
             $request->session()->put('team_leader', $team_leader);
 
             $biaya_leader = $biaya;
-            
         }
 
         if (empty($request->session()->get('member1'))){
@@ -233,13 +249,17 @@ class PaperCompetitionController extends Controller
             ]);
             $request->session()->put('papercompe', $papercompe);
         }
-        
+        // dd($team_leader->nama, $team_leader->institution, $team_leader->biaya_pendaftaran);
+        // dd($papercompe->nama_tim, $papercompe->jenis, $papercompe->total_pembayaran, $papercompe->validation, $papercompe->origin);
         return redirect()->route('paper-competition-regis-voucher-get', ['count'=>$count]);
     }
 
     public function postCreateStep2(Request $request){
         // dd($request->hasFile('document_requirement'));
         $papercompe = $request->session()->get('papercompe');
+        $team_leader = $request->session()->get('team_leader');
+        $member1 = $request->session()->get('member1');
+        $member2 = $request->session()->get('member2');
 
         $this->validate($request,
             [
@@ -279,7 +299,7 @@ class PaperCompetitionController extends Controller
             $extension = $request->file('tf_receipt_bca')->getClientOriginalExtension();
             $filenameSimpan = $filename.'_'.time().'.'.$extension;
             $path = $request->file('tf_receipt_bca')->storeAs('public/comperegis/payment', $filenameSimpan);
-            dd($path);
+            //dd($path);
         }
         else {
             $this->validate($request, [
@@ -302,8 +322,12 @@ class PaperCompetitionController extends Controller
             $extension = $request->file('tf_receipt_paypal')->getClientOriginalExtension();
             $filenameSimpan = $filename.'_'.time().'.'.$extension;
             $path = $request->file('tf_receipt_paypal')->storeAs('public/comperegis/payment', $filenameSimpan);
-            dd($path);
+            // dd($path);
         }
+
+
+        
+        $papercompe->save();
 
         $payment = new Payment();
         $payment->fill([
@@ -312,34 +336,104 @@ class PaperCompetitionController extends Controller
             'filename' => $filenameSimpan,
             'filepath' => $path,
             'comperegis_id' => $papercompe->id,
+            'method' => $request->radio
         ]);
+
+        $payment->save();
+
+        $team_leader->fill([
+            'comperegis_id' => $papercompe->id
+        ]);
+        $team_leader->save();
+
+        if($member1){
+            $member1->fill([
+                'comperegis_id' => $papercompe->id
+            ]);
+            $member1->save();
+        }
+
+        if($member2){
+            $member2->fill([
+                'comperegis_id' => $papercompe->id
+            ]);
+            $member2->save();
+        }
+
+        $filenameWithExt = $request->file('document_requirement')->getClientOriginalName();
+        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
+        $extension = $request->file('document_requirement')->getClientOriginalExtension();
+        $filenameSimpan = $filename.'_'.time().'.'.$extension;
+        $path = $request->file('document_requirement')->storeAs('public/comperegis/document', $filenameSimpan);
+    
+        $document = new Document();
+        $document->fill([
+            'filename' => $filenameSimpan,
+            'filepath' => $path,
+            'comperegis_id' => $papercompe->id
+        ]);
+        $document->save();
+        // dd($payment, $team_leader, $member1, $member2);
+        $request->session()->forget('papercompe');
+        $request->session()->forget('payment');
+        $request->session()->forget('document');
+        $request->session()->forget('team_leader');
+        $request->session()->forget('member1');
+        $request->session()->forget('member2');
+        return redirect()->route('paper-competition-regis-complete');
     }
 
     public function postCreateStep3(Request $request){
+        
         $papercompe = $request->session()->get('papercompe');
         $team_leader = $request->session()->get('team_leader');
         $member1 = $request->session()->get('member1');
         $member2 = $request->session()->get('member2');
 
+        $count=0;
+
         $this->validate($request, [
-            'team_leader' => 'exists:App\Models\Voucher,kode_voucher',
-            'member1' => 'exists:App\Models\Voucher,kode_voucher',
-            'member2' => 'exists:App\Models\Voucher,kode_voucher'
-        ]);
+            'team_leader' => 'nullable|exists:App\Models\Voucher,kode_voucher',
+            'member1' => 'nullable|exists:App\Models\Voucher,kode_voucher',
+            'member2' => 'nullable|exists:App\Models\Voucher,kode_voucher'
+        ],
+        [
+            'team_leader.exists' => 'The voucher code for team leader is invalid',
+            'member1.exists' => 'The voucher code for frist member is invalid',
+            'member2.exists' => 'The voucher code for second member is invalid'
+        ]
+        );
 
         $voucher_leader = NULL;
         $voucher_member1 = NULL;
         $voucher_member2 = NULL;
 
-        $biaya_leader = 0;
-        $biaya_member1 = 0;
-        $biaya_member2 = 0;
+        if(!$papercompe->origin) $biaya = 60000;
+        else $biaya = 6;
+
+        $team_leader->biaya_pendaftaran=$biaya;
+        $biaya_leader = $team_leader->biaya_pendaftaran;
+        if($member1) {
+            $member1->biaya_pendaftaran=$biaya;
+            $biaya_member1 = $member1->biaya_pendaftaran;
+            $count++;
+        }
+        else $biaya_member1 = 0;
+        if($member2) {
+            $member2->biaya_pendaftaran=$biaya;
+            $biaya_member2 = $member2->biaya_pendaftaran;
+            $count++;
+        }
+        else $biaya_member2 = 0;
 
         if ($request->team_leader){
             $voucher = Voucher::whereKode_voucher($request->team_leader)->first();
-            if (!stcrmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
                 if (strcmp($voucher->institution->nama_institusi, $team_leader->institution)){
-                    return redirect()->back()->withErrors(['message' => 'This voucher is not eligible for team leader.']);
+                    return redirect()->back()->withErrors(['leader_roadshow' => 'This voucher is not eligible for the team leader.']);
+                }
+                if(Carbon::now()->toDateString()>$voucher->expired_date){
+                    return redirect()->back()->withErrors(['leader_roadshow' => 'This voucher is already expired.']);
                 }
             }
             $voucher_leader = $voucher->id;
@@ -349,9 +443,12 @@ class PaperCompetitionController extends Controller
 
         if ($request->member1){
             $voucher = Voucher::whereKode_voucher($request->member1)->first();
-            if (!stcrmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
                 if (strcmp($voucher->institution->nama_institusi, $member1->institution)){
-                    return redirect()->back()->withErrors(['message' => 'This voucher is not eligible for first member.']);
+                    return redirect()->back()->withErrors(['member1_roadshow' => 'This voucher is not eligible for first member.']);
+                }
+                if(Carbon::now()->toDateString()>$voucher->expired_date){
+                    return redirect()->back()->withErrors(['member1_roadshow' => 'This voucher is already expired.']);
                 }
             }
             $voucher_member1 = $voucher->id;
@@ -361,28 +458,41 @@ class PaperCompetitionController extends Controller
 
         if ($request->member2){
             $voucher = Voucher::whereKode_voucher($request->member2)->first();
-            if (!stcrmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
                 if (strcmp($voucher->institution->nama_institusi, $member2->institution)){
-                    return redirect()->back()->withErrors(['message' => 'This voucher is not eligible for second member.']);
+                    return redirect()->back()->withErrors(['member2_roadshow' => 'This voucher is not eligible for second member.']);
+                }
+                if(Carbon::now()->toDateString()>$voucher->expired_date){
+                    return redirect()->back()->withErrors(['member2_roadshow' => 'This voucher is already expired.']);
                 }
             }
             $voucher_member2 = $voucher->id;
             $member2->biaya_pendaftaran = (1-($voucher->besar_potongan/100))*$member2->biaya_pendaftaran;
             $biaya_member2 = $member2->biaya_pendaftaran;
         }
+        
 
-        $papercome->total_pembayaran = $biaya_leader + $biaya_member1 + $biaya_member2;
+        $papercompe->total_pembayaran = $biaya_leader + $biaya_member1 + $biaya_member2;
 
         $team_leader->fill([
             'voucher_id' => $voucher_leader
         ]);
 
-        $member1->fill([
-            'voucher_id' => $voucher_leader
-        ]);
+        
 
-        $member2->fill([
-            'voucher_id' => $voucher_leader
-        ]);
+        if($member1){
+            $member1->fill([
+                'voucher_id' => $voucher_member1
+            ]);
+        }
+
+        if($member2){
+            $member2->fill([
+                'voucher_id' => $voucher_member2
+            ]);
+        }
+
+        // dd($team_leader, $member1, $member2, $papercompe);
+        return redirect()->route('paper-competition-total', ['count' =>$count]);
     }
 }

@@ -157,7 +157,7 @@
                 </tbody>
                 </table>
             </div>
-            <form action="{{ route('institution-add') }}" method="GET">
+            <form action="{{ route('voucher-add') }}" method="GET">
                 @csrf
                 <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">Add</button>
             </form>

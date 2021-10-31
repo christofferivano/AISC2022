@@ -32,17 +32,35 @@
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
                 <div class="flex flex-col">
-                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Total Price</h2>
-                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">Rp.60.000</h2>
+                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Team Leader Price after Discount:</h2>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $team_leader->biaya_pendaftaran }}</h2>
                 </div>
+                @if($member1)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 1 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member1->biaya_pendaftaran }}</h2>
+                    </div>
+                @endif
+                @if($member2)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 2 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member2->biaya_pendaftaran }}</h2>
+                    </div>
+                @endif
                 <div class="flex flex-col">
-                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Coupon </h2>
-                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent"> -Rp.15.000</h2>  
+                    <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total Price</h1>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">{{ $papercompe->total_pembayaran }}</h2>  
                 </div>
-                <div class="flex flex-col">
-                    <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total </h1>
-                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">Rp. 45.000</h2>  
-                </div>
+                <form action="{{ route('paper-competition-regis-payment') }}" method="GET" class="flex flex-col pt-10 md:pt-12">
+                    @csrf
+                    <div class="flex flex-col pt-20">
+                        <a href="" class="pt-2 md:pl-5">
+                            <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
+                                Next
+                            </button>
+                        </a>
+                    </div>
+                </form>
             </div>
             <img src="/images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
             <img src="/images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
