@@ -47,11 +47,17 @@
                         <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member2->currency() }}</h2>
                     </div>
                 @endif
+                @if($member3)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 3 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member3->currency() }}</h2>
+                    </div>
+                @endif
                 <div class="flex flex-col">
                     <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total Price</h1>
                     <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">{{ $papercompe->currency() }}</h2>  
                 </div>
-                <form action="{{ route('paper-competition-regis-payment') }}" method="GET" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('poster-competition-regis-payment') }}" method="GET" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <div class="flex flex-col pt-20">
                         <a href="" class="pt-2 md:pl-5">

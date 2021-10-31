@@ -34,7 +34,7 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('paper-competition-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('poster-competition-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="teamname" class="pb-2 pl-4 text-base md:text-xl font-medium">Team Name*</label>
                     <input value="{{{ $papercome->nama_tim ?? '' }}}" name="teamname" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">

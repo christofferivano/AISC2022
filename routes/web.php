@@ -36,7 +36,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 |
 */
 // Route::view('/dashboard', 'papercompe-regis')->name('dashboard');
-Route::get('/dashboard', [PosterCompetitionController::class, 'createStep1'])->name('dashboard');
+Route::get('/dashboard', [JeopardyCompetitionController::class, 'createStep1'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -92,7 +92,14 @@ Route::get('/competition/paper/register/complete', [PaperCompetitionController::
 
 //Route for Cheme Jeopardy
 Route::get('/competition/cheme', [JeopardyCompetitionController::class, 'index'])->name('cheme-competition');
-Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'register'])->name('cheme-competition-regis');
+Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'createStep1'])->name('cheme-competition-regis');
+Route::post('/competition/cheme/register', [JeopardyCompetitionController::class, 'postCreateStep1'])->name('cheme-competition-regis');
+Route::get('/competition/cheme/register/voucher/{count}', [JeopardyCompetitionController::class, 'CreateStep3'])->name('cheme-competition-regis-voucher-get');
+Route::post('/competition/cheme/register/voucher', [JeopardyCompetitionController::class, 'postCreateStep3'])->name('cheme-competition-regis-voucher-post');
+Route::get('/competition/cheme/register/total/{count}', [JeopardyCompetitionController::class, 'createStep4'])->name('cheme-competition-total');
+Route::get('/competition/cheme/register/payment', [JeopardyCompetitionController::class, 'createStep2'])->name('cheme-competition-regis-payment');
+Route::post('/competition/cheme/register/payment', [JeopardyCompetitionController::class, 'postCreateStep2'])->name('cheme-competition-regis-payment');
+Route::get('/competition/cheme/register/complete', [JeopardyCompetitionController::class, 'createStep5'])->name('cheme-competition-regis-complete');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 

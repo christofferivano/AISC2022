@@ -5,7 +5,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <title>AISChat AISC 2022</title>
+    <title>AISC 2022</title>
     <link rel="shortcut icon" href="/images/logogram.ico" />
     <style>
         #file{
@@ -275,6 +275,19 @@
             }
             else {
                 targetDiv2.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv3 = document.getElementById("other_column3");
+        const btn3 = document.getElementById("place3");
+        btn3.onchange = function() {  
+            console.log("d", targetDiv3.style.display)
+            if(btn3.value == "Other"){
+                targetDiv3.style.display = "flex";
+            }
+            else {
+                targetDiv3.style.display = "none";
             }
         }
     </script>
