@@ -35,18 +35,24 @@
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
                 <form action="{{ route('aischat-regis-one') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
-                    <label for="cctl" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
-                    <input value="{{{ $chatregis->cctl ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    
+                    <label for="team_leader" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
+                    <input value="{{{ $team_leader->voucher ?? '' }}}" name="team_leader" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    
+                    @if ($count>=1)
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
                                 <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1 Coupon Code</label>
-                                <input value="{{{ $chatregis->member1 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <input value="{{{ $member1->voucher ?? '' }}}" name="member1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         </div>
                     </div>
+                    @endif
+                    @if ($count>=2)
                     <div class="flex flex-col">
-                                <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2 Coupon Code</label>
-                                <input value="{{{ $chatregis->member2 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                        </div>
+                            <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2 Coupon Code</label>
+                            <input value="{{{ $member2->voucher ?? '' }}}" name="member2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    </div>
+                    @endif
                     <div class="flex flex-col pt-20">
                         <a href="competitionregis-2" class="pt-2 md:pl-5">
                             <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">

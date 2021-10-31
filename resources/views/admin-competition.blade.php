@@ -34,6 +34,11 @@
                             <a href="{{ route('institution') }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Institution</a>
                         </th>
                     </tr>
+                    <tr>
+                        <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
+                            <a href="{{ route('voucher') }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Voucher</a>
+                        </th>
+                    </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
                     {{-- @if ($files->count())

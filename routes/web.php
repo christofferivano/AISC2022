@@ -35,7 +35,8 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'welcome')->name('dashboard');
+// Route::view('/dashboard', 'papercompe-regis')->name('dashboard');
+Route::get('/dashboard', [PaperCompetitionController::class, 'createStep1'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -75,7 +76,7 @@ Route::get('/competition/poster/register', [PosterCompetitionController::class, 
 Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
 Route::get('/competition/paper/register', [PaperCompetitionController::class, 'createStep1'])->name('paper-competition-regis');
 Route::post('/competition/paper/register', [PaperCompetitionController::class, 'postCreateStep1'])->name('paper-competition-regis');
-Route::get('/competition/paper/register/voucher', [PaperCompetitionController::class, 'CreateStep3'])->name('paper-competition-regis-voucher');
+Route::get('/competition/paper/register/voucher/{count}', [PaperCompetitionController::class, 'CreateStep3'])->name('paper-competition-regis-voucher-get');
 Route::post('/competition/paper/register/voucher', [PaperCompetitionController::class, 'postCreateStep3'])->name('paper-competition-regis-voucher');
 Route::get('/competition/paper/register/payment', [PaperCompetitionController::class, 'CreateStep2'])->name('paper-competition-regis-payment');
 Route::post('/competition/paper/register/payment', [PaperCompetitionController::class, 'PostCreateStep2'])->name('paper-competition-regis-payment');
@@ -95,6 +96,8 @@ Route::get('/admin/aischat/registration/delete/{chatregis}', [AischatRegistratio
 Route::get('/admin/aischat/registration/show/{id}', [AischatRegistrationDataController::class, 'show'])->name('admin-aischat-show');
 
 //Route for competition admin
+
+//Route for institution CRUD
 Route::view('/admin/competition', 'admin-competition')->name('admin-competition');
 Route::get('/admin/competition/institution', [CompetitionDataController::class, 'index_institution'])->name('institution');
 Route::get('/admin/competition/institution/add', [CompetitionDataController::class, 'index_institution_add'])->name('institution-add');
@@ -102,6 +105,14 @@ Route::post('/admin/competition/institution/add', [CompetitionDataController::cl
 Route::get('/admin/competition/institution/delete/{institute}', [CompetitionDataController::class, 'institution_delete'])->name('institution-delete');
 Route::get('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_edit'])->name('institution-edit');
 Route::post('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_update'])->name('institution-update');
+
+//Route for voucher CRUD
+Route::get('/admin/competition/voucher', [CompetitionDataController::class, 'index_voucher'])->name('voucher');
+Route::get('/admin/competition/voucher/add', [CompetitionDataController::class, 'voucher_add'])->name('voucher-add');
+Route::post('/admin/competition/voucher/add', [CompetitionDataController::class, 'post_voucher_add'])->name('voucher-add');
+Route::get('/admin/competition/voucher/delete/{voucher}', [CompetitionDataController::class, 'voucher_delete'])->name('voucher-delete');
+Route::get('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_edit'])->name('voucher-edit');
+Route::post('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_update'])->name('voucher-update');
 
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 

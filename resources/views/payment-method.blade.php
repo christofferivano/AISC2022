@@ -123,7 +123,7 @@
                         </div>
                     @enderror
                     <label for="payment-date" class="pt-4 pb-2 pl-4 text-xl font-medium">Date of Payment</label>
-                    <input name="date_paypal" type="text" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent" placeholder="Name on Card">
+                    <input name="date_paypal" type="date" class="input border-b-2 focus:border-form border-form py-1 px-4 pt-4 w-full text-sm bg-transparent">
                     @error('date_paypal')
                         <div class="text-red-500 mt-2 text-sm">
                             Payment date is required!

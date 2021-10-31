@@ -239,6 +239,45 @@
             $(this).prev('label').text(file);
         });
     </script>
+    <script>
+        const targetDivLead = document.getElementById("other_column");
+        const btnLead = document.getElementById("place");
+        btnLead.onchange = function() {  
+            console.log("d", targetDivLead.style.display)
+            if(btnLead.value == "Other"){
+                targetDivLead.style.display = "flex";
+            }
+            else {
+                targetDivLead.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv = document.getElementById("other_column1");
+        const btn1 = document.getElementById("place1");
+        btn1.onchange = function() {  
+            console.log("d", targetDiv.style.display)
+            if(btn1.value == "Other"){
+                targetDiv.style.display = "flex";
+            }
+            else {
+                targetDiv.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv2 = document.getElementById("other_column2");
+        const btn2 = document.getElementById("place2");
+        btn2.onchange = function() {  
+            console.log("d", targetDiv2.style.display)
+            if(btn2.value == "Other"){
+                targetDiv2.style.display = "flex";
+            }
+            else {
+                targetDiv2.style.display = "none";
+            }
+        }
+    </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
