@@ -68,7 +68,7 @@
                         </div>
                     @enderror
 
-                    <label for="institution" class="pb-2 pl-4 text-base md:text-xl font-medium">Institution (Must be filled for Roadshow Voucher)</label>
+                    <label for="institution" class="pb-2 pl-4 text-base md:text-xl font-medium">Institution (Must be filled for Ogranisasi Voucher)</label>
                     <select name="institution" for="institution" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
                         <option value="" class="py-1 font-sans" disabled selected hidden>Select Institution</option>
                         @foreach ($institution as $t)

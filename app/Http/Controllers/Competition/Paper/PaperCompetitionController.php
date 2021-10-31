@@ -428,10 +428,12 @@ class PaperCompetitionController extends Controller
 
         if ($request->team_leader){
             $voucher = Voucher::whereKode_voucher($request->team_leader)->first();
-            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Organisasi")){
                 if (strcmp($voucher->institution->nama_institusi, $team_leader->institution)){
                     return redirect()->back()->withErrors(['leader_roadshow' => 'This voucher is not eligible for the team leader.']);
                 }
+            }
+            if(!strcmp($voucher->jenis_voucher, "Roadshow")){
                 if(Carbon::now()->toDateString()>$voucher->expired_date){
                     return redirect()->back()->withErrors(['leader_roadshow' => 'This voucher is already expired.']);
                 }
@@ -444,10 +446,12 @@ class PaperCompetitionController extends Controller
 
         if ($request->member1){
             $voucher = Voucher::whereKode_voucher($request->member1)->first();
-            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Organisasi")){
                 if (strcmp($voucher->institution->nama_institusi, $member1->institution)){
                     return redirect()->back()->withErrors(['member1_roadshow' => 'This voucher is not eligible for first member.']);
                 }
+            }
+            if(!strcmp($voucher->jenis_voucher, "Roadshow")){
                 if(Carbon::now()->toDateString()>$voucher->expired_date){
                     return redirect()->back()->withErrors(['member1_roadshow' => 'This voucher is already expired.']);
                 }
@@ -460,11 +464,13 @@ class PaperCompetitionController extends Controller
 
         if ($request->member2){
             $voucher = Voucher::whereKode_voucher($request->member2)->first();
-            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
+            if (!strcmp($voucher->jenis_voucher, "Organisasi")){
                 if (strcmp($voucher->institution->nama_institusi, $member2->institution)){
                     return redirect()->back()->withErrors(['member2_roadshow' => 'This voucher is not eligible for second member.']);
                 }
-                if(Carbon::now()->toDateString()>$voucher->expired_date){
+            }
+            if (!strcmp($voucher->jenis_voucher, "Roadshow")){
+                if (Carbon::now()->toDateString()>$voucher->expired_date){
                     return redirect()->back()->withErrors(['member2_roadshow' => 'This voucher is already expired.']);
                 }
             }

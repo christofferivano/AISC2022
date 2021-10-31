@@ -87,7 +87,13 @@ class CompetitionDataController extends Controller
             $this->validate($request,
             [
                 'expired_date' => 'required',
-                'institution' => 'required'
+            ]);
+        }
+
+        if(!strcmp($request->jenis_voucher, "Organisasi")){
+            $this->validate($request,
+            [
+                'institution' => 'required',
             ]);
         }
 
@@ -133,6 +139,12 @@ class CompetitionDataController extends Controller
             $this->validate($request,
             [
                 'expired_date' => 'required',
+            ]);
+        }
+
+        if(!strcmp($request->jenis_voucher, "Organisasi")){
+            $this->validate($request,
+            [
                 'institution' => 'required'
             ]);
         }
