@@ -35,8 +35,8 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'welcome')->name('dashboard');
-// Route::get('/dashboard', [PaperCompetitionController::class, 'createStep2'])->name('dashboard');
+// Route::view('/dashboard', 'papercompe-regis')->name('dashboard');
+Route::get('/dashboard', [PosterCompetitionController::class, 'createStep1'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -70,7 +70,14 @@ Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition
 
 //Route for poster
 Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
-Route::get('/competition/poster/register', [PosterCompetitionController::class, 'register'])->name('poster-competition-regis');
+Route::get('/competition/poster/register', [PosterCompetitionController::class, 'createStep1'])->name('poster-competition-regis');
+Route::post('/competition/poster/register', [PosterCompetitionController::class, 'postCreateStep1'])->name('poster-competition-regis');
+Route::get('/competition/poster/register/voucher/{count}', [PosterCompetitionController::class, 'CreateStep3'])->name('poster-competition-regis-voucher-get');
+Route::post('/competition/poster/register/voucher', [PosterCompetitionController::class, 'postCreateStep3'])->name('poster-competition-regis-voucher-post');
+Route::get('/competition/poster/register/total/{count}', [PosterCompetitionController::class, 'createStep4'])->name('poster-competition-total');
+Route::get('/competition/poster/register/payment', [PosterCompetitionController::class, 'createStep2'])->name('poster-competition-regis-payment');
+Route::post('/competition/poster/register/payment', [PosterCompetitionController::class, 'postCreateStep2'])->name('poster-competition-regis-payment');
+Route::get('/competition/poster/register/complete', [PosterCompetitionController::class, 'createStep5'])->name('poster-competition-regis-complete');
 
 //Route for paper
 Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
