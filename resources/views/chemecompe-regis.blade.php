@@ -3,7 +3,7 @@
 
 @section('content')
     <div class="block md:hidden absolute left-0 top-0 z-0">
-        <img src="images/bulet-aischat-4.png" alt="" class="h-48 opacity-50">
+        <img src="/images/bulet-aischat-4.png" alt="" class="h-48 opacity-50">
     </div>
     <div class="hidden md:block absolute">
         <img src="/images/compe-atas.png" alt="" class="w-97 ml-96 pl-20">
@@ -205,8 +205,8 @@
             <div class="py-20 md:py-0">
                 <img src="/images/cheme-bg.png" alt="" class="md:hidden absolute right-0 bottom-6/7 h-96 -mb-96">
             </div>
-            <img src="images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
-            <img src="images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
+            <img src="/images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
+            <img src="/images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
         </div>
         <div class="hidden col-span-3 col-start-3 md:flex flex-col items-end">
             <div class="flex flex-row pt-6 pr-20">
@@ -220,15 +220,15 @@
             </div>
             <img src="/images/cheme-bg.png" alt="" class="w-5/7 pt-20 z-10">
             <div class="absolute right-0 bottom-48 -mb-96 z-0">
-                <img src="images/compe-kanan.png" alt="" class="h-150">
+                <img src="/images/compe-kanan.png" alt="" class="h-150">
             </div>
         </div>
     </div>
     <div class="hidden md:block absolute md:left-0 md:-mt-96 z-0">
-        <img src="images/compe-bawah.png" alt="" class="h-120">
+        <img src="/images/compe-bawah.png" alt="" class="h-120">
     </div>
     <div class="hidden md:block absolute md:right-0 md:-mt-80 z-0 opacity-75">
-        <img src="images/compe-kbawah.png" alt="" class="h-100">
+        <img src="/images/compe-kbawah.png" alt="" class="h-100">
     </div>
 
     <!-- Footer -->
@@ -239,16 +239,16 @@
                     Contact Us
                 </h2>
                 <div class="flex pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/tiktok.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12 mr-2 md:mr-4">
-                    <img src="images/instagram.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/tiktok.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12 mr-2 md:mr-4">
+                    <img src="/images/instagram.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 md:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">@aisc2022</p>
                 </div>
                 <div class="flex pl-8 md:pl-12 lg:pl-14 xl:pl-16 pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/line-app.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/line-app.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 xl:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">@961ckski</p>
                 </div>
                 <div class="flex pl-8 md:pl-12 lg:pl-14 xl:pl-16 pt-2 md:pt-4 lg:pt-6 xl:pt-8 items-center">
-                    <img src="images/linkedin.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
+                    <img src="/images/linkedin.png" alt="" class="w-6 md:w-8 lg:w-10 xl:w-12">
                     <p class="pl-2 xl:pl-5 text-white font-semibold text-sm md:text-base lg:text-lg xl:text-2xl">AIChE Indonesia Student Conference 2022</p>
                 </div>
             </div>

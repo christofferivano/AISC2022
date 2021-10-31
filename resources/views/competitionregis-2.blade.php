@@ -11,12 +11,9 @@
     <div class="pt-32 md:grid md:grid-cols-5 pb-96 md:pb-32 md:w-full">
         <div class="md:col-span-2 md:col-start-1 pl-1 md:pl-24 flex flex-col items-start md:w-full">
             <h1 class="hidden md:block md:absolute py-5 md:py-0.5 md:relative text-2xl md:text-5xl font-bold">
-                ChemE Competition Coupon
-                <h2 class="pl-2 md:hidden text-lg font-bold">
-                    ChemE Competition 
-                </h2>
+                Total Price
                 <h1 class="pl-2 md:hidden text-2xl font-bold">
-                    Coupon
+                    Total Price
                 </h1>
                 <div class="md:hidden flex flex-row right-0 pl-72 md:pl-80 -mt-10 pt-6">
                     <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
@@ -34,31 +31,18 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('aischat-regis-one') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
-                    <label for="cctl" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
-                    <input value="{{{ $chatregis->cctl ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    <div class="flex flex-col md:flex-row">
-                        <div class="flex flex-col">
-                                <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1 Coupon Code</label>
-                                <input value="{{{ $chatregis->member1 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                        </div>
-                    </div>
-                    <div class="flex flex-col">
-                            <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2 Coupon Code</label>
-                            <input value="{{{ $chatregis->member2 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    </div>
-                    <div class="flex flex-col">
-                            <label for="member3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 3 Coupon Code</label>
-                            <input value="{{{ $chatregis->member3 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    </div>
-                    <div class="flex flex-col pt-20">
-                        <a href="competitionregis-2" class="pt-2 md:pl-5">
-                            <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
-                                Next
-                            </button>
-                        </a>
-                    </div>                    
-                </form>
+                <div class="flex flex-col">
+                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Total Price</h2>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">Rp.60.000</h2>
+                </div>
+                <div class="flex flex-col">
+                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Coupon </h2>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent"> -Rp.15.000</h2>  
+                </div>
+                <div class="flex flex-col">
+                    <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total </h1>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">Rp. 45.000</h2>  
+                </div>
             </div>
             <img src="/images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
             <img src="/images/bulet-aischat-responsive2.png" alt="" class="md:hidden absolute right-0 bottom-36 h-80 -mb-10 opacity-100">
