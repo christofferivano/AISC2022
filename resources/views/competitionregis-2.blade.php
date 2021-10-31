@@ -33,23 +33,23 @@
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
                 <div class="flex flex-col">
                     <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Team Leader Price after Discount:</h2>
-                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $team_leader->biaya_pendaftaran }}</h2>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $team_leader->currency() }}</h2>
                 </div>
                 @if($member1)
                     <div class="flex flex-col">
                         <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 1 Price after Discount:</h2>
-                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member1->biaya_pendaftaran }}</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member1->currency() }}</h2>
                     </div>
                 @endif
                 @if($member2)
                     <div class="flex flex-col">
                         <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 2 Price after Discount:</h2>
-                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member2->biaya_pendaftaran }}</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member2->currency() }}</h2>
                     </div>
                 @endif
                 <div class="flex flex-col">
                     <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total Price</h1>
-                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">{{ $papercompe->total_pembayaran }}</h2>  
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">{{ $papercompe->currency() }}</h2>  
                 </div>
                 <form action="{{ route('paper-competition-regis-payment') }}" method="GET" class="flex flex-col pt-10 md:pt-12">
                     @csrf

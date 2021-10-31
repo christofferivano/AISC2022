@@ -44,7 +44,7 @@
                             </div>
                     @enderror
 
-                    <label for="besar_potongan" class="pb-2 pl-4 text-base md:text-xl font-medium">Besar Potongan</label>
+                    <label for="besar_potongan" class="pb-2 pl-4 text-base md:text-xl font-medium">Besar Potongan (dalam rupiah)</label>
                     <input value="" name="besar_potongan" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     @error('besar_potongan')
                             <div class="text-red-500 mt-2 text-sm">

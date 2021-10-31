@@ -437,7 +437,8 @@ class PaperCompetitionController extends Controller
                 }
             }
             $voucher_leader = $voucher->id;
-            $team_leader->biaya_pendaftaran = (1-($voucher->besar_potongan/100))*$team_leader->biaya_pendaftaran;
+            if($papercompe->origin) $voucher->besar_potongan = $voucher->besar_potongan/10000;
+            $team_leader->biaya_pendaftaran = $team_leader->biaya_pendaftaran-$voucher->besar_potongan;
             $biaya_leader = $team_leader->biaya_pendaftaran;
         }
 
@@ -452,7 +453,8 @@ class PaperCompetitionController extends Controller
                 }
             }
             $voucher_member1 = $voucher->id;
-            $member1->biaya_pendaftaran = (1-($voucher->besar_potongan/100))*$member1->biaya_pendaftaran;
+            if($papercompe->origin) $voucher->besar_potongan = $voucher->besar_potongan/10000;
+            $member1->biaya_pendaftaran = $member1->biaya_pendaftaran-$voucher->besar_potongan;
             $biaya_member1 = $member1->biaya_pendaftaran;
         }
 
@@ -467,7 +469,8 @@ class PaperCompetitionController extends Controller
                 }
             }
             $voucher_member2 = $voucher->id;
-            $member2->biaya_pendaftaran = (1-($voucher->besar_potongan/100))*$member2->biaya_pendaftaran;
+            if($papercompe->origin) $voucher->besar_potongan = $voucher->besar_potongan/10000;
+            $member2->biaya_pendaftaran = $member2->biaya_pendaftaran-$voucher->besar_potongan;
             $biaya_member2 = $member2->biaya_pendaftaran;
         }
         
