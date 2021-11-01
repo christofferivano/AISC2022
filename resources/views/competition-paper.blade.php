@@ -163,12 +163,10 @@
     <div class="flex flex-col items-center pt-32 pb-40">
         <div class="flex flex-col items-start md:py-1 lg:py-3 px-4 bg-gradient-to-bl from-blue-300 to-pink-500 shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-40 lg:h-52">
             <!-- <div class="card-event flex flex-col items-start py-3 px-4" id="card-event"> -->
-                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Enter your name here</h2>
+                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Anzardisyah Bimasatya Bramana</h2>
                 <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
-                    <p>Project Officer AISC 2022</p>
-                    <p>Phone Number : 00</p>
-                    <p>Line ID : aa</p>
-                    <p>Email : aa</p>
+                    <p>Line ID : bimabramana</p>
+                    <p>WA : +6281233572489</p>
                 </div>
             <!-- </div> -->
         </div>
