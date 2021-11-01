@@ -104,6 +104,7 @@ module.exports = {
         buttonVolunteer: '#A264B3',
         buttonCompe: '#F25889',
         buttonMM: '#FF8B0E',
+        fontCompe: '#8f4391',
       },
     },
   },
