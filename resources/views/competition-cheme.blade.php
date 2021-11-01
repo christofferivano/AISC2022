@@ -12,24 +12,23 @@
     <div class="pt-8 md:pt-12 lg:pt-28 xl:pt-36 pb-20">
         <div class="px-12 relative md:flex">
             <div class="z-10 md:pl-10 lg:pl-20 xl:pl-60 pt-20 flex flex-col items-start" data-aos="fade-right" data-aos-duration="1900">
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:tracking-wide">
+                <h2 class="text-fontCompe text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:tracking-wide">
                     ChemE Jeopardy
                 </h2>
-                <h2 class="text-white text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:tracking-wide">
+                <h2 class="text-fontCompe text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold md:tracking-wide">
                     Competition
                 </h2>
-                <p class="w-64 md:w-96 py-7 md:py-4 lg:py-7 text-white text-sm md:text-base lg:text-xl xl:text-2xl text-center md:text-left">
-                    “A platform for undergraduate students in 
-                    Southeast Asia with big ideas to discover more 
-                    about green innovations.”
+                <p class="w-64 md:w-96 py-7 md:py-4 lg:py-7 text-fontCompe text-sm md:text-base lg:text-xl xl:text-2xl text-center md:text-left">
+                    The very first ChemE Jeopardy Competition 
+                    in Indonesia
                 </p>
                 <div class="flex flex-row items-start">
-                <button class="text-white text-xs lg:text-xl font-semibold shadow-xl rounded-full bg-gradient-to-l from-blue-300 to-indigo-500 px-6 lg:px-14 py-1 lg:py-2">
-                    Learn More
+                <button class="text-white text-xs lg:text-xl font-semibold shadow-xl rounded-full bg-gradient-to-r from-purple-800 to-yellow-600 px-6 lg:px-14 py-1 lg:py-2">
+                    <a href="#about">Learn More</a>
                 </button>
                 <div class="px-5">
-                    <button class="text-white text-xs lg:text-xl font-semibold shadow-xl rounded-full bg-transparent border-2 border-white px-6 lg:px-14 py-1 lg:py-2">
-                        Guide Book
+                    <button class="text-fontCompe text-xs lg:text-xl font-semibold shadow-xl rounded-full bg-transparent border-2 border-fontCompe px-6 lg:px-14 py-1 lg:py-2">
+                        <a href="bit.ly/AISC2022Competitions">Guide Book</a>
                     </button>
                 </div>
             </div>
@@ -43,18 +42,24 @@
     <!-- About Competition -->
     <div class="pt-20 xl:pt-40 2xl:pt-52 pb-60">
         <div class="relative md:flex">
-            <div class="z-10 md:pl-72 lg:pl-96 xl:pl-98 2xl:pl-100 pt-20 xl:pt-40 flex flex-col items-center md:items-start" data-aos="fade-right" data-aos-duration="1900">
+            <div id="about" class="z-10 md:pl-72 lg:pl-96 xl:pl-98 2xl:pl-100 pt-20 xl:pt-40 flex flex-col items-center md:items-start" data-aos="fade-right" data-aos-duration="1900">
                 <h2 class="text-footer text-3xl md:text-3xl lg:text-5xl xl:text-6xl font-bold md:tracking-wide">
                     About the Competition?
                 </h2>
                 <div class="pt-5">
                     <div class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 w-40 md:w-48 lg:w-56"></div>
                 </div>
-                <p class="w-97 md:w-96 lg:w-97 py-7 text-footer text-base md:text-base lg:text-lg xl:text-2xl text-center md:text-left">
-                    A platform for undergraduate students in Southeast Asia with big ideas to 
-                    discover more about green innovations. A platform for undergraduate 
-                    students in Southeast Asia with big ideas to discover more about green 
-                    innovations.
+                <p class="w-97 md:w-96 lg:w-97 xl:w-99 py-7 text-justify text-footer text-base md:text-base lg:text-lg xl:text-2xl text-center md:text-left">
+                AISC 2022 presents a ChemE Jeopardy Competition for undergraduate 
+                students in Southeast Asia to challenge their knowledge according to 
+                chemical Engineering-related questions. ChemE Jeopardy Competition is 
+                the first fast-paced quiz competition in Indonesia in which questions 
+                will be presented on the game board, and must phrase their responses 
+                in the form of answers. In this competition, there will be three games, 
+                which are preliminary, semi-final, and championship. Our ChemE Jeopardy 
+                Competition aims to enrich knowledge in the field of chemical engineering 
+                as well as provide a different point of view and an unforgettable experience 
+                during the competition.
                 </p>
             </div>
             <div class="absolute flex flex-col items-end bottom-0 left-0 -mb-56 md:-mb-0 lg:-mb-10" data-aos="fade-left" data-aos-duration="2400">
@@ -84,18 +89,18 @@
                         <!-- Slides -->
                         <div class="swiper-slide slide2 justify-center items-start flex-col items-start py-3 md:py-10">
                             <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                                Registration
+                                Open Registration
                             </h2>
                             <span class="text-footer text-xs md:text-xl">
-                                Aug 9, 2021                            
+                                Oct 31, 2021 - Dec 12, 2021                            
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-start flex-col items-start py-3 md:py-10">
                             <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                                Abstract Submission 
+                                Preliminary Games
                             </h2>
                             <span class="text-footer text-xs md:text-xl">
-                                Aug 20, 2021
+                                Feb 11, 2022 - Feb 13, 2022 
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
@@ -103,15 +108,23 @@
                                 Finalist Announcement
                             </h2>
                             <span class="text-footer text-xs md:text-xl">
-                                Aug 27, 2021
+                                Feb 19, 2022
                             </span>
                         </div>
                         <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
                             <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
-                                Paper/Poster Submission
+                                Technical Meeting
                             </h2>
                             <span class="text-footer text-xs md:text-xl">
-                                Sept 2, 2021
+                                Mar 5, 2022
+                            </span>
+                        </div>
+                        <div class="swiper-slide slide2 justify-center items-center flex-col items-start py-3 md:py-10">
+                            <h2 class="text-center text-base md:text-2xl font-bold py-1 md:py-5">
+                                Competition Day
+                            </h2>
+                            <span class="text-footer text-xs md:text-xl">
+                                Mar 12, 2022
                             </span>
                         </div>
                     </div>
@@ -133,10 +146,9 @@
                 <div class="pt-5 pb-5">
                     <div class="py-1 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 w-40 md:w-48 lg:w-56"></div>
                 </div>
-                <img src="images/compe-1st.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
-                <img src="images/compe-2nd.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
-                <img src="images/compe-3rd.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
-                <img src="images/compe-fav.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
+                <img src="images/juara1.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
+                <img src="images/juara2.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
+                <img src="images/juara3.png" alt="" class="h-14 md:h-20 lg:h-32 xl:h-36 2xl:h-40">
             </div>
             <div class="z-10 absolute flex flex-col items-end top-0 right-0" data-aos="fade-left" data-aos-duration="2400">
                 <img src="images/compe-img-2.png" alt="" class="h-80 lg:h-110 xl:h-140 2xl:h-150 mt-40">
@@ -164,14 +176,17 @@
 
     <!-- Contact Person -->
     <div class="flex flex-col items-center pt-32 pb-40">
-        <div class="flex flex-col items-start md:py-1 lg:py-3 px-4 bg-gradient-to-bl from-blue-300 to-pink-500 shadow-lg rounded-lg border border-gray-900 bg-cover h-landing bg-local relative h-32 md:h-40 lg:h-52">
+        <div class="flex flex-col items-start md:py-1 lg:py-3 px-4 bg-gradient-to-bl from-blue-300 to-pink-500 shadow-lg rounded-lg relative h-40 md:h-52 lg:h-60">
             <!-- <div class="card-event flex flex-col items-start py-3 px-4" id="card-event"> -->
-                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Enter your name here</h2>
+                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Nadhifa Auria Andini</h2>
                 <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
-                    <p>Project Officer AISC 2022</p>
-                    <p>Phone Number : 00</p>
-                    <p>Line ID : aa</p>
-                    <p>Email : aa</p>
+                    <p>Whats App : +6282211801116</p>
+                    <p>Line ID : nadhifauria</p>
+                </div>
+                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Haura Tsabita Rachman</h2>
+                <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
+                    <p>Whats App : +6285779651775</p>
+                    <p>Line ID : hauratsabita</p>
                 </div>
             <!-- </div> -->
         </div>
