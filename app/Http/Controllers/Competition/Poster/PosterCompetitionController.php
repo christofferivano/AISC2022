@@ -71,7 +71,7 @@ class PosterCompetitionController extends Controller
     }
 
     public function createStep5(){
-        return view('competitioncomplete');
+        return view('comperegisdone');
     }
 
     public function postCreateStep1(Request $request){

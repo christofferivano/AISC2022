@@ -31,12 +31,14 @@ class PaperCompetitionController extends Controller
         $team_leader = $request->session()->get('team_leader');
         $member1 = $request->session()->get('member1');
         $member2 = $request->session()->get('member2');
+        $member3 = $request->session()->get('member3');
         $institution = Institution::all();
         return view('papercompe-regis')
         ->with(compact('papercompe', $papercompe))
         ->with(compact('team_leader', $team_leader))
         ->with(compact('member1', $member1))
         ->with(compact('member2', $member2))
+        ->with(compact('member3', $member3))
         ->with(compact('institution', $institution));
     }
 
@@ -49,11 +51,13 @@ class PaperCompetitionController extends Controller
         $team_leader = $request->session()->get('team_leader');
         $member1 = $request->session()->get('member1');
         $member2 = $request->session()->get('member2');
+        $member3 = $request->session()->get('member3');
         return view('couponpaper', ['count', $count])
         ->with(compact('papercompe', $papercompe))
         ->with(compact('team_leader', $team_leader))
         ->with(compact('member1', $member1))
         ->with(compact('member2', $member2))
+        ->with(compact('member3', $member3))
         ->with('count', $count);
     }
 
@@ -62,16 +66,18 @@ class PaperCompetitionController extends Controller
         $team_leader = $request->session()->get('team_leader');
         $member1 = $request->session()->get('member1');
         $member2 = $request->session()->get('member2');
+        $member3 = $request->session()->get('member3');
         return view('competitionregis-2', ['count', $count])
         ->with(compact('papercompe', $papercompe))
         ->with(compact('team_leader', $team_leader))
         ->with(compact('member1', $member1))
         ->with(compact('member2', $member2))
+        ->with(compact('member3', $member3))
         ->with('count', $count);
     }
 
     public function createStep5(){
-        return view('competitioncomplete');
+        return view('comperegisdone');
     }
 
     public function postCreateStep1(Request $request){
