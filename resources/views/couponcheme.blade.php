@@ -11,9 +11,9 @@
     <div class="pt-32 md:grid md:grid-cols-5 pb-96 md:pb-32 md:w-full">
         <div class="md:col-span-2 md:col-start-1 pl-1 md:pl-24 flex flex-col items-start md:w-full">
             <h1 class="hidden md:block md:absolute py-5 md:py-0.5 md:relative text-2xl md:text-5xl font-bold">
-                Paper Competition Coupon
+                ChemE Competition Coupon
                 <h2 class="pl-2 md:hidden text-lg font-bold">
-                    Paper Competition 
+                    ChemE Competition 
                 </h2>
                 <h1 class="pl-2 md:hidden text-2xl font-bold">
                     Coupon
@@ -34,25 +34,74 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('aischat-regis-one') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
-                    <label for="cctl" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
-                    <input value="{{{ $chatregis->cctl ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                <form action="{{ route('cheme-competition-regis-voucher-post') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                    @csrf
+                    <label for="team_leader" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
+                    <input value="{{{ $team_leader->voucher ?? '' }}}" name="team_leader" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @if($errors->has('team_leader'))
+                    <div class="text-red-500 mt-2 text-sm">
+                        {{ $errors->first('team_leader') }}
+                    </div>
+                    @endif
+                    @if($errors->has('leader_roadshow'))
+                    <div class="text-red-500 mt-2 text-sm">
+                        {{ $errors->first('leader_roadshow') }}
+                    </div>
+                    @endif
+                    @if ($count>=1)
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
                                 <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1 Coupon Code</label>
-                                <input value="{{{ $chatregis->member1 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <input value="{{{ $member1->voucher ?? '' }}}" name="member1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         </div>
                     </div>
+                        @if($errors->has('member1'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member1') }}
+                        </div>
+                        @endif
+                        @if($errors->has('member1_roadshow'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member1_roadshow') }}
+                        </div>
+                        @endif
+                    @endif
+                    @if ($count>=2)
                     <div class="flex flex-col">
                             <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2 Coupon Code</label>
-                            <input value="{{{ $chatregis->member2 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <input value="{{{ $member2->voucher ?? '' }}}" name="member2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     </div>
+                        @if($errors->has('member2'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member2') }}
+                        </div>
+                        @endif
+
+                        @if($errors->has('member2_roadshow'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member2_roadshow') }}
+                        </div>
+                        @endif
+                    @endif
+                    @if ($count>=3)
                     <div class="flex flex-col">
                             <label for="member3" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 3 Coupon Code</label>
-                            <input value="{{{ $chatregis->member3 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                            <input value="{{{ $member3->voucher ?? '' }}}" name="member3" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     </div>
+                        @if($errors->has('member3'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member3') }}
+                        </div>
+                        @endif
+
+                        @if($errors->has('member3_roadshow'))
+                        <div class="text-red-500 mt-2 text-sm">
+                            {{ $errors->first('member3_roadshow') }}
+                        </div>
+                        @endif
+                    @endif
                     <div class="flex flex-col pt-20">
-                        <a href="competitionregis-2" class="pt-2 md:pl-5">
+                        <a href="" class="pt-2 md:pl-5">
                             <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>

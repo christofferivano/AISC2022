@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPaymentMethodToComperegis extends Migration
+class AddExpiredDateToVoucherTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,8 +13,8 @@ class AddPaymentMethodToComperegis extends Migration
      */
     public function up()
     {
-        Schema::table('comperegis', function (Blueprint $table) {
-            $table->string('payment_method');
+        Schema::table('voucher', function (Blueprint $table) {
+            $table->date('expired_date')->nullable(true);
         });
     }
 
@@ -25,8 +25,8 @@ class AddPaymentMethodToComperegis extends Migration
      */
     public function down()
     {
-        Schema::table('comperegis', function (Blueprint $table) {
-            $table->dropColumn('payment_method');
+        Schema::table('voucher', function (Blueprint $table) {
+            $table->dropColumn('expired_date');
         });
     }
 }

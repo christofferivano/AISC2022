@@ -34,18 +34,18 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('aischat-regis-one') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <form action="{{ route('poster-competition-regis') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="teamname" class="pb-2 pl-4 text-base md:text-xl font-medium">Team Name*</label>
-                    <input value="{{{ $chatregis->teamname ?? '' }}}" name="team name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <input value="{{{ $papercome->nama_tim ?? '' }}}" name="teamname" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                     @error('teamname')
                             <div class="text-red-500 mt-2 text-sm">
                                 The team name is required!
                             </div>
                     @enderror
                     <label for="tl" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader*</label>
-                    <input value="{{{ $chatregis->tl ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    @error('place')
+                    <input name="tl" value="{{{ $team_leader->nama ?? '' }}}" name="tl" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('tl')
                             <div class="text-red-500 mt-2 text-sm">
                                 The team leader is required!
                             </div>
@@ -53,8 +53,8 @@
                     <label for="origin" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Origin*</label>
                     <select name="origin" for="origin" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
                         <option class="py-1 font-sans" disabled selected hidden>Select Origin</option>
-                        <option class="py-1 font-sans">Indonesia</option>
-                        <option class="py-1 font-sans">International</option>
+                        <option value="0" class="py-1 font-sans">Indonesia</option>
+                        <option value="1" class="py-1 font-sans">International</option>
                     </select>
                     @error('origin')
                             <div class="text-red-500 mt-2 text-sm">
@@ -62,74 +62,122 @@
                             </div>
                     @enderror
                     <label for="place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                    <select name="place" for="place" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
-                        <option class="py-1 font-sans">Pre-Event</option>
-                        <option class="py-1 font-sans">Conference Day</option>
-                        <option class="py-1 font-sans">nAISC Night</option>
-                        <option class="py-1 font-sans">Logistic</option>
-                        <option class="py-1 font-sans">Sponsorship</option>
-                        <option class="py-1 font-sans">Paper Competition</option>
-                        <option class="py-1 font-sans">Poster Competition</option>
-                        <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
-                        <option class="py-1 font-sans">Social Media Specialist</option>
-                        <option class="py-1 font-sans">Outreach</option>
-                        <option class="py-1 font-sans">Media Production</option>
+                    {{-- <input value="{{{ $team_leader->institution ?? '' }}}" name="place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder=""> --}}
+                    <select id="place" name="place" for="place" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
+                        <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                            @foreach ($institution as $i)
+                                <option class="py-1 font-sans">{{ $i->nama_institusi }}</option>
+                            @endforeach
+                        <option class="py-1 font-sans">Other</option>
                     </select>
                     @error('place')
                             <div class="text-red-500 mt-2 text-sm">
                                 The institution/university is required!
                             </div>
                     @enderror
+                    <div id="other_column" class="hidden flex flex-col md:flex-row">
+                        <div class="flex flex-col">
+                            <label for="other_place" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Institution*</label>
+                            <input value="{{{ $member1->nama ?? '' }}}" name="other_place" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                        </div>
+                        @error('other_place')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    The Institution is required!
+                                </div>
+                        @enderror
+                    </div>
                     <label for="telp" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Phone Number*</label>
-                    <input value="{{{ $chatregis->telp ?? '' }}}" name="telp" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    @error('wa')
+                    <input value="{{{ $team_leader->phone_number ?? '' }}}" name="telp" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('telp')
                             <div class="text-red-500 mt-2 text-sm">
                                 The phone number is required!
                             </div>
                     @enderror
+                    <label for="email" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Email*</label>
+                    <input value="{{{ $team_leader->email ?? '' }}}" name="email" type="tel" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    @error('email')
+                            <div class="text-red-500 mt-2 text-sm">
+                                The email is required!
+                            </div>
+                    @enderror
+                    
+                    <input type="hidden" name="jenis" value="Poster">
+
                     <div class="flex flex-col md:flex-row">
                         <div class="flex flex-col">
-                                <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1*</label>
-                                <input value="{{{ $chatregis->member1 ?? '' }}}" name="" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                                @error('place')
-                                        <div class="text-red-500 mt-2 text-sm">
-                                            The team member 1 is required!
-                                        </div>
-                                @enderror
+                                <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1</label>
+                                <input value="{{{ $member1->nama ?? '' }}}" name="member1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         </div>
                         <div class="flex flex-col px-0 md:px-10">
-                            <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label>
-                            <select name="place1" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                            <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
-                                <option class="py-1 font-sans">Pre-Event</option>
-                                <option class="py-1 font-sans">Conference Day</option>
-                                <option class="py-1 font-sans">nAISC Night</option>
-                                <option class="py-1 font-sans">Logistic</option>
-                                <option class="py-1 font-sans">Sponsorship</option>
-                                <option class="py-1 font-sans">Paper Competition</option>
-                                <option class="py-1 font-sans">Poster Competition</option>
-                                <option class="py-1 font-sans">ChemE Jeopardy Competition</option>
-                                <option class="py-1 font-sans">Social Media Specialist</option>
-                                <option class="py-1 font-sans">Outreach</option>
-                                <option class="py-1 font-sans">Media Production</option>
+                            <label for="place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University</label>
+                            {{-- <input value="{{{ $member1->institution ?? '' }}}" name="place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">  --}}
+                            <select id="place1" name="place1" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                @foreach ($institution as $i)
+                                    <option class="py-1 font-sans">{{ $i->nama_institusi }}</option>
+                                @endforeach
+                                <option class="py-1 font-sans">Other</option>
                             </select>
                             @error('place')
                                     <div class="text-red-500 mt-2 text-sm">
                                         The institution/university for team member 1 is required!
                                     </div>
+                            @enderror
+                        </div>
+                    </div>
+                    <div id="other_column1" class="hidden flex flex-col md:flex-row">
+                        <div class="flex flex-col">
+                            <label for="other_place1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1 Institution</label>
+                            <input value="{{{ $member1->nama ?? '' }}}" name="other_place1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                        </div>
+                        @error('other_place1')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    The Institution is required!
+                                </div>
+                        @enderror
+                    </div>
+                    {{-- <div class="flex flex-col md:flex-row">
+                        <div class="flex flex-col">
+                                <label for="member2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2</label>
+                                <input value="{{{ $member2->nama ?? '' }}}" name="member2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                        </div>
+                        <div class="flex flex-col px-0 md:px-10">
+                            <label for="place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Institution/University*</label> --}}
+                            {{-- <input value="{{{ $member2->institution ?? '' }}}" name="place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">  --}}
+                            {{-- <select id="place2" name="place2" for="place2" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                                <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
+                                @foreach ($institution as $i)
+                                    <option class="py-1 font-sans">{{ $i->nama_institusi }}</option>
+                                @endforeach
+                                <option class="py-1 font-sans">Other</option>
+                            </select>
+                            @error('place')
+                                    <div class="text-red-500 mt-2 text-sm">
+                                        The institution/university for team member 2 is required!
+                                    </div>
                             @enderror   
                         </div>
-                    </div>                    
+                    </div>
+                    <div id="other_column2" class="hidden flex flex-col md:flex-row">
+                        <div class="flex flex-col">
+                            <label for="other_place2" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 2 Institution*</label>
+                            <input value="{{{ $member1->nama ?? '' }}}" name="other_place2" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                        </div>
+                        @error('other_place2')
+                                <div class="text-red-500 mt-2 text-sm">
+                                    The Institution is required!
+                                </div>
+                        @enderror
+                    </div> --}}
                     <div class="text-black-500 mt-4 text-sm">
                         * is required!
                     </div>
                     <div class="flex flex-col pt-20">
-                        <div class="text-black-500 w-96 md:w-full mt-4 text-xs md:text-lg pl-2 md:pl-10">
+                        <div class="text-black-500 mt-4 text-xs md:text-lg pl-2 md:pl-10">
                         The guidebook of each competitions can be found, <a href="" class="underline text-blue-500">Here</a>
                         </div>
-                        <a href="competitionregis-2" class="pt-2 md:pl-5">
-                            <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
+                        <a href="" class="pt-2 md:pl-5">
+                            <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>
                         </a>

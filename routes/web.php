@@ -22,6 +22,7 @@ use App\Http\Controllers\ShowFileController;
 use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 use App\Http\Controllers\Webinar\Admin\AischatExportController;
+use App\Http\Controllers\Competition\Admin\CompetitionDataController;
 use App\Http\Controllers\Competency\CompetencyController;
 
 /*
@@ -34,7 +35,8 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'competition-poster')->name('dashboard');
+Route::view('/dashboard', 'aiscompetencyright')->name('dashboard');
+// Route::get('/dashboard', [PaperCompetitionController::class, 'createStep2'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -68,18 +70,36 @@ Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition
 
 //Route for poster
 Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
-Route::get('/competition/poster/register', [PosterCompetitionController::class, 'register'])->name('poster-competition-regis');
+Route::get('/competition/poster/register', [PosterCompetitionController::class, 'createStep1'])->name('poster-competition-regis');
+Route::post('/competition/poster/register', [PosterCompetitionController::class, 'postCreateStep1'])->name('poster-competition-regis');
+Route::get('/competition/poster/register/voucher/{count}', [PosterCompetitionController::class, 'CreateStep3'])->name('poster-competition-regis-voucher-get');
+Route::post('/competition/poster/register/voucher', [PosterCompetitionController::class, 'postCreateStep3'])->name('poster-competition-regis-voucher-post');
+Route::get('/competition/poster/register/total/{count}', [PosterCompetitionController::class, 'createStep4'])->name('poster-competition-total');
+Route::get('/competition/poster/register/payment', [PosterCompetitionController::class, 'createStep2'])->name('poster-competition-regis-payment');
+Route::post('/competition/poster/register/payment', [PosterCompetitionController::class, 'postCreateStep2'])->name('poster-competition-regis-payment');
+Route::get('/competition/poster/register/complete', [PosterCompetitionController::class, 'createStep5'])->name('poster-competition-regis-complete');
 
 //Route for paper
 Route::get('/competition/paper', [PaperCompetitionController::class, 'index'])->name('paper-competition');
 Route::get('/competition/paper/register', [PaperCompetitionController::class, 'createStep1'])->name('paper-competition-regis');
 Route::post('/competition/paper/register', [PaperCompetitionController::class, 'postCreateStep1'])->name('paper-competition-regis');
-Route::get('/competition/paper/register/payment', [PaperCompetitionController::class, 'CreateStep2'])->name('paper-competition-regis-payment');
-Route::post('/competition/paper/register/payment', [PaperCompetitionController::class, 'PostCreateStep2'])->name('paper-competition-regis-payment');
+Route::get('/competition/paper/register/voucher/{count}', [PaperCompetitionController::class, 'CreateStep3'])->name('paper-competition-regis-voucher-get');
+Route::post('/competition/paper/register/voucher', [PaperCompetitionController::class, 'postCreateStep3'])->name('paper-competition-regis-voucher-post');
+Route::get('/competition/paper/register/total/{count}', [PaperCompetitionController::class, 'createStep4'])->name('paper-competition-total');
+Route::get('/competition/paper/register/payment', [PaperCompetitionController::class, 'createStep2'])->name('paper-competition-regis-payment');
+Route::post('/competition/paper/register/payment', [PaperCompetitionController::class, 'postCreateStep2'])->name('paper-competition-regis-payment');
+Route::get('/competition/paper/register/complete', [PaperCompetitionController::class, 'createStep5'])->name('paper-competition-regis-complete');
 
 //Route for Cheme Jeopardy
 Route::get('/competition/cheme', [JeopardyCompetitionController::class, 'index'])->name('cheme-competition');
-Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'register'])->name('cheme-competition-regis');
+Route::get('/competition/cheme/register', [JeopardyCompetitionController::class, 'createStep1'])->name('cheme-competition-regis');
+Route::post('/competition/cheme/register', [JeopardyCompetitionController::class, 'postCreateStep1'])->name('cheme-competition-regis');
+Route::get('/competition/cheme/register/voucher/{count}', [JeopardyCompetitionController::class, 'CreateStep3'])->name('cheme-competition-regis-voucher-get');
+Route::post('/competition/cheme/register/voucher', [JeopardyCompetitionController::class, 'postCreateStep3'])->name('cheme-competition-regis-voucher-post');
+Route::get('/competition/cheme/register/total/{count}', [JeopardyCompetitionController::class, 'createStep4'])->name('cheme-competition-total');
+Route::get('/competition/cheme/register/payment', [JeopardyCompetitionController::class, 'createStep2'])->name('cheme-competition-regis-payment');
+Route::post('/competition/cheme/register/payment', [JeopardyCompetitionController::class, 'postCreateStep2'])->name('cheme-competition-regis-payment');
+Route::get('/competition/cheme/register/complete', [JeopardyCompetitionController::class, 'createStep5'])->name('cheme-competition-regis-complete');
 
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 
@@ -90,6 +110,25 @@ Route::get('/admin/volunteer/registration/{volregis}', [VolunteerRegistrationDat
 Route::get('/admin/aischat/registration', [AischatRegistrationDataController::class, 'index'])->name('admin-aischat');
 Route::get('/admin/aischat/registration/delete/{chatregis}', [AischatRegistrationDataController::class, 'delete'])->name('admin-aischat-delete');
 Route::get('/admin/aischat/registration/show/{id}', [AischatRegistrationDataController::class, 'show'])->name('admin-aischat-show');
+
+//Route for competition admin
+
+//Route for institution CRUD
+Route::view('/admin/competition', 'admin-competition')->name('admin-competition');
+Route::get('/admin/competition/institution', [CompetitionDataController::class, 'index_institution'])->name('institution');
+Route::get('/admin/competition/institution/add', [CompetitionDataController::class, 'index_institution_add'])->name('institution-add');
+Route::post('/admin/competition/institution/add', [CompetitionDataController::class, 'index_institution_add_add'])->name('institution-add');
+Route::get('/admin/competition/institution/delete/{institute}', [CompetitionDataController::class, 'institution_delete'])->name('institution-delete');
+Route::get('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_edit'])->name('institution-edit');
+Route::post('/admin/competition/institution/edit/{id}', [CompetitionDataController::class, 'institution_update'])->name('institution-update');
+
+//Route for voucher CRUD
+Route::get('/admin/competition/voucher', [CompetitionDataController::class, 'index_voucher'])->name('voucher');
+Route::get('/admin/competition/voucher/add', [CompetitionDataController::class, 'voucher_add'])->name('voucher-add');
+Route::post('/admin/competition/voucher/add', [CompetitionDataController::class, 'post_voucher_add'])->name('voucher-add');
+Route::get('/admin/competition/voucher/delete/{voucher}', [CompetitionDataController::class, 'voucher_delete'])->name('voucher-delete');
+Route::get('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_edit'])->name('voucher-edit');
+Route::post('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_update'])->name('voucher-update');
 
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 

@@ -11,12 +11,9 @@
     <div class="pt-32 md:grid md:grid-cols-5 pb-96 md:pb-32 md:w-full">
         <div class="md:col-span-2 md:col-start-1 pl-1 md:pl-24 flex flex-col items-start md:w-full">
             <h1 class="hidden md:block md:absolute py-5 md:py-0.5 md:relative text-2xl md:text-5xl font-bold">
-                Poster Competition Coupon
-                <h2 class="pl-2 md:hidden text-lg font-bold">
-                    Poster Competition 
-                </h2>
+                Total Price
                 <h1 class="pl-2 md:hidden text-2xl font-bold">
-                    Coupon
+                    Total Price
                 </h1>
                 <div class="md:hidden flex flex-row right-0 pl-72 md:pl-80 -mt-10 pt-6">
                     <div class="rounded-full h-3 md:h-4 w-3 md:w-4 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg"></div>
@@ -34,45 +31,41 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                <form action="{{ route('poster-competition-regis-voucher-post') }}" method="POST" class="flex flex-col pt-10 md:pt-12">
+                <div class="flex flex-col">
+                    <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Team Leader Price after Discount:</h2>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $team_leader->currency() }}</h2>
+                </div>
+                @if($member1)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 1 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member1->currency() }}</h2>
+                    </div>
+                @endif
+                @if($member2)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 2 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member2->currency() }}</h2>
+                    </div>
+                @endif
+                @if($member3)
+                    <div class="flex flex-col">
+                        <h2 class="text-xl md:text-2xl font-bold pt-4 md:pt-6"> Member 3 Price after Discount:</h2>
+                        <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-52 text-lg bg-transparent">{{ $member3->currency() }}</h2>
+                    </div>
+                @endif
+                <div class="flex flex-col">
+                    <h1 class="text-xl md:text-2xl font-bold pt-4 md:pt-16"> Grand Total Price</h1>
+                    <h2 class="border-b-2 focus:border-form border-form py-1 px-0.5 pt-6 w-60 text-2xl bg-transparent">{{ $papercompe->currency() }}</h2>  
+                </div>
+                <form action="{{ route('poster-competition-regis-payment') }}" method="GET" class="flex flex-col pt-10 md:pt-12">
                     @csrf
-                    <label for="team_leader" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Team Leader Coupon Code</label>
-                    <input value="{{{ $team_leader->voucher ?? '' }}}" name="team_leader" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                    @if($errors->has('team_leader'))
-                    <div class="text-red-500 mt-2 text-sm">
-                        {{ $errors->first('team_leader') }}
-                    </div>
-                    @endif
-                    @if($errors->has('leader_roadshow'))
-                    <div class="text-red-500 mt-2 text-sm">
-                        {{ $errors->first('leader_roadshow') }}
-                    </div>
-                    @endif
-                    @if ($count>=1)
-                    <div class="flex flex-col md:flex-row">
-                        <div class="flex flex-col">
-                                <label for="member1" class="pt-10 pb-2 pl-4 text-base md:text-xl font-medium">Member 1 Coupon Code</label>
-                                <input value="{{{ $member1->voucher ?? '' }}}" name="member1" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form" placeholder="">
-                        </div>
-                    </div>
-                        @if($errors->has('member1'))
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $errors->first('member1') }}
-                        </div>
-                        @endif
-                        @if($errors->has('member1_roadshow'))
-                        <div class="text-red-500 mt-2 text-sm">
-                            {{ $errors->first('member1_roadshow') }}
-                        </div>
-                        @endif
-                    @endif
                     <div class="flex flex-col pt-20">
                         <a href="" class="pt-2 md:pl-5">
-                            <button type="submit" class="px-44 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
+                            <button type="submit" class="px-40 md:px-101 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
                                 Next
                             </button>
                         </a>
-                    </div>                    
+                    </div>
                 </form>
             </div>
             <img src="/images/bulet-aischat-responsive.png" alt="" class="md:hidden absolute left-0 bottom-0 h-80 -mb-52 opacity-100">
