@@ -1,4 +1,4 @@
-@extends('layouts.navbar-aischat')
+@extends('layouts.navbar-aiscompe')
 
 
 @section('content')
