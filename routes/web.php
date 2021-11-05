@@ -35,15 +35,15 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'aiscompetencyright')->name('dashboard');
+Route::view('/dashboard', 'welcome')->name('dashboard');
 // Route::get('/dashboard', [PaperCompetitionController::class, 'createStep2'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
-Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
-Route::post('/competency/registration', [CompetencyController::class, 'store_1'])->name('competency-regis-1-store');
-Route::get('/competency/registration-2', [CompetencyController::class, 'registration_2'])->name('competency-regis-2');
-Route::post('/competency/registration-2/store/{name}/{place}/{email}/{wa}', [CompetencyController::class, 'store_2'])->name('competency-regis-2-store');
-Route::get('/competency/registration/thanks', [CompetencyController::class, 'end'])->name('competency-regis-end');
+// Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
+// Route::post('/competency/registration', [CompetencyController::class, 'store_1'])->name('competency-regis-1-store');
+// Route::get('/competency/registration-2', [CompetencyController::class, 'registration_2'])->name('competency-regis-2');
+// Route::post('/competency/registration-2/store/{name}/{place}/{email}/{wa}', [CompetencyController::class, 'store_2'])->name('competency-regis-2-store');
+// Route::get('/competency/registration/thanks', [CompetencyController::class, 'end'])->name('competency-regis-end');
 
 Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 
