@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\File;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\Auth\LogoutController;
 use App\Http\Controllers\Competition\CompetitionPage;
@@ -23,6 +24,7 @@ use App\Http\Controllers\Admin;
 use App\Http\Controllers\Webinar\Admin\AischatRegistrationDataController;
 use App\Http\Controllers\Webinar\Admin\AischatExportController;
 use App\Http\Controllers\Competition\Admin\CompetitionDataController;
+use App\Http\Controllers\Competition\Admin\RegistrationDataController;
 use App\Http\Controllers\Competency\CompetencyController;
 
 /*
@@ -35,8 +37,8 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'competition-paper')->name('dashboard');
-// Route::get('/dashboard', [PaperCompetitionController::class, 'index'])->name('dashboard');
+// Route::view('/dashboard', 'competition-paper')->name('dashboard');
+Route::get('/dashboard', [RegistrationDataController::class, 'index'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -67,6 +69,9 @@ Route::get('/aischat/registration-3', [WebinarPage::class, 'registration_3'])->n
 
 // Route for competition
 Route::get('/competition', [CompetitionPage::class, 'index'])->name('competition');
+
+//Route for admin competition
+// Route::get()
 
 //Route for poster
 Route::get('/competition/poster', [PosterCompetitionController::class, 'index'])->name('poster-competition');
@@ -129,6 +134,30 @@ Route::post('/admin/competition/voucher/add', [CompetitionDataController::class,
 Route::get('/admin/competition/voucher/delete/{voucher}', [CompetitionDataController::class, 'voucher_delete'])->name('voucher-delete');
 Route::get('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_edit'])->name('voucher-edit');
 Route::post('/admin/competition/voucher/edit/{id}', [CompetitionDataController::class, 'voucher_update'])->name('voucher-update');
+
+//Route for competition registration data show
+Route::get('/admin/competition/competition/{type}', [RegistrationDataController::class, 'index'])->name('competition-data');
+Route::get('/admin/competition/competition/payment/{id}', [RegistrationDataController::class, 'payment_view'])->name('payment-view');
+Route::get('/admin/competition/competition/members/{id}', [RegistrationDataController::class, 'members_view'])->name('members-view');
+Route::get('/admin/competition/competition/validate/{id}', [RegistrationDataController::class, 'validate_registration'])->name('validate-competition');
+
+//Route to access storage
+// Route::get('storage/app/{filename}', function ($filename)
+// {
+//     $path = storage_path('public/' . $filename);
+
+//     if (!File::exists($path)) {
+//         abort(404);
+//     }
+
+//     $file = File::get($path);
+//     $type = File::mimeType($path);
+
+//     $response = Response::make($file, 200);
+//     $response->header("Content-Type", $type);
+
+//     return $response;
+// });
 
 Route::get('/show/{file_path}', [ShowFileController::class, 'index'])->name('show-file');
 

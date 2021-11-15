@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Comperegis;
 
 class Payment extends Model
 {
@@ -19,4 +20,8 @@ class Payment extends Model
         'method',
         'filepath'
     ];
+
+    public function comperegis(){
+        return $this->belongsTo(Comperegis::class, 'comperegis_id');
+    }
 }

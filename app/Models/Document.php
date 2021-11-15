@@ -16,4 +16,8 @@ class Document extends Model
         'filepath',
         'comperegis_id'
     ];
+
+    public function comperegis(){
+        return $this->belongsTo(Comperegis::class, 'comperegis_id');
+    }
 }

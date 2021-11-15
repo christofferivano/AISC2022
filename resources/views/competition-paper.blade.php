@@ -198,12 +198,6 @@
     <div class="flex flex-col items-center pt-32 pb-40">
         <div class="flex flex-col items-start md:py-1 lg:py-3 px-4 bg-gradient-to-bl from-blue-300 to-pink-500 shadow-lg rounded-lg relative h-40 md:h-52 lg:h-60">
             <!-- <div class="card-event flex flex-col items-start py-3 px-4" id="card-event"> -->
-<<<<<<< HEAD
-                <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Anzardisyah Bimasatya Bramana</h2>
-                <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
-                    <p>Line ID : bimabramana</p>
-                    <p>WA : +6281233572489</p>
-=======
             <h2 class="title-1 text-white text-xl md:text-2xl lg:text-3xl xl:text-4xl font-semibold pt-2 lg:pt-3 z-10">Anzardisyah Bimasatya Bramana</h2>
                 <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
                     <p>Whats App : +6281233572489</p>
@@ -213,7 +207,6 @@
                 <div class="pt-2 text-white flex flex-col items-start text-xs md:text-base">
                     <p>Whats App : +6285645224700</p>
                     <p>Line ID : evaniacf</p>
->>>>>>> 48863b5686e7b9b7e476b0cab86fb58d5350fb0e
                 </div>
             <!-- </div> -->
         </div>

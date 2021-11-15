@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use App\Models\Payment;
+use App\Models\Document;
+use App\Models\Member;
 
 class Comperegis extends Model
 {
@@ -27,5 +30,22 @@ class Comperegis extends Model
             $string = 'Rp.'.($this->total_pembayaran/1000).'.000';
             return $string;
         }
+    }
+
+    public function origin(){
+        if (!$this->origin) return "Indonesia";
+        else return "Internasional";
+    }
+
+    public function payment(){
+        return $this->hasOne(Payment::class, 'comperegis_id');
+    }
+
+    public function document(){
+        return $this->hasOne(Document::class, 'comperegis_id');
+    }
+
+    public function members(){
+        return $this->hasMany(Member::class, 'comperegis_id');
     }
 }

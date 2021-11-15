@@ -39,6 +39,21 @@
                             <a href="{{ route('voucher') }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Voucher</a>
                         </th>
                     </tr>
+                    <tr>
+                        <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
+                            <a href="{{ route('competition-data', "Paper") }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Paper</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
+                            <a href="{{ route('competition-data', "Poster") }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Poster</a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
+                            <a href="{{ route('competition-data', "Cheme") }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Cheme</a>
+                        </th>
+                    </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
                     {{-- @if ($files->count())
