@@ -5,7 +5,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-    <title>Volunteer AISC 2022</title>
+    <title>AISCompetency 2022</title>
     <link rel="shortcut icon" href="/images/logogram.ico" />
     <style>
         #file{
@@ -238,8 +238,58 @@
             var file = $('#file-upload-7')[0].files[0].name;
             $(this).prev('label').text(file);
         });
-
-        
+    </script>
+    <script>
+        const targetDivLead = document.getElementById("other_column");
+        const btnLead = document.getElementById("place");
+        btnLead.onchange = function() {  
+            console.log("d", targetDivLead.style.display)
+            if(btnLead.value == "Other"){
+                targetDivLead.style.display = "flex";
+            }
+            else {
+                targetDivLead.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv = document.getElementById("other_column1");
+        const btn1 = document.getElementById("place1");
+        btn1.onchange = function() {  
+            console.log("d", targetDiv.style.display)
+            if(btn1.value == "Other"){
+                targetDiv.style.display = "flex";
+            }
+            else {
+                targetDiv.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv2 = document.getElementById("other_column2");
+        const btn2 = document.getElementById("place2");
+        btn2.onchange = function() {  
+            console.log("d", targetDiv2.style.display)
+            if(btn2.value == "Other"){
+                targetDiv2.style.display = "flex";
+            }
+            else {
+                targetDiv2.style.display = "none";
+            }
+        }
+    </script>
+    <script>
+        const targetDiv3 = document.getElementById("other_column3");
+        const btn3 = document.getElementById("place3");
+        btn3.onchange = function() {  
+            console.log("d", targetDiv3.style.display)
+            if(btn3.value == "Other"){
+                targetDiv3.style.display = "flex";
+            }
+            else {
+                targetDiv3.style.display = "none";
+            }
+        }
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

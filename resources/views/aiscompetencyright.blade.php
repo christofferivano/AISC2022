@@ -1,18 +1,18 @@
-@extends('layouts.navbar-aischat')
+@extends('layouts.navbar-aiscompe')
 
 
 @section('content')
-    <div class="absolute right-0 z-10 pt-72 md:pt-20">
+    <div class="absolute right-0 z-10 pt-72 md:pt-28">
         <img src="/images/aiscompetency.png" alt="" class="h-72 md:h-80 lg:h-100 xl:h-140">
     </div>
     <div class="absolute right-0 z-0">
-        <img src="images/bulet-aischat-1.png" alt="" class="h-60 md:h-80 lg:h-100 xl:h-140">
+        <img src="/images/bulet-aischat-1.png" alt="" class="h-60 md:h-80 lg:h-100 xl:h-150">
     </div>
     <div class="absolute left-0 bottom-0 z-0 -mb-32 md:-mb-32 lg:-mb-16 xl:-mb-10 md:-ml-10 lg:-ml-20 xl:-ml-28">
-        <img src="images/bulet-aischat-3.png" alt="" class="h-28 md:h-40 lg:h-52 xl:h-80">
+        <img src="/images/bulet-aischat-3.png" alt="" class="h-28 md:h-40 lg:h-52 xl:h-80">
     </div>
     <div class ="flex flex-col items-center md:items-start md:pl-20 lg:pl-28 xl:pl-36 pt-32 md:pt-32 lg:pt-36 xl:pt-40">
-        <div class="justify-left items-left md:w-96">
+        <div class="justify-left items-left md:w-100">
             <h1 class="text-3xl md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-4.5xl font-bold text-footer">
                 What is AISCompetency?
             </h1>
@@ -20,7 +20,7 @@
         <div class="w-40 md:w-40 lg:w-48 xl:w-56 2xl:w-60 pt-2">
             <div class="rounded-full py-0.5 md:py-1 bg-gradient-to-l from-blue-300 to-purple-400"></div>
         </div>
-        <div class="w-97 md:w-72 xl:w-96 pt-8 text-sm md:text-xs lg:text-sm xl:text-lg text-justify">
+        <div class="w-97 md:w-72 xl:w-97 pt-8 text-sm md:text-xs lg:text-sm xl:text-lg text-justify">
             <p class="text-footer">
             AISCompetency is series of workshop held by AISC 2022 that will discuss competencies needed when entering the 
             work-life and studying in university. This event will invite experts in their respective fields to speak and share t
@@ -43,12 +43,13 @@
             </div>
             <div class="col-span-2 col-start-2 md:pl-20 py-14 md:py-20 lg:py-28 xl:py-40">
                 <p class="text-xxs md:text-sm lg:text-base xl:text-xl font-semibold text-justify">
-                AISCompetency 1 will discuss about hThe main challenge that will be faced by fresh graduates is looking for work where currently 
+                AISCompetency 1 will discuss about the main challenge that will be faced by fresh graduates is looking for work where currently 
                 many fresh graduates are still unemployed because their skills do not meet the competencies of the company being applied for. 
                 Therefore we need good career planning to make the career targets we want to achieve in line with our skills. 
                 In addition to skills, personal branding is needed and answering interviews well to facilitate getting a job
                 <div class="list-decimal text-xxs md:text-sm lg:text-base xl:text-xl font-semibold text-justify">
-                    What will you get
+                <br>
+                What will you get :
                 <li>Making a good career plan</li>
                 <li>Learn about CV ATS Friendly</li>
                 <li>Nailing the interviews</li>
@@ -72,7 +73,7 @@
         <h1 class="z-10 text-footer text-2xl md:text-4xl lg:text-4.5xl xl:text-6xl font-bold md:pb-4">Join Our AISChat Now!</h1>
         <div class="py-2 md:py-4">
             <button class="py-0.5 md:py-1 lg:py-1.5 xl:py-2 rounded-full bg-gradient-to-r from-purple-400 to-blue-300 shadow-lg z-10">
-                <a class="text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold px-14 md:px-20 lg:w-24 xl:px-32" href="{{ route('aischat-regis-one') }}">Register Here!</a>
+                <a class="text-white text-sm md:text-base lg:text-lg xl:text-xl font-semibold px-14 md:px-20 lg:w-24 xl:px-32" href="https://forms.gle/2oMgpjpZ8Jp6rqsA8" target="_blank">Register Here!</a>
             </button>
         </div>
         <div class="absolute right-0 md:block right-0 -mt-40 md:-mt-52 z-0">
