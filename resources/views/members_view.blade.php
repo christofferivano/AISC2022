@@ -34,12 +34,16 @@
                 </div>
             </div>
             <div class="w-72 md:w-full pt-2 md:pt-0 md:pr-5 z-10">
-                @foreach($members as $m)
-                    <label for="" class="pb-2 pl-4 text-base md:text-xl font-medium">Nama - Status</label>
-                    <div class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
-                        {{ $m->nama }} - {{ $m->jenis_member }}
-                    </div>
-                @endforeach
+                <div class="flex flex-row">
+                    @foreach($members as $m)
+                        <div class="flex flex-col">
+                            <label for="" class="pb-2 pl-4 text-base md:text-xl font-medium">Nama - Status</label>
+                            <div class="outline-none rounded-full border border-form py-1 px-4 w-96 md:w-80 text-sm focus:ring-2 focus:ring-form">
+                                {{ $m->nama }} - {{ $m->jenis_member }}
+                            </div>
+                        </div>
+                    @endforeach
+                </div>
                 {{-- <div class="flex flex-col pt-20">
                     <a href="{{ route('competition-data', $payment->comperegis->jenis) }}" class="pt-2 md:pl-5">
                         <button href="{{ route('competition-data', $payment->comperegis->jenis) }}" type="" class="px-40 md:px-50 bg-gradient-to-l from-blue-300 to-purple-400 py-3 rounded-full text-white text-lg font-semibold shadow-lg">
