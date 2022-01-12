@@ -37,7 +37,7 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::view('/dashboard', 'conferencedone')->name('dashboard');
+Route::view('/dashboard', 'exhibition')->name('dashboard');
 // Route::get('/dashboard', [RegistrationDataController::class, 'index'])->name('dashboard');
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
