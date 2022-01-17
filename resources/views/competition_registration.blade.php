@@ -103,7 +103,15 @@
                         </th>
 
                         <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
-                            Validation
+                            Treasurer Validation
+                        </th>
+
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Comp Team Validation
+                        </th>
+
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Email Sent Validation
                         </th>
                     </tr>
                 </thead>
@@ -156,13 +164,33 @@
                                 </td>
                             @endif
 
-                            @if($r->validation == 0)
+                            @if($r->validate_treasure == 0)
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    <a href="{{ route('validate-competition', $r->id) }}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Validate</a>
+                                    <a onClick='javascript:return confirm("Are you sure want to validate {{ $r->nama_tim }}`s payment?");' href="{{ route('validate-competition', [$r->id, 1]) }}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Validate</a>
                                 </td>
                             @else
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">Validated</span>
+                                </td>
+                            @endif
+
+                            @if($r->validation == 0)
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <a onClick='javascript:return confirm("Are you sure want to validate {{ $r->nama_tim }}`s document?");' href="{{ route('validate-competition', [$r->id, 2]) }}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Validate</a>
+                                </td>
+                            @else
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">Validated</span>
+                                </td>
+                            @endif
+
+                            @if($r->validate_email == 0)
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <a onClick='javascript:return confirm("Are you sure email has been sent to {{ $r->nama_tim }}?");' href="{{ route('validate-competition', [$r->id, 3]) }}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-red-200 text-red-800">Validate</a>
+                                </td>
+                            @else
+                                <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                    <span class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-green-200 text-green-800">Email sent</span>
                                 </td>
                             @endif
                             </tr>

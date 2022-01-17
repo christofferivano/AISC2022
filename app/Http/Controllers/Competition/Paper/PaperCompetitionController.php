@@ -332,13 +332,13 @@ class PaperCompetitionController extends Controller
         }
 
 
-        
+        $format = date('Y-m-d', strtotime($date));
         $papercompe->save();
 
         $payment = new Payment();
         $payment->fill([
             'name_card' => $name_card,
-            'payment_date' => $date,
+            'payment_date' => $format,
             'filename' => $filenameSimpan,
             'filepath' => $path,
             'comperegis_id' => $papercompe->id,

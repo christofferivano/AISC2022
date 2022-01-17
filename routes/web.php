@@ -37,8 +37,9 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// Route::view('/dashboard', 'competition-paper')->name('dashboard');
-Route::get('/dashboard', [RegistrationDataController::class, 'index'])->name('dashboard');
+Route::view('/dashboard', 'welcome')->name('dashboard');
+// Route::get('/dashboard', [PaperCompetitionController::class, 'createStep2'])->name('dashboard');
+
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 // Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
@@ -139,7 +140,7 @@ Route::post('/admin/competition/voucher/edit/{id}', [CompetitionDataController::
 Route::get('/admin/competition/competition/{type}', [RegistrationDataController::class, 'index'])->name('competition-data');
 Route::get('/admin/competition/competition/payment/{id}', [RegistrationDataController::class, 'payment_view'])->name('payment-view');
 Route::get('/admin/competition/competition/members/{id}', [RegistrationDataController::class, 'members_view'])->name('members-view');
-Route::get('/admin/competition/competition/validate/{id}', [RegistrationDataController::class, 'validate_registration'])->name('validate-competition');
+Route::get('/admin/competition/competition/validate/{id}/{num}', [RegistrationDataController::class, 'validate_registration'])->name('validate-competition');
 
 //Route to access storage
 // Route::get('storage/app/{filename}', function ($filename)

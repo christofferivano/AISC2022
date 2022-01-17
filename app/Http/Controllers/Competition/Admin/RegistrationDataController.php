@@ -31,9 +31,12 @@ class RegistrationDataController extends Controller
         return view("members_view")->with('members', $members);
     }
 
-    public function validate_registration($id){
+    public function validate_registration($id, $num){
         $registration = Comperegis::find($id);
-        $registration->validation = 1;
+
+        if($num == 1) $registration->validate_treasure = 1;
+        elseif($num == 2) $registration->validation = 1;
+        elseif($num == 3) $registration->validate_email = 1;
         $registration->save();    
         return redirect()->back();
     }
