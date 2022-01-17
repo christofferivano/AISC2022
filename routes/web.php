@@ -37,14 +37,9 @@ use App\Http\Controllers\Competency\CompetencyController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-<<<<<<< HEAD
 Route::view('/dashboard', 'welcome')->name('dashboard');
 // Route::get('/dashboard', [PaperCompetitionController::class, 'createStep2'])->name('dashboard');
 
-=======
-Route::view('/dashboard', 'sosnight')->name('dashboard');
-// Route::get('/dashboard', [RegistrationDataController::class, 'index'])->name('dashboard');
->>>>>>> defc91bc11166e14694f808d3ef279ae76e4f048
 
 Route::get('/competency', [CompetencyController::class, 'index'])->name('competency');
 // Route::get('/competency/registration', [CompetencyController::class, 'registration_1'])->name('competency-regis-1');
