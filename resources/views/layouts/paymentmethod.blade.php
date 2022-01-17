@@ -239,6 +239,11 @@
             var file = $('#file-upload-7')[0].files[0].name;
             $(this).prev('label').text(file);
         });
+        $('#file-upload-8').change(function() {
+            var i = $(this).prev('label').clone();
+            var file = $('#file-upload-8')[0].files[0].name;
+            $(this).prev('label').text(file);
+        });
     </script>
     <script>
         const targetDiv = document.getElementById("bcadisplay");
