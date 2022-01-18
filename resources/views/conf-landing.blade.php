@@ -244,7 +244,7 @@
             Join Conference Day Now!
         </h1>
         <button class="w-96 py-1 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg text-white text-2xl font-semibold rounded-full">
-            <a href="">Register Here!</a>
+            <a href="{{ route('conference-registration-get') }}">Register Here!</a>
         </button>
     </div>
 
@@ -254,7 +254,7 @@
             Exhibition is Here
         </h1>
         <button class="w-96 py-1 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg text-white text-2xl font-semibold rounded-full">
-            <a href="">Join Here!</a>
+            <a href="{{ route('exhibition') }}">Join Here!</a>
         </button>
     </div>
 

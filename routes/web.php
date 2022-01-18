@@ -26,6 +26,7 @@ use App\Http\Controllers\Webinar\Admin\AischatExportController;
 use App\Http\Controllers\Competition\Admin\CompetitionDataController;
 use App\Http\Controllers\Competition\Admin\RegistrationDataController;
 use App\Http\Controllers\Competency\CompetencyController;
+use App\Http\Controllers\Conference\Admin\ConferenceDataController;
 
 /*
 |--------------------------------------------------------------------------
@@ -48,7 +49,13 @@ Route::get('/competency', [CompetencyController::class, 'index'])->name('compete
 // Route::post('/competency/registration-2/store/{name}/{place}/{email}/{wa}', [CompetencyController::class, 'store_2'])->name('competency-regis-2-store');
 // Route::get('/competency/registration/thanks', [CompetencyController::class, 'end'])->name('competency-regis-end');
 
+// Routes for conference
 Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
+Route::get('/conference/register', [ConferencePage::class, 'get_register'])->name('conference-registration-get');
+Route::post('/conference/register/post', [ConferencePage::class, 'post_register'])->name('conference-registration-post');
+Route::get('/conference/register/done', [ConferencePage::class, 'end_register'])->name('conference-registration-end');
+Route::get('/admin/conference', [ConferenceDataController::class, 'index'])->name('admin-conference');
+Route::get('/exhibition', [ConferencePage::class, 'index_exhibition'])->name('exhibition');
 
 Route::get('/volunteer', [VolunteerPage::class, 'index'])->name('volunteer');
 Route::get('/registration', [VolunteerRegistrationPage::class, 'index'])->prefix('volunteer')->name('volunteer-regis');
@@ -107,6 +114,7 @@ Route::get('/competition/cheme/register/payment', [JeopardyCompetitionController
 Route::post('/competition/cheme/register/payment', [JeopardyCompetitionController::class, 'postCreateStep2'])->name('cheme-competition-regis-payment');
 Route::get('/competition/cheme/register/complete', [JeopardyCompetitionController::class, 'createStep5'])->name('cheme-competition-regis-complete');
 
+//Routes fot sosnight page
 Route::get('/socialnight', [SocialNightPage::class, 'index'])->name('sosnight');
 
 Route::get('/admin/volunteer/registration', [VolunteerRegistrationDataController::class, 'index'])->name('admin-volunteer');
