@@ -55,7 +55,9 @@ Route::get('/conference/register', [ConferencePage::class, 'get_register'])->nam
 Route::post('/conference/register/post', [ConferencePage::class, 'post_register'])->name('conference-registration-post');
 Route::get('/conference/register/done', [ConferencePage::class, 'end_register'])->name('conference-registration-end');
 Route::get('/admin/conference', [ConferenceDataController::class, 'index'])->name('admin-conference');
+Route::get('/admin/conference/export', [ConferenceDataController::class, 'export'])->name('admin-conference-export');
 Route::get('/exhibition', [ConferencePage::class, 'index_exhibition'])->name('exhibition');
+
 
 Route::get('/volunteer', [VolunteerPage::class, 'index'])->name('volunteer');
 Route::get('/registration', [VolunteerRegistrationPage::class, 'index'])->prefix('volunteer')->name('volunteer-regis');

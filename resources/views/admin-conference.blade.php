@@ -144,10 +144,10 @@
                     {!! $registration->links() !!}
                 </div>
             </div>
-            {{-- <form action="{{ route('export-aischat') }}" method="GET">
+            <form action="{{ route('admin-conference-export') }}" method="GET">
                 @csrf
                 <button class="rounded-lg bg-red-500 text-white font-semibold text-xl py-2 px-5 hover:text-gray-200">Export</button>
-            </form> --}}
+            </form>
         </div>
     </div>
 </body>
