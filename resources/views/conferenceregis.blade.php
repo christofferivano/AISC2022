@@ -54,8 +54,9 @@
                             @else
                                 <option class="py-1 font-sans">{{ $i->nama_institusi }}</option>
                             @endif      
-                            <option class="py-1 font-sans">Other</option>
+                            
                         @endforeach
+                        <option class="py-1 font-sans">Other</option>
                     </select>
 
                     @error('place')
@@ -115,11 +116,11 @@
                         </div>
                     @enderror
 
-                    <label for="file" class="pt-8 pb-2 pl-4 text-base md:text-base font-medium">Registration File Link*</label>
-                    <input name="file" type="file" class="outline-none rounded-full py-1 px-4 w-72 md:w-96 text-sm">  
+                    <label for="file" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Registration File Link*</label>
+                    <input value="{{{ $conference->file ?? '' }}}" name="file" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     @error('file')
                         <div class="text-red-500 mt-2 text-sm">
-                            {{ $message }}
+                            The document link is required!
                         </div>
                     @enderror
                     

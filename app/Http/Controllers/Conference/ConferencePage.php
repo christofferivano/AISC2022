@@ -44,15 +44,16 @@ class ConferencePage extends Controller
             'major' => $request->major,
             'email' => $request->email,
             'position' => $request->position,
+            'document_link' => $request->file
         ]);
 
         if($request->place == 'Other') {
-            $conference->instituion = $request->other_place;
+            $conference->institution = $request->other_place;
             $request->session()->put('other', 1);
         }
         
         $request->session()->put('conference', $conference);
-
+        
         if($request->institution == 'Other'){
             $request->validate([
                 'name' => 'required',
@@ -60,11 +61,7 @@ class ConferencePage extends Controller
                 'major' => 'required',
                 'email' => 'required|email',
                 'position' => 'required',
-                'file' => 'required|mimes:pdf|max:2048'
-            ],[
-                'file.required' => 'Document requirement must be uploaded!',
-                'file.mimes' => 'File must be in pdf format!',
-                'file.max' => 'File size must not exceed 2 MB'
+                'file' => 'required'
             ]);
         }
         else{
@@ -74,29 +71,11 @@ class ConferencePage extends Controller
                 'major' => 'required',
                 'email' => 'required|email',
                 'position' => 'required',
-                'file' => 'required|mimes:pdf|max:2048'
-            ],[
-                'file.required' => 'Document requirement must be uploaded!',
-                'file.mimes' => 'File must be in pdf format!',
-                'file.max' => 'File size must not exceed 2 MB'
+                'file' => 'required'
             ]);
         }
-
+        
         $conference->save();
-
-        $filenameWithExt = $request->file('file')->getClientOriginalName();
-        $filename = pathinfo($filenameWithExt, PATHINFO_FILENAME);
-        $extension = $request->file('file')->getClientOriginalExtension();
-        $filenameSimpan = $filename.'_'.time().'.'.$extension;
-        $path = $request->file('file')->storeAs('public/conference', $filenameSimpan);
-
-        $file = new Conf_file();
-        $file->fill([
-            'filename' => $filenameSimpan,
-            'filepath' => $path,
-            'conference_id' => $conference->id,
-        ]);
-        $file->save();
 
         $request->session()->forget('conference');
         $request->session()->forget('other');

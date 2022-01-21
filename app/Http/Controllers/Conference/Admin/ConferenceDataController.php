@@ -31,6 +31,6 @@ class ConferenceDataController extends Controller
 
     public function export(){
         $date = Carbon::now()->toDateTimeString();
-        return Excel::download(new Conference, $date.'volunteer.xlsx');
+        return Excel::download(new Conference, $date.'conference.xlsx');
     }
 }

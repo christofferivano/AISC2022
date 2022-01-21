@@ -24,15 +24,13 @@ class Conference implements FromCollection, WithHeadings
             'major',
             'email',
             'position',
-            'document_filename',
             'document_link'
         ];
     }
     public function collection()
     {
         //
-        $export_to_excel = Conf::join('conf_file', 'conf.id', "=", 'conf_file.conference_id')
-        ->select(['conf.*', 'conf_file.filename', DB::raw("CONCAT(\"127.0.0.1:8000/storage/file/\",filename) AS url")])->get();
+        $export_to_excel = Conf::select(['conf.*'])->get();
 
         return collect($export_to_excel);
     }

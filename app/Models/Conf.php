@@ -16,7 +16,8 @@ class Conf extends Model
         'institution',
         'major',
         'email',
-        'position'
+        'position',
+        'document_link'
     ];
 
     public function conf_file(){

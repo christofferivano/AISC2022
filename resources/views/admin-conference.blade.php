@@ -125,9 +125,9 @@
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                 {{ $r->position }}
                             </td>
-                            @if ($r->conf_file)
+                            @if ($r->document_link)
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                    <a target="#" href="/storage/conference/{{$r->conf_file->filename}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-200 text-blue-800">View</a>
+                                    <a target="#" href="//{{$r->document_link}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-200 text-blue-800">View</a>
                                 </td>
                             @else
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
