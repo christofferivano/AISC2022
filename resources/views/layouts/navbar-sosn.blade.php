@@ -15,15 +15,15 @@
 <body style="" class="relative">
     <div style="" class="">
         <img src="../images/bg-sosnight.png" alt="" class="absolute z-0">
-        <img src="../images/planet-1.png" alt="" class="absolute top-0 left-10 z-10 h-96">
-        <img src="../images/planet-2.png" alt="" class="absolute top-40 right-0 z-10 h-96">
-        <img src="../images/planet-3.png" alt="" class="absolute top-1/3 left-1/3 z-10 h-60">
-        <img src="../images/planet-4.png" alt="" class="absolute top-1/2 left-0 z-10 h-80">
-        <img src="../images/planet-5.png" alt="" class="absolute top-1/2 right-0 z-10 h-96">
-        <img src="../images/cloud-1.png" alt="" class="absolute bottom-0 left-0 z-10 h-150">
-        <img src="../images/rocket-1.png" alt="" class="absolute bottom-0 left-0 z-20 h-100">
-        <img src="../images/cloud-2.png" alt="" class="absolute bottom-0 right-0 z-10 h-150">
-        <img src="../images/rocket-2.png" alt="" class="absolute bottom-0 right-0 z-20 h-100">
+        <img src="../images/planet-1.png" alt="" class="absolute top-0 left-10 z-10 h-32 md:h-52 lg:h-80 xl:h-96">
+        <img src="../images/planet-2.png" alt="" class="absolute top-40 right-0 z-10 h-32 md:h-52 lg:h-80 xl:h-96">
+        <img src="../images/planet-3.png" alt="" class="absolute top-1/3 left-1/3 z-10 h-20 md:h-44 lg:h-60 xl:h-60">
+        <img src="../images/planet-4.png" alt="" class="absolute top-1/2 left-0 z-10 h-20 md:h-48 lg:h-64 xl:h-80">
+        <img src="../images/planet-5.png" alt="" class="absolute top-1/2 right-0 z-10 h-20 md:h-48 lg:h-64 xl:h-96">
+        <img src="../images/cloud-1.png" alt="" class="absolute bottom-40 md:bottom-0 left-0 z-10 h-20 md:h-48 lg:h-72 xl:h-150">
+        <img src="../images/rocket-1.png" alt="" class="absolute bottom-40 md:bottom-0 left-0 z-20 h-20 md:h-48 lg:h-72 xl:h-100">
+        <img src="../images/cloud-2.png" alt="" class="absolute bottom-40 md:bottom-0 right-0 z-10 h-20 md:h-48 lg:h-72 xl:h-150">
+        <img src="../images/rocket-2.png" alt="" class="absolute bottom-40 md:bottom-0 right-0 z-20 h-20 md:h-48 lg:h-72 xl:h-100">
         <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-5 md:px-10 lg:px-16 xl:px-24 py-2">
                 <div class="flex items-center justify-between md:h-12 lg:h-16 xl:h-20">

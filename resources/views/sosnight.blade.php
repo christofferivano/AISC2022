@@ -3,13 +3,13 @@
 
 @section('content')
 
-    <div class="relative pt-60 flex flex-col items-center z-10">
-        <div class="w-98 h-96 rounded-xl bg-white bg-opacity-30 flex flex-col items-center px-8 py-16">
-            <h1 class="text-white text-5xl font-bold pb-5">
+    <div class="relative pt-28 md:pt-32 lg:pt-40 xl:pt-60 flex flex-col items-center z-10">
+        <div class="w-60 md:w-80 lg:w-98 h-32 md:h-60 lg:h-80 xl:h-96 rounded-xl bg-white bg-opacity-30 flex flex-col items-center px-2 md:px-4 lg:px-8 py-4 md:py-8 lg:py-12 xl:py-16">
+            <h1 class="text-white text-base md:text-2xl lg:text-4xl xl:text-5xl font-bold pb-2 md:pb-3 lg:pb-4 xl:pb-5">
                 What is nAISC Night?
             </h1>
-            <div class="w-72 h-2 bg-gradient-to-l from-blue-300 to-purple-400 rounded-full"></div>
-            <p class="text-white text-xl pt-8 text-center">
+            <div class="w-24 md:w-44 lg:w-60 xl:w-72 h-1 md:h-2 bg-gradient-to-l from-blue-300 to-purple-400 rounded-full"></div>
+            <p class="text-white text-xxs md:text-sm lg:text-lg xl:text-xl pt-2 lg:pt-6 xl:pt-8 text-center">
                 nAISC night is a spectacular event
                 which is dedicated for the competition finalists,
                 AIChE’s representatives
@@ -20,11 +20,11 @@
         </div>
     </div>
 
-    <div class="relative pt-98 pb-101 flex flex-col items-center z-10">
-        <h1 class="text-white font-black text-6xl pb-8">
+    <div class="relative pt-16 md:pt-72 lg:pt-72 xl:pt-98 pb-32 md:pb-48 lg:pb-96 xl:pb-96 2xl:pb-101 flex flex-col items-center z-10">
+        <h1 class="text-white font-black text-xl md:text-4xl lg:text-5xl xl:text-6xl pb-2 md:pb-4 lg:pb-6 xl:pb-8">
             Are You Ready?
         </h1>
-        <button class="px-10 py-1 rounded-full bg-gradient-to-l from-blue-300 to-purple-400 text-white text-2xl font-semibold">
+        <button class="px-4 md:px-6 lg:px-8 xl:px-10 py-1 rounded-full bg-gradient-to-l from-blue-300 to-purple-400 text-white text-sm md:text-lg lg:text-xl xl:text-2xl font-semibold">
             <a href="">Check Your Email!</a>
         </button>
     </div>
