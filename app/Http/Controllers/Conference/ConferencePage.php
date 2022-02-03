@@ -18,6 +18,10 @@ class ConferencePage extends Controller
         return view ('conferencedone');
     }
 
+    public function end_register_2(){
+        return view('conferencedone2');
+    }
+
     public function index_exhibition(){
         return view ('exhibition');
     }
@@ -35,16 +39,22 @@ class ConferencePage extends Controller
 
     public function post_register(Request $request){
         $conference;
+        $renew_membership;
         if(empty($request->session()->get('conference'))) $conference = new Conf();   
         else $conference = $request->session()->get('conference');
-        
+        if($request->renew == "on") $renew_membership = "Yes";
+        else $renew_membership = "No";
         $conference->fill([
             'name' => $request->name,
             'institution' => $request->place,
             'major' => $request->major,
             'email' => $request->email,
             'position' => $request->position,
-            'document_link' => $request->file
+            'document_link' => $request->file,
+            'membership' => $request->member,
+            'renew_membership' => $renew_membership,
+            'contact_email_address' => $request->contact_email,
+            'graduation_date' => $request->graduation_date
         ]);
 
         if($request->place == 'Other') {
@@ -55,31 +65,68 @@ class ConferencePage extends Controller
         $request->session()->put('conference', $conference);
         
         if($request->institution == 'Other'){
-            $request->validate([
-                'name' => 'required',
-                'other_place' => 'required',
-                'major' => 'required',
-                'email' => 'required|email',
-                'position' => 'required',
-                'file' => 'required'
-            ]);
+            if($request->member == "Yes"){
+                $request->validate([
+                    'name' => 'required',
+                    'other_place' => 'required',
+                    'major' => 'required',
+                    'email' => 'required|email',
+                    'position' => 'required',
+                    'file' => 'required',
+                    'member' => 'required',
+                    'renew' => 'required',
+                    'contact_email' => "required|email",
+                    "graduation_date" => "required"
+                ]);
+            }
+            else{
+                $request->validate([
+                    'name' => 'required',
+                    'other_place' => 'required',
+                    'major' => 'required',
+                    'email' => 'required|email',
+                    'position' => 'required',
+                    'file' => 'required',
+                    'member' => 'required',
+                ]);
+            }
         }
         else{
-            $request->validate([
-                'name' => 'required',
-                'place' => 'required',
-                'major' => 'required',
-                'email' => 'required|email',
-                'position' => 'required',
-                'file' => 'required'
-            ]);
+            if($request->member == "Yes"){
+                $request->validate([
+                    'name' => 'required',
+                    'place' => 'required',
+                    'major' => 'required',
+                    'email' => 'required|email',
+                    'position' => 'required',
+                    'file' => 'required',
+                    'member' => 'required',
+                    'renew' => 'required',
+                    'contact_email' => "required|email",
+                    "graduation_date" => "required"
+                ]);
+            }
+            else{
+                $request->validate([
+                    'name' => 'required',
+                    'place' => 'required',
+                    'major' => 'required',
+                    'email' => 'required|email',
+                    'position' => 'required',
+                    'file' => 'required',
+                    'member' => 'required'
+                ]);
+            }
         }
-        
         $conference->save();
+        
+        $position = $conference->position;
 
         $request->session()->forget('conference');
         $request->session()->forget('other');
-
+        if($position == "Participants")
         return redirect()->route('conference-registration-end');
+        else
+        return redirect()->route('conference-registration-end-2');
     }
 }

@@ -37,7 +37,7 @@
                 <form enctype="multipart/form-data" method="POST" action="{{ route('conference-registration-post') }}" class="flex flex-col pt-10 md:pt-12">
                     @csrf
                     <label for="name" class="pb-2 pl-4 text-base md:text-xl font-medium">Name*</label>
-                    <input value="{{{ $conference->name ?? '' }}}" name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input required value="{{{ $conference->name ?? '' }}}" name="name" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     @error('name')
                             <div class="text-red-500 mt-2 text-sm">
                                 The name is required!
@@ -46,7 +46,7 @@
                     
                     <label for="place" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Institution / University*</label>
                     
-                    <select id="place" name="place" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                    <select required id="place" name="place" for="place1" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
                         <option class="py-1 font-sans" disabled selected hidden>Select University/Institution</option>
                         @foreach ($institution as $i)
                             @if ( ($conference->institution ?? '') == $i->nama_institusi )
@@ -78,15 +78,43 @@
                     </div>
                     
                     <label for="major" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Major*</label>
-                    <input value="{{{ $conference->major ?? '' }}}" name="major" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input required value="{{{ $conference->major ?? '' }}}" name="major" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     @error('major')
                         <div class="text-red-500 mt-2 text-sm">
                             The major is required!
                         </div>
                     @enderror
+
+                    <label for="member" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Are you a member of AIChE*</label>
+                    <select required id="member" name="member" for="member" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form" placeholder="">
+                        <option class="py-1 font-sans" disabled selected hidden>Select Membership</option>
+                        <option class="py-1 font-sans">Yes</option>
+                        <option class="py-1 font-sans">No</option>
+                    </select>
+                    <div hidden class="membership">
+                        <input class="req" name="renew" type="checkbox" >
+                        <span class="">Yes, renew my AIChE membership</span>
+                        {{-- class="outline-none border border-form py-1 px-4 w-3 md:w-5 text-sm focus:ring-2 focus:ring-form" --}}
+                    </div>
                     
+                    <label hidden for="contact_email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium membership">Permanent/ Non Edu contact email address *</label>
+                    <input hidden value="{{{ $conference->contact_email_address ?? '' }}}" name="contact_email" type="email" class="req membership outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    @error('contact_email')
+                        <div class="text-red-500 mt-2 text-sm">
+                            Fill the email section with the correct email format!
+                        </div>
+                    @enderror
+
+                    <label hidden for="graduation_date" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium membership">Graduation Date*</label>
+                    <input hidden value="{{{ $conference->graduation_date ?? '' }}}" name="graduation_date" type="text" class="req membership outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    @error('graduation_date')
+                        <div class="text-red-500 mt-2 text-sm">
+                            The graduation date is required!
+                        </div>
+                    @enderror
+
                     <label for="email" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Email*</label>
-                    <input value="{{{ $conference->email ?? '' }}}" name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input required value="{{{ $conference->email ?? '' }}}" name="email" type="email" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     @error('email')
                         <div class="text-red-500 mt-2 text-sm">
                             Fill the email section with the correct email format!
@@ -94,7 +122,7 @@
                     @enderror
                     
                     <label for="position" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Register As*</label>
-                    <select class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
+                    <select required class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form"
                     name="position" for="position">
                         @if ( ($conference->position ?? '') == "Delegates" )
                             <option class="py-1 font-sans" disabled selected hidden>Choose an Option</option>
@@ -117,7 +145,7 @@
                     @enderror
 
                     <label for="file" class="pt-4 pb-2 pl-4 text-base md:text-xl font-medium">Registration File Link*</label>
-                    <input value="{{{ $conference->file ?? '' }}}" name="file" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
+                    <input required value="{{{ $conference->file ?? '' }}}" name="file" type="text" class="outline-none rounded-full border border-form py-1 px-4 w-72 md:w-96 text-sm focus:ring-2 focus:ring-form">
                     @error('file')
                         <div class="text-red-500 mt-2 text-sm">
                             The document link is required!

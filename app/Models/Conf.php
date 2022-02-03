@@ -17,7 +17,11 @@ class Conf extends Model
         'major',
         'email',
         'position',
-        'document_link'
+        'document_link',
+        'membership',
+        'renew_membership',
+        'contact_email_address',
+        'graduation_date'
     ];
 
     public function conf_file(){

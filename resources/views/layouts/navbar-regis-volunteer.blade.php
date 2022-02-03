@@ -242,17 +242,58 @@
         
     </script>
     <script>
-        const targetDivLead = document.getElementById("other_column");
-        const btnLead = document.getElementById("place");
-        btnLead.onchange = function() {  
-            console.log("d", targetDivLead.style.display)
-            if(btnLead.value == "Other"){
-                targetDivLead.style.display = "flex";
+
+        document.addEventListener("DOMContentLoaded", function(){
+            const membershipColumn = document.getElementById("member");
+            const membershipSection = document.querySelectorAll(".membership");
+            const requiredSection = document.querySelectorAll(".req");
+            if(membershipColumn.value == "Yes"){
+                for (let column of membershipSection){
+                    column.removeAttribute("hidden");
+                }
+                for (let column of requiredSection){
+                    column.setAttribute("required", "required");
+                }
             }
-            else {
-                targetDivLead.style.display = "none";
+            else{
+                for (let column of membershipSection){
+                    column.setAttribute("hidden", "hidden");
+                }
+                for (let column of requiredSection){
+                    column.removeAttribute("required");
+                }
             }
-        }
+            membershipColumn.addEventListener("change", function(){
+                if(membershipColumn.value == "Yes"){
+                    for (let column of membershipSection){
+                        column.removeAttribute("hidden");
+                    }
+                    for (let column of requiredSection){
+                        column.setAttribute("required", "required");
+                    }
+                }
+                else{
+                    for (let column of membershipSection){
+                        column.setAttribute("hidden", "hidden");
+                    }
+                    for (let column of requiredSection){
+                        column.removeAttribute("required");
+                    }
+                }
+            })
+
+            const targetDivLead = document.getElementById("other_column");
+            const btnLead = document.getElementById("place");
+            btnLead.onchange = function() {  
+                console.log("d", targetDivLead.style.display)
+                if(btnLead.value == "Other"){
+                    targetDivLead.style.display = "flex";
+                }
+                else {
+                    targetDivLead.style.display = "none";
+                }
+            }
+        })
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

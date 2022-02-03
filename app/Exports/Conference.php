@@ -24,7 +24,11 @@ class Conference implements FromCollection, WithHeadings
             'major',
             'email',
             'position',
-            'document_link'
+            'document_link',
+            'member',
+            'renew_membership',
+            'contact_email_address',
+            'graduation_date'
         ];
     }
     public function collection()

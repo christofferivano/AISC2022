@@ -29,11 +29,7 @@
             <div class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg">
                 <table class="min-w-full divide-y divide-gray-200">
                 <thead class="bg-gray-50">
-                    <tr>
-                        <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
-                            <a href="{{ route('institution') }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Institution</a>
-                        </th>
-                    </tr>
+                    
                     <tr>
                         <th scope="col" class="text-left text-xl font-medium text-gray-900 uppercase tracking-wider">
                             <a href="{{ route('voucher') }}" class="px-6 py-3 btn btn-primary btn-sm float-left w-full hover:bg-gray-200 transition duration-200"><span class="fas fa-plus" style="padding-right: 7px;"></span>Voucher</a>

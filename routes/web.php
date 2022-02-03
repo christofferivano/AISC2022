@@ -53,7 +53,8 @@ Route::get('/competency', [CompetencyController::class, 'index'])->name('compete
 Route::get('/conference', [ConferencePage::class, 'index'])->name('conference');
 Route::get('/conference/register', [ConferencePage::class, 'get_register'])->name('conference-registration-get');
 Route::post('/conference/register/post', [ConferencePage::class, 'post_register'])->name('conference-registration-post');
-Route::get('/conference/register/done', [ConferencePage::class, 'end_register'])->name('conference-registration-end');
+Route::get('/conference/register/done1', [ConferencePage::class, 'end_register'])->name('conference-registration-end');
+Route::get('/conference/register/done2', [ConferencePage::class, 'end_register_2'])->name('conference-registration-end-2');
 Route::get('/admin/conference', [ConferenceDataController::class, 'index'])->name('admin-conference');
 Route::get('/admin/conference/export', [ConferenceDataController::class, 'export'])->name('admin-conference-export');
 Route::get('/exhibition', [ConferencePage::class, 'index_exhibition'])->name('exhibition');

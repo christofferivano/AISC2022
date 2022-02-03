@@ -6,15 +6,10 @@
         <img src="images/competency.png" alt="" class="h-100 md:h-140">
     </div>
     <div class="py-5 md:py-20 text-montserrat flex flex-col items-center pb-60" data-aos="fade-right" data-aos-duration="2000"> 
-        <h1 class="text-base md:text-4xl ">Thank you for registering as a <span class="font-bold">Participant</span> of our Conference</h1>
-        <h1 class="text-base md:text-4xl pt-1 jusify-center">You are hereby invited to our group </h1>
-        <h1 class="text-base md:text-4xl pt-1 jusify-center">for getting futher information about the Conference</h1>
-        <br>
-        <button class="w-48 md:w-60 lg:w-80 xl:w-96 py-1 bg-gradient-to-l from-blue-300 to-purple-400 shadow-lg text-white text-sm md:text-lg lg:text-xl xl:text-2xl font-semibold rounded-full">
-            <a href="#">Check Here!</a>
-        </button>
+        <h1 class="text-base md:text-4xl ">Thank you for registering as a <span class="font-bold">Delegates</span> of our Conference</h1>
+        <h1 class="text-base md:text-4xl pt-1 jusify-center">Wait for our email to get the delegates announcement</h1>
+        
     </div>
-    
 
     <!-- Footer -->
     <footer class="bg-footer absolute w-full z-10">

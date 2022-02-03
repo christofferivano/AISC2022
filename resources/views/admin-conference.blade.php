@@ -98,6 +98,18 @@
                         <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
                             File Link
                         </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Member of AIChE
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Renew Membership
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Contact Email Address
+                        </th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-bold text-gray-500 uppercase tracking-wider">
+                            Graduation Date
+                        </th>
                     </tr>
                 </thead>
                 <tbody class="bg-white divide-y divide-gray-200">
@@ -125,6 +137,7 @@
                             <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                 {{ $r->position }}
                             </td>
+                            
                             @if ($r->document_link)
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                     <a target="#" href="//{{$r->document_link}}" class="px-2 inline-flex text-xs leading-5 font-semibold rounded-full bg-blue-200 text-blue-800">View</a>
@@ -133,6 +146,18 @@
                                 <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                 </td>
                             @endif
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ $r->membership ?? '' }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ $r->renew_membership ?? '' }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ $r->contact_email_address ?? '' }}
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                {{ $r->graduation_date ?? '' }}
+                            </td>
                             </tr>
                         @endforeach
                     @else
