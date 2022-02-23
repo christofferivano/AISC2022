@@ -12,7 +12,7 @@
     <title>AISC 2022</title>
     <link rel="shortcut icon" href="/images/Logogram.ico" />
 </head>
-<body class="relative">
+<body class="relative bg-landing">
     <div style="background-image: url('images/bg-conf-day.png')" class="bg-cover h-landing bg-local relative h-96 md:h-full">
         <nav class="hidden md:block fixed w-screen top-0 z-20 shadow-lg bg-white font-montserrat backdrop-filter backdrop-blur-lg bg-opacity-30">
             <div class="mx-auto px-5 md:px-10 lg:px-16 xl:px-24 py-2">

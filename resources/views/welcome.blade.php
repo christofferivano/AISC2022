@@ -21,7 +21,7 @@
     <div class="relative md:pb-20 pt-28 md:pt-20 md:py-16">
         <div class="flex flex-col items-center">
             <h1 class="text-footer text-center text-xl md:text-3xl lg:text-4xl xl:text-6xl font-bold tracking-wide" data-aos="fade-left">
-                Open Registration AISChat 1!
+                Open Registration Conference Day!
             </h1>
             <div class="countdown md:pt-4 xl:pt-8 text-footer font-semibold md:text-2xl lg:text-3xl" data-aos="fade-right" data-aos-duration="2000">
                 00 : 00 : 00: 00

@@ -117,7 +117,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" ></script>
     <script>
         //Setup End Date
-        let launchDate = new Date("Sep 17, 2021 23:59:59").getTime();
+        let launchDate = new Date("Mar 4, 2022 23:59:59").getTime();
 
         //Setup Timer Tick
         let timer = setInterval(tick,1000);
