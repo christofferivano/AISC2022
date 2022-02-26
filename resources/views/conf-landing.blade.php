@@ -112,26 +112,26 @@
         <div class="flex flex-col items-center mt-8 md:mt-5 pl-10 md:pl-20 lg:pl-32 xl:pl-40 z-10 w-36 md:w-52 lg:w-80 xl:w-97">
             <img src="../images/pembicara 1-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80 z-10">
             <p class="text-footer text-xxxs md:text-xxs lg:text-xs xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Mark Thomas Holtzapple</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">“Carboxylate Platform: Chemicals and Fuels from Biomass”</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Professor of Chemical Engineering a Texas A&M University, United States</p>
         </div>
         <div class="flex flex-col items-center mt-8 md:mt-5 pl-5 md:pl-5 lg:pl-10 z-10 w-24 md:w-36 lg:w-60 xl:w-97">
             <img src="../images/pembicara 2-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80">
             <p class="text-footer text-xxxs md:text-xxs lg:text-sm xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Amitabh Prasad</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">“LNG, CNG and Hydrogen: Automotive Uses”</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Country Manager at Iceberg Energy, Myanmar</p>
         </div>
     </div>
     <div class="flex flex-row px-6 md:px-10 lg:px-14 xl:px-20 py-32">
         <!-- <img src="../images/pembicara 3-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80 md:-mt-5 -mt-0 md:-ml-10 z-10">
         <img src="../images/pembicara 4-02.png.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80 md:-mt-5 -mt-0 pl-5 md:pl-10 z-10"> -->
-        <div class="flex flex-col items-center mt-8 md:mt-0 xl:-mt-5 z-10 w-36 md:w-52 lg:w-80 xl:w-96">
+        <div class="flex flex-col items-center px-2 md:px-0 mt-8 md:mt-0 xl:-mt-5 z-10 w-36 md:w-52 lg:w-80 xl:w-96">
             <img src="../images/pembicara 3-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80 z-10">
             <p class="text-footer text-xxxs md:text-xxs lg:text-sm xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Anish Malan</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">“Battery as the Future of Energy”</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Assistant Director at National Institute of Solar Energy (Ministry of New and Renewable Energy, Government of India)</p>
         </div>
-        <div class="flex flex-col items-center mt-8 md:mt-0 xl:-mt-5 z-10 w-36 md:w-52 lg:w-80 xl:w-96">
-            <img src="../images/pembicara 4-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80">
-            <p class="text-footer text-xxxs md:text-xxs lg:text-xs xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Hafeez Ur Rahman Memon</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">“Battery as the Future of Energy”</p>
+        <div class="flex flex-col items-center px-1 md:px-10 mt-8 md:mt-0 xl:-mt-5 z-10 w-36 md:w-52 lg:w-80 xl:w-96">
+            <img src="../images/Pembicara Baru-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80">
+            <p class="text-footer text-xxxs md:text-xxxs lg:text-xxs xl:text-xss -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Tubagus Ahmad Fauzi Soelaiman</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Professor in Energy Convertion Systems, Mechanical Engineering Dept., FAME (FTMD), ITB</p>
         </div>
         <img src="../images/bulet-conf-2.png" alt="" class="absolute left-0 -mt-20 h-80 md:h-120 lg:h-150">
         <div class="flex flex-col items-start w-72 md:w-80 lg:w-96 xl:w-98">
@@ -180,12 +180,12 @@
         <div class="flex flex-col items-center mt-14 md:mt-5 pl-10 md:pl-20 lg:pl-32 xl:pl-40 z-10 w-36 md:w-52 lg:w-80 xl:w-97">
             <img src="../images/pembicara 5-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80 z-10">
             <p class="text-footer text-xxxs md:text-xxs lg:text-sm xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Belinda Azzahra</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">“Waste Management in FMCG Industry”</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Supply Chain in Johnson & Johnson</p>
         </div>
         <div class="flex flex-col items-center mt-14 md:mt-5 pl-5 md:pl-5 lg:pl-10 z-10 w-36 md:w-52 lg:w-80 xl:w-97">
             <img src="../images/pembicara 6-02.png" alt="" class="h-24 md:h-44 lg:h-60 xl:h-72 2xl:h-80">
             <p class="text-footer text-xxxs md:text-xxs lg:text-xs xl:text-sm -mt-4 md:-mt-7 lg:-mt-10 xl:-mt-12 font-semibold z-20">Aurelia Salsabila Putri</p>
-            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">"The Eco-Friendly Packaging for Sustainable FMCG Industry"</p>
+            <p class="text-footer text-xxs md:text-xxs lg:text-sm xl:text-base mt-1 md:mt-4 text-center">Project Development Executive at Waste4Change</p>
         </div>
         <img src="../images/bulet-conf-1.png" alt="" class="absolute right-0 -mt-20 h-80 md:h-120 lg:h-150">
     </div>
